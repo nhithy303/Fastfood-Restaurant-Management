@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class Form1 : Form
+    public partial class Oder4 : Form
     {
-        public Form1()
+        public Oder4()
         {
             InitializeComponent();
         }
@@ -20,20 +20,7 @@ namespace GUI
         private void ptb_close_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
 
-        private void ptb_login_Click(object sender, EventArgs e)
-        {
-            Login mhc = new Login();
-            mhc.Show();
-            this.Hide();
-        }
-
-        private void lbl_login_Click(object sender, EventArgs e)
-        {
-            Login mhc = new Login();
-            mhc.Show();
-            this.Hide();
         }
     }
 }

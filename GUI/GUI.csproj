@@ -52,28 +52,104 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee.designer.cs">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="Form1.designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainOrder.designer.cs">
+      <DependentUpon>mainOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Oder1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Oder1.designer.cs">
+      <DependentUpon>Oder1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Oder2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Oder2.designer.cs">
+      <DependentUpon>Oder2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Oder3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Oder3.designer.cs">
+      <DependentUpon>Oder3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Oder4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Oder4.designer.cs">
+      <DependentUpon>Oder4.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee.resx">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainOrder.resx">
+      <DependentUpon>mainOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Oder1.resx">
+      <DependentUpon>Oder1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Oder2.resx">
+      <DependentUpon>Oder2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Oder3.resx">
+      <DependentUpon>Oder3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Oder4.resx">
+      <DependentUpon>Oder4.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -88,6 +164,168 @@
       <Project>{68d85d9a-caba-4aef-bf7c-d72a7af83a15}</Project>
       <Name>BLL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin-ep_bg.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\decoBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Decomenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\locked.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login_Background.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login_bg.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login_boder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mF_Background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mF_icBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mF_titleBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NMCNPM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\titleBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconX.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icUser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deco4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dot_mOrder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mOrder_deco %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mOrder_deco %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mOrder_deco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mOrder_deco2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mOrder_deco3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cheese_chicken.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chicken %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chicken %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chicken %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nomal_chicken.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spicy_chicken.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tilte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hbg %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hbg %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hbg %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hbg_beef.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hbg_chicken.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hbg_egg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noodle %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noodle %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noodle %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noodle_beef.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noodle_eggbeef.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noodles_egg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chicken_deco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chicken_tilte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noodle_deco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noodle_tilte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\another %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\another %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\another %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\another %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\another %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\another %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\another %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\another_bg.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
