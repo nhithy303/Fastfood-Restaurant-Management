@@ -1,6 +1,6 @@
 ﻿namespace GUI
 {
-    partial class Oder3
+    partial class Order_Noodles
     {
         /// <summary>
         /// Required designer variable.
@@ -47,9 +47,10 @@
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.Image = global::GUI.Properties.Resources.noodle_title;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(180, -217);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(240, -267);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(1292, 763);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(1723, 939);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
@@ -60,9 +61,10 @@
             this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox2.Image = global::GUI.Properties.Resources.noodle_deco;
             this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(-60, -152);
+            this.guna2PictureBox2.Location = new System.Drawing.Point(-80, -187);
+            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(954, 686);
+            this.guna2PictureBox2.Size = new System.Drawing.Size(1272, 844);
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox2.TabIndex = 1;
             this.guna2PictureBox2.TabStop = false;
@@ -73,9 +75,10 @@
             this.ptb_nd1.BackColor = System.Drawing.Color.Transparent;
             this.ptb_nd1.Image = global::GUI.Properties.Resources.noodle__1_;
             this.ptb_nd1.ImageRotate = 0F;
-            this.ptb_nd1.Location = new System.Drawing.Point(-150, -7);
+            this.ptb_nd1.Location = new System.Drawing.Point(-200, -9);
+            this.ptb_nd1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ptb_nd1.Name = "ptb_nd1";
-            this.ptb_nd1.Size = new System.Drawing.Size(511, 306);
+            this.ptb_nd1.Size = new System.Drawing.Size(681, 377);
             this.ptb_nd1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptb_nd1.TabIndex = 2;
             this.ptb_nd1.TabStop = false;
@@ -86,9 +89,10 @@
             this.ptb_nd2.BackColor = System.Drawing.Color.Transparent;
             this.ptb_nd2.Image = global::GUI.Properties.Resources.noodle__2_;
             this.ptb_nd2.ImageRotate = 0F;
-            this.ptb_nd2.Location = new System.Drawing.Point(200, 186);
+            this.ptb_nd2.Location = new System.Drawing.Point(267, 229);
+            this.ptb_nd2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ptb_nd2.Name = "ptb_nd2";
-            this.ptb_nd2.Size = new System.Drawing.Size(541, 304);
+            this.ptb_nd2.Size = new System.Drawing.Size(721, 374);
             this.ptb_nd2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptb_nd2.TabIndex = 3;
             this.ptb_nd2.TabStop = false;
@@ -99,9 +103,10 @@
             this.ptb_nd3.BackColor = System.Drawing.Color.Transparent;
             this.ptb_nd3.Image = global::GUI.Properties.Resources.noodle__3_;
             this.ptb_nd3.ImageRotate = 0F;
-            this.ptb_nd3.Location = new System.Drawing.Point(515, 424);
+            this.ptb_nd3.Location = new System.Drawing.Point(687, 522);
+            this.ptb_nd3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ptb_nd3.Name = "ptb_nd3";
-            this.ptb_nd3.Size = new System.Drawing.Size(556, 329);
+            this.ptb_nd3.Size = new System.Drawing.Size(741, 405);
             this.ptb_nd3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptb_nd3.TabIndex = 4;
             this.ptb_nd3.TabStop = false;
@@ -112,9 +117,10 @@
             this.ptb_close.BackColor = System.Drawing.Color.Transparent;
             this.ptb_close.Image = global::GUI.Properties.Resources.iconX;
             this.ptb_close.ImageRotate = 0F;
-            this.ptb_close.Location = new System.Drawing.Point(-26, 21);
+            this.ptb_close.Location = new System.Drawing.Point(-35, 26);
+            this.ptb_close.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ptb_close.Name = "ptb_close";
-            this.ptb_close.Size = new System.Drawing.Size(135, 65);
+            this.ptb_close.Size = new System.Drawing.Size(180, 80);
             this.ptb_close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptb_close.TabIndex = 9;
             this.ptb_close.TabStop = false;
@@ -123,11 +129,11 @@
             // 
             // Oder3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::GUI.Properties.Resources.mF_Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1045, 765);
+            this.ClientSize = new System.Drawing.Size(1393, 942);
             this.Controls.Add(this.ptb_close);
             this.Controls.Add(this.ptb_nd1);
             this.Controls.Add(this.ptb_nd2);
@@ -135,9 +141,11 @@
             this.Controls.Add(this.ptb_nd3);
             this.Controls.Add(this.guna2PictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Oder3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Oder3";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_nd1)).EndInit();

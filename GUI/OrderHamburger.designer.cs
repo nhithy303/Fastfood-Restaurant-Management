@@ -1,6 +1,6 @@
 ﻿namespace GUI
 {
-    partial class Oder1
+    partial class OrderHamburger
     {
         /// <summary>
         /// Required designer variable.
@@ -47,9 +47,10 @@
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.Image = global::GUI.Properties.Resources.deco;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(-2, -2);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(-3, -2);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(1292, 763);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(1723, 939);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
@@ -60,9 +61,10 @@
             this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox2.Image = global::GUI.Properties.Resources.tilte;
             this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(-110, -226);
+            this.guna2PictureBox2.Location = new System.Drawing.Point(-147, -278);
+            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(1292, 763);
+            this.guna2PictureBox2.Size = new System.Drawing.Size(1723, 939);
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox2.TabIndex = 1;
             this.guna2PictureBox2.TabStop = false;
@@ -73,9 +75,10 @@
             this.ptb_hbg1.BackColor = System.Drawing.Color.Transparent;
             this.ptb_hbg1.Image = global::GUI.Properties.Resources.hbg__2_;
             this.ptb_hbg1.ImageRotate = 0F;
-            this.ptb_hbg1.Location = new System.Drawing.Point(-100, 230);
+            this.ptb_hbg1.Location = new System.Drawing.Point(-133, 283);
+            this.ptb_hbg1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ptb_hbg1.Name = "ptb_hbg1";
-            this.ptb_hbg1.Size = new System.Drawing.Size(499, 314);
+            this.ptb_hbg1.Size = new System.Drawing.Size(665, 386);
             this.ptb_hbg1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptb_hbg1.TabIndex = 3;
             this.ptb_hbg1.TabStop = false;
@@ -86,9 +89,10 @@
             this.ptb_hbg3.BackColor = System.Drawing.Color.Transparent;
             this.ptb_hbg3.Image = global::GUI.Properties.Resources.hbg__1_;
             this.ptb_hbg3.ImageRotate = 0F;
-            this.ptb_hbg3.Location = new System.Drawing.Point(650, 250);
+            this.ptb_hbg3.Location = new System.Drawing.Point(867, 308);
+            this.ptb_hbg3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ptb_hbg3.Name = "ptb_hbg3";
-            this.ptb_hbg3.Size = new System.Drawing.Size(455, 278);
+            this.ptb_hbg3.Size = new System.Drawing.Size(607, 342);
             this.ptb_hbg3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptb_hbg3.TabIndex = 4;
             this.ptb_hbg3.TabStop = false;
@@ -99,9 +103,10 @@
             this.ptb_hbg2.BackColor = System.Drawing.Color.Transparent;
             this.ptb_hbg2.Image = global::GUI.Properties.Resources.hbg__3_;
             this.ptb_hbg2.ImageRotate = 0F;
-            this.ptb_hbg2.Location = new System.Drawing.Point(300, 417);
+            this.ptb_hbg2.Location = new System.Drawing.Point(400, 513);
+            this.ptb_hbg2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ptb_hbg2.Name = "ptb_hbg2";
-            this.ptb_hbg2.Size = new System.Drawing.Size(432, 302);
+            this.ptb_hbg2.Size = new System.Drawing.Size(576, 372);
             this.ptb_hbg2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptb_hbg2.TabIndex = 5;
             this.ptb_hbg2.TabStop = false;
@@ -112,9 +117,10 @@
             this.ptb_close.BackColor = System.Drawing.Color.Transparent;
             this.ptb_close.Image = global::GUI.Properties.Resources.iconX;
             this.ptb_close.ImageRotate = 0F;
-            this.ptb_close.Location = new System.Drawing.Point(930, 2);
+            this.ptb_close.Location = new System.Drawing.Point(1240, 2);
+            this.ptb_close.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ptb_close.Name = "ptb_close";
-            this.ptb_close.Size = new System.Drawing.Size(135, 65);
+            this.ptb_close.Size = new System.Drawing.Size(180, 80);
             this.ptb_close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptb_close.TabIndex = 9;
             this.ptb_close.TabStop = false;
@@ -123,11 +129,11 @@
             // 
             // Oder1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::GUI.Properties.Resources.mF_Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1045, 765);
+            this.ClientSize = new System.Drawing.Size(1393, 942);
             this.Controls.Add(this.ptb_close);
             this.Controls.Add(this.ptb_hbg1);
             this.Controls.Add(this.ptb_hbg2);
@@ -135,9 +141,11 @@
             this.Controls.Add(this.guna2PictureBox2);
             this.Controls.Add(this.guna2PictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Oder1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Oder1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_hbg1)).EndInit();

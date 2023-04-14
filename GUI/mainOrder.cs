@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class mainOrder : Form
+    public partial class MainOrder : Form
     {
-        public mainOrder()
+        public MainOrder()
         {
             InitializeComponent();
         }
@@ -35,28 +35,28 @@ namespace GUI
 
         private void ptb_dot1_Click(object sender, EventArgs e)
         {
-            openChildForm(new Oder1());
+            openChildForm(new OrderHamburger());
             pnl3.Visible = true;
 
         }
 
         private void ptb_dot2_Click(object sender, EventArgs e)
         {
-            openChildForm(new Oder2());
+            openChildForm(new OrderChicken());
             pnl3.Visible=true;
 
         }
 
         private void ptb_dot3_Click(object sender, EventArgs e)
         {
-            openChildForm(new Oder3());
+            openChildForm(new Order_Noodles());
             pnl3.Visible = true;
 
         }
 
         private void ptb_dot4_Click(object sender, EventArgs e)
         {
-            openChildForm(new Oder4());
+            openChildForm(new OrderSidedish());
             pnl3.Visible = true;
 
         }

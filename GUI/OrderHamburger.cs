@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class Oder1 : Form
+    public partial class OrderHamburger : Form
     {
-        public Oder1()
+        public OrderHamburger()
         {
             InitializeComponent();
         }

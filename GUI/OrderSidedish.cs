@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class Oder4 : Form
+    public partial class OrderSidedish : Form
     {
-        public Oder4()
+        public OrderSidedish()
         {
             InitializeComponent();
         }

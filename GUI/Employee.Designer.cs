@@ -50,7 +50,8 @@
             this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox2.Image = global::GUI.Properties.Resources.titleBackground;
             this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(-520, -374);
+            this.guna2PictureBox2.Location = new System.Drawing.Point(-693, -460);
+            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
             this.guna2PictureBox2.Size = new System.Drawing.Size(2400, 1350);
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -64,9 +65,10 @@
             this.guna2PictureBox1.FillColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.Image = global::GUI.Properties.Resources.decoBackground;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(310, 167);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(413, 206);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(1190, 684);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(1587, 842);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 3;
             this.guna2PictureBox1.TabStop = false;
@@ -77,9 +79,10 @@
             this.guna2PictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox4.Image = global::GUI.Properties.Resources.icUser;
             this.guna2PictureBox4.ImageRotate = 0F;
-            this.guna2PictureBox4.Location = new System.Drawing.Point(0, 7);
+            this.guna2PictureBox4.Location = new System.Drawing.Point(0, 9);
+            this.guna2PictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox4.Name = "guna2PictureBox4";
-            this.guna2PictureBox4.Size = new System.Drawing.Size(70, 40);
+            this.guna2PictureBox4.Size = new System.Drawing.Size(93, 49);
             this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox4.TabIndex = 7;
             this.guna2PictureBox4.TabStop = false;
@@ -91,9 +94,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(60, 16);
+            this.label1.Location = new System.Drawing.Point(80, 20);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(158, 19);
+            this.label1.Size = new System.Drawing.Size(210, 25);
             this.label1.TabIndex = 8;
             this.label1.Text = "NAME EMPLOYEE";
             // 
@@ -103,9 +107,10 @@
             this.guna2Panel1.Controls.Add(this.bnt_info);
             this.guna2Panel1.Controls.Add(this.bnt_bh);
             this.guna2Panel1.Controls.Add(this.bnt_home2);
-            this.guna2Panel1.Location = new System.Drawing.Point(-1, 160);
+            this.guna2Panel1.Location = new System.Drawing.Point(-1, 197);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(218, 155);
+            this.guna2Panel1.Size = new System.Drawing.Size(291, 191);
             this.guna2Panel1.TabIndex = 20;
             // 
             // bnt_info
@@ -121,9 +126,10 @@
             this.bnt_info.FillColor = System.Drawing.Color.Transparent;
             this.bnt_info.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bnt_info.ForeColor = System.Drawing.Color.Black;
-            this.bnt_info.Location = new System.Drawing.Point(0, 100);
+            this.bnt_info.Location = new System.Drawing.Point(0, 124);
+            this.bnt_info.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bnt_info.Name = "bnt_info";
-            this.bnt_info.Size = new System.Drawing.Size(218, 50);
+            this.bnt_info.Size = new System.Drawing.Size(291, 62);
             this.bnt_info.TabIndex = 15;
             this.bnt_info.Text = "Thông tin cá nhân";
             // 
@@ -140,9 +146,10 @@
             this.bnt_bh.FillColor = System.Drawing.Color.Transparent;
             this.bnt_bh.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bnt_bh.ForeColor = System.Drawing.Color.Black;
-            this.bnt_bh.Location = new System.Drawing.Point(0, 50);
+            this.bnt_bh.Location = new System.Drawing.Point(0, 62);
+            this.bnt_bh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bnt_bh.Name = "bnt_bh";
-            this.bnt_bh.Size = new System.Drawing.Size(218, 50);
+            this.bnt_bh.Size = new System.Drawing.Size(291, 62);
             this.bnt_bh.TabIndex = 17;
             this.bnt_bh.Text = "Bán hàng";
             // 
@@ -160,8 +167,9 @@
             this.bnt_home2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bnt_home2.ForeColor = System.Drawing.Color.Black;
             this.bnt_home2.Location = new System.Drawing.Point(0, 0);
+            this.bnt_home2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bnt_home2.Name = "bnt_home2";
-            this.bnt_home2.Size = new System.Drawing.Size(218, 50);
+            this.bnt_home2.Size = new System.Drawing.Size(291, 62);
             this.bnt_home2.TabIndex = 16;
             this.bnt_home2.Text = "Home";
             // 
@@ -176,9 +184,10 @@
             this.bnt_logout.FillColor = System.Drawing.Color.Transparent;
             this.bnt_logout.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bnt_logout.ForeColor = System.Drawing.Color.Black;
-            this.bnt_logout.Location = new System.Drawing.Point(-61, 751);
+            this.bnt_logout.Location = new System.Drawing.Point(-81, 924);
+            this.bnt_logout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bnt_logout.Name = "bnt_logout";
-            this.bnt_logout.Size = new System.Drawing.Size(218, 50);
+            this.bnt_logout.Size = new System.Drawing.Size(291, 62);
             this.bnt_logout.TabIndex = 21;
             this.bnt_logout.Text = "Log out";
             // 
@@ -187,9 +196,10 @@
             this.ptb_close.BackColor = System.Drawing.Color.Transparent;
             this.ptb_close.Image = global::GUI.Properties.Resources.iconX;
             this.ptb_close.ImageRotate = 0F;
-            this.ptb_close.Location = new System.Drawing.Point(1415, -12);
+            this.ptb_close.Location = new System.Drawing.Point(1887, -15);
+            this.ptb_close.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ptb_close.Name = "ptb_close";
-            this.ptb_close.Size = new System.Drawing.Size(135, 65);
+            this.ptb_close.Size = new System.Drawing.Size(180, 80);
             this.ptb_close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptb_close.TabIndex = 22;
             this.ptb_close.TabStop = false;
@@ -198,11 +208,11 @@
             // 
             // Employee
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::GUI.Properties.Resources.admin_ep_bg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1500, 850);
+            this.ClientSize = new System.Drawing.Size(1942, 1046);
             this.Controls.Add(this.ptb_close);
             this.Controls.Add(this.bnt_logout);
             this.Controls.Add(this.guna2Panel1);
@@ -211,9 +221,11 @@
             this.Controls.Add(this.guna2PictureBox2);
             this.Controls.Add(this.guna2PictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Employee";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Employee";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Employee_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();

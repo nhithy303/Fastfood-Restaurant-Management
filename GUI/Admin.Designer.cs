@@ -55,9 +55,10 @@
             this.guna2PictureBox1.FillColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.Image = global::GUI.Properties.Resources.decoBackground;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(296, 134);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(395, 165);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(1190, 684);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(1587, 842);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
@@ -68,7 +69,8 @@
             this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox2.Image = global::GUI.Properties.Resources.titleBackground;
             this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(-512, -373);
+            this.guna2PictureBox2.Location = new System.Drawing.Point(-683, -459);
+            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
             this.guna2PictureBox2.Size = new System.Drawing.Size(2400, 1350);
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -81,9 +83,10 @@
             this.guna2PictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox4.Image = global::GUI.Properties.Resources.icUser;
             this.guna2PictureBox4.ImageRotate = 0F;
-            this.guna2PictureBox4.Location = new System.Drawing.Point(0, 7);
+            this.guna2PictureBox4.Location = new System.Drawing.Point(0, 9);
+            this.guna2PictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox4.Name = "guna2PictureBox4";
-            this.guna2PictureBox4.Size = new System.Drawing.Size(70, 40);
+            this.guna2PictureBox4.Size = new System.Drawing.Size(93, 49);
             this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox4.TabIndex = 6;
             this.guna2PictureBox4.TabStop = false;
@@ -95,9 +98,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(63, 16);
+            this.label1.Location = new System.Drawing.Point(84, 20);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(119, 19);
+            this.label1.Size = new System.Drawing.Size(159, 25);
             this.label1.TabIndex = 7;
             this.label1.Text = "NAME ADMIN";
             // 
@@ -111,9 +115,10 @@
             this.guna2Panel1.Controls.Add(this.bnt_qlnh);
             this.guna2Panel1.Controls.Add(this.bnt_qlnv);
             this.guna2Panel1.Controls.Add(this.bnt_home);
-            this.guna2Panel1.Location = new System.Drawing.Point(-1, 160);
+            this.guna2Panel1.Location = new System.Drawing.Point(-1, 197);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(218, 354);
+            this.guna2Panel1.Size = new System.Drawing.Size(291, 436);
             this.guna2Panel1.TabIndex = 19;
             // 
             // bnt_qldt
@@ -129,9 +134,10 @@
             this.bnt_qldt.FillColor = System.Drawing.Color.Transparent;
             this.bnt_qldt.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bnt_qldt.ForeColor = System.Drawing.Color.Black;
-            this.bnt_qldt.Location = new System.Drawing.Point(0, 300);
+            this.bnt_qldt.Location = new System.Drawing.Point(0, 372);
+            this.bnt_qldt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bnt_qldt.Name = "bnt_qldt";
-            this.bnt_qldt.Size = new System.Drawing.Size(218, 50);
+            this.bnt_qldt.Size = new System.Drawing.Size(291, 62);
             this.bnt_qldt.TabIndex = 13;
             this.bnt_qldt.Text = "Quản lý doanh thu";
             // 
@@ -148,9 +154,10 @@
             this.bnt_qltd.FillColor = System.Drawing.Color.Transparent;
             this.bnt_qltd.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bnt_qltd.ForeColor = System.Drawing.Color.Black;
-            this.bnt_qltd.Location = new System.Drawing.Point(0, 250);
+            this.bnt_qltd.Location = new System.Drawing.Point(0, 310);
+            this.bnt_qltd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bnt_qltd.Name = "bnt_qltd";
-            this.bnt_qltd.Size = new System.Drawing.Size(218, 50);
+            this.bnt_qltd.Size = new System.Drawing.Size(291, 62);
             this.bnt_qltd.TabIndex = 19;
             this.bnt_qltd.Text = "Quản lý thực đơn";
             // 
@@ -167,9 +174,10 @@
             this.bnt_qlbh.FillColor = System.Drawing.Color.Transparent;
             this.bnt_qlbh.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bnt_qlbh.ForeColor = System.Drawing.Color.Black;
-            this.bnt_qlbh.Location = new System.Drawing.Point(0, 200);
+            this.bnt_qlbh.Location = new System.Drawing.Point(0, 248);
+            this.bnt_qlbh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bnt_qlbh.Name = "bnt_qlbh";
-            this.bnt_qlbh.Size = new System.Drawing.Size(218, 50);
+            this.bnt_qlbh.Size = new System.Drawing.Size(291, 62);
             this.bnt_qlbh.TabIndex = 14;
             this.bnt_qlbh.Text = "Quản lý bán hàng";
             // 
@@ -186,9 +194,10 @@
             this.bnt_qlkh.FillColor = System.Drawing.Color.Transparent;
             this.bnt_qlkh.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bnt_qlkh.ForeColor = System.Drawing.Color.Black;
-            this.bnt_qlkh.Location = new System.Drawing.Point(0, 150);
+            this.bnt_qlkh.Location = new System.Drawing.Point(0, 186);
+            this.bnt_qlkh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bnt_qlkh.Name = "bnt_qlkh";
-            this.bnt_qlkh.Size = new System.Drawing.Size(218, 50);
+            this.bnt_qlkh.Size = new System.Drawing.Size(291, 62);
             this.bnt_qlkh.TabIndex = 18;
             this.bnt_qlkh.Text = "Quản lí kho hàng";
             // 
@@ -205,9 +214,10 @@
             this.bnt_qlnh.FillColor = System.Drawing.Color.Transparent;
             this.bnt_qlnh.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bnt_qlnh.ForeColor = System.Drawing.Color.Black;
-            this.bnt_qlnh.Location = new System.Drawing.Point(0, 100);
+            this.bnt_qlnh.Location = new System.Drawing.Point(0, 124);
+            this.bnt_qlnh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bnt_qlnh.Name = "bnt_qlnh";
-            this.bnt_qlnh.Size = new System.Drawing.Size(218, 50);
+            this.bnt_qlnh.Size = new System.Drawing.Size(291, 62);
             this.bnt_qlnh.TabIndex = 15;
             this.bnt_qlnh.Text = "Quản lý nhập hàng";
             // 
@@ -224,9 +234,10 @@
             this.bnt_qlnv.FillColor = System.Drawing.Color.Transparent;
             this.bnt_qlnv.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bnt_qlnv.ForeColor = System.Drawing.Color.Black;
-            this.bnt_qlnv.Location = new System.Drawing.Point(0, 50);
+            this.bnt_qlnv.Location = new System.Drawing.Point(0, 62);
+            this.bnt_qlnv.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bnt_qlnv.Name = "bnt_qlnv";
-            this.bnt_qlnv.Size = new System.Drawing.Size(218, 50);
+            this.bnt_qlnv.Size = new System.Drawing.Size(291, 62);
             this.bnt_qlnv.TabIndex = 17;
             this.bnt_qlnv.Text = "Quản lí nhân viên";
             // 
@@ -244,8 +255,9 @@
             this.bnt_home.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bnt_home.ForeColor = System.Drawing.Color.Black;
             this.bnt_home.Location = new System.Drawing.Point(0, 0);
+            this.bnt_home.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bnt_home.Name = "bnt_home";
-            this.bnt_home.Size = new System.Drawing.Size(218, 50);
+            this.bnt_home.Size = new System.Drawing.Size(291, 62);
             this.bnt_home.TabIndex = 16;
             this.bnt_home.Text = "Home";
             // 
@@ -260,9 +272,10 @@
             this.bnt_logout.FillColor = System.Drawing.Color.Transparent;
             this.bnt_logout.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bnt_logout.ForeColor = System.Drawing.Color.Black;
-            this.bnt_logout.Location = new System.Drawing.Point(-60, 699);
+            this.bnt_logout.Location = new System.Drawing.Point(-80, 860);
+            this.bnt_logout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bnt_logout.Name = "bnt_logout";
-            this.bnt_logout.Size = new System.Drawing.Size(218, 50);
+            this.bnt_logout.Size = new System.Drawing.Size(291, 62);
             this.bnt_logout.TabIndex = 20;
             this.bnt_logout.Text = "Log out";
             // 
@@ -271,9 +284,10 @@
             this.ptb_close.BackColor = System.Drawing.Color.Transparent;
             this.ptb_close.Image = global::GUI.Properties.Resources.iconX;
             this.ptb_close.ImageRotate = 0F;
-            this.ptb_close.Location = new System.Drawing.Point(1415, -12);
+            this.ptb_close.Location = new System.Drawing.Point(1887, -15);
+            this.ptb_close.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ptb_close.Name = "ptb_close";
-            this.ptb_close.Size = new System.Drawing.Size(135, 65);
+            this.ptb_close.Size = new System.Drawing.Size(180, 80);
             this.ptb_close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptb_close.TabIndex = 23;
             this.ptb_close.TabStop = false;
@@ -282,11 +296,11 @@
             // 
             // Admin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::GUI.Properties.Resources.admin_ep_bg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1500, 800);
+            this.ClientSize = new System.Drawing.Size(1942, 985);
             this.Controls.Add(this.ptb_close);
             this.Controls.Add(this.bnt_logout);
             this.Controls.Add(this.guna2Panel1);
@@ -295,9 +309,11 @@
             this.Controls.Add(this.guna2PictureBox2);
             this.Controls.Add(this.guna2PictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();

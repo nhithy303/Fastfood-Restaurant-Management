@@ -208,8 +208,11 @@
   <data name="Login_Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Login_Background.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Login_Background1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login_Background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Login_bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Login_bg.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\Login_bg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Login_boder" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Login_boder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
