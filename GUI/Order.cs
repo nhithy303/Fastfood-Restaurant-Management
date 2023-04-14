@@ -10,17 +10,13 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class OrderSidedish : Form
+    public partial class Order : Form
     {
-        public OrderSidedish()
+        public Order()
         {
             InitializeComponent();
         }
 
-        private void ptb_close_Click(object sender, EventArgs e)
-        {
-            this.Close();
-
-        }
+       
     }
 }
