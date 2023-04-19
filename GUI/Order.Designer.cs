@@ -29,22 +29,17 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tab_order = new System.Windows.Forms.TabControl();
+            this.tab_Home = new System.Windows.Forms.TabPage();
+            this.guna2PictureBox7 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.tab_menu1 = new System.Windows.Forms.TabPage();
             this.lbl_nameHb3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lbl_nameHb2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lbl_nameHb1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.ptb_hbg1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.tab_menu4 = new System.Windows.Forms.TabPage();
-            this.ptb_tra = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.ptb_coca = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.ptb_soda = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.ptb_nugget = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.ptb_xucxich = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.ptb_phomai = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.ptb_khoaitay = new Guna.UI2.WinForms.Guna2PictureBox();
             this.ptb_hbg2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.tab_order = new System.Windows.Forms.TabControl();
-            this.tab_Home = new System.Windows.Forms.TabPage();
-            this.tab_menu1 = new System.Windows.Forms.TabPage();
             this.ptb_hbg3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.tab_menu2 = new System.Windows.Forms.TabPage();
             this.lbl_nameCk1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -64,33 +59,33 @@
             this.guna2PictureBox11 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.ptb_nd3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox12 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox6 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.tab_menu4 = new System.Windows.Forms.TabPage();
+            this.ptb_tra = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.ptb_coca = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.ptb_soda = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.ptb_nugget = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.ptb_xucxich = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.ptb_phomai = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.ptb_khoaitay = new Guna.UI2.WinForms.Guna2PictureBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.lbl_order = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox6 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.label3 = new System.Windows.Forms.Label();
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox7 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_hbg1)).BeginInit();
-            this.tab_menu4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_tra)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_coca)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_soda)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_nugget)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_xucxich)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_phomai)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_khoaitay)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_hbg2)).BeginInit();
             this.tab_order.SuspendLayout();
             this.tab_Home.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.tab_menu1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_hbg1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_hbg2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_hbg3)).BeginInit();
             this.tab_menu2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_ck1)).BeginInit();
@@ -104,15 +99,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_nd3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
+            this.tab_menu4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_tra)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_coca)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_soda)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_nugget)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_xucxich)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_phomai)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_khoaitay)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).BeginInit();
             this.tableLayoutPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -131,6 +131,95 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1600, 862);
             this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // tab_order
+            // 
+            this.tab_order.Controls.Add(this.tab_Home);
+            this.tab_order.Controls.Add(this.tab_menu1);
+            this.tab_order.Controls.Add(this.tab_menu2);
+            this.tab_order.Controls.Add(this.tab_menu3);
+            this.tab_order.Controls.Add(this.tab_menu4);
+            this.tab_order.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tab_order.Location = new System.Drawing.Point(3, 2);
+            this.tab_order.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tab_order.Name = "tab_order";
+            this.tab_order.SelectedIndex = 0;
+            this.tab_order.Size = new System.Drawing.Size(1114, 858);
+            this.tab_order.TabIndex = 5;
+            // 
+            // tab_Home
+            // 
+            this.tab_Home.BackgroundImage = global::GUI.Properties.Resources.mF_Background;
+            this.tab_Home.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tab_Home.Controls.Add(this.guna2PictureBox7);
+            this.tab_Home.Controls.Add(this.guna2PictureBox3);
+            this.tab_Home.Controls.Add(this.guna2PictureBox2);
+            this.tab_Home.Location = new System.Drawing.Point(4, 25);
+            this.tab_Home.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tab_Home.Name = "tab_Home";
+            this.tab_Home.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tab_Home.Size = new System.Drawing.Size(1106, 829);
+            this.tab_Home.TabIndex = 1;
+            this.tab_Home.Text = "Home";
+            this.tab_Home.UseVisualStyleBackColor = true;
+            // 
+            // guna2PictureBox7
+            // 
+            this.guna2PictureBox7.Image = global::GUI.Properties.Resources.deco4;
+            this.guna2PictureBox7.ImageRotate = 0F;
+            this.guna2PictureBox7.Location = new System.Drawing.Point(595, 138);
+            this.guna2PictureBox7.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2PictureBox7.Name = "guna2PictureBox7";
+            this.guna2PictureBox7.Size = new System.Drawing.Size(709, 697);
+            this.guna2PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox7.TabIndex = 12;
+            this.guna2PictureBox7.TabStop = false;
+            this.guna2PictureBox7.UseTransparentBackground = true;
+            // 
+            // guna2PictureBox3
+            // 
+            this.guna2PictureBox3.Image = global::GUI.Properties.Resources.mOrder_deco__2_;
+            this.guna2PictureBox3.ImageRotate = 0F;
+            this.guna2PictureBox3.Location = new System.Drawing.Point(151, 39);
+            this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2PictureBox3.Name = "guna2PictureBox3";
+            this.guna2PictureBox3.Size = new System.Drawing.Size(1045, 389);
+            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.guna2PictureBox3.TabIndex = 11;
+            this.guna2PictureBox3.TabStop = false;
+            this.guna2PictureBox3.UseTransparentBackground = true;
+            // 
+            // guna2PictureBox2
+            // 
+            this.guna2PictureBox2.Image = global::GUI.Properties.Resources.mOrder_deco2;
+            this.guna2PictureBox2.ImageRotate = 0F;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(-80, 192);
+            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.Size = new System.Drawing.Size(1143, 599);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox2.TabIndex = 10;
+            this.guna2PictureBox2.TabStop = false;
+            this.guna2PictureBox2.UseTransparentBackground = true;
+            // 
+            // tab_menu1
+            // 
+            this.tab_menu1.BackgroundImage = global::GUI.Properties.Resources.hg__1_;
+            this.tab_menu1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tab_menu1.Controls.Add(this.lbl_nameHb3);
+            this.tab_menu1.Controls.Add(this.lbl_nameHb2);
+            this.tab_menu1.Controls.Add(this.lbl_nameHb1);
+            this.tab_menu1.Controls.Add(this.ptb_hbg1);
+            this.tab_menu1.Controls.Add(this.ptb_hbg2);
+            this.tab_menu1.Controls.Add(this.ptb_hbg3);
+            this.tab_menu1.Location = new System.Drawing.Point(4, 25);
+            this.tab_menu1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tab_menu1.Name = "tab_menu1";
+            this.tab_menu1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tab_menu1.Size = new System.Drawing.Size(1106, 829);
+            this.tab_menu1.TabIndex = 2;
+            this.tab_menu1.Text = "Menu1";
+            this.tab_menu1.UseVisualStyleBackColor = true;
             // 
             // lbl_nameHb3
             // 
@@ -179,124 +268,6 @@
             this.ptb_hbg1.TabStop = false;
             this.ptb_hbg1.UseTransparentBackground = true;
             // 
-            // tab_menu4
-            // 
-            this.tab_menu4.BackgroundImage = global::GUI.Properties.Resources.another_bg;
-            this.tab_menu4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tab_menu4.Controls.Add(this.ptb_tra);
-            this.tab_menu4.Controls.Add(this.ptb_coca);
-            this.tab_menu4.Controls.Add(this.ptb_soda);
-            this.tab_menu4.Controls.Add(this.ptb_nugget);
-            this.tab_menu4.Controls.Add(this.ptb_xucxich);
-            this.tab_menu4.Controls.Add(this.ptb_phomai);
-            this.tab_menu4.Controls.Add(this.ptb_khoaitay);
-            this.tab_menu4.Location = new System.Drawing.Point(4, 25);
-            this.tab_menu4.Margin = new System.Windows.Forms.Padding(4);
-            this.tab_menu4.Name = "tab_menu4";
-            this.tab_menu4.Padding = new System.Windows.Forms.Padding(4);
-            this.tab_menu4.Size = new System.Drawing.Size(1106, 829);
-            this.tab_menu4.TabIndex = 5;
-            this.tab_menu4.Text = "Menu4";
-            this.tab_menu4.UseVisualStyleBackColor = true;
-            // 
-            // ptb_tra
-            // 
-            this.ptb_tra.BackColor = System.Drawing.Color.Transparent;
-            this.ptb_tra.Image = global::GUI.Properties.Resources.anotherfood__6_;
-            this.ptb_tra.ImageRotate = 0F;
-            this.ptb_tra.Location = new System.Drawing.Point(321, 570);
-            this.ptb_tra.Margin = new System.Windows.Forms.Padding(4);
-            this.ptb_tra.Name = "ptb_tra";
-            this.ptb_tra.Size = new System.Drawing.Size(432, 265);
-            this.ptb_tra.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptb_tra.TabIndex = 9;
-            this.ptb_tra.TabStop = false;
-            this.ptb_tra.UseTransparentBackground = true;
-            // 
-            // ptb_coca
-            // 
-            this.ptb_coca.BackColor = System.Drawing.Color.Transparent;
-            this.ptb_coca.Image = global::GUI.Properties.Resources.anotherfood__7_;
-            this.ptb_coca.ImageRotate = 0F;
-            this.ptb_coca.Location = new System.Drawing.Point(321, 273);
-            this.ptb_coca.Margin = new System.Windows.Forms.Padding(4);
-            this.ptb_coca.Name = "ptb_coca";
-            this.ptb_coca.Size = new System.Drawing.Size(408, 260);
-            this.ptb_coca.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptb_coca.TabIndex = 8;
-            this.ptb_coca.TabStop = false;
-            this.ptb_coca.UseTransparentBackground = true;
-            // 
-            // ptb_soda
-            // 
-            this.ptb_soda.BackColor = System.Drawing.Color.Transparent;
-            this.ptb_soda.Image = global::GUI.Properties.Resources.anotherfood__1_;
-            this.ptb_soda.ImageRotate = 0F;
-            this.ptb_soda.Location = new System.Drawing.Point(321, 31);
-            this.ptb_soda.Margin = new System.Windows.Forms.Padding(4);
-            this.ptb_soda.Name = "ptb_soda";
-            this.ptb_soda.Size = new System.Drawing.Size(379, 233);
-            this.ptb_soda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptb_soda.TabIndex = 7;
-            this.ptb_soda.TabStop = false;
-            this.ptb_soda.UseTransparentBackground = true;
-            // 
-            // ptb_nugget
-            // 
-            this.ptb_nugget.BackColor = System.Drawing.Color.Transparent;
-            this.ptb_nugget.Image = global::GUI.Properties.Resources.anotherfood__2_;
-            this.ptb_nugget.ImageRotate = 0F;
-            this.ptb_nugget.Location = new System.Drawing.Point(-111, 652);
-            this.ptb_nugget.Margin = new System.Windows.Forms.Padding(4);
-            this.ptb_nugget.Name = "ptb_nugget";
-            this.ptb_nugget.Size = new System.Drawing.Size(424, 198);
-            this.ptb_nugget.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptb_nugget.TabIndex = 13;
-            this.ptb_nugget.TabStop = false;
-            this.ptb_nugget.UseTransparentBackground = true;
-            // 
-            // ptb_xucxich
-            // 
-            this.ptb_xucxich.BackColor = System.Drawing.Color.Transparent;
-            this.ptb_xucxich.Image = global::GUI.Properties.Resources.anotherfood__3_;
-            this.ptb_xucxich.ImageRotate = 0F;
-            this.ptb_xucxich.Location = new System.Drawing.Point(-84, 441);
-            this.ptb_xucxich.Margin = new System.Windows.Forms.Padding(4);
-            this.ptb_xucxich.Name = "ptb_xucxich";
-            this.ptb_xucxich.Size = new System.Drawing.Size(365, 175);
-            this.ptb_xucxich.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptb_xucxich.TabIndex = 12;
-            this.ptb_xucxich.TabStop = false;
-            this.ptb_xucxich.UseTransparentBackground = true;
-            // 
-            // ptb_phomai
-            // 
-            this.ptb_phomai.BackColor = System.Drawing.Color.Transparent;
-            this.ptb_phomai.Image = global::GUI.Properties.Resources.anotherfood__4_;
-            this.ptb_phomai.ImageRotate = 0F;
-            this.ptb_phomai.Location = new System.Drawing.Point(-84, 219);
-            this.ptb_phomai.Margin = new System.Windows.Forms.Padding(4);
-            this.ptb_phomai.Name = "ptb_phomai";
-            this.ptb_phomai.Size = new System.Drawing.Size(397, 169);
-            this.ptb_phomai.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptb_phomai.TabIndex = 11;
-            this.ptb_phomai.TabStop = false;
-            this.ptb_phomai.UseTransparentBackground = true;
-            // 
-            // ptb_khoaitay
-            // 
-            this.ptb_khoaitay.BackColor = System.Drawing.Color.Transparent;
-            this.ptb_khoaitay.Image = global::GUI.Properties.Resources.anotherfood__5_;
-            this.ptb_khoaitay.ImageRotate = 0F;
-            this.ptb_khoaitay.Location = new System.Drawing.Point(-164, -12);
-            this.ptb_khoaitay.Margin = new System.Windows.Forms.Padding(4);
-            this.ptb_khoaitay.Name = "ptb_khoaitay";
-            this.ptb_khoaitay.Size = new System.Drawing.Size(533, 191);
-            this.ptb_khoaitay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptb_khoaitay.TabIndex = 10;
-            this.ptb_khoaitay.TabStop = false;
-            this.ptb_khoaitay.UseTransparentBackground = true;
-            // 
             // ptb_hbg2
             // 
             this.ptb_hbg2.BackColor = System.Drawing.Color.Transparent;
@@ -310,56 +281,6 @@
             this.ptb_hbg2.TabIndex = 9;
             this.ptb_hbg2.TabStop = false;
             this.ptb_hbg2.UseTransparentBackground = true;
-            // 
-            // tab_order
-            // 
-            this.tab_order.Controls.Add(this.tab_Home);
-            this.tab_order.Controls.Add(this.tab_menu1);
-            this.tab_order.Controls.Add(this.tab_menu2);
-            this.tab_order.Controls.Add(this.tab_menu3);
-            this.tab_order.Controls.Add(this.tab_menu4);
-            this.tab_order.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tab_order.Location = new System.Drawing.Point(3, 2);
-            this.tab_order.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tab_order.Name = "tab_order";
-            this.tab_order.SelectedIndex = 0;
-            this.tab_order.Size = new System.Drawing.Size(1114, 858);
-            this.tab_order.TabIndex = 5;
-            // 
-            // tab_Home
-            // 
-            this.tab_Home.BackgroundImage = global::GUI.Properties.Resources.mF_Background;
-            this.tab_Home.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tab_Home.Controls.Add(this.guna2PictureBox7);
-            this.tab_Home.Controls.Add(this.guna2PictureBox3);
-            this.tab_Home.Controls.Add(this.guna2PictureBox2);
-            this.tab_Home.Location = new System.Drawing.Point(4, 25);
-            this.tab_Home.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tab_Home.Name = "tab_Home";
-            this.tab_Home.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tab_Home.Size = new System.Drawing.Size(1426, 829);
-            this.tab_Home.TabIndex = 1;
-            this.tab_Home.Text = "Home";
-            this.tab_Home.UseVisualStyleBackColor = true;
-            // 
-            // tab_menu1
-            // 
-            this.tab_menu1.BackgroundImage = global::GUI.Properties.Resources.hg__1_;
-            this.tab_menu1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tab_menu1.Controls.Add(this.lbl_nameHb3);
-            this.tab_menu1.Controls.Add(this.lbl_nameHb2);
-            this.tab_menu1.Controls.Add(this.lbl_nameHb1);
-            this.tab_menu1.Controls.Add(this.ptb_hbg1);
-            this.tab_menu1.Controls.Add(this.ptb_hbg2);
-            this.tab_menu1.Controls.Add(this.ptb_hbg3);
-            this.tab_menu1.Location = new System.Drawing.Point(4, 25);
-            this.tab_menu1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tab_menu1.Name = "tab_menu1";
-            this.tab_menu1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tab_menu1.Size = new System.Drawing.Size(1426, 829);
-            this.tab_menu1.TabIndex = 2;
-            this.tab_menu1.Text = "Menu1";
-            this.tab_menu1.UseVisualStyleBackColor = true;
             // 
             // ptb_hbg3
             // 
@@ -391,7 +312,7 @@
             this.tab_menu2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tab_menu2.Name = "tab_menu2";
             this.tab_menu2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tab_menu2.Size = new System.Drawing.Size(1426, 829);
+            this.tab_menu2.Size = new System.Drawing.Size(1106, 829);
             this.tab_menu2.TabIndex = 3;
             this.tab_menu2.Text = "Menu2";
             this.tab_menu2.UseVisualStyleBackColor = true;
@@ -515,7 +436,7 @@
             this.tab_menu3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tab_menu3.Name = "tab_menu3";
             this.tab_menu3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tab_menu3.Size = new System.Drawing.Size(1426, 829);
+            this.tab_menu3.Size = new System.Drawing.Size(1106, 829);
             this.tab_menu3.TabIndex = 4;
             this.tab_menu3.Text = "Menu3";
             this.tab_menu3.UseVisualStyleBackColor = true;
@@ -623,50 +544,123 @@
             this.guna2PictureBox12.TabStop = false;
             this.guna2PictureBox12.UseTransparentBackground = true;
             // 
-            // guna2PictureBox6
+            // tab_menu4
             // 
-            this.guna2PictureBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.guna2PictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox6.Image = global::GUI.Properties.Resources.chicken__2_;
-            this.guna2PictureBox6.ImageRotate = 0F;
-            this.guna2PictureBox6.Location = new System.Drawing.Point(30, 468);
-            this.guna2PictureBox6.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2PictureBox6.Name = "guna2PictureBox6";
-            this.guna2PictureBox6.Size = new System.Drawing.Size(127, 70);
-            this.guna2PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox6.TabIndex = 8;
-            this.guna2PictureBox6.TabStop = false;
-            this.guna2PictureBox6.UseTransparentBackground = true;
+            this.tab_menu4.BackgroundImage = global::GUI.Properties.Resources.another_bg;
+            this.tab_menu4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tab_menu4.Controls.Add(this.ptb_tra);
+            this.tab_menu4.Controls.Add(this.ptb_coca);
+            this.tab_menu4.Controls.Add(this.ptb_soda);
+            this.tab_menu4.Controls.Add(this.ptb_nugget);
+            this.tab_menu4.Controls.Add(this.ptb_xucxich);
+            this.tab_menu4.Controls.Add(this.ptb_phomai);
+            this.tab_menu4.Controls.Add(this.ptb_khoaitay);
+            this.tab_menu4.Location = new System.Drawing.Point(4, 25);
+            this.tab_menu4.Margin = new System.Windows.Forms.Padding(4);
+            this.tab_menu4.Name = "tab_menu4";
+            this.tab_menu4.Padding = new System.Windows.Forms.Padding(4);
+            this.tab_menu4.Size = new System.Drawing.Size(1106, 829);
+            this.tab_menu4.TabIndex = 5;
+            this.tab_menu4.Text = "Menu4";
+            this.tab_menu4.UseVisualStyleBackColor = true;
             // 
-            // guna2PictureBox5
+            // ptb_tra
             // 
-            this.guna2PictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.guna2PictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox5.Image = global::GUI.Properties.Resources.noodle__2_;
-            this.guna2PictureBox5.ImageRotate = 0F;
-            this.guna2PictureBox5.Location = new System.Drawing.Point(30, 289);
-            this.guna2PictureBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2PictureBox5.Name = "guna2PictureBox5";
-            this.guna2PictureBox5.Size = new System.Drawing.Size(127, 70);
-            this.guna2PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox5.TabIndex = 5;
-            this.guna2PictureBox5.TabStop = false;
-            this.guna2PictureBox5.UseTransparentBackground = true;
+            this.ptb_tra.BackColor = System.Drawing.Color.Transparent;
+            this.ptb_tra.Image = global::GUI.Properties.Resources.anotherfood__6_;
+            this.ptb_tra.ImageRotate = 0F;
+            this.ptb_tra.Location = new System.Drawing.Point(321, 570);
+            this.ptb_tra.Margin = new System.Windows.Forms.Padding(4);
+            this.ptb_tra.Name = "ptb_tra";
+            this.ptb_tra.Size = new System.Drawing.Size(432, 265);
+            this.ptb_tra.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptb_tra.TabIndex = 9;
+            this.ptb_tra.TabStop = false;
+            this.ptb_tra.UseTransparentBackground = true;
             // 
-            // guna2PictureBox4
+            // ptb_coca
             // 
-            this.guna2PictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.guna2PictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox4.Image = global::GUI.Properties.Resources.hbg__1_;
-            this.guna2PictureBox4.ImageRotate = 0F;
-            this.guna2PictureBox4.Location = new System.Drawing.Point(30, 112);
-            this.guna2PictureBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2PictureBox4.Name = "guna2PictureBox4";
-            this.guna2PictureBox4.Size = new System.Drawing.Size(127, 70);
-            this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox4.TabIndex = 1;
-            this.guna2PictureBox4.TabStop = false;
-            this.guna2PictureBox4.UseTransparentBackground = true;
+            this.ptb_coca.BackColor = System.Drawing.Color.Transparent;
+            this.ptb_coca.Image = global::GUI.Properties.Resources.anotherfood__7_;
+            this.ptb_coca.ImageRotate = 0F;
+            this.ptb_coca.Location = new System.Drawing.Point(321, 273);
+            this.ptb_coca.Margin = new System.Windows.Forms.Padding(4);
+            this.ptb_coca.Name = "ptb_coca";
+            this.ptb_coca.Size = new System.Drawing.Size(408, 260);
+            this.ptb_coca.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptb_coca.TabIndex = 8;
+            this.ptb_coca.TabStop = false;
+            this.ptb_coca.UseTransparentBackground = true;
+            // 
+            // ptb_soda
+            // 
+            this.ptb_soda.BackColor = System.Drawing.Color.Transparent;
+            this.ptb_soda.Image = global::GUI.Properties.Resources.anotherfood__1_;
+            this.ptb_soda.ImageRotate = 0F;
+            this.ptb_soda.Location = new System.Drawing.Point(321, 31);
+            this.ptb_soda.Margin = new System.Windows.Forms.Padding(4);
+            this.ptb_soda.Name = "ptb_soda";
+            this.ptb_soda.Size = new System.Drawing.Size(379, 233);
+            this.ptb_soda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptb_soda.TabIndex = 7;
+            this.ptb_soda.TabStop = false;
+            this.ptb_soda.UseTransparentBackground = true;
+            // 
+            // ptb_nugget
+            // 
+            this.ptb_nugget.BackColor = System.Drawing.Color.Transparent;
+            this.ptb_nugget.Image = global::GUI.Properties.Resources.anotherfood__2_;
+            this.ptb_nugget.ImageRotate = 0F;
+            this.ptb_nugget.Location = new System.Drawing.Point(-111, 652);
+            this.ptb_nugget.Margin = new System.Windows.Forms.Padding(4);
+            this.ptb_nugget.Name = "ptb_nugget";
+            this.ptb_nugget.Size = new System.Drawing.Size(424, 198);
+            this.ptb_nugget.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptb_nugget.TabIndex = 13;
+            this.ptb_nugget.TabStop = false;
+            this.ptb_nugget.UseTransparentBackground = true;
+            // 
+            // ptb_xucxich
+            // 
+            this.ptb_xucxich.BackColor = System.Drawing.Color.Transparent;
+            this.ptb_xucxich.Image = global::GUI.Properties.Resources.anotherfood__3_;
+            this.ptb_xucxich.ImageRotate = 0F;
+            this.ptb_xucxich.Location = new System.Drawing.Point(-84, 441);
+            this.ptb_xucxich.Margin = new System.Windows.Forms.Padding(4);
+            this.ptb_xucxich.Name = "ptb_xucxich";
+            this.ptb_xucxich.Size = new System.Drawing.Size(365, 175);
+            this.ptb_xucxich.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptb_xucxich.TabIndex = 12;
+            this.ptb_xucxich.TabStop = false;
+            this.ptb_xucxich.UseTransparentBackground = true;
+            // 
+            // ptb_phomai
+            // 
+            this.ptb_phomai.BackColor = System.Drawing.Color.Transparent;
+            this.ptb_phomai.Image = global::GUI.Properties.Resources.anotherfood__4_;
+            this.ptb_phomai.ImageRotate = 0F;
+            this.ptb_phomai.Location = new System.Drawing.Point(-84, 219);
+            this.ptb_phomai.Margin = new System.Windows.Forms.Padding(4);
+            this.ptb_phomai.Name = "ptb_phomai";
+            this.ptb_phomai.Size = new System.Drawing.Size(397, 169);
+            this.ptb_phomai.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptb_phomai.TabIndex = 11;
+            this.ptb_phomai.TabStop = false;
+            this.ptb_phomai.UseTransparentBackground = true;
+            // 
+            // ptb_khoaitay
+            // 
+            this.ptb_khoaitay.BackColor = System.Drawing.Color.Transparent;
+            this.ptb_khoaitay.Image = global::GUI.Properties.Resources.anotherfood__5_;
+            this.ptb_khoaitay.ImageRotate = 0F;
+            this.ptb_khoaitay.Location = new System.Drawing.Point(-164, -12);
+            this.ptb_khoaitay.Margin = new System.Windows.Forms.Padding(4);
+            this.ptb_khoaitay.Name = "ptb_khoaitay";
+            this.ptb_khoaitay.Size = new System.Drawing.Size(533, 191);
+            this.ptb_khoaitay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptb_khoaitay.TabIndex = 10;
+            this.ptb_khoaitay.TabStop = false;
+            this.ptb_khoaitay.UseTransparentBackground = true;
             // 
             // tableLayoutPanel2
             // 
@@ -676,9 +670,9 @@
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Controls.Add(this.lbl_order, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel4, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.label4, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(1123, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -688,19 +682,6 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(474, 856);
             this.tableLayoutPanel2.TabIndex = 6;
-            // 
-            // lbl_order
-            // 
-            this.lbl_order.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl_order.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_order.Font = new System.Drawing.Font("Times New Roman", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_order.Location = new System.Drawing.Point(98, 13);
-            this.lbl_order.Margin = new System.Windows.Forms.Padding(4);
-            this.lbl_order.Name = "lbl_order";
-            this.lbl_order.Size = new System.Drawing.Size(277, 59);
-            this.lbl_order.TabIndex = 1;
-            this.lbl_order.Text = "ĐƠN HÀNG";
-            this.lbl_order.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel3
             // 
@@ -723,6 +704,51 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(468, 593);
             this.tableLayoutPanel3.TabIndex = 2;
+            // 
+            // guna2PictureBox4
+            // 
+            this.guna2PictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.guna2PictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox4.Image = global::GUI.Properties.Resources.hbg__1_;
+            this.guna2PictureBox4.ImageRotate = 0F;
+            this.guna2PictureBox4.Location = new System.Drawing.Point(30, 112);
+            this.guna2PictureBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2PictureBox4.Name = "guna2PictureBox4";
+            this.guna2PictureBox4.Size = new System.Drawing.Size(127, 70);
+            this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox4.TabIndex = 1;
+            this.guna2PictureBox4.TabStop = false;
+            this.guna2PictureBox4.UseTransparentBackground = true;
+            // 
+            // guna2PictureBox5
+            // 
+            this.guna2PictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.guna2PictureBox5.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox5.Image = global::GUI.Properties.Resources.noodle__2_;
+            this.guna2PictureBox5.ImageRotate = 0F;
+            this.guna2PictureBox5.Location = new System.Drawing.Point(30, 289);
+            this.guna2PictureBox5.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2PictureBox5.Name = "guna2PictureBox5";
+            this.guna2PictureBox5.Size = new System.Drawing.Size(127, 70);
+            this.guna2PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox5.TabIndex = 5;
+            this.guna2PictureBox5.TabStop = false;
+            this.guna2PictureBox5.UseTransparentBackground = true;
+            // 
+            // guna2PictureBox6
+            // 
+            this.guna2PictureBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.guna2PictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox6.Image = global::GUI.Properties.Resources.chicken__2_;
+            this.guna2PictureBox6.ImageRotate = 0F;
+            this.guna2PictureBox6.Location = new System.Drawing.Point(30, 468);
+            this.guna2PictureBox6.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2PictureBox6.Name = "guna2PictureBox6";
+            this.guna2PictureBox6.Size = new System.Drawing.Size(127, 70);
+            this.guna2PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox6.TabIndex = 8;
+            this.guna2PictureBox6.TabStop = false;
+            this.guna2PictureBox6.UseTransparentBackground = true;
             // 
             // label1
             // 
@@ -757,7 +783,7 @@
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 166F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(468, 166);
             this.tableLayoutPanel4.TabIndex = 3;
             // 
@@ -772,44 +798,16 @@
             this.label3.TabIndex = 10;
             this.label3.Text = "Thành tiền";
             // 
-            // guna2PictureBox2
+            // label4
             // 
-            this.guna2PictureBox2.Image = global::GUI.Properties.Resources.mOrder_deco2;
-            this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(-80, 192);
-            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(1143, 599);
-            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox2.TabIndex = 10;
-            this.guna2PictureBox2.TabStop = false;
-            this.guna2PictureBox2.UseTransparentBackground = true;
-            // 
-            // guna2PictureBox3
-            // 
-            this.guna2PictureBox3.Image = global::GUI.Properties.Resources.mOrder_deco__2_;
-            this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(151, 39);
-            this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2PictureBox3.Name = "guna2PictureBox3";
-            this.guna2PictureBox3.Size = new System.Drawing.Size(1045, 389);
-            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.guna2PictureBox3.TabIndex = 11;
-            this.guna2PictureBox3.TabStop = false;
-            this.guna2PictureBox3.UseTransparentBackground = true;
-            // 
-            // guna2PictureBox7
-            // 
-            this.guna2PictureBox7.Image = global::GUI.Properties.Resources.deco4;
-            this.guna2PictureBox7.ImageRotate = 0F;
-            this.guna2PictureBox7.Location = new System.Drawing.Point(595, 138);
-            this.guna2PictureBox7.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2PictureBox7.Name = "guna2PictureBox7";
-            this.guna2PictureBox7.Size = new System.Drawing.Size(709, 697);
-            this.guna2PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox7.TabIndex = 12;
-            this.guna2PictureBox7.TabStop = false;
-            this.guna2PictureBox7.UseTransparentBackground = true;
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(87, 14);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(299, 57);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "ĐƠN HÀNG";
             // 
             // Order
             // 
@@ -828,20 +826,15 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_hbg1)).EndInit();
-            this.tab_menu4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_tra)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_coca)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_soda)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_nugget)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_xucxich)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_phomai)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_khoaitay)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_hbg2)).EndInit();
             this.tab_order.ResumeLayout(false);
             this.tab_Home.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.tab_menu1.ResumeLayout(false);
             this.tab_menu1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_hbg1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_hbg2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_hbg3)).EndInit();
             this.tab_menu2.ResumeLayout(false);
             this.tab_menu2.PerformLayout();
@@ -857,18 +850,23 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_nd3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
+            this.tab_menu4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_tra)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_coca)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_soda)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_nugget)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_xucxich)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_phomai)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_khoaitay)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).EndInit();
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -915,7 +913,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox5;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lbl_order;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -924,5 +921,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox7;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
+        private System.Windows.Forms.Label label4;
     }
 }
