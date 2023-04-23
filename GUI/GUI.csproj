@@ -39,6 +39,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Management" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
@@ -63,6 +64,12 @@
     </Compile>
     <Compile Include="Employee.designer.cs">
       <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageEmployees .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageEmployees .Designer.cs">
+      <DependentUpon>frmManageEmployees .cs</DependentUpon>
     </Compile>
     <Compile Include="Order.cs">
       <SubType>Form</SubType>
@@ -89,6 +96,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Employee.resx">
       <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageEmployees .resx">
+      <DependentUpon>frmManageEmployees .cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Order.resx">
       <DependentUpon>Order.cs</DependentUpon>
@@ -350,6 +360,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="images\anotherfood %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon-search.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

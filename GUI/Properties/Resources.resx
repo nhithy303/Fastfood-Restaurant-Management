@@ -163,9 +163,6 @@
   <data name="nd (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\nd (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="another__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\another (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="nd (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\nd (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -178,8 +175,8 @@
   <data name="chicken_title" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\chicken_tilte.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="noodle_beef" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\noodle_beef.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="noodles_egg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\noodles_egg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="hbg_beef" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hbg_beef.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,8 +193,8 @@
   <data name="noodle__2_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\noodle (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="noodles_egg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\noodles_egg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="another__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\another (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tilte" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tilte.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -213,6 +210,9 @@
   </data>
   <data name="mF_titleBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mF_titleBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ck1 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\ck1 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Decomenu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Decomenu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -247,6 +247,9 @@
   <data name="chicken__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\chicken (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="noodle_beef" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\noodle_beef.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="chicken__3_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\chicken (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -262,17 +265,14 @@
   <data name="noodle__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\noodle (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ck1 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\ck1 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mF_icBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mF_icBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iconX" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconX.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Login_Background1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Login_Background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mF_icBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mF_icBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cheese_chicken" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cheese_chicken.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -304,6 +304,9 @@
   <data name="dot_mOrder" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dot_mOrder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="anotherfood (6)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\anotherfood (6).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="User" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\User.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -331,7 +334,7 @@
   <data name="anotherfood (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\anotherfood (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="anotherfood (6)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\anotherfood (6).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon-search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\icon-search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

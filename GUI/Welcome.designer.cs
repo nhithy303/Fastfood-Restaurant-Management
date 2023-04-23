@@ -47,7 +47,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::GUI.Properties.Resources.mF_icBackground;
             this.pictureBox2.Location = new System.Drawing.Point(0, -6);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(2000, 1046);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -60,7 +60,7 @@
             this.guna2PictureBox1.Image = global::GUI.Properties.Resources.mF_titleBackground;
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(125, 95);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(1837, 945);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -74,7 +74,7 @@
             this.ptb_login.Image = global::GUI.Properties.Resources.icUser;
             this.ptb_login.ImageRotate = 0F;
             this.ptb_login.Location = new System.Drawing.Point(0, 9);
-            this.ptb_login.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ptb_login.Margin = new System.Windows.Forms.Padding(4);
             this.ptb_login.Name = "ptb_login";
             this.ptb_login.Size = new System.Drawing.Size(93, 49);
             this.ptb_login.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -103,7 +103,7 @@
             this.ptb_close.Image = global::GUI.Properties.Resources.iconX;
             this.ptb_close.ImageRotate = 0F;
             this.ptb_close.Location = new System.Drawing.Point(1887, -15);
-            this.ptb_close.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ptb_close.Margin = new System.Windows.Forms.Padding(4);
             this.ptb_close.Name = "ptb_close";
             this.ptb_close.Size = new System.Drawing.Size(180, 80);
             this.ptb_close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -125,7 +125,7 @@
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Welcome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

@@ -50,8 +50,8 @@
             this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox2.Image = global::GUI.Properties.Resources.titleBackground;
             this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(-693, -460);
-            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox2.Location = new System.Drawing.Point(-415, -364);
+            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
             this.guna2PictureBox2.Size = new System.Drawing.Size(2400, 1350);
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -66,7 +66,7 @@
             this.guna2PictureBox1.Image = global::GUI.Properties.Resources.decoBackground;
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(413, 206);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(1587, 842);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -80,7 +80,7 @@
             this.guna2PictureBox4.Image = global::GUI.Properties.Resources.icUser;
             this.guna2PictureBox4.ImageRotate = 0F;
             this.guna2PictureBox4.Location = new System.Drawing.Point(0, 9);
-            this.guna2PictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox4.Name = "guna2PictureBox4";
             this.guna2PictureBox4.Size = new System.Drawing.Size(93, 49);
             this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -108,7 +108,7 @@
             this.guna2Panel1.Controls.Add(this.bnt_bh);
             this.guna2Panel1.Controls.Add(this.bnt_home2);
             this.guna2Panel1.Location = new System.Drawing.Point(-1, 197);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(291, 191);
             this.guna2Panel1.TabIndex = 20;
@@ -127,7 +127,7 @@
             this.bnt_info.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bnt_info.ForeColor = System.Drawing.Color.Black;
             this.bnt_info.Location = new System.Drawing.Point(0, 124);
-            this.bnt_info.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bnt_info.Margin = new System.Windows.Forms.Padding(4);
             this.bnt_info.Name = "bnt_info";
             this.bnt_info.Size = new System.Drawing.Size(291, 62);
             this.bnt_info.TabIndex = 15;
@@ -147,7 +147,7 @@
             this.bnt_bh.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bnt_bh.ForeColor = System.Drawing.Color.Black;
             this.bnt_bh.Location = new System.Drawing.Point(0, 62);
-            this.bnt_bh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bnt_bh.Margin = new System.Windows.Forms.Padding(4);
             this.bnt_bh.Name = "bnt_bh";
             this.bnt_bh.Size = new System.Drawing.Size(291, 62);
             this.bnt_bh.TabIndex = 17;
@@ -167,7 +167,7 @@
             this.bnt_home2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bnt_home2.ForeColor = System.Drawing.Color.Black;
             this.bnt_home2.Location = new System.Drawing.Point(0, 0);
-            this.bnt_home2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bnt_home2.Margin = new System.Windows.Forms.Padding(4);
             this.bnt_home2.Name = "bnt_home2";
             this.bnt_home2.Size = new System.Drawing.Size(291, 62);
             this.bnt_home2.TabIndex = 16;
@@ -185,7 +185,7 @@
             this.bnt_logout.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bnt_logout.ForeColor = System.Drawing.Color.Black;
             this.bnt_logout.Location = new System.Drawing.Point(-81, 924);
-            this.bnt_logout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bnt_logout.Margin = new System.Windows.Forms.Padding(4);
             this.bnt_logout.Name = "bnt_logout";
             this.bnt_logout.Size = new System.Drawing.Size(291, 62);
             this.bnt_logout.TabIndex = 21;
@@ -197,7 +197,7 @@
             this.ptb_close.Image = global::GUI.Properties.Resources.iconX;
             this.ptb_close.ImageRotate = 0F;
             this.ptb_close.Location = new System.Drawing.Point(1887, -15);
-            this.ptb_close.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ptb_close.Margin = new System.Windows.Forms.Padding(4);
             this.ptb_close.Name = "ptb_close";
             this.ptb_close.Size = new System.Drawing.Size(180, 80);
             this.ptb_close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -221,7 +221,7 @@
             this.Controls.Add(this.guna2PictureBox2);
             this.Controls.Add(this.guna2PictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Employee";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Employee";
