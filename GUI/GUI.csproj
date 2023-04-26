@@ -65,11 +65,59 @@
     <Compile Include="Employee.designer.cs">
       <DependentUpon>Employee.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDiscount .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDiscount .Designer.cs">
+      <DependentUpon>frmDiscount .cs</DependentUpon>
+    </Compile>
     <Compile Include="frmManageEmployees .cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmManageEmployees .Designer.cs">
       <DependentUpon>frmManageEmployees .cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageImport.Designer.cs">
+      <DependentUpon>frmManageImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageMenu .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageMenu .Designer.cs">
+      <DependentUpon>frmManageMenu .cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageStorage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageStorage.Designer.cs">
+      <DependentUpon>frmManageStorage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShowDish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowDish.Designer.cs">
+      <DependentUpon>frmShowDish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShowEmployee .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowEmployee .Designer.cs">
+      <DependentUpon>frmShowEmployee .cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShowImportBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowImportBill.Designer.cs">
+      <DependentUpon>frmShowImportBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStatistics .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStatistics .Designer.cs">
+      <DependentUpon>frmStatistics .cs</DependentUpon>
     </Compile>
     <Compile Include="Order.cs">
       <SubType>Form</SubType>
@@ -97,8 +145,32 @@
     <EmbeddedResource Include="Employee.resx">
       <DependentUpon>Employee.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDiscount .resx">
+      <DependentUpon>frmDiscount .cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmManageEmployees .resx">
       <DependentUpon>frmManageEmployees .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageImport.resx">
+      <DependentUpon>frmManageImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageMenu .resx">
+      <DependentUpon>frmManageMenu .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageStorage.resx">
+      <DependentUpon>frmManageStorage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowDish.resx">
+      <DependentUpon>frmShowDish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowEmployee .resx">
+      <DependentUpon>frmShowEmployee .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowImportBill.resx">
+      <DependentUpon>frmShowImportBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStatistics .resx">
+      <DependentUpon>frmStatistics .cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Order.resx">
       <DependentUpon>Order.cs</DependentUpon>
