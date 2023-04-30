@@ -50,7 +50,7 @@
     <Compile Include="HoaDonBanHang.cs" />
     <Compile Include="HoaDonNhapHang.cs" />
     <Compile Include="KhuyenMai.cs" />
-    <Compile Include="LoaiNV.cs" />
+    <Compile Include="PhanLoaiNV.cs" />
     <Compile Include="NguyenLieu.cs" />
     <Compile Include="NhanVien.cs" />
     <Compile Include="PhanLoaiTD.cs" />

@@ -8,7 +8,7 @@ namespace DTO
 {
     public class PhanLoaiTD
     {
-        public string MaLoai { get; set; }
+        public int MaLoai { get; set; }
         public string TenLoai { get; set; }
     }
 }

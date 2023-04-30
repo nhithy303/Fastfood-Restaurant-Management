@@ -12,6 +12,5 @@ namespace DTO
         public string TenDangNhap { get; set; }
         public string MatKhau { get; set; }
         public int PhanQuyen { get; set; }
-        public DateTime DaXoa { get; set; }
     }
 }

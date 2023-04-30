@@ -8,7 +8,7 @@ namespace DTO
 {
     public class TrangThaiDonHang
     {
-        public string MaTT { get; set; }
+        public int MaTT { get; set; }
         public string TenTT { get; set; }
     }
 }

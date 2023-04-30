@@ -11,6 +11,6 @@ namespace DTO
         public int MaNL { get; set; }
         public string TenNL { get; set; }
         public int TongTonKho { get; set; }
-        public string DonViTinh { get; set; }
+        public int DonViTinh { get; set; }
     }
 }

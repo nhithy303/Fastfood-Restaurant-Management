@@ -41,7 +41,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChiTietHDBHBLL.cs" />
+    <Compile Include="ChiTietHDNHBLL.cs" />
+    <Compile Include="ChiTietNLBLL.cs" />
+    <Compile Include="CongThucBLL.cs" />
+    <Compile Include="DonViTinhBLL.cs" />
+    <Compile Include="HinhThucThanhToanBLL.cs" />
+    <Compile Include="HoaDonBanHangBLL.cs" />
+    <Compile Include="HoaDonNhapHangBLL.cs" />
+    <Compile Include="KhuyenMaiBLL.cs" />
+    <Compile Include="PhanLoaiNVBLL.cs" />
+    <Compile Include="NguyenLieuBLL.cs" />
+    <Compile Include="NhanVienBLL.cs" />
+    <Compile Include="PhanLoaiTDBLL.cs" />
+    <Compile Include="PhanQuyenBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanLyBLL.cs" />
+    <Compile Include="TaiKhoanBLL.cs" />
+    <Compile Include="ThucDonBLL.cs" />
+    <Compile Include="TrangThaiDonHangBLL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">

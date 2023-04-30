@@ -41,8 +41,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChiTietHDBHDAL.cs" />
+    <Compile Include="ChiTietHDNHDAL.cs" />
+    <Compile Include="ChiTietNLDAL.cs" />
+    <Compile Include="CongThucDAL.cs" />
     <Compile Include="DatabaseAccess.cs" />
+    <Compile Include="DonViTinhDAL.cs" />
+    <Compile Include="HinhThucThanhToanDAL.cs" />
+    <Compile Include="HoaDonBanHangDAL.cs" />
+    <Compile Include="HoaDonNhapHangDAL.cs" />
+    <Compile Include="KhuyenMaiDAL.cs" />
+    <Compile Include="PhanLoaiNVDAL.cs" />
+    <Compile Include="NguyenLieuDAL.cs" />
+    <Compile Include="NhanVienDAL.cs" />
+    <Compile Include="PhanLoaiTDDAL.cs" />
+    <Compile Include="PhanQuyenDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanLyDAL.cs" />
+    <Compile Include="TaiKhoanDAL.cs" />
+    <Compile Include="ThucDonDAL.cs" />
+    <Compile Include="TrangThaiDonHangDAL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DTO\DTO.csproj">

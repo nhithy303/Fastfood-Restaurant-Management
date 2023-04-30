@@ -210,6 +210,10 @@
       <Project>{68d85d9a-caba-4aef-bf7c-d72a7af83a15}</Project>
       <Name>BLL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{cfcba85d-5f67-401c-a4fc-d5d8ba9c858b}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\admin-ep_bg.jpeg" />
@@ -435,6 +439,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="images\icon-search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Employee\" />
+    <Folder Include="Manager\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

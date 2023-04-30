@@ -13,14 +13,16 @@ namespace DAL
     public class DatabaseAccess
     {
         private static SqlConnection connection = null;
+
         public DatabaseAccess()
         {
             string server = "LAPTOP-NL39PTHM\\MEI";
-            string database = "DAHLIA_FastFoodRestaurant";
+            string database = "DAHLIA_FFR";
             string connStr = string.Format("Data Source={0};Initial Catalog={1};Integrated Security=True", server, database);
             connection = new SqlConnection(connStr);
         }
-        public DataTable ExecuteQuery(string procedure)
+
+        public DataTable ExecuteQuery(string procedure, string action, SqlParameter[] parameters)
         {
             DataTable table = new DataTable();
             try
@@ -28,39 +30,38 @@ namespace DAL
                 connection.Open();
                 SqlCommand cmd = new SqlCommand(procedure, connection);
                 cmd.CommandType = CommandType.StoredProcedure;
-                SqlDataAdapter adapter = new SqlDataAdapter();
-                adapter.SelectCommand = cmd;
+                cmd.Parameters.AddRange(parameters);
+                cmd.Parameters.AddWithValue("@ActionType", action);
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                 adapter.Fill(table);
             }
-            catch
-            {
-                
-            }
+            catch { }
             finally
             {
                 connection.Close();
             }
             return table;
         }
-        public bool ExecuteNonQuery(string procedure, object[] parameters)
+
+        public string ExecuteNonQuery(string procedure, string action, SqlParameter[] parameters)
         {
-            bool succeeded = true;
             try
             {
                 connection.Open();
                 SqlCommand cmd = new SqlCommand(procedure, connection);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.ExecuteNonQuery();
+                cmd.Parameters.AddRange(parameters);
+                cmd.Parameters.AddWithValue("@ActionType", action);
+                return cmd.ExecuteNonQuery().ToString();
             }
-            catch
+            catch (Exception ex)
             {
-                succeeded = false;
+                return ex.Message;
             }
             finally
             {
                 connection.Close();
             }
-            return succeeded;
         }
     }
 }
