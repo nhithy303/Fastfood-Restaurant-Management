@@ -40,10 +40,10 @@ namespace DAL
             return ql;
         }
 
-        public QuanLy[] GetList()
+        public QuanLy[] GetList(QuanLy ql)
         {
             QuanLy[] list = null;
-            DataTable table = da.ExecuteQuery(procedure, "Select", new SqlParameter[] { });
+            DataTable table = da.ExecuteQuery(procedure, "Select", GetParametersArray(ql));
             int len = table.Rows.Count;
             if (len == 0) { return null; }
             list = new QuanLy[len];
@@ -54,27 +54,27 @@ namespace DAL
             return list;
         }
 
-        public string Create(QuanLy ql)
+        public int Create(QuanLy ql)
         {
             return da.ExecuteNonQuery(procedure, "Create", GetParametersArray(ql));
         }
 
-        public string AddAccount(QuanLy ql)
+        public int AddAccount(QuanLy ql)
         {
             return da.ExecuteNonQuery(procedure, "AddAccount", GetParametersArray(ql));
         }
 
-        public string Update(QuanLy ql)
+        public int Update(QuanLy ql)
         {
             return da.ExecuteNonQuery(procedure, "Update", GetParametersArray(ql));
         }
 
-        public string Delete(QuanLy ql)
+        public int Delete(QuanLy ql)
         {
             return da.ExecuteNonQuery(procedure, "Delete", GetParametersArray(ql));
         }
 
-        public string Restore(QuanLy ql)
+        public int Restore(QuanLy ql)
         {
             return da.ExecuteNonQuery(procedure, "Restore", GetParametersArray(ql));
         }

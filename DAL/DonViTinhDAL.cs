@@ -31,10 +31,10 @@ namespace DAL
             return dvt;
         }
 
-        public DonViTinh[] GetList()
+        public DonViTinh[] GetList(DonViTinh dvt)
         {
             DonViTinh[] list = null;
-            DataTable table = da.ExecuteQuery(procedure, "Select", new SqlParameter[] { });
+            DataTable table = da.ExecuteQuery(procedure, "Select", GetParametersArray(dvt));
             int len = table.Rows.Count;
             if (len == 0) { return null; }
             list = new DonViTinh[len];
@@ -45,17 +45,17 @@ namespace DAL
             return list;
         }
 
-        public string Create(DonViTinh dvt)
+        public int Create(DonViTinh dvt)
         {
             return da.ExecuteNonQuery(procedure, "Create", GetParametersArray(dvt));
         }
 
-        public string Update(DonViTinh dvt)
+        public int Update(DonViTinh dvt)
         {
             return da.ExecuteNonQuery(procedure, "Update", GetParametersArray(dvt));
         }
 
-        public string Delete(DonViTinh dvt)
+        public int Delete(DonViTinh dvt)
         {
             return da.ExecuteNonQuery(procedure, "Delete", GetParametersArray(dvt));
         }

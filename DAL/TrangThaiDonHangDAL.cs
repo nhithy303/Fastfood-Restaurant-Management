@@ -31,10 +31,10 @@ namespace DAL
             return ttdh;
         }
 
-        public TrangThaiDonHang[] GetList()
+        public TrangThaiDonHang[] GetList(TrangThaiDonHang ttdh)
         {
             TrangThaiDonHang[] list = null;
-            DataTable table = da.ExecuteQuery(procedure, "Select", new SqlParameter[] { });
+            DataTable table = da.ExecuteQuery(procedure, "Select", GetParametersArray(ttdh));
             int len = table.Rows.Count;
             if (len == 0) { return null; }
             list = new TrangThaiDonHang[len];
@@ -45,22 +45,22 @@ namespace DAL
             return list;
         }
 
-        public string Create(TrangThaiDonHang ttdh)
+        public int Create(TrangThaiDonHang ttdh)
         {
             return da.ExecuteNonQuery(procedure, "Create", GetParametersArray(ttdh));
         }
 
-        public string Update(TrangThaiDonHang ttdh)
+        public int Update(TrangThaiDonHang ttdh)
         {
             return da.ExecuteNonQuery(procedure, "Update", GetParametersArray(ttdh));
         }
 
-        public string Delete(TrangThaiDonHang ttdh)
+        public int Delete(TrangThaiDonHang ttdh)
         {
             return da.ExecuteNonQuery(procedure, "Delete", GetParametersArray(ttdh));
         }
 
-        public string Restore(TrangThaiDonHang ttdh)
+        public int Restore(TrangThaiDonHang ttdh)
         {
             return da.ExecuteNonQuery(procedure, "Restore", GetParametersArray(ttdh));
         }

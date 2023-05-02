@@ -23,7 +23,6 @@ namespace DAL
                 new SqlParameter("@AnhMon", td.AnhMon),
                 new SqlParameter("@GiaGoc", td.GiaGoc),
                 new SqlParameter("@GiaBan", td.GiaBan),
-                new SqlParameter("@GiaDaGiam", td.GiaDaGiam)
             };
         }
 
@@ -36,14 +35,13 @@ namespace DAL
             td.AnhMon = row["ANHMON"].ToString();
             td.GiaGoc = int.Parse(row["GIAGOC"].ToString());
             td.GiaBan = int.Parse(row["GIABAN"].ToString());
-            td.GiaDaGiam = int.Parse(row["GIADAGIAM"].ToString());
             return td;
         }
 
-        public ThucDon[] GetList()
+        public ThucDon[] GetList(ThucDon td)
         {
             ThucDon[] list = null;
-            DataTable table = da.ExecuteQuery(procedure, "Select", new SqlParameter[] { });
+            DataTable table = da.ExecuteQuery(procedure, "Select", GetParametersArray(td));
             int len = table.Rows.Count;
             if (len == 0) { return null; }
             list = new ThucDon[len];
@@ -54,22 +52,22 @@ namespace DAL
             return list;
         }
 
-        public string Create(ThucDon td)
+        public int Create(ThucDon td)
         {
             return da.ExecuteNonQuery(procedure, "Create", GetParametersArray(td));
         }
 
-        public string Update(ThucDon td)
+        public int Update(ThucDon td)
         {
             return da.ExecuteNonQuery(procedure, "Update", GetParametersArray(td));
         }
 
-        public string Delete(ThucDon td)
+        public int Delete(ThucDon td)
         {
             return da.ExecuteNonQuery(procedure, "Delete", GetParametersArray(td));
         }
 
-        public string Restore(ThucDon td)
+        public int Restore(ThucDon td)
         {
             return da.ExecuteNonQuery(procedure, "Restore", GetParametersArray(td));
         }

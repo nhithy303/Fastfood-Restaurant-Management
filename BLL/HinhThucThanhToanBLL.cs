@@ -11,27 +11,27 @@ namespace BLL
     public class HinhThucThanhToanBLL
     {
         HinhThucThanhToanDAL httt_dal = new HinhThucThanhToanDAL();
-        public HinhThucThanhToan[] GetList()
+        public HinhThucThanhToan[] GetList(HinhThucThanhToan httt)
         {
-            return httt_dal.GetList();
+            return httt_dal.GetList(httt);
         }
 
-        public string Create(HinhThucThanhToan httt)
+        public int Create(HinhThucThanhToan httt)
         {
             return httt_dal.Create(httt);
         }
 
-        public string Update(HinhThucThanhToan httt)
+        public int Update(HinhThucThanhToan httt)
         {
             return httt_dal.Update(httt);
         }
 
-        public string Delete(HinhThucThanhToan httt)
+        public int Delete(HinhThucThanhToan httt)
         {
             return httt_dal.Delete(httt);
         }
 
-        public string Restore(HinhThucThanhToan httt)
+        public int Restore(HinhThucThanhToan httt)
         {
             return httt_dal.Restore(httt);
         }

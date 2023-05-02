@@ -34,10 +34,10 @@ namespace DAL
             return tk;
         }
 
-        public TaiKhoan[] GetList()
+        public TaiKhoan[] GetList(TaiKhoan tk)
         {
             TaiKhoan[] list = null;
-            DataTable table = da.ExecuteQuery(procedure, "Select", new SqlParameter[] { });
+            DataTable table = da.ExecuteQuery(procedure, "Select", GetParametersArray(tk));
             int len = table.Rows.Count;
             if (len == 0) { return null; }
             list = new TaiKhoan[len];
@@ -48,27 +48,27 @@ namespace DAL
             return list;
         }
 
-        public string Create(TaiKhoan tk)
+        public int Create(TaiKhoan tk)
         {
             return da.ExecuteNonQuery(procedure, "Create", GetParametersArray(tk));
         }
 
-        public string Update(TaiKhoan tk)
+        public int Update(TaiKhoan tk)
         {
             return da.ExecuteNonQuery(procedure, "Update", GetParametersArray(tk));
         }
 
-        public string ResetPassword(TaiKhoan tk)
+        public int ResetPassword(TaiKhoan tk)
         {
             return da.ExecuteNonQuery(procedure, "ResetPassword", GetParametersArray(tk));
         }
 
-        public string Delete(TaiKhoan tk)
+        public int Delete(TaiKhoan tk)
         {
             return da.ExecuteNonQuery(procedure, "Delete", GetParametersArray(tk));
         }
 
-        public string Restore(TaiKhoan tk)
+        public int Restore(TaiKhoan tk)
         {
             return da.ExecuteNonQuery(procedure, "Restore", GetParametersArray(tk));
         }

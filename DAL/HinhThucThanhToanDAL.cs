@@ -30,10 +30,10 @@ namespace DAL
             return httt;
         }
 
-        public HinhThucThanhToan[] GetList()
+        public HinhThucThanhToan[] GetList(HinhThucThanhToan httt)
         {
             HinhThucThanhToan[] list = null;
-            DataTable table = da.ExecuteQuery(procedure, "Select", new SqlParameter[] { });
+            DataTable table = da.ExecuteQuery(procedure, "Select", GetParametersArray(httt));
             int len = table.Rows.Count;
             if (len == 0) { return null; }
             list = new HinhThucThanhToan[len];
@@ -44,22 +44,22 @@ namespace DAL
             return list;
         }
 
-        public string Create(HinhThucThanhToan httt)
+        public int Create(HinhThucThanhToan httt)
         {
             return da.ExecuteNonQuery(procedure, "Create", GetParametersArray(httt));
         }
 
-        public string Update(HinhThucThanhToan httt)
+        public int Update(HinhThucThanhToan httt)
         {
             return da.ExecuteNonQuery(procedure, "Update", GetParametersArray(httt));
         }
 
-        public string Delete(HinhThucThanhToan httt)
+        public int Delete(HinhThucThanhToan httt)
         {
             return da.ExecuteNonQuery(procedure, "Delete", GetParametersArray(httt));
         }
 
-        public string Restore(HinhThucThanhToan httt)
+        public int Restore(HinhThucThanhToan httt)
         {
             return da.ExecuteNonQuery(procedure, "Restore", GetParametersArray(httt));
         }

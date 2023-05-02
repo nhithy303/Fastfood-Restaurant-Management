@@ -43,8 +43,9 @@ namespace DAL
             return table;
         }
 
-        public string ExecuteNonQuery(string procedure, string action, SqlParameter[] parameters)
+        public int ExecuteNonQuery(string procedure, string action, SqlParameter[] parameters)
         {
+            int count;
             try
             {
                 connection.Open();
@@ -52,16 +53,17 @@ namespace DAL
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddRange(parameters);
                 cmd.Parameters.AddWithValue("@ActionType", action);
-                return cmd.ExecuteNonQuery().ToString();
+                count = cmd.ExecuteNonQuery();
             }
-            catch (Exception ex)
+            catch
             {
-                return ex.Message;
+                count = -1;
             }
             finally
             {
                 connection.Close();
             }
+            return count;
         }
     }
 }

@@ -32,10 +32,10 @@ namespace DAL
             return pq;
         }
 
-        public PhanQuyen[] GetList()
+        public PhanQuyen[] GetList(PhanQuyen pq)
         {
             PhanQuyen[] list = null;
-            DataTable table = da.ExecuteQuery(procedure, "Select", new SqlParameter[] { });
+            DataTable table = da.ExecuteQuery(procedure, "Select", GetParametersArray(pq));
             int len = table.Rows.Count;
             if (len == 0) { return null; }
             list = new PhanQuyen[len];
@@ -46,22 +46,22 @@ namespace DAL
             return list;
         }
 
-        public string Create(PhanQuyen pq)
+        public int Create(PhanQuyen pq)
         {
             return da.ExecuteNonQuery(procedure, "Create", GetParametersArray(pq));
         }
 
-        public string Update(PhanQuyen pq)
+        public int Update(PhanQuyen pq)
         {
             return da.ExecuteNonQuery(procedure, "Update", GetParametersArray(pq));
         }
 
-        public string Delete(PhanQuyen pq)
+        public int Delete(PhanQuyen pq)
         {
             return da.ExecuteNonQuery(procedure, "Delete", GetParametersArray(pq));
         }
 
-        public string Restore(PhanQuyen pq)
+        public int Restore(PhanQuyen pq)
         {
             return da.ExecuteNonQuery(procedure, "Restore", GetParametersArray(pq));
         }

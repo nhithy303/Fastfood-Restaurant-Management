@@ -32,17 +32,17 @@ namespace DAL
             HoaDonBanHang hdbh = new HoaDonBanHang();
             hdbh.MaHD = int.Parse(row["MAHD"].ToString());
             hdbh.MaNV =  int.Parse(row["MANV"].ToString());
-            hdbh.NgayHD = DateTime.Parse(row["NGAYHD"].ToString());
+            hdbh.NgayHD = DateTime.Parse(row["NGAYHD"].ToString()).ToString("dd/MM/yyyy");
             hdbh.TongTien = int.Parse(row["TONGTIEN"].ToString());
             hdbh.ThanhToan = int.Parse(row["THANHTOAN"].ToString());
             hdbh.TrangThai = int.Parse(row["TRANGTHAI"].ToString());
             return hdbh;
         }
 
-        public HoaDonBanHang[] GetList()
+        public HoaDonBanHang[] GetList(HoaDonBanHang hdbh)
         {
             HoaDonBanHang[] list = null;
-            DataTable table = da.ExecuteQuery(procedure, "Select", new SqlParameter[] { });
+            DataTable table = da.ExecuteQuery(procedure, "Select", GetParametersArray(hdbh));
             int len = table.Rows.Count;
             if (len == 0) { return null; }
             list = new HoaDonBanHang[len];
@@ -53,17 +53,27 @@ namespace DAL
             return list;
         }
 
-        public string Create(HoaDonBanHang hdbh)
+        public int GetLatest()
+        {
+            DataTable table = da.ExecuteQuery(procedure, "GetLatest", new SqlParameter[] { });
+            if (table.Rows.Count > 0)
+            {
+                return int.Parse(table.Rows[0][0].ToString());
+            }
+            return 0;
+        }
+
+        public int Create(HoaDonBanHang hdbh)
         {
             return da.ExecuteNonQuery(procedure, "Create", GetParametersArray(hdbh));
         }
 
-        public string Update(HoaDonBanHang hdbh)
+        public int Update(HoaDonBanHang hdbh)
         {
             return da.ExecuteNonQuery(procedure, "Update", GetParametersArray(hdbh));
         }
 
-        public string Delete(HoaDonBanHang hdbh)
+        public int Delete(HoaDonBanHang hdbh)
         {
             return da.ExecuteNonQuery(procedure, "Delete", GetParametersArray(hdbh));
         }

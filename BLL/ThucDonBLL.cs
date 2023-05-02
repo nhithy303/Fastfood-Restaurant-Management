@@ -11,29 +11,38 @@ namespace BLL
     public class ThucDonBLL
     {
         ThucDonDAL td_dal = new ThucDonDAL();
-        public ThucDon[] GetList()
+        public ThucDon[] GetList(ThucDon td)
         {
-            return td_dal.GetList();
+            return td_dal.GetList(td);
         }
 
-        public string Create(ThucDon td)
+        public int Create(ThucDon td)
         {
+            if (!IsValid(td))
+            {
+                return -2;
+            }
             return td_dal.Create(td);
         }
 
-        public string Update(ThucDon td)
+        public int Update(ThucDon td)
         {
             return td_dal.Update(td);
         }
 
-        public string Delete(ThucDon td)
+        public int Delete(ThucDon td)
         {
             return td_dal.Delete(td);
         }
 
-        public string Restore(ThucDon td)
+        public int Restore(ThucDon td)
         {
             return td_dal.Restore(td);
+        }
+
+        private bool IsValid(ThucDon td)
+        {
+            return td.TenMon != String.Empty;
         }
     }
 }

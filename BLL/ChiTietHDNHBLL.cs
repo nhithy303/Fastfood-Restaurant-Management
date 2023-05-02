@@ -12,22 +12,22 @@ namespace BLL
     {
         ChiTietHDNHDAL cthdnh_dal = new ChiTietHDNHDAL();
 
-        public ChiTietHDNH[] GetList()
+        public ChiTietHDNH[] GetList(ChiTietHDNH cthdnh)
         {
-            return cthdnh_dal.GetList();
+            return cthdnh_dal.GetList(cthdnh);
         }
 
-        public string Create(ChiTietHDNH cthdnh)
+        public int Create(ChiTietHDNH cthdnh)
         {
             return cthdnh_dal.Create(cthdnh);
         }
 
-        public string Update(ChiTietHDNH cthdnh)
+        public int Update(ChiTietHDNH cthdnh)
         {
             return cthdnh_dal.Update(cthdnh);
         }
 
-        public string Delete(ChiTietHDNH cthdnh)
+        public int Delete(ChiTietHDNH cthdnh)
         {
             return cthdnh_dal.Delete(cthdnh);
         }

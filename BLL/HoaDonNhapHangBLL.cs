@@ -12,22 +12,22 @@ namespace BLL
     {
         HoaDonNhapHangDAL hdnh_dal = new HoaDonNhapHangDAL();
 
-        public HoaDonNhapHang[] GetList()
+        public HoaDonNhapHang[] GetList(HoaDonNhapHang hdnh)
         {
-            return hdnh_dal.GetList();
+            return hdnh_dal.GetList(hdnh);
         }
 
-        public string Create(HoaDonNhapHang hdnh)
+        public int Create(HoaDonNhapHang hdnh)
         {
             return hdnh_dal.Create(hdnh);
         }
 
-        public string Update(HoaDonNhapHang hdnh)
+        public int Update(HoaDonNhapHang hdnh)
         {
             return hdnh_dal.Update(hdnh);
         }
 
-        public string Delete(HoaDonNhapHang hdnh)
+        public int Delete(HoaDonNhapHang hdnh)
         {
             return hdnh_dal.Delete(hdnh);
         }

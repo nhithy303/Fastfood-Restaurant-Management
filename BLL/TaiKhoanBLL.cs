@@ -11,34 +11,47 @@ namespace BLL
     public class TaiKhoanBLL
     {
         TaiKhoanDAL tk_dal = new TaiKhoanDAL();
-        public TaiKhoan[] GetList()
+        public TaiKhoan[] GetList(TaiKhoan tk)
         {
-            return tk_dal.GetList();
+            return tk_dal.GetList(tk);
         }
 
-        public string Create(TaiKhoan tk)
+        public int Create(TaiKhoan tk)
         {
             return tk_dal.Create(tk);
         }
 
-        public string Update(TaiKhoan tk)
+        public int Update(TaiKhoan tk)
         {
             return tk_dal.Update(tk);
         }
 
-        public string ResetPassword(TaiKhoan tk)
+        public int ResetPassword(TaiKhoan tk)
         {
             return tk_dal.ResetPassword(tk);
         }
 
-        public string Delete(TaiKhoan tk)
+        public int Delete(TaiKhoan tk)
         {
             return tk_dal.Delete(tk);
         }
 
-        public string Restore(TaiKhoan tk)
+        public int Restore(TaiKhoan tk)
         {
             return tk_dal.Restore(tk);
+        }
+
+        public bool IsValidated(TaiKhoan tk)
+        {
+            if (tk.TenDangNhap == String.Empty)
+            {
+                return false;
+            }
+            if (tk.MatKhau == String.Empty)
+            {
+                return false;
+            }
+            return true;
         }
     }
 }

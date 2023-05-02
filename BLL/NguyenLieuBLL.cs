@@ -12,22 +12,31 @@ namespace BLL
     {
         NguyenLieuDAL nl_dal = new NguyenLieuDAL();
 
-        public NguyenLieu[] GetList()
+        public NguyenLieu[] GetList(NguyenLieu nl)
         {
-            return nl_dal.GetList();
+            return nl_dal.GetList(nl);
         }
 
-        public string Create(NguyenLieu nl)
+        public int GetUnitPrice(NguyenLieu nl)
+        {
+            if (nl.MaNL == 0)
+            {
+                return -1;
+            }
+            return nl_dal.GetUnitPrice(nl);
+        }
+
+        public int Create(NguyenLieu nl)
         {
             return nl_dal.Create(nl);
         }
 
-        public string Update(NguyenLieu nl)
+        public int Update(NguyenLieu nl)
         {
             return nl_dal.Update(nl);
         }
 
-        public string Delete(NguyenLieu nl)
+        public int Delete(NguyenLieu nl)
         {
             return nl_dal.Delete(nl);
         }

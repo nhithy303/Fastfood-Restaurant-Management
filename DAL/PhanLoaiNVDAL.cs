@@ -30,10 +30,10 @@ namespace DAL
             return plnv;
         }
 
-        public PhanLoaiNV[] GetList()
+        public PhanLoaiNV[] GetList(PhanLoaiNV plnv)
         {
             PhanLoaiNV[] list = null;
-            DataTable table = da.ExecuteQuery(procedure, "Select", new SqlParameter[] { });
+            DataTable table = da.ExecuteQuery(procedure, "Select", GetParametersArray(plnv));
             int len = table.Rows.Count;
             if (len == 0) { return null; }
             list = new PhanLoaiNV[len];
@@ -44,22 +44,22 @@ namespace DAL
             return list;
         }
 
-        public string Create(PhanLoaiNV plnv)
+        public int Create(PhanLoaiNV plnv)
         {
             return da.ExecuteNonQuery(procedure, "Create", GetParametersArray(plnv));
         }
 
-        public string Update(PhanLoaiNV plnv)
+        public int Update(PhanLoaiNV plnv)
         {
             return da.ExecuteNonQuery(procedure, "Update", GetParametersArray(plnv));
         }
 
-        public string Delete(PhanLoaiNV plnv)
+        public int Delete(PhanLoaiNV plnv)
         {
             return da.ExecuteNonQuery(procedure, "Delete", GetParametersArray(plnv));
         }
 
-        public string Restore(PhanLoaiNV plnv)
+        public int Restore(PhanLoaiNV plnv)
         {
             return da.ExecuteNonQuery(procedure, "Restore", GetParametersArray(plnv));
         }

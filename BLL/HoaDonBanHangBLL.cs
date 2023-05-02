@@ -3,6 +3,7 @@ using DTO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -12,22 +13,32 @@ namespace BLL
     {
         HoaDonBanHangDAL hdbh_dal = new HoaDonBanHangDAL();
 
-        public HoaDonBanHang[] GetList()
+        public HoaDonBanHang[] GetList(HoaDonBanHang hdbh)
         {
-            return hdbh_dal.GetList();
+            return hdbh_dal.GetList(hdbh);
         }
 
-        public string Create(HoaDonBanHang hdbh)
+        public int GetLatest()
+        {
+            return hdbh_dal.GetLatest();
+        }
+
+        public int Create(HoaDonBanHang hdbh)
         {
             return hdbh_dal.Create(hdbh);
         }
 
-        public string Update(HoaDonBanHang hdbh)
+        public int Update(HoaDonBanHang hdbh)
         {
+            TrangThaiDonHangBLL ttdh_bll = new TrangThaiDonHangBLL();
+            if (hdbh.TrangThai == ttdh_bll.Served())
+            {
+                return -2;
+            }
             return hdbh_dal.Update(hdbh);
         }
 
-        public string Delete(HoaDonBanHang hdbh)
+        public int Delete(HoaDonBanHang hdbh)
         {
             return hdbh_dal.Delete(hdbh);
         }

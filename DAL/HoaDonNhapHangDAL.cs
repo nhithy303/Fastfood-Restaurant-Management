@@ -30,15 +30,15 @@ namespace DAL
             HoaDonNhapHang hdnh = new HoaDonNhapHang();
             hdnh.MaHD = int.Parse(row["MAHD"].ToString());
             hdnh.MaQL = int.Parse(row["MAQL"].ToString());
-            hdnh.NgayHD = DateTime.Parse(row["NGAYHD"].ToString());
+            hdnh.NgayHD = DateTime.Parse(row["NGAYHD"].ToString()).ToString("dd/MM/yyyy");
             hdnh.TongTien = int.Parse(row["TONGTIEN"].ToString());
             return hdnh;
         }
 
-        public HoaDonNhapHang[] GetList()
+        public HoaDonNhapHang[] GetList(HoaDonNhapHang hdnh)
         {
             HoaDonNhapHang[] list = null;
-            DataTable table = da.ExecuteQuery(procedure, "Select", new SqlParameter[] { });
+            DataTable table = da.ExecuteQuery(procedure, "Select", GetParametersArray(hdnh));
             int len = table.Rows.Count;
             if (len == 0) { return null; }
             list = new HoaDonNhapHang[len];
@@ -49,17 +49,17 @@ namespace DAL
             return list;
         }
 
-        public string Create(HoaDonNhapHang hdnh)
+        public int Create(HoaDonNhapHang hdnh)
         {
             return da.ExecuteNonQuery(procedure, "Create", GetParametersArray(hdnh));
         }
 
-        public string Update(HoaDonNhapHang hdnh)
+        public int Update(HoaDonNhapHang hdnh)
         {
             return da.ExecuteNonQuery(procedure, "Update", GetParametersArray(hdnh));
         }
 
-        public string Delete(HoaDonNhapHang hdnh)
+        public int Delete(HoaDonNhapHang hdnh)
         {
             return da.ExecuteNonQuery(procedure, "Delete", GetParametersArray(hdnh));
         }

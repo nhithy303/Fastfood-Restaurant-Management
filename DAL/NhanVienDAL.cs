@@ -46,10 +46,11 @@ namespace DAL
             return nv;
         }
 
-        public NhanVien[] GetList()
+        public NhanVien[] GetList(NhanVien nv)
         {
             NhanVien[] list = null;
-            DataTable table = da.ExecuteQuery(procedure, "Select", new SqlParameter[] {});
+            SqlParameter[] p = GetParametersArray(nv);
+            DataTable table = da.ExecuteQuery(procedure, "Select", p);
             int len = table.Rows.Count;
             if (len == 0) { return null; }
             list = new NhanVien[len];
@@ -60,27 +61,27 @@ namespace DAL
             return list;
         }
 
-        public string Create(NhanVien nv)
+        public int Create(NhanVien nv)
         {
             return da.ExecuteNonQuery(procedure, "Create", GetParametersArray(nv));
         }
 
-        public string AddAccount(NhanVien nv)
+        public int AddAccount(NhanVien nv)
         {
             return da.ExecuteNonQuery(procedure, "AddAccount", GetParametersArray(nv));
         }
 
-        public string Update(NhanVien nv)
+        public int Update(NhanVien nv)
         {
             return da.ExecuteNonQuery(procedure, "Update", GetParametersArray(nv));
         }
 
-        public string Delete(NhanVien nv)
+        public int Delete(NhanVien nv)
         {
             return da.ExecuteNonQuery(procedure, "Delete", GetParametersArray(nv));
         }
 
-        public string Restore(NhanVien nv)
+        public int Restore(NhanVien nv)
         {
             return da.ExecuteNonQuery(procedure, "Restore", GetParametersArray(nv));
         }

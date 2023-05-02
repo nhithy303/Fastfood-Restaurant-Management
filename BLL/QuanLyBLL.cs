@@ -11,32 +11,32 @@ namespace BLL
     public class QuanLyBLL
     {
         QuanLyDAL ql_dal = new QuanLyDAL();
-        public QuanLy[] GetList()
+        public QuanLy[] GetList(QuanLy ql)
         {
-            return ql_dal.GetList();
+            return ql_dal.GetList(ql);
         }
 
-        public string Create(QuanLy ql)
+        public int Create(QuanLy ql)
         {
             return ql_dal.Create(ql);
         }
 
-        public string AddAccount(QuanLy ql)
+        public int AddAccount(QuanLy ql)
         {
             return ql_dal.AddAccount(ql);
         }
 
-        public string Update(QuanLy ql)
+        public int Update(QuanLy ql)
         {
             return ql_dal.Update(ql);
         }
 
-        public string Delete(QuanLy ql)
+        public int Delete(QuanLy ql)
         {
             return ql_dal.Delete(ql);
         }
 
-        public string Restore(QuanLy ql)
+        public int Restore(QuanLy ql)
         {
             return ql_dal.Restore(ql);
         }

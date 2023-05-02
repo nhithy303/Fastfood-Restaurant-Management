@@ -20,7 +20,6 @@ namespace DAL
             {
                 new SqlParameter("@MaHD", cthdnh.MaHD),
                 new SqlParameter("@MaNL", cthdnh.MaNL),
-                new SqlParameter("@HanSuDung", cthdnh.HanSuDung),
                 new SqlParameter("@SoLuong", cthdnh.SoLuong),
                 new SqlParameter("@DonViTinh", cthdnh.DonViTinh),
                 new SqlParameter("@DonGia", cthdnh.DonGia),
@@ -33,7 +32,6 @@ namespace DAL
             ChiTietHDNH cthdnh = new ChiTietHDNH();
             cthdnh.MaHD = int.Parse(row["MAHD"].ToString());
             cthdnh.MaNL = int.Parse(row["MANL"].ToString());
-            cthdnh.HanSuDung = DateTime.Parse(row["HANSUDUNG"].ToString()).ToString("dd/MM/yyyy");
             cthdnh.SoLuong = int.Parse(row["SOLUONG"].ToString());
             cthdnh.DonViTinh = int.Parse(row["DONVITINH"].ToString());
             cthdnh.DonGia = int.Parse(row["DONGIA"].ToString());
@@ -41,10 +39,10 @@ namespace DAL
             return cthdnh;
         }
 
-        public ChiTietHDNH[] GetList()
+        public ChiTietHDNH[] GetList(ChiTietHDNH cthdnh)
         {
             ChiTietHDNH[] list = null;
-            DataTable table = da.ExecuteQuery(procedure, "Select", new SqlParameter[] { });
+            DataTable table = da.ExecuteQuery(procedure, "Select", GetParametersArray(cthdnh));
             int len = table.Rows.Count;
             if (len == 0) { return null; }
             list = new ChiTietHDNH[len];
@@ -55,17 +53,17 @@ namespace DAL
             return list;
         }
 
-        public string Create(ChiTietHDNH cthdnh)
+        public int Create(ChiTietHDNH cthdnh)
         {
             return da.ExecuteNonQuery(procedure, "Create", GetParametersArray(cthdnh));
         }
 
-        public string Update(ChiTietHDNH cthdnh)
+        public int Update(ChiTietHDNH cthdnh)
         {
             return da.ExecuteNonQuery(procedure, "Update", GetParametersArray(cthdnh));
         }
 
-        public string Delete(ChiTietHDNH cthdnh)
+        public int Delete(ChiTietHDNH cthdnh)
         {
             return da.ExecuteNonQuery(procedure, "Delete", GetParametersArray(cthdnh));
         }

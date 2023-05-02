@@ -11,27 +11,27 @@ namespace BLL
     public class PhanLoaiNVBLL
     {
         PhanLoaiNVDAL plnv_dal = new PhanLoaiNVDAL();
-        public PhanLoaiNV[] GetList()
+        public PhanLoaiNV[] GetList(PhanLoaiNV plnv)
         {
-            return plnv_dal.GetList();
+            return plnv_dal.GetList(plnv);
         }
 
-        public string Create(PhanLoaiNV plnv)
+        public int Create(PhanLoaiNV plnv)
         {
             return plnv_dal.Create(plnv);
         }
 
-        public string Update(PhanLoaiNV plnv)
+        public int Update(PhanLoaiNV plnv)
         {
             return plnv_dal.Update(plnv);
         }
 
-        public string Delete(PhanLoaiNV plnv)
+        public int Delete(PhanLoaiNV plnv)
         {
             return plnv_dal.Delete(plnv);
         }
 
-        public string Restore(PhanLoaiNV plnv)
+        public int Restore(PhanLoaiNV plnv)
         {
             return plnv_dal.Restore(plnv);
         }

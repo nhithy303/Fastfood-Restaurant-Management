@@ -12,22 +12,22 @@ namespace BLL
     {
         DonViTinhDAL dvt_dal = new DonViTinhDAL();
 
-        public DonViTinh[] GetList()
+        public DonViTinh[] GetList(DonViTinh dvt)
         {
-            return dvt_dal.GetList();
+            return dvt_dal.GetList(dvt);
         }
 
-        public string Create(DonViTinh dvt)
+        public int Create(DonViTinh dvt)
         {
             return dvt_dal.Create(dvt);
         }
 
-        public string Update(DonViTinh dvt)
+        public int Update(DonViTinh dvt)
         {
             return dvt_dal.Update(dvt);
         }
 
-        public string Delete(DonViTinh dvt)
+        public int Delete(DonViTinh dvt)
         {
             return dvt_dal.Delete(dvt);
         }

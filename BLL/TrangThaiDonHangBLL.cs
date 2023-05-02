@@ -12,29 +12,41 @@ namespace BLL
     {
         TrangThaiDonHangDAL ttdh_dal = new TrangThaiDonHangDAL();
 
-        public TrangThaiDonHang[] GetList()
+        public TrangThaiDonHang[] GetList(TrangThaiDonHang ttdh)
         {
-            return ttdh_dal.GetList();
+            return ttdh_dal.GetList(ttdh);
         }
 
-        public string Create(TrangThaiDonHang ttdh)
+        public int Create(TrangThaiDonHang ttdh)
         {
             return ttdh_dal.Create(ttdh);
         }
 
-        public string Update(TrangThaiDonHang ttdh)
+        public int Update(TrangThaiDonHang ttdh)
         {
             return ttdh_dal.Update(ttdh);
         }
 
-        public string Delete(TrangThaiDonHang ttdh)
+        public int Delete(TrangThaiDonHang ttdh)
         {
             return ttdh_dal.Delete(ttdh);
         }
 
-        public string Restore(TrangThaiDonHang ttdh)
+        public int Restore(TrangThaiDonHang ttdh)
         {
             return ttdh_dal.Restore(ttdh);
+        }
+
+        public int Served()
+        {
+            TrangThaiDonHang ttdh_find = new TrangThaiDonHang();
+            ttdh_find.TenTT = "Đã phục vụ";
+            TrangThaiDonHang[] ttdh = ttdh_dal.GetList(ttdh_find);
+            if (ttdh != null)
+            {
+                return ttdh[0].MaTT;
+            }
+            return 0;
         }
     }
 }

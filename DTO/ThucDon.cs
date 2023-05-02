@@ -14,6 +14,5 @@ namespace DTO
         public string AnhMon { get; set; }
         public int GiaGoc { get; set; }
         public int GiaBan { get; set; }
-        public int GiaDaGiam { get; set; }
     }
 }

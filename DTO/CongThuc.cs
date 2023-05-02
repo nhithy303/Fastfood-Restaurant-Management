@@ -12,5 +12,6 @@ namespace DTO
         public int MaNL { get; set; }
         public int SoLuong { get; set; }
         public int DonViTinh { get; set; }
+        public int GiaNL { get; set; }
     }
 }

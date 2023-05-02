@@ -12,22 +12,22 @@ namespace BLL
     {
         CongThucDAL ct_dal = new CongThucDAL();
 
-        public CongThuc[] GetList()
+        public CongThuc[] GetList(CongThuc ct)
         {
-            return ct_dal.GetList();
+            return ct_dal.GetList(ct);
         }
 
-        public string Create(CongThuc ct)
+        public int Create(CongThuc ct)
         {
             return ct_dal.Create(ct);
         }
 
-        public string Update(CongThuc ct)
+        public int Update(CongThuc ct)
         {
             return ct_dal.Update(ct);
         }
 
-        public string Delete(CongThuc ct)
+        public int Delete(CongThuc ct)
         {
             return ct_dal.Delete(ct);
         }

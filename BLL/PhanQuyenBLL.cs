@@ -11,27 +11,27 @@ namespace BLL
     public class PhanQuyenBLL
     {
         PhanQuyenDAL pq_dal = new PhanQuyenDAL();
-        public PhanQuyen[] GetList()
+        public PhanQuyen[] GetList(PhanQuyen pq)
         {
-            return pq_dal.GetList();
+            return pq_dal.GetList(pq);
         }
 
-        public string Create(PhanQuyen pq)
+        public int Create(PhanQuyen pq)
         {
             return pq_dal.Create(pq);
         }
 
-        public string Update(PhanQuyen pq)
+        public int Update(PhanQuyen pq)
         {
             return pq_dal.Update(pq);
         }
 
-        public string Delete(PhanQuyen pq)
+        public int Delete(PhanQuyen pq)
         {
             return pq_dal.Delete(pq);
         }
 
-        public string Restore(PhanQuyen pq)
+        public int Restore(PhanQuyen pq)
         {
             return pq_dal.Restore(pq);
         }

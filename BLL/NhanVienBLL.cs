@@ -11,34 +11,44 @@ namespace BLL
     public class NhanVienBLL
     {
         NhanVienDAL nv_dal = new NhanVienDAL();
-        public NhanVien[] GetList()
+        public NhanVien[] GetList(NhanVien nv)
         {
-            return nv_dal.GetList();
+            return nv_dal.GetList(nv);
         }
 
-        public string Create(NhanVien nv)
+        public int Create(NhanVien nv)
         {
+            if (!IsValid(nv))
+            {
+                return -2;
+            }
             return nv_dal.Create(nv);
         }
 
-        public string AddAccount(NhanVien nv)
+        public int AddAccount(NhanVien nv)
         {
             return nv_dal.AddAccount(nv);
         }
 
-        public string Update(NhanVien nv)
+        public int Update(NhanVien nv)
         {
             return nv_dal.Update(nv);
         }
 
-        public string Delete(NhanVien nv)
+        public int Delete(NhanVien nv)
         {
             return nv_dal.Delete(nv);
         }
 
-        public string Restore(NhanVien nv)
+        public int Restore(NhanVien nv)
         {
             return nv_dal.Restore(nv);
+        }
+
+        private bool IsValid(NhanVien nv)
+        {
+            return nv.HoNV != String.Empty && nv.TenNV != String.Empty
+                && nv.Sdt != String.Empty && nv.DiaChi != String.Empty;
         }
     }
 }
