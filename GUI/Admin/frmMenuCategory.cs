@@ -39,6 +39,7 @@ namespace GUI
         private void dgvMenuCategory_Load()
         {
             dgvMenuCategory.DataSource = pltd_bll.GetList(new PhanLoaiTD());
+            dgvMenuCategory.Font = new Font("Times New Roman", 13F);
         }
 
         private void btnCreate_Click(object sender, EventArgs e)

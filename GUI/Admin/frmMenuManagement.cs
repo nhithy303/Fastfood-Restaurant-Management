@@ -46,6 +46,7 @@ namespace GUI
         private void dgvMenu_Load()
         {
             dgvMenu.DataSource = td_bll.GetList(new ThucDon());
+            dgvMenu.Font = new Font("Times New Roman", 13F);
         }
 
         private void dgvMenu_SelectionChanged(object sender, EventArgs e)

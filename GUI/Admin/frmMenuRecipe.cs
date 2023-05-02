@@ -53,6 +53,7 @@ namespace GUI
             CongThuc ct = new CongThuc();
             ct.MaMon = td.MaMon;
             dgvRecipe.DataSource = ct_bll.GetList(ct);
+            dgvRecipe.Font = new Font("Times New Roman", 13F);
         }
 
         private void dgvRecipe_SelectionChanged(object sender, EventArgs e)
