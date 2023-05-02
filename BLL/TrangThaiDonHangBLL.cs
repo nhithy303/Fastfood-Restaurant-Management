@@ -40,7 +40,7 @@ namespace BLL
         public int Served()
         {
             TrangThaiDonHang ttdh_find = new TrangThaiDonHang();
-            ttdh_find.TenTT = "Đã phục vụ";
+            ttdh_find.TenTT = "Hoàn thành";
             TrangThaiDonHang[] ttdh = ttdh_dal.GetList(ttdh_find);
             if (ttdh != null)
             {

@@ -44,6 +44,7 @@ namespace GUI
         {
             tabOrder_Load();
             currentTabPage = tabOrder.TabPages[0];
+            dgvOrder_Load();
             cboPayment_Load();
         }
 
@@ -189,6 +190,41 @@ namespace GUI
             currentTabPage = tab.TabPages[tab.SelectedIndex];
         }
 
+        private void dgvOrder_Load()
+        {
+            dgvOrder.ColumnCount = 5;
+
+            dgvOrder.Columns[0].Name = "Picture";
+            dgvOrder.Columns[1].Name = "UnitPrice";
+            dgvOrder.Columns[2].Name = "Quantity";
+            dgvOrder.Columns[3].Name = "TotalPrice";
+            dgvOrder.Columns[4].Name = "Delete";
+
+            dgvOrder.Columns[0].ValueType = typeof(Image);
+            dgvOrder.Columns[1].ValueType = typeof(int);
+            dgvOrder.Columns[2].ValueType = typeof(int);
+            dgvOrder.Columns[3].ValueType = typeof(int);
+            dgvOrder.Columns[4].ValueType = typeof(Image);
+
+            dgvOrder.Columns[0].HeaderText = "";
+            dgvOrder.Columns[1].HeaderText = "Đơn giá";
+            dgvOrder.Columns[2].HeaderText = "Số lượng";
+            dgvOrder.Columns[3].HeaderText = "Thành tiền";
+            dgvOrder.Columns[4].HeaderText = "";
+
+            int dgvWidth = dgvOrder.Width;
+            dgvOrder.Columns[0].FillWeight = (float)(dgvWidth * 20 / 100);
+            dgvOrder.Columns[1].FillWeight = (float)(dgvWidth * 25 / 100);
+            dgvOrder.Columns[2].FillWeight = (float)(dgvWidth * 20 / 100);
+            dgvOrder.Columns[3].FillWeight = (float)(dgvWidth * 25 / 100);
+            dgvOrder.Columns[4].FillWeight = (float)(dgvWidth * 10 / 100);
+        }
+
+        private void dgvOrder_Clear()
+        {
+            dgvOrder.Rows.Clear();
+        }
+
         private void btnAdd_Click(object sender, EventArgs e)
         {
             Guna2Button btn = (Guna2Button)sender;
@@ -213,10 +249,8 @@ namespace GUI
                         if (td.MaMon == cthdbh[i].MaMon)
                         {
                             added = true;
-                            // Position of quantity cell: 5 * (i + 1)
-                            int currentCell = 5 * (i + 1);
-                            int currentQuantity = int.Parse(tblOrder.Controls[currentCell].Text);
-                            tblOrder.Controls[currentCell].Text = (currentQuantity + quantity).ToString();
+                            int currentQuantity = int.Parse(dgvOrder.Rows[i].Cells["Quantity"].Value.ToString());
+                            dgvOrder.Rows[i].Cells["Quantity"].Value = currentQuantity + quantity;
 
                             // Update quantity of ChiTietHDBH list
                             cthdbh[i].SoLuong += quantity;
@@ -227,53 +261,18 @@ namespace GUI
                     // If this dish hasn't been added into order yet => create new row
                     if (!added)
                     {
-                        tblOrder.RowCount++;
-                        tblOrder.RowStyles.Add(new RowStyle(SizeType.Absolute, 150));
-                        
-                        // Dish image
-                        Guna2PictureBox img = new Guna2PictureBox();
-                        img.Image = new Bitmap(td.AnhMon);
-                        img.SizeMode = PictureBoxSizeMode.Zoom;
-                        img.Anchor = AnchorStyles.None;
-                        tblOrder.Controls.Add(img, 0, tblOrder.RowCount - 1);
-
-                        // Unit price
-                        Guna2HtmlLabel txtUnitPrice = new Guna2HtmlLabel()
+                        Image dish = new Bitmap(td.AnhMon);
+                        Image delete = new Bitmap(GUI.Properties.Resources.delete);
+                        dgvOrder.Rows.Add(new object[]
                         {
-                            Anchor = AnchorStyles.None,
-                            Text = td.GiaBan.ToString()
-                        };
-                        tblOrder.Controls.Add(txtUnitPrice, 1, tblOrder.RowCount - 1);
-
-                        // Quantity
-                        tblOrder.Controls.Add(new Guna2HtmlLabel()
-                        {
-                            Anchor = AnchorStyles.None,
-                            Text = quantity.ToString()
-                        }, 2, tblOrder.RowCount - 1);
-
-                        // Total price
-                        tblOrder.Controls.Add(new Guna2HtmlLabel()
-                        {
-                            Anchor = AnchorStyles.None,
-                            Text = (quantity * td.GiaBan).ToString()
-                        }, 3, tblOrder.RowCount - 1);
-
-                        // Delete button
-                        Guna2PictureBox delete = new Guna2PictureBox()
-                        {
-                            Anchor = AnchorStyles.None,
-                            Image = new Bitmap(GUI.Properties.Resources.delete),
-                            SizeMode = PictureBoxSizeMode.CenterImage
-                        };
-                        // delete.Tag = ?
-                        tblOrder.Controls.Add(delete, 4, tblOrder.RowCount - 1);
+                            dish, td.GiaBan, quantity, td.GiaBan * quantity, delete
+                        });
 
                         // Add new ChiTietHDBH to list
                         ChiTietHDBH cthdbh_new = new ChiTietHDBH();
                         cthdbh_new.MaMon = td.MaMon;
                         cthdbh_new.SoLuong = quantity;
-                        cthdbh_new.DonGia = int.Parse(txtUnitPrice.Text);
+                        cthdbh_new.DonGia = td.GiaBan;
                         cthdbh_new.ThanhTien = cthdbh_new.SoLuong * cthdbh_new.DonGia;
                         cthdbh.Add(cthdbh_new);
                     }
@@ -304,7 +303,7 @@ namespace GUI
 
         private void btnOrder_Click(object sender, EventArgs e)
         {
-            if (tblOrder.RowCount > 1)
+            if (dgvOrder.RowCount > 1)
             {
                 HoaDonBanHang hdbh = new HoaDonBanHang();
                 hdbh.MaNV = nv.MaNV;
@@ -326,6 +325,7 @@ namespace GUI
                         }
                     }
                     ShowMessage("Đặt hàng thành công!");
+                    dgvOrder_Clear();
                 }
                 else
                 {
@@ -340,8 +340,8 @@ namespace GUI
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-            //tblOrder.RowCount = 1;
-            //cthdbh.Clear();
+            dgvOrder_Clear();
+            cthdbh.Clear();
         }
 
         private void btnOrderList_Click(object sender, EventArgs e)
