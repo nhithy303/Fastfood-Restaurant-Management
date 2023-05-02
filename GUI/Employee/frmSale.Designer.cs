@@ -47,6 +47,11 @@
             this.btnClear = new Guna.UI2.WinForms.Guna2Button();
             this.tabOrder = new Guna.UI2.WinForms.Guna2TabControl();
             this.dgvOrder = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.Dish = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UnitPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TotalPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tblTotal.SuspendLayout();
@@ -314,6 +319,8 @@
             // 
             // dgvOrder
             // 
+            this.dgvOrder.AllowUserToAddRows = false;
+            this.dgvOrder.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dgvOrder.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvOrder.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
@@ -327,6 +334,12 @@
             this.dgvOrder.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvOrder.ColumnHeadersHeight = 50;
             this.dgvOrder.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgvOrder.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Dish,
+            this.UnitPrice,
+            this.Quantity,
+            this.TotalPrice,
+            this.Delete});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -340,7 +353,6 @@
             this.dgvOrder.Location = new System.Drawing.Point(3, 88);
             this.dgvOrder.MultiSelect = false;
             this.dgvOrder.Name = "dgvOrder";
-            this.dgvOrder.ReadOnly = true;
             this.dgvOrder.RowHeadersVisible = false;
             this.dgvOrder.RowHeadersWidth = 51;
             this.dgvOrder.RowTemplate.Height = 24;
@@ -359,7 +371,7 @@
             this.dgvOrder.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgvOrder.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvOrder.ThemeStyle.HeaderStyle.Height = 50;
-            this.dgvOrder.ThemeStyle.ReadOnly = true;
+            this.dgvOrder.ThemeStyle.ReadOnly = false;
             this.dgvOrder.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvOrder.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvOrder.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -367,6 +379,38 @@
             this.dgvOrder.ThemeStyle.RowsStyle.Height = 24;
             this.dgvOrder.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvOrder.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // Dish
+            // 
+            this.Dish.HeaderText = "Món ăn";
+            this.Dish.MinimumWidth = 6;
+            this.Dish.Name = "Dish";
+            // 
+            // UnitPrice
+            // 
+            this.UnitPrice.HeaderText = "Đơn giá";
+            this.UnitPrice.MinimumWidth = 6;
+            this.UnitPrice.Name = "UnitPrice";
+            // 
+            // Quantity
+            // 
+            this.Quantity.HeaderText = "Số lượng";
+            this.Quantity.MinimumWidth = 6;
+            this.Quantity.Name = "Quantity";
+            // 
+            // TotalPrice
+            // 
+            this.TotalPrice.HeaderText = "Thành tiền";
+            this.TotalPrice.MinimumWidth = 6;
+            this.TotalPrice.Name = "TotalPrice";
+            // 
+            // Delete
+            // 
+            this.Delete.HeaderText = "";
+            this.Delete.MinimumWidth = 6;
+            this.Delete.Name = "Delete";
+            this.Delete.Text = "Xóa";
+            this.Delete.UseColumnTextForButtonValue = true;
             // 
             // frmSale
             // 
@@ -415,5 +459,10 @@
         private Guna.UI2.WinForms.Guna2Button btnOrder;
         private Guna.UI2.WinForms.Guna2Button btnClear;
         private Guna.UI2.WinForms.Guna2DataGridView dgvOrder;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Dish;
+        private System.Windows.Forms.DataGridViewTextBoxColumn UnitPrice;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TotalPrice;
+        private System.Windows.Forms.DataGridViewButtonColumn Delete;
     }
 }

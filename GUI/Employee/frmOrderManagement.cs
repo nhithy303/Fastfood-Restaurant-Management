@@ -47,10 +47,10 @@ namespace GUI.Employee
 
         private void dgvOrder_Load()
         {
-            //dgvEmployees.AutoGenerateColumns = false;
             HoaDonBanHang hdbh_find = new HoaDonBanHang();
             hdbh_find.MaNV = nv.MaNV;
             dgvOrder.DataSource = hdbh_bll.GetList(hdbh_find);
+            dgvOrder.Font = new Font("Times New Roman", 13F);
         }
 
         private void dgvOrder_SelectionChanged(object sender, EventArgs e)

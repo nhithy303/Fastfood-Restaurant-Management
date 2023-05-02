@@ -34,6 +34,7 @@ namespace GUI
             this.nv = nv;
             this.Load += frmSale_Load;
             tabOrder.SelectedIndexChanged += tabOrder_SelectedIndexChanged;
+            dgvOrder.CellContentClick += dgvOrder_CellContentClick;
             btnOrder.Click += btnOrder_Click;
             btnClear.Click += btnClear_Click;
             btnOrderList.Click += btnOrderList_Click;
@@ -192,32 +193,21 @@ namespace GUI
 
         private void dgvOrder_Load()
         {
-            dgvOrder.ColumnCount = 5;
-
-            dgvOrder.Columns[0].Name = "Picture";
-            dgvOrder.Columns[1].Name = "UnitPrice";
-            dgvOrder.Columns[2].Name = "Quantity";
-            dgvOrder.Columns[3].Name = "TotalPrice";
-            dgvOrder.Columns[4].Name = "Delete";
-
-            dgvOrder.Columns[0].ValueType = typeof(Image);
-            dgvOrder.Columns[1].ValueType = typeof(int);
-            dgvOrder.Columns[2].ValueType = typeof(int);
-            dgvOrder.Columns[3].ValueType = typeof(int);
-            dgvOrder.Columns[4].ValueType = typeof(Image);
-
-            dgvOrder.Columns[0].HeaderText = "";
-            dgvOrder.Columns[1].HeaderText = "Đơn giá";
-            dgvOrder.Columns[2].HeaderText = "Số lượng";
-            dgvOrder.Columns[3].HeaderText = "Thành tiền";
-            dgvOrder.Columns[4].HeaderText = "";
-
             int dgvWidth = dgvOrder.Width;
-            dgvOrder.Columns[0].FillWeight = (float)(dgvWidth * 20 / 100);
-            dgvOrder.Columns[1].FillWeight = (float)(dgvWidth * 25 / 100);
+            dgvOrder.Columns[0].FillWeight = (float)(dgvWidth * 25 / 100);
+            dgvOrder.Columns[1].FillWeight = (float)(dgvWidth * 20 / 100);
             dgvOrder.Columns[2].FillWeight = (float)(dgvWidth * 20 / 100);
             dgvOrder.Columns[3].FillWeight = (float)(dgvWidth * 25 / 100);
             dgvOrder.Columns[4].FillWeight = (float)(dgvWidth * 10 / 100);
+        }
+
+        private void dgvOrder_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgvOrder.Columns[e.ColumnIndex].Name == "Delete")
+            {
+                cthdbh.RemoveAt(e.RowIndex);
+                dgvOrder.Rows.RemoveAt(e.RowIndex);
+            }
         }
 
         private void dgvOrder_Clear()
@@ -261,13 +251,11 @@ namespace GUI
                     // If this dish hasn't been added into order yet => create new row
                     if (!added)
                     {
-                        Image dish = new Bitmap(td.AnhMon);
-                        Image delete = new Bitmap(GUI.Properties.Resources.delete);
                         dgvOrder.Rows.Add(new object[]
                         {
-                            dish, td.GiaBan, quantity, td.GiaBan * quantity, delete
+                            td.TenMon, td.GiaBan, quantity, td.GiaBan * quantity
                         });
-
+                        
                         // Add new ChiTietHDBH to list
                         ChiTietHDBH cthdbh_new = new ChiTietHDBH();
                         cthdbh_new.MaMon = td.MaMon;

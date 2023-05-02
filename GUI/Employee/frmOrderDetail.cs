@@ -60,6 +60,7 @@ namespace GUI
             ChiTietHDBH cthdbh = new ChiTietHDBH();
             cthdbh.MaHD = hdbh.MaHD;
             dgvOrderDetail.DataSource = cthdbh_bll.GetList(cthdbh);
+            dgvOrderDetail.Font = new Font("Times New Roman", 13F);
         }
 
         private void dgvOrderDetail_SelectionChanged(object sender, EventArgs e)
