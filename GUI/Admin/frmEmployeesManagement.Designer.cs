@@ -28,127 +28,73 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnSearch = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnExportExcel = new Guna.UI2.WinForms.Guna2Button();
-            this.lbl_date = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtFirstName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lbl_tennv = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtLastName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lbl_honv = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lbl_gioitinh = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txtPhone = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lbl_sdt = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtAddress = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lbl_addr = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lbl_ngayVaoLam = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lbl_loainv = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtAccount = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lbl_account = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.dtpStartDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.cboType = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.cboGender = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.dtpBirthday = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.btnCreate = new Guna.UI2.WinForms.Guna2Button();
             this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
             this.btnUpdate = new Guna.UI2.WinForms.Guna2Button();
             this.dgvEmployees = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.lblID = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtID = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnSave = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Panel1.SuspendLayout();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tblButton = new System.Windows.Forms.TableLayoutPanel();
+            this.tblInput = new System.Windows.Forms.TableLayoutPanel();
+            this.tblInput1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tblInput3 = new System.Windows.Forms.TableLayoutPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.tblInput2 = new System.Windows.Forms.TableLayoutPanel();
+            this.dtpBirthday = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.cboGender = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtPhone = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployees)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.tblButton.SuspendLayout();
+            this.tblInput.SuspendLayout();
+            this.tblInput1.SuspendLayout();
+            this.tblInput3.SuspendLayout();
+            this.tblInput2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.BackColor = System.Drawing.Color.Transparent;
-            this.txtSearch.BorderColor = System.Drawing.Color.Transparent;
-            this.txtSearch.BorderRadius = 15;
-            this.txtSearch.BorderThickness = 0;
-            this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearch.DefaultText = "";
-            this.txtSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearch.Font = new System.Drawing.Font("Times New Roman", 13.8F);
-            this.txtSearch.ForeColor = System.Drawing.Color.Black;
-            this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearch.Location = new System.Drawing.Point(259, 322);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.PasswordChar = '\0';
-            this.txtSearch.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txtSearch.PlaceholderText = "Search";
-            this.txtSearch.SelectedText = "";
-            this.txtSearch.Size = new System.Drawing.Size(1070, 55);
-            this.txtSearch.TabIndex = 0;
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.BackColor = System.Drawing.Color.Transparent;
-            this.btnSearch.BackgroundImage = global::GUI.Properties.Resources.icon_search;
-            this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSearch.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSearch.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSearch.FillColor = System.Drawing.Color.Transparent;
-            this.btnSearch.Font = new System.Drawing.Font("Times New Roman", 9F);
-            this.btnSearch.ForeColor = System.Drawing.Color.Black;
-            this.btnSearch.Location = new System.Drawing.Point(1337, 340);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnSearch.Size = new System.Drawing.Size(35, 37);
-            this.btnSearch.TabIndex = 1;
-            this.btnSearch.UseTransparentBackground = true;
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Times New Roman", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(315, -10);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(957, 92);
-            this.guna2HtmlLabel1.TabIndex = 2;
-            this.guna2HtmlLabel1.Text = "DANH SÁCH NHÂN VIÊN";
             // 
             // btnExportExcel
             // 
+            this.btnExportExcel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnExportExcel.BackColor = System.Drawing.Color.Transparent;
+            this.btnExportExcel.BorderRadius = 5;
             this.btnExportExcel.BorderThickness = 1;
             this.btnExportExcel.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnExportExcel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnExportExcel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnExportExcel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnExportExcel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnExportExcel.Font = new System.Drawing.Font("Times New Roman", 16.2F);
+            this.btnExportExcel.Font = new System.Drawing.Font("Times New Roman", 14F);
             this.btnExportExcel.ForeColor = System.Drawing.Color.Black;
-            this.btnExportExcel.Location = new System.Drawing.Point(1360, 405);
+            this.btnExportExcel.Location = new System.Drawing.Point(1343, 17);
             this.btnExportExcel.Name = "btnExportExcel";
-            this.btnExportExcel.Size = new System.Drawing.Size(166, 43);
+            this.btnExportExcel.Size = new System.Drawing.Size(150, 40);
             this.btnExportExcel.TabIndex = 3;
-            this.btnExportExcel.Text = "Xuất File";
-            // 
-            // lbl_date
-            // 
-            this.lbl_date.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_date.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_date.Location = new System.Drawing.Point(56, 232);
-            this.lbl_date.Name = "lbl_date";
-            this.lbl_date.Size = new System.Drawing.Size(96, 28);
-            this.lbl_date.TabIndex = 17;
-            this.lbl_date.Text = "Ngày sinh";
+            this.btnExportExcel.Text = "Xuất Excel";
             // 
             // txtFirstName
             // 
+            this.txtFirstName.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtFirstName.BackColor = System.Drawing.Color.Transparent;
             this.txtFirstName.BorderColor = System.Drawing.Color.Transparent;
             this.txtFirstName.BorderRadius = 5;
@@ -160,31 +106,22 @@
             this.txtFirstName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtFirstName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtFirstName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtFirstName.Font = new System.Drawing.Font("Times New Roman", 13.8F);
+            this.txtFirstName.Font = new System.Drawing.Font("Times New Roman", 13F);
             this.txtFirstName.ForeColor = System.Drawing.Color.Black;
             this.txtFirstName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtFirstName.Location = new System.Drawing.Point(197, 163);
+            this.txtFirstName.Location = new System.Drawing.Point(1339, 7);
             this.txtFirstName.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.PasswordChar = '\0';
             this.txtFirstName.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txtFirstName.PlaceholderText = "";
             this.txtFirstName.SelectedText = "";
-            this.txtFirstName.Size = new System.Drawing.Size(263, 32);
+            this.txtFirstName.Size = new System.Drawing.Size(150, 31);
             this.txtFirstName.TabIndex = 16;
-            // 
-            // lbl_tennv
-            // 
-            this.lbl_tennv.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_tennv.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_tennv.Location = new System.Drawing.Point(56, 168);
-            this.lbl_tennv.Name = "lbl_tennv";
-            this.lbl_tennv.Size = new System.Drawing.Size(137, 28);
-            this.lbl_tennv.TabIndex = 15;
-            this.lbl_tennv.Text = "Tên nhân viên";
             // 
             // txtLastName
             // 
+            this.txtLastName.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtLastName.BackColor = System.Drawing.Color.Transparent;
             this.txtLastName.BorderColor = System.Drawing.Color.Transparent;
             this.txtLastName.BorderRadius = 5;
@@ -196,77 +133,22 @@
             this.txtLastName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtLastName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtLastName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtLastName.Font = new System.Drawing.Font("Times New Roman", 13.8F);
+            this.txtLastName.Font = new System.Drawing.Font("Times New Roman", 13F);
             this.txtLastName.ForeColor = System.Drawing.Color.Black;
             this.txtLastName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtLastName.Location = new System.Drawing.Point(197, 99);
+            this.txtLastName.Location = new System.Drawing.Point(868, 7);
             this.txtLastName.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.PasswordChar = '\0';
             this.txtLastName.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txtLastName.PlaceholderText = "";
             this.txtLastName.SelectedText = "";
-            this.txtLastName.Size = new System.Drawing.Size(263, 32);
+            this.txtLastName.Size = new System.Drawing.Size(300, 31);
             this.txtLastName.TabIndex = 14;
-            // 
-            // lbl_honv
-            // 
-            this.lbl_honv.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_honv.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_honv.Location = new System.Drawing.Point(56, 104);
-            this.lbl_honv.Name = "lbl_honv";
-            this.lbl_honv.Size = new System.Drawing.Size(128, 28);
-            this.lbl_honv.TabIndex = 13;
-            this.lbl_honv.Text = "Họ nhân viên";
-            // 
-            // lbl_gioitinh
-            // 
-            this.lbl_gioitinh.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_gioitinh.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_gioitinh.Location = new System.Drawing.Point(601, 144);
-            this.lbl_gioitinh.Name = "lbl_gioitinh";
-            this.lbl_gioitinh.Size = new System.Drawing.Size(85, 28);
-            this.lbl_gioitinh.TabIndex = 23;
-            this.lbl_gioitinh.Text = "Giới tính";
-            // 
-            // txtPhone
-            // 
-            this.txtPhone.BackColor = System.Drawing.Color.Transparent;
-            this.txtPhone.BorderColor = System.Drawing.Color.Transparent;
-            this.txtPhone.BorderRadius = 5;
-            this.txtPhone.BorderThickness = 0;
-            this.txtPhone.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPhone.DefaultText = "";
-            this.txtPhone.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtPhone.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtPhone.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPhone.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPhone.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPhone.Font = new System.Drawing.Font("Times New Roman", 13.8F);
-            this.txtPhone.ForeColor = System.Drawing.Color.Black;
-            this.txtPhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPhone.Location = new System.Drawing.Point(717, 75);
-            this.txtPhone.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.txtPhone.Name = "txtPhone";
-            this.txtPhone.PasswordChar = '\0';
-            this.txtPhone.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txtPhone.PlaceholderText = "";
-            this.txtPhone.SelectedText = "";
-            this.txtPhone.Size = new System.Drawing.Size(263, 32);
-            this.txtPhone.TabIndex = 22;
-            // 
-            // lbl_sdt
-            // 
-            this.lbl_sdt.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_sdt.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_sdt.Location = new System.Drawing.Point(601, 80);
-            this.lbl_sdt.Name = "lbl_sdt";
-            this.lbl_sdt.Size = new System.Drawing.Size(47, 28);
-            this.lbl_sdt.TabIndex = 21;
-            this.lbl_sdt.Text = "SĐT";
             // 
             // txtAddress
             // 
+            this.txtAddress.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtAddress.BackColor = System.Drawing.Color.Transparent;
             this.txtAddress.BorderColor = System.Drawing.Color.Transparent;
             this.txtAddress.BorderRadius = 5;
@@ -278,51 +160,22 @@
             this.txtAddress.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtAddress.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtAddress.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtAddress.Font = new System.Drawing.Font("Times New Roman", 13.8F);
+            this.txtAddress.Font = new System.Drawing.Font("Times New Roman", 13F);
             this.txtAddress.ForeColor = System.Drawing.Color.Black;
             this.txtAddress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtAddress.Location = new System.Drawing.Point(717, 11);
+            this.txtAddress.Location = new System.Drawing.Point(162, 9);
             this.txtAddress.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.PasswordChar = '\0';
             this.txtAddress.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txtAddress.PlaceholderText = "";
             this.txtAddress.SelectedText = "";
-            this.txtAddress.Size = new System.Drawing.Size(263, 32);
+            this.txtAddress.Size = new System.Drawing.Size(450, 31);
             this.txtAddress.TabIndex = 20;
-            // 
-            // lbl_addr
-            // 
-            this.lbl_addr.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_addr.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_addr.Location = new System.Drawing.Point(601, 16);
-            this.lbl_addr.Name = "lbl_addr";
-            this.lbl_addr.Size = new System.Drawing.Size(70, 28);
-            this.lbl_addr.TabIndex = 19;
-            this.lbl_addr.Text = "Địa chỉ";
-            // 
-            // lbl_ngayVaoLam
-            // 
-            this.lbl_ngayVaoLam.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_ngayVaoLam.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_ngayVaoLam.Location = new System.Drawing.Point(1120, 232);
-            this.lbl_ngayVaoLam.Name = "lbl_ngayVaoLam";
-            this.lbl_ngayVaoLam.Size = new System.Drawing.Size(131, 28);
-            this.lbl_ngayVaoLam.TabIndex = 29;
-            this.lbl_ngayVaoLam.Text = "Ngày vào làm";
-            // 
-            // lbl_loainv
-            // 
-            this.lbl_loainv.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_loainv.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_loainv.Location = new System.Drawing.Point(1120, 168);
-            this.lbl_loainv.Name = "lbl_loainv";
-            this.lbl_loainv.Size = new System.Drawing.Size(142, 28);
-            this.lbl_loainv.TabIndex = 27;
-            this.lbl_loainv.Text = "Loại nhân viên";
             // 
             // txtAccount
             // 
+            this.txtAccount.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtAccount.BackColor = System.Drawing.Color.Transparent;
             this.txtAccount.BorderColor = System.Drawing.Color.Transparent;
             this.txtAccount.BorderRadius = 5;
@@ -335,10 +188,10 @@
             this.txtAccount.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtAccount.Enabled = false;
             this.txtAccount.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtAccount.Font = new System.Drawing.Font("Times New Roman", 13.8F);
+            this.txtAccount.Font = new System.Drawing.Font("Times New Roman", 13F);
             this.txtAccount.ForeColor = System.Drawing.Color.Black;
             this.txtAccount.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtAccount.Location = new System.Drawing.Point(1270, 99);
+            this.txtAccount.Location = new System.Drawing.Point(476, 7);
             this.txtAccount.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtAccount.Name = "txtAccount";
             this.txtAccount.PasswordChar = '\0';
@@ -346,142 +199,97 @@
             this.txtAccount.PlaceholderText = "";
             this.txtAccount.ReadOnly = true;
             this.txtAccount.SelectedText = "";
-            this.txtAccount.Size = new System.Drawing.Size(263, 32);
+            this.txtAccount.Size = new System.Drawing.Size(80, 31);
             this.txtAccount.TabIndex = 26;
-            // 
-            // lbl_account
-            // 
-            this.lbl_account.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_account.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_account.Location = new System.Drawing.Point(1120, 104);
-            this.lbl_account.Name = "lbl_account";
-            this.lbl_account.Size = new System.Drawing.Size(124, 28);
-            this.lbl_account.TabIndex = 25;
-            this.lbl_account.Text = "Mã tài khoản";
-            // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel1.Controls.Add(this.dtpStartDate);
-            this.guna2Panel1.Controls.Add(this.cboType);
-            this.guna2Panel1.Controls.Add(this.cboGender);
-            this.guna2Panel1.Controls.Add(this.dtpBirthday);
-            this.guna2Panel1.Controls.Add(this.txtPhone);
-            this.guna2Panel1.Controls.Add(this.txtAddress);
-            this.guna2Panel1.Controls.Add(this.lbl_sdt);
-            this.guna2Panel1.Controls.Add(this.lbl_addr);
-            this.guna2Panel1.Controls.Add(this.lbl_gioitinh);
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 88);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1584, 200);
-            this.guna2Panel1.TabIndex = 31;
             // 
             // dtpStartDate
             // 
+            this.dtpStartDate.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.dtpStartDate.BorderRadius = 5;
             this.dtpStartDate.Checked = true;
             this.dtpStartDate.FillColor = System.Drawing.Color.White;
-            this.dtpStartDate.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpStartDate.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpStartDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpStartDate.Location = new System.Drawing.Point(1270, 139);
+            this.dtpStartDate.Location = new System.Drawing.Point(1336, 6);
             this.dtpStartDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpStartDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpStartDate.Name = "dtpStartDate";
-            this.dtpStartDate.Size = new System.Drawing.Size(263, 36);
+            this.dtpStartDate.Size = new System.Drawing.Size(170, 36);
             this.dtpStartDate.TabIndex = 39;
+            this.dtpStartDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.dtpStartDate.Value = new System.DateTime(2023, 4, 26, 15, 40, 20, 439);
             // 
             // cboType
             // 
+            this.cboType.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.cboType.BackColor = System.Drawing.Color.Transparent;
+            this.cboType.BorderRadius = 5;
             this.cboType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cboType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboType.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cboType.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cboType.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cboType.Font = new System.Drawing.Font("Times New Roman", 13F);
             this.cboType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cboType.ItemHeight = 30;
-            this.cboType.Location = new System.Drawing.Point(1270, 75);
+            this.cboType.Location = new System.Drawing.Point(866, 6);
             this.cboType.Name = "cboType";
-            this.cboType.Size = new System.Drawing.Size(177, 36);
+            this.cboType.Size = new System.Drawing.Size(200, 36);
             this.cboType.TabIndex = 38;
-            // 
-            // cboGender
-            // 
-            this.cboGender.BackColor = System.Drawing.Color.Transparent;
-            this.cboGender.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cboGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboGender.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cboGender.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cboGender.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cboGender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cboGender.ItemHeight = 30;
-            this.cboGender.Location = new System.Drawing.Point(717, 135);
-            this.cboGender.Name = "cboGender";
-            this.cboGender.Size = new System.Drawing.Size(177, 36);
-            this.cboGender.TabIndex = 37;
-            // 
-            // dtpBirthday
-            // 
-            this.dtpBirthday.Checked = true;
-            this.dtpBirthday.FillColor = System.Drawing.Color.White;
-            this.dtpBirthday.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpBirthday.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpBirthday.Location = new System.Drawing.Point(197, 139);
-            this.dtpBirthday.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dtpBirthday.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.dtpBirthday.Name = "dtpBirthday";
-            this.dtpBirthday.Size = new System.Drawing.Size(263, 36);
-            this.dtpBirthday.TabIndex = 36;
-            this.dtpBirthday.Value = new System.DateTime(2023, 4, 26, 15, 40, 20, 439);
             // 
             // btnCreate
             // 
+            this.btnCreate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnCreate.BackColor = System.Drawing.Color.Transparent;
+            this.btnCreate.BorderRadius = 5;
             this.btnCreate.BorderThickness = 1;
             this.btnCreate.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnCreate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnCreate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnCreate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnCreate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnCreate.Font = new System.Drawing.Font("Times New Roman", 16.2F);
+            this.btnCreate.Font = new System.Drawing.Font("Times New Roman", 14F);
             this.btnCreate.ForeColor = System.Drawing.Color.Black;
-            this.btnCreate.Location = new System.Drawing.Point(600, 405);
+            this.btnCreate.Location = new System.Drawing.Point(82, 17);
             this.btnCreate.Name = "btnCreate";
-            this.btnCreate.Size = new System.Drawing.Size(166, 43);
+            this.btnCreate.Size = new System.Drawing.Size(150, 40);
             this.btnCreate.TabIndex = 32;
             this.btnCreate.Text = "Thêm";
             // 
             // btnDelete
             // 
+            this.btnDelete.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnDelete.BackColor = System.Drawing.Color.Transparent;
+            this.btnDelete.BorderRadius = 5;
             this.btnDelete.BorderThickness = 1;
             this.btnDelete.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnDelete.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnDelete.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnDelete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnDelete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnDelete.Font = new System.Drawing.Font("Times New Roman", 16.2F);
+            this.btnDelete.Font = new System.Drawing.Font("Times New Roman", 14F);
             this.btnDelete.ForeColor = System.Drawing.Color.Black;
-            this.btnDelete.Location = new System.Drawing.Point(1170, 405);
+            this.btnDelete.Location = new System.Drawing.Point(1027, 17);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(166, 43);
+            this.btnDelete.Size = new System.Drawing.Size(150, 40);
             this.btnDelete.TabIndex = 33;
             this.btnDelete.Text = "Xóa";
             // 
             // btnUpdate
             // 
+            this.btnUpdate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnUpdate.BackColor = System.Drawing.Color.Transparent;
+            this.btnUpdate.BorderRadius = 5;
             this.btnUpdate.BorderThickness = 1;
             this.btnUpdate.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnUpdate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnUpdate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnUpdate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnUpdate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnUpdate.Font = new System.Drawing.Font("Times New Roman", 16.2F);
+            this.btnUpdate.Font = new System.Drawing.Font("Times New Roman", 14F);
             this.btnUpdate.ForeColor = System.Drawing.Color.Black;
-            this.btnUpdate.Location = new System.Drawing.Point(790, 405);
+            this.btnUpdate.Location = new System.Drawing.Point(397, 17);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(166, 43);
+            this.btnUpdate.Size = new System.Drawing.Size(150, 40);
             this.btnUpdate.TabIndex = 34;
             this.btnUpdate.Text = "Sửa";
             // 
@@ -489,35 +297,36 @@
             // 
             this.dgvEmployees.AllowUserToAddRows = false;
             this.dgvEmployees.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.dgvEmployees.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvEmployees.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgvEmployees.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvEmployees.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvEmployees.ColumnHeadersHeight = 30;
             this.dgvEmployees.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvEmployees.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvEmployees.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvEmployees.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvEmployees.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvEmployees.Location = new System.Drawing.Point(0, 475);
+            this.dgvEmployees.Location = new System.Drawing.Point(3, 369);
             this.dgvEmployees.MultiSelect = false;
             this.dgvEmployees.Name = "dgvEmployees";
             this.dgvEmployees.ReadOnly = true;
             this.dgvEmployees.RowHeadersVisible = false;
             this.dgvEmployees.RowHeadersWidth = 51;
             this.dgvEmployees.RowTemplate.Height = 24;
-            this.dgvEmployees.Size = new System.Drawing.Size(1584, 351);
+            this.dgvEmployees.Size = new System.Drawing.Size(1576, 443);
             this.dgvEmployees.TabIndex = 35;
             this.dgvEmployees.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvEmployees.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -541,18 +350,9 @@
             this.dgvEmployees.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvEmployees.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // lblID
-            // 
-            this.lblID.BackColor = System.Drawing.Color.Transparent;
-            this.lblID.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblID.Location = new System.Drawing.Point(81, 408);
-            this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(130, 28);
-            this.lblID.TabIndex = 36;
-            this.lblID.Text = "Mã nhân viên";
-            // 
             // txtID
             // 
+            this.txtID.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtID.BackColor = System.Drawing.Color.Transparent;
             this.txtID.BorderColor = System.Drawing.Color.Transparent;
             this.txtID.BorderRadius = 5;
@@ -565,10 +365,10 @@
             this.txtID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtID.Enabled = false;
             this.txtID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtID.Font = new System.Drawing.Font("Times New Roman", 13.8F);
+            this.txtID.Font = new System.Drawing.Font("Times New Roman", 13F);
             this.txtID.ForeColor = System.Drawing.Color.Black;
             this.txtID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtID.Location = new System.Drawing.Point(228, 408);
+            this.txtID.Location = new System.Drawing.Point(162, 7);
             this.txtID.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtID.Name = "txtID";
             this.txtID.PasswordChar = '\0';
@@ -576,25 +376,353 @@
             this.txtID.PlaceholderText = "";
             this.txtID.ReadOnly = true;
             this.txtID.SelectedText = "";
-            this.txtID.Size = new System.Drawing.Size(263, 32);
+            this.txtID.Size = new System.Drawing.Size(80, 31);
             this.txtID.TabIndex = 37;
             // 
             // btnSave
             // 
+            this.btnSave.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnSave.BackColor = System.Drawing.Color.Transparent;
+            this.btnSave.BorderRadius = 5;
             this.btnSave.BorderThickness = 1;
             this.btnSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnSave.Font = new System.Drawing.Font("Times New Roman", 16.2F);
+            this.btnSave.Font = new System.Drawing.Font("Times New Roman", 14F);
             this.btnSave.ForeColor = System.Drawing.Color.Black;
-            this.btnSave.Location = new System.Drawing.Point(980, 405);
+            this.btnSave.Location = new System.Drawing.Point(712, 17);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(166, 43);
+            this.btnSave.Size = new System.Drawing.Size(150, 40);
             this.btnSave.TabIndex = 38;
             this.btnSave.Text = "Lưu";
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.dgvEmployees, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.tblButton, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.tblInput, 0, 1);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 4;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1582, 815);
+            this.tableLayoutPanel1.TabIndex = 39;
+            // 
+            // tblButton
+            // 
+            this.tblButton.ColumnCount = 5;
+            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tblButton.Controls.Add(this.btnCreate, 0, 0);
+            this.tblButton.Controls.Add(this.btnSave, 2, 0);
+            this.tblButton.Controls.Add(this.btnUpdate, 1, 0);
+            this.tblButton.Controls.Add(this.btnDelete, 3, 0);
+            this.tblButton.Controls.Add(this.btnExportExcel, 4, 0);
+            this.tblButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tblButton.Location = new System.Drawing.Point(3, 288);
+            this.tblButton.Name = "tblButton";
+            this.tblButton.RowCount = 1;
+            this.tblButton.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tblButton.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tblButton.Size = new System.Drawing.Size(1576, 75);
+            this.tblButton.TabIndex = 36;
+            // 
+            // tblInput
+            // 
+            this.tblInput.ColumnCount = 1;
+            this.tblInput.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tblInput.Controls.Add(this.tblInput1, 0, 0);
+            this.tblInput.Controls.Add(this.tblInput3, 0, 2);
+            this.tblInput.Controls.Add(this.tblInput2, 0, 1);
+            this.tblInput.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tblInput.Location = new System.Drawing.Point(3, 125);
+            this.tblInput.Name = "tblInput";
+            this.tblInput.RowCount = 3;
+            this.tblInput.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33F));
+            this.tblInput.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33F));
+            this.tblInput.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 34F));
+            this.tblInput.Size = new System.Drawing.Size(1576, 157);
+            this.tblInput.TabIndex = 37;
+            // 
+            // tblInput1
+            // 
+            this.tblInput1.ColumnCount = 8;
+            this.tblInput1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tblInput1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tblInput1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tblInput1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tblInput1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tblInput1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tblInput1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tblInput1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tblInput1.Controls.Add(this.label5, 6, 0);
+            this.tblInput1.Controls.Add(this.label4, 4, 0);
+            this.tblInput1.Controls.Add(this.label3, 2, 0);
+            this.tblInput1.Controls.Add(this.label2, 0, 0);
+            this.tblInput1.Controls.Add(this.txtID, 1, 0);
+            this.tblInput1.Controls.Add(this.txtAccount, 3, 0);
+            this.tblInput1.Controls.Add(this.txtFirstName, 7, 0);
+            this.tblInput1.Controls.Add(this.txtLastName, 5, 0);
+            this.tblInput1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tblInput1.Location = new System.Drawing.Point(3, 3);
+            this.tblInput1.Name = "tblInput1";
+            this.tblInput1.RowCount = 1;
+            this.tblInput1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tblInput1.Size = new System.Drawing.Size(1570, 45);
+            this.tblInput1.TabIndex = 0;
+            // 
+            // tblInput3
+            // 
+            this.tblInput3.ColumnCount = 6;
+            this.tblInput3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tblInput3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tblInput3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tblInput3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tblInput3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tblInput3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tblInput3.Controls.Add(this.label11, 4, 0);
+            this.tblInput3.Controls.Add(this.label10, 2, 0);
+            this.tblInput3.Controls.Add(this.label9, 0, 0);
+            this.tblInput3.Controls.Add(this.dtpStartDate, 5, 0);
+            this.tblInput3.Controls.Add(this.cboType, 3, 0);
+            this.tblInput3.Controls.Add(this.txtAddress, 1, 0);
+            this.tblInput3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tblInput3.Location = new System.Drawing.Point(3, 105);
+            this.tblInput3.Name = "tblInput3";
+            this.tblInput3.RowCount = 1;
+            this.tblInput3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tblInput3.Size = new System.Drawing.Size(1570, 49);
+            this.tblInput3.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(378, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(826, 76);
+            this.label1.TabIndex = 75;
+            this.label1.Text = "DANH SÁCH NHÂN VIÊN";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(24, 10);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(130, 25);
+            this.label2.TabIndex = 91;
+            this.label2.Text = "Mã nhân viên";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(341, 10);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(127, 25);
+            this.label3.TabIndex = 92;
+            this.label3.Text = "Mã tài khoản";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(733, 10);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(127, 25);
+            this.label4.TabIndex = 93;
+            this.label4.Text = "Họ nhân viên";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(1196, 10);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(135, 25);
+            this.label5.TabIndex = 94;
+            this.label5.Text = "Tên nhân viên";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label9
+            // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(78, 12);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(76, 25);
+            this.label9.TabIndex = 91;
+            this.label9.Text = "Địa chỉ";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label10
+            // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(720, 12);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(140, 25);
+            this.label10.TabIndex = 92;
+            this.label10.Text = "Loại nhân viên";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label11
+            // 
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(1195, 12);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(135, 25);
+            this.label11.TabIndex = 93;
+            this.label11.Text = "Ngày vào làm";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tblInput2
+            // 
+            this.tblInput2.ColumnCount = 6;
+            this.tblInput2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tblInput2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tblInput2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tblInput2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tblInput2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tblInput2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tblInput2.Controls.Add(this.txtPhone, 5, 0);
+            this.tblInput2.Controls.Add(this.cboGender, 3, 0);
+            this.tblInput2.Controls.Add(this.label7, 2, 0);
+            this.tblInput2.Controls.Add(this.label6, 0, 0);
+            this.tblInput2.Controls.Add(this.dtpBirthday, 1, 0);
+            this.tblInput2.Controls.Add(this.label8, 4, 0);
+            this.tblInput2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tblInput2.Location = new System.Drawing.Point(3, 54);
+            this.tblInput2.Name = "tblInput2";
+            this.tblInput2.RowCount = 1;
+            this.tblInput2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tblInput2.Size = new System.Drawing.Size(1570, 45);
+            this.tblInput2.TabIndex = 3;
+            // 
+            // dtpBirthday
+            // 
+            this.dtpBirthday.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.dtpBirthday.BorderRadius = 5;
+            this.dtpBirthday.Checked = true;
+            this.dtpBirthday.FillColor = System.Drawing.Color.White;
+            this.dtpBirthday.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpBirthday.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpBirthday.Location = new System.Drawing.Point(160, 4);
+            this.dtpBirthday.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtpBirthday.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtpBirthday.Name = "dtpBirthday";
+            this.dtpBirthday.Size = new System.Drawing.Size(170, 36);
+            this.dtpBirthday.TabIndex = 37;
+            this.dtpBirthday.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.dtpBirthday.Value = new System.DateTime(2023, 4, 26, 15, 40, 20, 439);
+            // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(54, 10);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(100, 25);
+            this.label6.TabIndex = 95;
+            this.label6.Text = "Ngày sinh";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(770, 10);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(90, 25);
+            this.label7.TabIndex = 96;
+            this.label7.Text = "Giới tính";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label8
+            // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(1203, 10);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(127, 25);
+            this.label8.TabIndex = 97;
+            this.label8.Text = "Số điện thoại";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // cboGender
+            // 
+            this.cboGender.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.cboGender.BackColor = System.Drawing.Color.Transparent;
+            this.cboGender.BorderRadius = 5;
+            this.cboGender.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cboGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboGender.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboGender.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboGender.Font = new System.Drawing.Font("Times New Roman", 13F);
+            this.cboGender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cboGender.ItemHeight = 30;
+            this.cboGender.Location = new System.Drawing.Point(866, 4);
+            this.cboGender.Name = "cboGender";
+            this.cboGender.Size = new System.Drawing.Size(200, 36);
+            this.cboGender.TabIndex = 98;
+            // 
+            // txtPhone
+            // 
+            this.txtPhone.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtPhone.BackColor = System.Drawing.Color.Transparent;
+            this.txtPhone.BorderColor = System.Drawing.Color.Transparent;
+            this.txtPhone.BorderRadius = 5;
+            this.txtPhone.BorderThickness = 0;
+            this.txtPhone.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPhone.DefaultText = "";
+            this.txtPhone.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtPhone.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPhone.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPhone.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPhone.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPhone.Font = new System.Drawing.Font("Times New Roman", 13F);
+            this.txtPhone.ForeColor = System.Drawing.Color.Black;
+            this.txtPhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPhone.Location = new System.Drawing.Point(1338, 7);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(5);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.PasswordChar = '\0';
+            this.txtPhone.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txtPhone.PlaceholderText = "";
+            this.txtPhone.SelectedText = "";
+            this.txtPhone.Size = new System.Drawing.Size(150, 31);
+            this.txtPhone.TabIndex = 99;
             // 
             // frmEmployeesManagement
             // 
@@ -603,69 +731,58 @@
             this.BackgroundImage = global::GUI.Properties.Resources.mF_Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1582, 815);
-            this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.txtID);
-            this.Controls.Add(this.lblID);
-            this.Controls.Add(this.dgvEmployees);
-            this.Controls.Add(this.btnUpdate);
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.btnCreate);
-            this.Controls.Add(this.lbl_ngayVaoLam);
-            this.Controls.Add(this.lbl_loainv);
-            this.Controls.Add(this.txtAccount);
-            this.Controls.Add(this.lbl_account);
-            this.Controls.Add(this.lbl_date);
-            this.Controls.Add(this.txtFirstName);
-            this.Controls.Add(this.lbl_tennv);
-            this.Controls.Add(this.txtLastName);
-            this.Controls.Add(this.lbl_honv);
-            this.Controls.Add(this.btnExportExcel);
-            this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.guna2HtmlLabel1);
-            this.Controls.Add(this.txtSearch);
-            this.Controls.Add(this.guna2Panel1);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "frmEmployeesManagement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmManageEmployees";
-            this.guna2Panel1.ResumeLayout(false);
-            this.guna2Panel1.PerformLayout();
+            this.Text = "Quản lý nhân viên";
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployees)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
+            this.tblButton.ResumeLayout(false);
+            this.tblInput.ResumeLayout(false);
+            this.tblInput1.ResumeLayout(false);
+            this.tblInput1.PerformLayout();
+            this.tblInput3.ResumeLayout(false);
+            this.tblInput3.PerformLayout();
+            this.tblInput2.ResumeLayout(false);
+            this.tblInput2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2TextBox txtSearch;
-        private Guna.UI2.WinForms.Guna2CircleButton btnSearch;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2Button btnExportExcel;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lbl_date;
         private Guna.UI2.WinForms.Guna2TextBox txtFirstName;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lbl_tennv;
         private Guna.UI2.WinForms.Guna2TextBox txtLastName;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lbl_honv;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lbl_gioitinh;
-        private Guna.UI2.WinForms.Guna2TextBox txtPhone;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lbl_sdt;
         private Guna.UI2.WinForms.Guna2TextBox txtAddress;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lbl_addr;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lbl_ngayVaoLam;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lbl_loainv;
         private Guna.UI2.WinForms.Guna2TextBox txtAccount;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lbl_account;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Button btnCreate;
         private Guna.UI2.WinForms.Guna2Button btnDelete;
         private Guna.UI2.WinForms.Guna2Button btnUpdate;
         private Guna.UI2.WinForms.Guna2DataGridView dgvEmployees;
-        private Guna.UI2.WinForms.Guna2DateTimePicker dtpBirthday;
-        private Guna.UI2.WinForms.Guna2ComboBox cboGender;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpStartDate;
         private Guna.UI2.WinForms.Guna2ComboBox cboType;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblID;
         private Guna.UI2.WinForms.Guna2TextBox txtID;
         private Guna.UI2.WinForms.Guna2Button btnSave;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tblButton;
+        private System.Windows.Forms.TableLayoutPanel tblInput;
+        private System.Windows.Forms.TableLayoutPanel tblInput1;
+        private System.Windows.Forms.TableLayoutPanel tblInput3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TableLayoutPanel tblInput2;
+        private Guna.UI2.WinForms.Guna2TextBox txtPhone;
+        private Guna.UI2.WinForms.Guna2ComboBox cboGender;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dtpBirthday;
+        private System.Windows.Forms.Label label8;
     }
 }

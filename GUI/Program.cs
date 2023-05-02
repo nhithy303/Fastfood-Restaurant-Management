@@ -17,7 +17,7 @@ namespace GUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmOrderDetail(new DTO.HoaDonBanHang()));
+            Application.Run(new frmEmployeesManagement());
         }
     }
 }

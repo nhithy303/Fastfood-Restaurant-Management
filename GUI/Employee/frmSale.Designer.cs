@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tblTotal = new System.Windows.Forms.TableLayoutPanel();
@@ -45,13 +45,13 @@
             this.btnExit = new Guna.UI2.WinForms.Guna2Button();
             this.btnOrder = new Guna.UI2.WinForms.Guna2Button();
             this.btnClear = new Guna.UI2.WinForms.Guna2Button();
-            this.tabOrder = new Guna.UI2.WinForms.Guna2TabControl();
             this.dgvOrder = new Guna.UI2.WinForms.Guna2DataGridView();
             this.Dish = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UnitPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TotalPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.tabOrder = new Guna.UI2.WinForms.Guna2TabControl();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tblTotal.SuspendLayout();
@@ -120,25 +120,25 @@
             // 
             // lblTotal
             // 
-            this.lblTotal.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblTotal.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblTotal.AutoSize = true;
-            this.lblTotal.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal.Location = new System.Drawing.Point(374, 2);
+            this.lblTotal.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal.Location = new System.Drawing.Point(277, 5);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(73, 31);
+            this.lblTotal.Size = new System.Drawing.Size(59, 25);
             this.lblTotal.TabIndex = 11;
             this.lblTotal.Text = "VND";
             // 
             // label3
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(74, 2);
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(162, 5);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(125, 31);
+            this.label3.Size = new System.Drawing.Size(109, 25);
             this.label3.TabIndex = 10;
-            this.label3.Text = "Tổng tiền";
+            this.label3.Text = "Tổng tiền:";
             // 
             // label4
             // 
@@ -169,7 +169,7 @@
             // 
             // cboPayment
             // 
-            this.cboPayment.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cboPayment.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.cboPayment.AutoRoundedCorners = true;
             this.cboPayment.BackColor = System.Drawing.Color.Transparent;
             this.cboPayment.BorderRadius = 17;
@@ -177,24 +177,24 @@
             this.cboPayment.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboPayment.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cboPayment.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cboPayment.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboPayment.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboPayment.ForeColor = System.Drawing.Color.Black;
             this.cboPayment.ItemHeight = 30;
-            this.cboPayment.Location = new System.Drawing.Point(278, 13);
+            this.cboPayment.Location = new System.Drawing.Point(277, 13);
             this.cboPayment.Name = "cboPayment";
             this.cboPayment.Size = new System.Drawing.Size(265, 36);
             this.cboPayment.TabIndex = 67;
             // 
             // label7
             // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(4, 15);
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(50, 18);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(266, 31);
+            this.label7.Size = new System.Drawing.Size(221, 25);
             this.label7.TabIndex = 11;
-            this.label7.Text = "Hình thức thanh toán";
+            this.label7.Text = "Hình thức thanh toán:";
             // 
             // tableLayoutPanel3
             // 
@@ -219,6 +219,7 @@
             // btnOrderList
             // 
             this.btnOrderList.BackColor = System.Drawing.Color.Transparent;
+            this.btnOrderList.BorderRadius = 5;
             this.btnOrderList.BorderThickness = 1;
             this.btnOrderList.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnOrderList.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -237,6 +238,7 @@
             // btnExit
             // 
             this.btnExit.BackColor = System.Drawing.Color.Transparent;
+            this.btnExit.BorderRadius = 5;
             this.btnExit.BorderThickness = 1;
             this.btnExit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnExit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -255,6 +257,7 @@
             // btnOrder
             // 
             this.btnOrder.BackColor = System.Drawing.Color.Transparent;
+            this.btnOrder.BorderRadius = 5;
             this.btnOrder.BorderThickness = 1;
             this.btnOrder.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnOrder.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -273,6 +276,7 @@
             // btnClear
             // 
             this.btnClear.BackColor = System.Drawing.Color.Transparent;
+            this.btnClear.BorderRadius = 5;
             this.btnClear.BorderThickness = 1;
             this.btnClear.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnClear.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -288,50 +292,21 @@
             this.btnClear.TabIndex = 64;
             this.btnClear.Text = "Xóa tất cả";
             // 
-            // tabOrder
-            // 
-            this.tabOrder.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabOrder.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabOrder.ItemSize = new System.Drawing.Size(180, 40);
-            this.tabOrder.Location = new System.Drawing.Point(3, 3);
-            this.tabOrder.Name = "tabOrder";
-            this.tabOrder.SelectedIndex = 0;
-            this.tabOrder.Size = new System.Drawing.Size(1034, 856);
-            this.tabOrder.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
-            this.tabOrder.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
-            this.tabOrder.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
-            this.tabOrder.TabButtonHoverState.ForeColor = System.Drawing.Color.White;
-            this.tabOrder.TabButtonHoverState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
-            this.tabOrder.TabButtonIdleState.BorderColor = System.Drawing.Color.Empty;
-            this.tabOrder.TabButtonIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.tabOrder.TabButtonIdleState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
-            this.tabOrder.TabButtonIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(160)))), ((int)(((byte)(167)))));
-            this.tabOrder.TabButtonIdleState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.tabOrder.TabButtonSelectedState.BorderColor = System.Drawing.Color.Empty;
-            this.tabOrder.TabButtonSelectedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
-            this.tabOrder.TabButtonSelectedState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
-            this.tabOrder.TabButtonSelectedState.ForeColor = System.Drawing.Color.White;
-            this.tabOrder.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(132)))), ((int)(((byte)(255)))));
-            this.tabOrder.TabButtonSize = new System.Drawing.Size(180, 40);
-            this.tabOrder.TabIndex = 7;
-            this.tabOrder.TabMenuBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.tabOrder.TabMenuOrientation = Guna.UI2.WinForms.TabMenuOrientation.HorizontalTop;
-            // 
             // dgvOrder
             // 
             this.dgvOrder.AllowUserToAddRows = false;
             this.dgvOrder.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgvOrder.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            this.dgvOrder.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
             this.dgvOrder.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvOrder.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvOrder.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.dgvOrder.ColumnHeadersHeight = 50;
             this.dgvOrder.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvOrder.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -340,14 +315,14 @@
             this.Quantity,
             this.TotalPrice,
             this.Delete});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvOrder.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvOrder.DefaultCellStyle = dataGridViewCellStyle15;
             this.dgvOrder.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvOrder.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvOrder.Location = new System.Drawing.Point(3, 88);
@@ -411,6 +386,35 @@
             this.Delete.Name = "Delete";
             this.Delete.Text = "Xóa";
             this.Delete.UseColumnTextForButtonValue = true;
+            // 
+            // tabOrder
+            // 
+            this.tabOrder.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabOrder.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabOrder.ItemSize = new System.Drawing.Size(180, 40);
+            this.tabOrder.Location = new System.Drawing.Point(3, 3);
+            this.tabOrder.Name = "tabOrder";
+            this.tabOrder.SelectedIndex = 0;
+            this.tabOrder.Size = new System.Drawing.Size(1034, 856);
+            this.tabOrder.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
+            this.tabOrder.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.tabOrder.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
+            this.tabOrder.TabButtonHoverState.ForeColor = System.Drawing.Color.White;
+            this.tabOrder.TabButtonHoverState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.tabOrder.TabButtonIdleState.BorderColor = System.Drawing.Color.Empty;
+            this.tabOrder.TabButtonIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.tabOrder.TabButtonIdleState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
+            this.tabOrder.TabButtonIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(160)))), ((int)(((byte)(167)))));
+            this.tabOrder.TabButtonIdleState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.tabOrder.TabButtonSelectedState.BorderColor = System.Drawing.Color.Empty;
+            this.tabOrder.TabButtonSelectedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
+            this.tabOrder.TabButtonSelectedState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
+            this.tabOrder.TabButtonSelectedState.ForeColor = System.Drawing.Color.White;
+            this.tabOrder.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(132)))), ((int)(((byte)(255)))));
+            this.tabOrder.TabButtonSize = new System.Drawing.Size(180, 40);
+            this.tabOrder.TabIndex = 7;
+            this.tabOrder.TabMenuBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.tabOrder.TabMenuOrientation = Guna.UI2.WinForms.TabMenuOrientation.HorizontalTop;
             // 
             // frmSale
             // 

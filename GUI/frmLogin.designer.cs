@@ -45,7 +45,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(864, 170);
+            this.label1.Location = new System.Drawing.Point(880, 182);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(255, 68);
@@ -56,54 +56,54 @@
             // 
             this.lblUsername.AutoSize = true;
             this.lblUsername.BackColor = System.Drawing.Color.Transparent;
-            this.lblUsername.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsername.Location = new System.Drawing.Point(645, 273);
+            this.lblUsername.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.Location = new System.Drawing.Point(662, 285);
             this.lblUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(122, 31);
+            this.lblUsername.Size = new System.Drawing.Size(176, 31);
             this.lblUsername.TabIndex = 3;
-            this.lblUsername.Text = "Username";
+            this.lblUsername.Text = "Tên đăng nhập";
             // 
             // rdoAdmin
             // 
             this.rdoAdmin.AutoSize = true;
             this.rdoAdmin.BackColor = System.Drawing.Color.Transparent;
             this.rdoAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rdoAdmin.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoAdmin.Location = new System.Drawing.Point(817, 614);
+            this.rdoAdmin.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdoAdmin.Location = new System.Drawing.Point(834, 626);
             this.rdoAdmin.Margin = new System.Windows.Forms.Padding(4);
             this.rdoAdmin.Name = "rdoAdmin";
-            this.rdoAdmin.Size = new System.Drawing.Size(97, 31);
+            this.rdoAdmin.Size = new System.Drawing.Size(121, 35);
             this.rdoAdmin.TabIndex = 7;
             this.rdoAdmin.TabStop = true;
-            this.rdoAdmin.Text = "Admin";
+            this.rdoAdmin.Text = "Quản lý";
             this.rdoAdmin.UseVisualStyleBackColor = false;
             // 
             // rdoEmployee
             // 
             this.rdoEmployee.AutoSize = true;
             this.rdoEmployee.BackColor = System.Drawing.Color.Transparent;
-            this.rdoEmployee.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoEmployee.Location = new System.Drawing.Point(1036, 614);
+            this.rdoEmployee.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdoEmployee.Location = new System.Drawing.Point(1053, 626);
             this.rdoEmployee.Margin = new System.Windows.Forms.Padding(4);
             this.rdoEmployee.Name = "rdoEmployee";
-            this.rdoEmployee.Size = new System.Drawing.Size(130, 31);
+            this.rdoEmployee.Size = new System.Drawing.Size(146, 35);
             this.rdoEmployee.TabIndex = 8;
             this.rdoEmployee.TabStop = true;
-            this.rdoEmployee.Text = "Employee";
+            this.rdoEmployee.Text = "Nhân viên";
             this.rdoEmployee.UseVisualStyleBackColor = false;
             // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
             this.lblPassword.BackColor = System.Drawing.Color.Transparent;
-            this.lblPassword.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassword.Location = new System.Drawing.Point(645, 439);
+            this.lblPassword.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassword.Location = new System.Drawing.Point(662, 451);
             this.lblPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(117, 31);
+            this.lblPassword.Size = new System.Drawing.Size(118, 31);
             this.lblPassword.TabIndex = 10;
-            this.lblPassword.Text = "Password";
+            this.lblPassword.Text = "Mật khẩu";
             // 
             // btnLogIn
             // 
@@ -115,14 +115,14 @@
             this.btnLogIn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnLogIn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnLogIn.FillColor = System.Drawing.Color.Black;
-            this.btnLogIn.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogIn.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogIn.ForeColor = System.Drawing.Color.White;
-            this.btnLogIn.Location = new System.Drawing.Point(629, 688);
+            this.btnLogIn.Location = new System.Drawing.Point(646, 700);
             this.btnLogIn.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogIn.Name = "btnLogIn";
             this.btnLogIn.Size = new System.Drawing.Size(737, 55);
             this.btnLogIn.TabIndex = 15;
-            this.btnLogIn.Text = "LOG IN";
+            this.btnLogIn.Text = "Đăng nhập";
             // 
             // txtUsername
             // 
@@ -137,9 +137,10 @@
             this.txtUsername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtUsername.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.txtUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtUsername.Font = new System.Drawing.Font("Times New Roman", 16F);
+            this.txtUsername.ForeColor = System.Drawing.Color.Black;
             this.txtUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUsername.Location = new System.Drawing.Point(629, 316);
+            this.txtUsername.Location = new System.Drawing.Point(646, 328);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.PasswordChar = '\0';
@@ -161,9 +162,10 @@
             this.txtPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtPassword.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.txtPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtPassword.Font = new System.Drawing.Font("Times New Roman", 16F);
+            this.txtPassword.ForeColor = System.Drawing.Color.Black;
             this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPassword.Location = new System.Drawing.Point(629, 484);
+            this.txtPassword.Location = new System.Drawing.Point(646, 496);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '●';

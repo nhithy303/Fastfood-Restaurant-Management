@@ -44,18 +44,8 @@ namespace GUI
 
         private void dgvEmployees_Load()
         {
-            //dgvEmployees.AutoGenerateColumns = false;
             dgvEmployees.DataSource = nv_bll.GetList(new NhanVien());
-            //dgvEmployees.Columns[0].HeaderText = "Mã NV";
-            //dgvEmployees.Columns[1].HeaderText = "Mã TK";
-            //dgvEmployees.Columns[2].HeaderText = "Họ NV";
-            //dgvEmployees.Columns[3].HeaderText = "Tên NV";
-            //dgvEmployees.Columns[4].HeaderText = "Ngày sinh";
-            //dgvEmployees.Columns[5].HeaderText = "Giới tính";
-            //dgvEmployees.Columns[6].HeaderText = "Sđt";
-            //dgvEmployees.Columns[7].HeaderText = "Địa chỉ";
-            //dgvEmployees.Columns[8].HeaderText = "Mã loại";
-            //dgvEmployees.Columns[9].HeaderText = "Ngày vào làm";
+            dgvEmployees.Font = new Font("Times New Roman", 13F);
         }
 
         private void dgvEmployees_SelectionChanged(object sender, EventArgs e)

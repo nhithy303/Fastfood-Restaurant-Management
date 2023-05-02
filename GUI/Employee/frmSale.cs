@@ -71,10 +71,11 @@ namespace GUI
                 // Inform that this catogery has no dish added
                 if (td == null)
                 {
-                    newPage.Controls.Add(new Guna2HtmlLabel()
+                    newPage.Controls.Add(new Label()
                     {
+                        Anchor = AnchorStyles.Top,
                         Text = "Chưa có món ăn nào được thêm vào phân loại thực đơn này!",
-                        Font = new Font("Times New Roman", 16F, FontStyle.Bold)
+                        Font = new Font("Times New Roman", 14F, FontStyle.Bold)
                     });
                     tabOrder.Controls.Add(newPage);
                     continue;
@@ -104,7 +105,7 @@ namespace GUI
                     if (columnIndex % numberOfColumns == 0)
                     {
                         newTable.RowCount++;
-                        newTable.RowStyles.Add(new RowStyle(SizeType.Absolute, 350));
+                        newTable.RowStyles.Add(new RowStyle(SizeType.Absolute, 300));
                     }
 
                     // Add TableLayoutPanel for each cell of menu
@@ -128,7 +129,7 @@ namespace GUI
                     {
                         Anchor = AnchorStyles.None,
                         Text = dish.TenMon,
-                        Font = new Font("Times New Roman", 13F, FontStyle.Bold),
+                        Font = new Font("Times New Roman", 16F, FontStyle.Bold),
                     }, 0, 1);
 
                     TableLayoutPanel order = new TableLayoutPanel();
@@ -145,7 +146,7 @@ namespace GUI
                     order.Controls.Add(new Guna2HtmlLabel()
                     {
                         Anchor = AnchorStyles.Left,
-                        Text = dish.GiaBan.ToString(),
+                        Text = String.Format("{0} VNĐ", dish.GiaBan.ToString()),
                         Font = new Font("Times New Roman", 13F)
                     }, 0, 0);
 
@@ -167,6 +168,7 @@ namespace GUI
                         Tag = dish,
                         Anchor = AnchorStyles.None,
                         Height = 30,
+                        BorderRadius = 5,
                         Text = "Thêm",
                         Font = new Font("Times New Roman", 13F)
                     };
