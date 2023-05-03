@@ -18,7 +18,6 @@ namespace GUI
     public partial class frmOrderDetail : Form
     {
         HoaDonBanHang hdbh;
-        bool EnableEdit;
         TrangThaiDonHangBLL ttdh_bll = new TrangThaiDonHangBLL();
         ChiTietHDBHBLL cthdbh_bll = new ChiTietHDBHBLL();
         ThucDonBLL td_bll = new ThucDonBLL();
@@ -40,14 +39,7 @@ namespace GUI
 
         private void frmOrderDetail_Load(object sender, EventArgs e)
         {
-            if (hdbh.TrangThai == ttdh_bll.Served())
-            {
-                EnableEdit = false;
-            }
-            else
-            {
-                EnableEdit = true;
-            }
+            EnableEdit();
             dgvOrderDetail_Load();
             cboMenu_Load();
             DisableInput();
@@ -73,7 +65,7 @@ namespace GUI
                 txtUnitPrice.Text = row.Cells[3].Value.ToString();
                 txtTotalPrice.Text = row.Cells[4].Value.ToString();
 
-                EnableButton();
+                EnableEdit();
             }
             else
             {
@@ -185,6 +177,7 @@ namespace GUI
                     btnCreate.Enabled = btnDelete.Enabled = true;
                 }
                 ShowMessage(String.Format("{0} chi tiết hóa đơn thành công!", action));
+                EnableEdit();
                 DisableInput();
                 dgvOrderDetail_Load();
                 UpdateTotal();
@@ -249,15 +242,16 @@ namespace GUI
             MessageBox.Show(message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void EnableButton()
+        private void EnableEdit()
         {
-            if (EnableEdit)
+            // If this order has been already served -> don't allow editing
+            if (hdbh.TrangThai == ttdh_bll.Served())
             {
-                btnCreate.Enabled = btnUpdate.Enabled = btnDelete.Enabled = true;
+                btnCreate.Enabled = btnUpdate.Enabled = btnDelete.Enabled = false;
             }
             else
             {
-                btnCreate.Enabled = btnUpdate.Enabled = btnDelete.Enabled = false;
+                btnCreate.Enabled = btnUpdate.Enabled = btnDelete.Enabled = true;
             }
         }
 

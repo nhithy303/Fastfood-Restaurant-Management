@@ -16,6 +16,11 @@ namespace BLL
             return nv_dal.GetList(nv);
         }
 
+        public NhanVien[] GetFullName(NhanVien nv)
+        {
+            return nv_dal.GetFullName(nv);
+        }
+
         public int Create(NhanVien nv)
         {
             if (!IsValid(nv))

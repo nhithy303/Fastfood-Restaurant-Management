@@ -61,6 +61,24 @@ namespace DAL
             return list;
         }
 
+        public NhanVien[] GetFullName(NhanVien nv)
+        {
+            NhanVien[] list = null;
+            SqlParameter[] p = GetParametersArray(nv);
+            DataTable table = da.ExecuteQuery(procedure, "GetFullName", p);
+            int len = table.Rows.Count;
+            if (len == 0) { return null; }
+            list = new NhanVien[len];
+            for (int i = 0; i < len; i++)
+            {
+                NhanVien nv_new = new NhanVien();
+                nv_new.MaNV = int.Parse(table.Rows[i]["MANV"].ToString());
+                nv_new.TenNV = table.Rows[i]["HOTEN"].ToString();
+                list[i] = nv_new;
+            }
+            return list;
+        }
+
         public int Create(NhanVien nv)
         {
             return da.ExecuteNonQuery(procedure, "Create", GetParametersArray(nv));
