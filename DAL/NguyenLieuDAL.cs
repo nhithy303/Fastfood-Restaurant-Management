@@ -21,7 +21,8 @@ namespace DAL
                 new SqlParameter("@MaNL", nl.MaNL),
                 new SqlParameter("@TenNL", nl.TenNL),
                 new SqlParameter("@TonKho", nl.TonKho),
-                new SqlParameter("@DonViTinh", nl.DonViTinh)
+                new SqlParameter("@DonViTinh", nl.DonViTinh),
+                new SqlParameter("@DonGia", nl.DonGia)
             };
         }
 
@@ -32,6 +33,7 @@ namespace DAL
             nl.TenNL = row["TENNL"].ToString();
             nl.TonKho = int.Parse(row["TONKHO"].ToString());
             nl.DonViTinh = int.Parse(row["DONVITINH"].ToString());
+            nl.DonGia = int.Parse(row["DONGIA"].ToString());
             return nl;
         }
 
@@ -61,7 +63,8 @@ namespace DAL
 
         public int Create(NguyenLieu nl)
         {
-            return da.ExecuteNonQuery(procedure, "Create", GetParametersArray(nl));
+            SqlParameter[] p = GetParametersArray(nl);
+            return da.ExecuteNonQuery(procedure, "Create", p);
         }
 
         public int Update(NguyenLieu nl)

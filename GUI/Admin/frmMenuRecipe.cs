@@ -61,13 +61,17 @@ namespace GUI
             if (dgvRecipe.SelectedRows.Count > 0)
             {
                 DataGridViewRow row = dgvRecipe.CurrentRow;
-                cboIngredient.SelectedValue = int.Parse(row.Cells[1].Value.ToString());
-
-
                 txtID.Text = row.Cells[0].Value.ToString();
-                txtName.Text = row.Cells[1].Value.ToString();
+                cboIngredient.SelectedValue = int.Parse(row.Cells[1].Value.ToString());
+                txtQuantity.Text = row.Cells[2].Value.ToString();
+                cboUnit.SelectedValue = int.Parse(row.Cells[3].Value.ToString());
+                txtCost.Text = row.Cells[4].Value.ToString();
 
                 btnUpdate.Enabled = btnDelete.Enabled = true;
+            }
+            else
+            {
+                btnUpdate.Enabled = btnDelete.Enabled = false;
             }
         }
 

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsInvoice" targetNamespace="http://tempuri.org/dsInvoice.xsd" xmlns:mstns="http://tempuri.org/dsInvoice.xsd" xmlns="http://tempuri.org/dsInvoice.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsInvoice" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="dsInvoice" msprop:Generator_DataSetName="dsInvoice">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="INVOICE" msprop:Generator_RowEvHandlerName="INVOICERowChangeEventHandler" msprop:Generator_RowDeletedName="INVOICERowDeleted" msprop:Generator_RowDeletingName="INVOICERowDeleting" msprop:Generator_RowEvArgName="INVOICERowChangeEvent" msprop:Generator_TablePropName="INVOICE" msprop:Generator_RowChangedName="INVOICERowChanged" msprop:Generator_RowChangingName="INVOICERowChanging" msprop:Generator_TableClassName="INVOICEDataTable" msprop:Generator_RowClassName="INVOICERow" msprop:Generator_TableVarName="tableINVOICE" msprop:Generator_UserTableName="INVOICE">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TENMON" msprop:Generator_ColumnPropNameInRow="TENMON" msprop:Generator_ColumnPropNameInTable="TENMONColumn" msprop:Generator_ColumnVarNameInTable="columnTENMON" msprop:Generator_UserColumnName="TENMON" type="xs:string" minOccurs="0" />
+              <xs:element name="SOLUONG" msprop:Generator_ColumnPropNameInRow="SOLUONG" msprop:Generator_ColumnPropNameInTable="SOLUONGColumn" msprop:Generator_ColumnVarNameInTable="columnSOLUONG" msprop:Generator_UserColumnName="SOLUONG" type="xs:string" minOccurs="0" />
+              <xs:element name="DONGIA" msprop:Generator_ColumnPropNameInRow="DONGIA" msprop:Generator_ColumnPropNameInTable="DONGIAColumn" msprop:Generator_ColumnVarNameInTable="columnDONGIA" msprop:Generator_UserColumnName="DONGIA" type="xs:string" minOccurs="0" />
+              <xs:element name="THANHTIEN" msprop:Generator_ColumnPropNameInRow="THANHTIEN" msprop:Generator_ColumnPropNameInTable="THANHTIENColumn" msprop:Generator_ColumnVarNameInTable="columnTHANHTIEN" msprop:Generator_UserColumnName="THANHTIEN" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

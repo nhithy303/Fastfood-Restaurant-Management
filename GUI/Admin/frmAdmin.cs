@@ -43,7 +43,7 @@ namespace GUI
 
         private void btnImport_Click(object sender, EventArgs e)
         {
-            new frmImportManagement().ShowDialog();
+            
         }
 
         private void btnStorage_Click(object sender, EventArgs e)

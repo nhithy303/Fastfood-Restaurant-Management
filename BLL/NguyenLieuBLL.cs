@@ -28,6 +28,10 @@ namespace BLL
 
         public int Create(NguyenLieu nl)
         {
+            if (!IsValid(nl))
+            {
+                return -2;
+            }
             return nl_dal.Create(nl);
         }
 
@@ -39,6 +43,11 @@ namespace BLL
         public int Delete(NguyenLieu nl)
         {
             return nl_dal.Delete(nl);
+        }
+
+        private bool IsValid(NguyenLieu nl)
+        {
+            return nl.TenNL != String.Empty && nl.TonKho != 0 && nl.DonGia != 0;
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using BLL;
 using DTO;
+using GUI.Employee;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -35,6 +36,7 @@ namespace GUI
             btnUpdate.Click += btnUpdate_Click;
             btnSave.Click += btnSave_Click;
             btnDelete.Click += btnDelete_Click;
+            btnPrint.Click += btnPrint_Click;
         }
 
         private void frmOrderDetail_Load(object sender, EventArgs e)
@@ -215,6 +217,36 @@ namespace GUI
                     ShowError("Xóa chi tiết hóa đơn thất bại!");
                 }
             }
+        }
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            // Pass table of ChiTietHDBH to print
+            DataTable table = new DataTable();
+            table.Columns.Add("TENMON");
+            table.Columns.Add("SOLUONG");
+            table.Columns.Add("DONGIA");
+            table.Columns.Add("THANHTIEN");
+            foreach (DataGridViewRow row in dgvOrderDetail.Rows)
+            {
+                DataRow newRow = table.NewRow();
+
+                // Find TENMON of MAMON
+                ThucDon td_find = new ThucDon();
+                td_find.MaMon = int.Parse(row.Cells[1].Value.ToString());
+                ThucDon[] td = td_bll.GetList(td_find);
+                if (td != null)
+                {
+                    newRow[0] = td[0].TenMon;
+                }
+                // Add value of other columns
+                newRow[1] = row.Cells[2].Value;
+                newRow[2] = row.Cells[3].Value;
+                newRow[3] = row.Cells[4].Value;
+
+                table.Rows.Add(newRow);
+            }
+            new frmOrderDetailPrint(hdbh, table).ShowDialog();
         }
 
         private void UpdateTotal()

@@ -27,7 +27,6 @@ namespace GUI
             btnUpdate.Click += btnUpdate_Click;
             btnSave.Click += btnSave_Click;
             btnDelete.Click += btnDelete_Click;
-            btnExportExcel.Click += btnExportExcel_Click;
             btnResetPassword.Click += btnResetPassword_Click;
             dtpBirthday.Format = DateTimePickerFormat.Custom;
             dtpBirthday.CustomFormat = "dd'/'MM'/'yyyy";
@@ -99,7 +98,7 @@ namespace GUI
             {
                 btnCreate.Text = "Hủy";
                 btnSave.Enabled = true;
-                btnUpdate.Enabled = btnDelete.Enabled = btnExportExcel.Enabled = btnResetPassword.Enabled = false;
+                btnUpdate.Enabled = btnDelete.Enabled = btnResetPassword.Enabled = false;
                 ResetInput();
                 EnableInput();
             }
@@ -107,7 +106,7 @@ namespace GUI
             {
                 btnCreate.Text = "Thêm";
                 btnSave.Enabled = false;
-                btnUpdate.Enabled = btnDelete.Enabled = btnExportExcel.Enabled = btnResetPassword.Enabled = true;
+                btnUpdate.Enabled = btnDelete.Enabled = btnResetPassword.Enabled = true;
                 DisableInput();
             }
         }
@@ -118,14 +117,14 @@ namespace GUI
             {
                 btnUpdate.Text = "Hủy";
                 btnSave.Enabled = true;
-                btnCreate.Enabled = btnDelete.Enabled = btnExportExcel.Enabled = btnResetPassword.Enabled = false;
+                btnCreate.Enabled = btnDelete.Enabled = btnResetPassword.Enabled = false;
                 EnableInput();
             }
             else // btnUpdate.Text == "Hủy"
             {
                 btnUpdate.Text = "Sửa";
                 btnSave.Enabled = false;
-                btnCreate.Enabled = btnDelete.Enabled = btnExportExcel.Enabled = btnResetPassword.Enabled = true;
+                btnCreate.Enabled = btnDelete.Enabled = btnResetPassword.Enabled = true;
                 DisableInput();
             }
         }
@@ -175,7 +174,7 @@ namespace GUI
                     btnSave.Enabled = false;
                     btnCreate.Enabled = true;
                 }
-                btnDelete.Enabled = btnExportExcel.Enabled = true;
+                btnDelete.Enabled = true;
                 ShowMessage(String.Format("{0} nhân viên thành công!", action));
                 DisableInput();
                 dgvEmployees_Load();
@@ -211,11 +210,6 @@ namespace GUI
                     ShowError("Xóa nhân viên thất bại!");
                 }
             }
-        }
-
-        private void btnExportExcel_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btnResetPassword_Click(object sender, EventArgs e)

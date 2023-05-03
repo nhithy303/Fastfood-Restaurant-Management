@@ -32,7 +32,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEmployeesManagement));
-            this.btnExportExcel = new Guna.UI2.WinForms.Guna2Button();
             this.txtFirstName = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtLastName = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtAddress = new Guna.UI2.WinForms.Guna2TextBox();
@@ -74,25 +73,6 @@
             this.tblInput3.SuspendLayout();
             this.tblInput2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnExportExcel
-            // 
-            this.btnExportExcel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnExportExcel.BackColor = System.Drawing.Color.Transparent;
-            this.btnExportExcel.BorderRadius = 5;
-            this.btnExportExcel.BorderThickness = 1;
-            this.btnExportExcel.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnExportExcel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnExportExcel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnExportExcel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnExportExcel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnExportExcel.Font = new System.Drawing.Font("Times New Roman", 14F);
-            this.btnExportExcel.ForeColor = System.Drawing.Color.Black;
-            this.btnExportExcel.Location = new System.Drawing.Point(1059, 17);
-            this.btnExportExcel.Name = "btnExportExcel";
-            this.btnExportExcel.Size = new System.Drawing.Size(150, 40);
-            this.btnExportExcel.TabIndex = 3;
-            this.btnExportExcel.Text = "Xuất Excel";
             // 
             // txtFirstName
             // 
@@ -251,7 +231,7 @@
             this.btnCreate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnCreate.Font = new System.Drawing.Font("Times New Roman", 14F);
             this.btnCreate.ForeColor = System.Drawing.Color.Black;
-            this.btnCreate.Location = new System.Drawing.Point(51, 17);
+            this.btnCreate.Location = new System.Drawing.Point(82, 17);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(150, 40);
             this.btnCreate.TabIndex = 32;
@@ -270,7 +250,7 @@
             this.btnDelete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnDelete.Font = new System.Drawing.Font("Times New Roman", 14F);
             this.btnDelete.ForeColor = System.Drawing.Color.Black;
-            this.btnDelete.Location = new System.Drawing.Point(807, 17);
+            this.btnDelete.Location = new System.Drawing.Point(1027, 17);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(150, 40);
             this.btnDelete.TabIndex = 33;
@@ -289,7 +269,7 @@
             this.btnUpdate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnUpdate.Font = new System.Drawing.Font("Times New Roman", 14F);
             this.btnUpdate.ForeColor = System.Drawing.Color.Black;
-            this.btnUpdate.Location = new System.Drawing.Point(303, 17);
+            this.btnUpdate.Location = new System.Drawing.Point(397, 17);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(150, 40);
             this.btnUpdate.TabIndex = 34;
@@ -394,7 +374,7 @@
             this.btnSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnSave.Font = new System.Drawing.Font("Times New Roman", 14F);
             this.btnSave.ForeColor = System.Drawing.Color.Black;
-            this.btnSave.Location = new System.Drawing.Point(555, 17);
+            this.btnSave.Location = new System.Drawing.Point(712, 17);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(150, 40);
             this.btnSave.TabIndex = 38;
@@ -435,19 +415,18 @@
             // 
             // tblButton
             // 
-            this.tblButton.ColumnCount = 6;
-            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16F));
-            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16F));
-            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16F));
-            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16F));
-            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16F));
+            this.tblButton.ColumnCount = 5;
             this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tblButton.Controls.Add(this.btnResetPassword, 5, 0);
+            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tblButton.Controls.Add(this.btnCreate, 0, 0);
             this.tblButton.Controls.Add(this.btnSave, 2, 0);
             this.tblButton.Controls.Add(this.btnUpdate, 1, 0);
             this.tblButton.Controls.Add(this.btnDelete, 3, 0);
-            this.tblButton.Controls.Add(this.btnExportExcel, 4, 0);
+            this.tblButton.Controls.Add(this.btnResetPassword, 4, 0);
             this.tblButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tblButton.Location = new System.Drawing.Point(3, 288);
             this.tblButton.Name = "tblButton";
@@ -743,7 +722,7 @@
             this.btnResetPassword.Location = new System.Drawing.Point(1318, 17);
             this.btnResetPassword.Name = "btnResetPassword";
             this.btnResetPassword.Size = new System.Drawing.Size(200, 40);
-            this.btnResetPassword.TabIndex = 39;
+            this.btnResetPassword.TabIndex = 40;
             this.btnResetPassword.Text = "Đặt lại mật khẩu";
             // 
             // frmEmployeesManagement
@@ -774,7 +753,6 @@
         }
 
         #endregion
-        private Guna.UI2.WinForms.Guna2Button btnExportExcel;
         private Guna.UI2.WinForms.Guna2TextBox txtFirstName;
         private Guna.UI2.WinForms.Guna2TextBox txtLastName;
         private Guna.UI2.WinForms.Guna2TextBox txtAddress;

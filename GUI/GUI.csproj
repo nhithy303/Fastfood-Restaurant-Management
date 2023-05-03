@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.SqlServer.Types.160.1000.6\build\net462\Microsoft.SqlServer.Types.props" Condition="Exists('..\packages\Microsoft.SqlServer.Types.160.1000.6\build\net462\Microsoft.SqlServer.Types.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -12,6 +13,8 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -42,8 +45,8 @@
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1577.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    <Reference Include="Microsoft.SqlServer.Types, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.160.1000.6\lib\net462\Microsoft.SqlServer.Types.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -74,6 +77,11 @@
     <Compile Include="Admin\frmMenuCategory.Designer.cs">
       <DependentUpon>frmMenuCategory.cs</DependentUpon>
     </Compile>
+    <Compile Include="dsInvoice.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsInvoice.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Employee\frmEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,12 +93,6 @@
     </Compile>
     <Compile Include="Admin\frmEmployeesManagement.Designer.cs">
       <DependentUpon>frmEmployeesManagement.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\frmImportManagement.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Admin\frmImportManagement.Designer.cs">
-      <DependentUpon>frmImportManagement.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin\frmMenuManagement.cs">
       <SubType>Form</SubType>
@@ -110,17 +112,17 @@
     <Compile Include="Admin\frmMenuRecipe.Designer.cs">
       <DependentUpon>frmMenuRecipe.cs</DependentUpon>
     </Compile>
+    <Compile Include="Employee\frmOrderDetailPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee\frmOrderDetailPrint.Designer.cs">
+      <DependentUpon>frmOrderDetailPrint.cs</DependentUpon>
+    </Compile>
     <Compile Include="Employee\frmProfile.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Employee\frmProfile.Designer.cs">
       <DependentUpon>frmProfile.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\frmImportBill.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Admin\frmImportBill.Designer.cs">
-      <DependentUpon>frmImportBill.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin\frmSalesManagement.cs">
       <SubType>Form</SubType>
@@ -160,7 +162,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SqlServerTypes\Loader.cs" />
     <EmbeddedResource Include="Admin\frmAdmin.resx">
       <DependentUpon>frmAdmin.cs</DependentUpon>
     </EmbeddedResource>
@@ -173,9 +174,6 @@
     <EmbeddedResource Include="Admin\frmEmployeesManagement.resx">
       <DependentUpon>frmEmployeesManagement.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\frmImportManagement.resx">
-      <DependentUpon>frmImportManagement.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Admin\frmMenuManagement.resx">
       <DependentUpon>frmMenuManagement.cs</DependentUpon>
     </EmbeddedResource>
@@ -185,11 +183,11 @@
     <EmbeddedResource Include="Admin\frmMenuRecipe.resx">
       <DependentUpon>frmMenuRecipe.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Employee\frmOrderDetailPrint.resx">
+      <DependentUpon>frmOrderDetailPrint.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Employee\frmProfile.resx">
       <DependentUpon>frmProfile.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Admin\frmImportBill.resx">
-      <DependentUpon>frmImportBill.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\frmSalesManagement.resx">
       <DependentUpon>frmSalesManagement.cs</DependentUpon>
@@ -203,6 +201,7 @@
     <EmbeddedResource Include="Employee\frmSale.resx">
       <DependentUpon>frmSale.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Employee\rptOrderDetail.rdlc" />
     <EmbeddedResource Include="frmWelcome.resx">
       <DependentUpon>frmWelcome.cs</DependentUpon>
     </EmbeddedResource>
@@ -214,6 +213,17 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="dsInvoice.xsc">
+      <DependentUpon>dsInvoice.xsd</DependentUpon>
+    </None>
+    <None Include="dsInvoice.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsInvoice.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsInvoice.xss">
+      <DependentUpon>dsInvoice.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -474,19 +484,12 @@
   <ItemGroup>
     <None Include="Resources\search.png" />
     <None Include="Resources\FFR.ico" />
-    <Content Include="SqlServerTypes\readme.htm" />
-    <Content Include="SqlServerTypes\x64\msvcr120.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SqlServerTypes\x86\msvcr120.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.SqlServer.Types.160.1000.6\build\net462\Microsoft.SqlServer.Types.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.SqlServer.Types.160.1000.6\build\net462\Microsoft.SqlServer.Types.props'))" />
+  </Target>
 </Project>

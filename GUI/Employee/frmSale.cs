@@ -247,6 +247,7 @@ namespace GUI
                             // Update quantity of ChiTietHDBH list
                             cthdbh[i].SoLuong += quantity;
                             cthdbh[i].ThanhTien = cthdbh[i].SoLuong * cthdbh[i].DonGia;
+                            dgvOrder.Rows[i].Cells["TotalPrice"].Value = cthdbh[i].ThanhTien;
                         }
                     }
 
