@@ -42,7 +42,7 @@ namespace GUI
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
-
+            new frmProfile(nv).ShowDialog();
         }
 
         private void btnSale_Click(object sender, EventArgs e)

@@ -21,8 +21,18 @@ namespace BLL
             return tk_dal.Create(tk);
         }
 
-        public int Update(TaiKhoan tk)
+        public int Update(TaiKhoan tk, string newPassword, string rePassword)
         {
+            if (newPassword != rePassword)
+            {
+                return -2;
+            }
+            TaiKhoan[] tk_match = tk_dal.GetList(tk);
+            if (tk_match == null)
+            {
+                return -3;
+            }
+            tk.MatKhau = newPassword;
             return tk_dal.Update(tk);
         }
 

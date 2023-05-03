@@ -16,6 +16,9 @@ namespace GUI
 {
     public partial class frmLogin : Form
     {
+        TaiKhoanBLL tk_bll = new TaiKhoanBLL();
+        PhanQuyenBLL pq_bll = new PhanQuyenBLL();
+
         public frmLogin()
         {
             InitializeComponent();
@@ -27,18 +30,33 @@ namespace GUI
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
-            txtUsername.Focus();
+            // Assign Permission to RadioButton tag
+            PhanQuyen[] pq = pq_bll.GetList(new PhanQuyen());
+            if (pq != null)
+            {
+                foreach (PhanQuyen item in pq)
+                {
+                    if (item.KyHieu == "QL")
+                    {
+                        rdoAdmin.Tag = item.MaPQ;
+                    }
+                    if (item.KyHieu == "NV")
+                    {
+                        rdoEmployee.Tag = item.MaPQ;
+                    }
+                }
+            }
             rdoAdmin.Checked = true;
+            txtUsername.Focus();
         }
 
         private void btnLogIn_Click(object sender, EventArgs e)
-        {
+        {          
             TaiKhoan tk = new TaiKhoan();
             tk.TenDangNhap = txtUsername.Text.Trim();
             tk.MatKhau = txtPassword.Text;
-            tk.PhanQuyen = rdoAdmin.Checked ? 2 : 3;
+            tk.PhanQuyen = rdoAdmin.Checked ? int.Parse(rdoAdmin.Tag.ToString()) : int.Parse(rdoEmployee.Tag.ToString());
 
-            TaiKhoanBLL tk_bll = new TaiKhoanBLL();
             if (!tk_bll.IsValidated(tk))
             {
                 ShowError("Thông tin đăng nhập còn trống!");

@@ -27,6 +27,8 @@ namespace GUI
             btnUpdate.Click += btnUpdate_Click;
             btnSave.Click += btnSave_Click;
             btnDelete.Click += btnDelete_Click;
+            btnExportExcel.Click += btnExportExcel_Click;
+            btnResetPassword.Click += btnResetPassword_Click;
             dtpBirthday.Format = DateTimePickerFormat.Custom;
             dtpBirthday.CustomFormat = "dd'/'MM'/'yyyy";
             dtpStartDate.Format = DateTimePickerFormat.Custom;
@@ -64,7 +66,11 @@ namespace GUI
                 cboType.SelectedValue = int.Parse(row.Cells[8].Value.ToString());
                 dtpStartDate.Value = DateTime.Parse(ReverseDateFormat(row.Cells[9].Value.ToString()));
 
-                btnUpdate.Enabled = btnDelete.Enabled = true;
+                btnUpdate.Enabled = btnDelete.Enabled = btnResetPassword.Enabled = true;
+            }
+            else
+            {
+                btnUpdate.Enabled = btnDelete.Enabled = btnResetPassword.Enabled = false;
             }
         }
 
@@ -93,7 +99,7 @@ namespace GUI
             {
                 btnCreate.Text = "Hủy";
                 btnSave.Enabled = true;
-                btnUpdate.Enabled = btnDelete.Enabled = btnExportExcel.Enabled = false;
+                btnUpdate.Enabled = btnDelete.Enabled = btnExportExcel.Enabled = btnResetPassword.Enabled = false;
                 ResetInput();
                 EnableInput();
             }
@@ -101,7 +107,7 @@ namespace GUI
             {
                 btnCreate.Text = "Thêm";
                 btnSave.Enabled = false;
-                btnUpdate.Enabled = btnDelete.Enabled = btnExportExcel.Enabled = true;
+                btnUpdate.Enabled = btnDelete.Enabled = btnExportExcel.Enabled = btnResetPassword.Enabled = true;
                 DisableInput();
             }
         }
@@ -112,14 +118,14 @@ namespace GUI
             {
                 btnUpdate.Text = "Hủy";
                 btnSave.Enabled = true;
-                btnCreate.Enabled = btnDelete.Enabled = btnExportExcel.Enabled = false;
+                btnCreate.Enabled = btnDelete.Enabled = btnExportExcel.Enabled = btnResetPassword.Enabled = false;
                 EnableInput();
             }
             else // btnUpdate.Text == "Hủy"
             {
                 btnUpdate.Text = "Sửa";
                 btnSave.Enabled = false;
-                btnCreate.Enabled = btnDelete.Enabled = btnExportExcel.Enabled = true;
+                btnCreate.Enabled = btnDelete.Enabled = btnExportExcel.Enabled = btnResetPassword.Enabled = true;
                 DisableInput();
             }
         }
@@ -203,6 +209,33 @@ namespace GUI
                 else
                 {
                     ShowError("Xóa nhân viên thất bại!");
+                }
+            }
+        }
+
+        private void btnExportExcel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnResetPassword_Click(object sender, EventArgs e)
+        {
+            DataGridViewRow row = dgvEmployees.CurrentRow;
+            string question = String.Format("Bạn có chắc chắn muốn đặt lại mật khẩu cho tài khoản của nhân viên {0} - {1} {2} không?",
+                row.Cells[0].Value.ToString(), row.Cells[2].Value.ToString(), row.Cells[3].Value.ToString());
+            DialogResult r = MessageBox.Show(question, "Xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (r == DialogResult.Yes)
+            {
+                TaiKhoan tk = new TaiKhoan();
+                tk.MaTK = int.Parse(row.Cells[1].Value.ToString());
+                int result = tk_bll.ResetPassword(tk);
+                if (result > 0)
+                {
+                    ShowMessage("Đặt lại mật khẩu thành công!");
+                }
+                else
+                {
+                    ShowError("Đặt lại mật khẩu thất bại!");
                 }
             }
         }
