@@ -34,7 +34,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenuManagement));
             this.btnCreate = new Guna.UI2.WinForms.Guna2Button();
             this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
-            this.btnCategory = new Guna.UI2.WinForms.Guna2Button();
             this.btnUpload = new Guna.UI2.WinForms.Guna2Button();
             this.picDish = new Guna.UI2.WinForms.Guna2PictureBox();
             this.cboCategory = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -84,7 +83,7 @@
             this.btnCreate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnCreate.Font = new System.Drawing.Font("Times New Roman", 14F);
             this.btnCreate.ForeColor = System.Drawing.Color.Black;
-            this.btnCreate.Location = new System.Drawing.Point(51, 17);
+            this.btnCreate.Location = new System.Drawing.Point(82, 17);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(150, 40);
             this.btnCreate.TabIndex = 37;
@@ -103,30 +102,11 @@
             this.btnDelete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnDelete.Font = new System.Drawing.Font("Times New Roman", 14F);
             this.btnDelete.ForeColor = System.Drawing.Color.Black;
-            this.btnDelete.Location = new System.Drawing.Point(807, 17);
+            this.btnDelete.Location = new System.Drawing.Point(1027, 17);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(150, 40);
             this.btnDelete.TabIndex = 38;
             this.btnDelete.Text = "Xóa";
-            // 
-            // btnCategory
-            // 
-            this.btnCategory.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnCategory.BackColor = System.Drawing.Color.Transparent;
-            this.btnCategory.BorderRadius = 5;
-            this.btnCategory.BorderThickness = 1;
-            this.btnCategory.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnCategory.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnCategory.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnCategory.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCategory.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnCategory.Font = new System.Drawing.Font("Times New Roman", 14F);
-            this.btnCategory.ForeColor = System.Drawing.Color.Black;
-            this.btnCategory.Location = new System.Drawing.Point(1343, 17);
-            this.btnCategory.Name = "btnCategory";
-            this.btnCategory.Size = new System.Drawing.Size(150, 40);
-            this.btnCategory.TabIndex = 42;
-            this.btnCategory.Text = "Phân loại";
             // 
             // btnUpload
             // 
@@ -276,7 +256,7 @@
             this.btnSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnSave.Font = new System.Drawing.Font("Times New Roman", 14F);
             this.btnSave.ForeColor = System.Drawing.Color.Black;
-            this.btnSave.Location = new System.Drawing.Point(555, 17);
+            this.btnSave.Location = new System.Drawing.Point(712, 17);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(150, 40);
             this.btnSave.TabIndex = 68;
@@ -295,7 +275,7 @@
             this.btnUpdate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnUpdate.Font = new System.Drawing.Font("Times New Roman", 14F);
             this.btnUpdate.ForeColor = System.Drawing.Color.Black;
-            this.btnUpdate.Location = new System.Drawing.Point(303, 17);
+            this.btnUpdate.Location = new System.Drawing.Point(397, 17);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(150, 40);
             this.btnUpdate.TabIndex = 69;
@@ -314,7 +294,7 @@
             this.btnRecipe.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnRecipe.Font = new System.Drawing.Font("Times New Roman", 14F);
             this.btnRecipe.ForeColor = System.Drawing.Color.Black;
-            this.btnRecipe.Location = new System.Drawing.Point(1059, 17);
+            this.btnRecipe.Location = new System.Drawing.Point(1343, 17);
             this.btnRecipe.Name = "btnRecipe";
             this.btnRecipe.Size = new System.Drawing.Size(150, 40);
             this.btnRecipe.TabIndex = 70;
@@ -441,25 +421,23 @@
             // 
             // tblButton
             // 
-            this.tblButton.ColumnCount = 6;
-            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16F));
-            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16F));
-            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16F));
-            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16F));
-            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16F));
+            this.tblButton.ColumnCount = 5;
             this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tblButton.Controls.Add(this.btnCreate, 0, 0);
             this.tblButton.Controls.Add(this.btnUpdate, 1, 0);
             this.tblButton.Controls.Add(this.btnRecipe, 4, 0);
             this.tblButton.Controls.Add(this.btnSave, 2, 0);
             this.tblButton.Controls.Add(this.btnDelete, 3, 0);
-            this.tblButton.Controls.Add(this.btnCategory, 5, 0);
             this.tblButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tblButton.Location = new System.Drawing.Point(3, 328);
             this.tblButton.Name = "tblButton";
             this.tblButton.RowCount = 1;
             this.tblButton.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tblButton.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 75F));
             this.tblButton.Size = new System.Drawing.Size(1576, 75);
             this.tblButton.TabIndex = 44;
             // 
@@ -671,7 +649,6 @@
         #endregion
         private Guna.UI2.WinForms.Guna2Button btnCreate;
         private Guna.UI2.WinForms.Guna2Button btnDelete;
-        private Guna.UI2.WinForms.Guna2Button btnCategory;
         private Guna.UI2.WinForms.Guna2Button btnUpload;
         private Guna.UI2.WinForms.Guna2PictureBox picDish;
         private Guna.UI2.WinForms.Guna2ComboBox cboCategory;

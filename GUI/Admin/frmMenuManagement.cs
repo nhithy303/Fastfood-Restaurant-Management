@@ -31,7 +31,6 @@ namespace GUI
             btnSave.Click += btnSave_Click;
             btnDelete.Click += btnDelete_Click;
             btnRecipe.Click += btnRecipe_Click;
-            btnCategory.Click += btnCategory_Click;
             btnUpload.Click += btnUpload_Click;
         }
 
@@ -86,14 +85,14 @@ namespace GUI
             {
                 btnCreate.Text = "Hủy";
                 btnSave.Enabled = true;
-                btnUpdate.Enabled = btnDelete.Enabled = btnRecipe.Enabled = btnCategory.Enabled = dgvMenu.Enabled = false;
+                btnUpdate.Enabled = btnDelete.Enabled = btnRecipe.Enabled = dgvMenu.Enabled = false;
                 EnableInput();
             }
             else // btnCreate.Text == "Hủy"
             {
                 btnCreate.Text = "Thêm";
                 btnSave.Enabled = false;
-                btnUpdate.Enabled = btnDelete.Enabled = btnRecipe.Enabled = btnCategory.Enabled = dgvMenu.Enabled = true;
+                btnUpdate.Enabled = btnDelete.Enabled = btnRecipe.Enabled = dgvMenu.Enabled = true;
                 DisableInput();
             }
             ResetInput();
@@ -105,7 +104,7 @@ namespace GUI
             {
                 btnUpdate.Text = "Hủy";
                 btnSave.Enabled = true;
-                btnCreate.Enabled = btnDelete.Enabled = btnRecipe.Enabled = btnCategory.Enabled = dgvMenu.Enabled = false;
+                btnCreate.Enabled = btnDelete.Enabled = btnRecipe.Enabled = dgvMenu.Enabled = false;
                 EnableInput();
                 txtSellingPrice.ReadOnly = false;
             }
@@ -113,7 +112,7 @@ namespace GUI
             {
                 btnUpdate.Text = "Sửa";
                 btnSave.Enabled = false;
-                btnCreate.Enabled = btnDelete.Enabled = btnRecipe.Enabled = btnCategory.Enabled = dgvMenu.Enabled = true;
+                btnCreate.Enabled = btnDelete.Enabled = btnRecipe.Enabled = dgvMenu.Enabled = true;
                 DisableInput();
             }
         }
@@ -207,12 +206,6 @@ namespace GUI
             
             new frmMenuRecipe(td).ShowDialog();
             dgvMenu_Load();
-        }
-
-        private void btnCategory_Click(object sender, EventArgs e)
-        {
-            new frmMenuCategory().ShowDialog();
-            cboCategory_Load();
         }
 
         private void btnUpload_Click(object sender, EventArgs e)
