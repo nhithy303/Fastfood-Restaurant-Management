@@ -27,6 +27,7 @@ namespace GUI
         List<ChiTietHDBH> cthdbh = new List<ChiTietHDBH>();
         HoaDonBanHangBLL hdbh_bll = new HoaDonBanHangBLL();
         ChiTietHDBHBLL cthdbh_bll = new ChiTietHDBHBLL();
+        ThamSoBLL ts_bll = new ThamSoBLL();
 
         public frmSale(NhanVien nv)
         {
@@ -68,7 +69,8 @@ namespace GUI
                 ThucDon td_find = new ThucDon();
                 td_find.MaLoai = category.MaLoai;
                 ThucDon[] td = td_bll.GetList(td_find);
-                // Inform that this catogery has no dish added
+
+                // If this catogery has no dish added
                 if (td == null)
                 {
                     newPage.Controls.Add(new Label()
@@ -78,6 +80,7 @@ namespace GUI
                         Font = new Font("Times New Roman", 14F, FontStyle.Bold)
                     });
                     tabOrder.Controls.Add(newPage);
+                    // Skip to next category
                     continue;
                 }
 
@@ -88,17 +91,31 @@ namespace GUI
                 newTable.BackColor = Color.Transparent;
                 newTable.Dock = DockStyle.Top;
                 newPage.Controls.Add(newTable);
+
                 // Generate columns
-                int numberOfColumns = 3;
+                ThamSo ts_MenuColumns = new ThamSo();
+                ts_MenuColumns.TenTS = "MenuColumns";
+                ThamSo[] ts = ts_bll.GetList(ts_MenuColumns);
+                if (ts == null)
+                {
+                    ShowError("Bạn chưa cài đặt số cột hiển thị cho thực đơn!");
+                    return;
+                }
+                int numberOfColumns = ts[0].GiaTri;
                 newTable.ColumnCount = numberOfColumns;
-                newTable.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.33F));
-                newTable.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.33F));
-                newTable.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.33F));
+                float columnWidth = (float)(100 / numberOfColumns);
+                for (int i = 0; i < numberOfColumns; i++)
+                {
+                    newTable.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, columnWidth));
+                }
+                //newTable.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.33F));
+                //newTable.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.33F));
+                //newTable.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.33F));
 
                 int columnIndex = 0;
                 foreach (ThucDon dish in td)
                 {
-                    if (columnIndex == 3)
+                    if (columnIndex == numberOfColumns)
                     {
                         columnIndex = 0;
                     }
@@ -234,6 +251,7 @@ namespace GUI
                         ShowMessage("Vui lòng chọn số lượng món ăn!");
                         return;
                     }
+
                     // If this dish has already been added into order => just increase the quantity, not create new row
                     bool added = false;
                     for (int i = 0; i < cthdbh.Count; i++)

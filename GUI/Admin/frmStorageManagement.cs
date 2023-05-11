@@ -76,7 +76,7 @@ namespace GUI
             {
                 btnCreate.Text = "Hủy";
                 btnSave.Enabled = true;
-                btnUpdate.Enabled = btnDelete.Enabled = false;
+                btnUpdate.Enabled = btnDelete.Enabled = dgvIngredient.Enabled = false;
                 ResetInput();
                 EnableInput();
             }
@@ -84,7 +84,7 @@ namespace GUI
             {
                 btnCreate.Text = "Thêm";
                 btnSave.Enabled = false;
-                btnUpdate.Enabled = btnDelete.Enabled = true;
+                btnUpdate.Enabled = btnDelete.Enabled = dgvIngredient.Enabled = true;
                 DisableInput();
             }
         }
@@ -95,14 +95,14 @@ namespace GUI
             {
                 btnUpdate.Text = "Hủy";
                 btnSave.Enabled = true;
-                btnCreate.Enabled = btnDelete.Enabled = false;
+                btnCreate.Enabled = btnDelete.Enabled = dgvIngredient.Enabled = false;
                 EnableInput();
             }
             else // btnUpdate.Text == "Hủy"
             {
                 btnUpdate.Text = "Sửa";
                 btnSave.Enabled = false;
-                btnCreate.Enabled = btnDelete.Enabled = true;
+                btnCreate.Enabled = btnDelete.Enabled = dgvIngredient.Enabled = true;
                 DisableInput();
             }
         }
@@ -159,6 +159,7 @@ namespace GUI
             {
                 ShowError(String.Format("{0} nguyên liệu thất bại!", action));
             }
+            dgvIngredient.Enabled = true;
         }
 
         private void btnDelete_Click(object sender, EventArgs e)

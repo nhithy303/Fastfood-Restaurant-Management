@@ -56,6 +56,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuanLyBLL.cs" />
     <Compile Include="TaiKhoanBLL.cs" />
+    <Compile Include="ThamSoBLL.cs" />
     <Compile Include="ThucDonBLL.cs" />
     <Compile Include="TrangThaiDonHangBLL.cs" />
   </ItemGroup>

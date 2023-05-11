@@ -86,14 +86,14 @@ namespace GUI
             {
                 btnCreate.Text = "Hủy";
                 btnSave.Enabled = true;
-                btnUpdate.Enabled = btnDelete.Enabled = false;
+                btnUpdate.Enabled = btnDelete.Enabled = btnRecipe.Enabled = btnCategory.Enabled = dgvMenu.Enabled = false;
                 EnableInput();
             }
             else // btnCreate.Text == "Hủy"
             {
                 btnCreate.Text = "Thêm";
                 btnSave.Enabled = false;
-                btnUpdate.Enabled = btnDelete.Enabled = true;
+                btnUpdate.Enabled = btnDelete.Enabled = btnRecipe.Enabled = btnCategory.Enabled = dgvMenu.Enabled = true;
                 DisableInput();
             }
             ResetInput();
@@ -105,7 +105,7 @@ namespace GUI
             {
                 btnUpdate.Text = "Hủy";
                 btnSave.Enabled = true;
-                btnCreate.Enabled = btnDelete.Enabled = false;
+                btnCreate.Enabled = btnDelete.Enabled = btnRecipe.Enabled = btnCategory.Enabled = dgvMenu.Enabled = false;
                 EnableInput();
                 txtSellingPrice.ReadOnly = false;
             }
@@ -113,7 +113,7 @@ namespace GUI
             {
                 btnUpdate.Text = "Sửa";
                 btnSave.Enabled = false;
-                btnCreate.Enabled = btnDelete.Enabled = true;
+                btnCreate.Enabled = btnDelete.Enabled = btnRecipe.Enabled = btnCategory.Enabled = dgvMenu.Enabled = true;
                 DisableInput();
             }
         }
@@ -172,6 +172,7 @@ namespace GUI
             {
                 ShowError(String.Format("{0} thực đơn thất bại!", action));
             }
+            dgvMenu.Enabled = true;
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -240,7 +241,7 @@ namespace GUI
         private void EnableInput()
         {
             txtName.ReadOnly = false;
-            cboCategory.Enabled = btnUpload.Enabled = btnSave.Enabled = btnRecipe.Enabled = btnCategory.Enabled = true;
+            cboCategory.Enabled = btnUpload.Enabled = btnSave.Enabled = true;
             if (txtOriginalPrice.Text != String.Empty && txtOriginalPrice.Text != "0")
             {
                 txtSellingPrice.ReadOnly = false;
@@ -250,16 +251,13 @@ namespace GUI
         private void DisableInput()
         {
             txtName.ReadOnly = txtSellingPrice.ReadOnly = true;
-            cboCategory.Enabled = btnUpload.Enabled = btnSave.Enabled = btnRecipe.Enabled = btnCategory.Enabled = false;
+            cboCategory.Enabled = btnUpload.Enabled = btnSave.Enabled = false;
         }
 
         private void ResetInput()
         {
-            txtID.Text = "";
-            txtName.Clear();
+            txtID.Text = txtName.Text = txtOriginalPrice.Text = txtSellingPrice.Text = "";
             cboCategory.SelectedIndex = 0;
-            txtOriginalPrice.Clear();
-            txtSellingPrice.Clear();
             picDish.Image = null;
         }
     }

@@ -127,7 +127,7 @@ namespace GUI
             {
                 btnCreate.Text = "Hủy";
                 btnSave.Enabled = true;
-                btnUpdate.Enabled = btnDelete.Enabled = false;
+                btnUpdate.Enabled = btnDelete.Enabled = dgvRecipe.Enabled = false;
                 txtName.Clear();
                 EnableInput();
             }
@@ -135,7 +135,7 @@ namespace GUI
             {
                 btnCreate.Text = "Thêm";
                 btnSave.Enabled = false;
-                btnUpdate.Enabled = btnDelete.Enabled = true;
+                btnUpdate.Enabled = btnDelete.Enabled = dgvRecipe.Enabled = true;
                 DisableInput();
             }
         }
@@ -146,14 +146,14 @@ namespace GUI
             {
                 btnUpdate.Text = "Hủy";
                 btnSave.Enabled = true;
-                btnCreate.Enabled = btnDelete.Enabled = false;
+                btnCreate.Enabled = btnDelete.Enabled = dgvRecipe.Enabled = false;
                 EnableInput();
             }
             else // btnUpdate.Text == "Hủy"
             {
                 btnUpdate.Text = "Sửa";
                 btnSave.Enabled = false;
-                btnCreate.Enabled = btnDelete.Enabled = true;
+                btnCreate.Enabled = btnDelete.Enabled = dgvRecipe.Enabled = true;
                 DisableInput();
             }
         }
@@ -206,6 +206,7 @@ namespace GUI
             {
                 ShowError(String.Format("{0} công thức thất bại!", action));
             }
+            dgvRecipe.Enabled = true;
         }
 
         private void btnDelete_Click(object sender, EventArgs e)

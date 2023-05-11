@@ -98,7 +98,7 @@ namespace GUI
             {
                 btnCreate.Text = "Hủy";
                 btnSave.Enabled = true;
-                btnUpdate.Enabled = btnDelete.Enabled = btnResetPassword.Enabled = false;
+                btnUpdate.Enabled = btnDelete.Enabled = btnResetPassword.Enabled = dgvEmployees.Enabled = false;
                 ResetInput();
                 EnableInput();
             }
@@ -106,7 +106,7 @@ namespace GUI
             {
                 btnCreate.Text = "Thêm";
                 btnSave.Enabled = false;
-                btnUpdate.Enabled = btnDelete.Enabled = btnResetPassword.Enabled = true;
+                btnUpdate.Enabled = btnDelete.Enabled = btnResetPassword.Enabled = dgvEmployees.Enabled = true;
                 DisableInput();
             }
         }
@@ -117,14 +117,14 @@ namespace GUI
             {
                 btnUpdate.Text = "Hủy";
                 btnSave.Enabled = true;
-                btnCreate.Enabled = btnDelete.Enabled = btnResetPassword.Enabled = false;
+                btnCreate.Enabled = btnDelete.Enabled = btnResetPassword.Enabled = dgvEmployees.Enabled = false;
                 EnableInput();
             }
             else // btnUpdate.Text == "Hủy"
             {
                 btnUpdate.Text = "Sửa";
                 btnSave.Enabled = false;
-                btnCreate.Enabled = btnDelete.Enabled = btnResetPassword.Enabled = true;
+                btnCreate.Enabled = btnDelete.Enabled = btnResetPassword.Enabled = dgvEmployees.Enabled = true;
                 DisableInput();
             }
         }
@@ -187,6 +187,7 @@ namespace GUI
             {
                 ShowError(String.Format("{0} nhân viên thất bại!", action));
             }
+            dgvEmployees.Enabled = true;
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -199,6 +200,7 @@ namespace GUI
             {
                 NhanVien nv_delete = new NhanVien();
                 nv_delete.MaNV = int.Parse(row.Cells[0].Value.ToString());
+                nv_delete.MaTK = int.Parse(row.Cells[1].Value.ToString());
                 int result = nv_bll.Delete(nv_delete);
                 if (result > 0)
                 {

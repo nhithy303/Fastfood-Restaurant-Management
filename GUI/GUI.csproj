@@ -77,6 +77,12 @@
     <Compile Include="Admin\frmMenuCategory.Designer.cs">
       <DependentUpon>frmMenuCategory.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\frmSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmSettings.Designer.cs">
+      <DependentUpon>frmSettings.cs</DependentUpon>
+    </Compile>
     <Compile Include="dsInvoice.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -167,6 +173,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\frmMenuCategory.resx">
       <DependentUpon>frmMenuCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmSettings.resx">
+      <DependentUpon>frmSettings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Employee\frmEmployee.resx">
       <DependentUpon>frmEmployee.cs</DependentUpon>
@@ -423,60 +432,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Login_bg.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="images\hg %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="images\hg %281%29.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="images\hg %283%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="images\hg %282%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="images\ck1 %282%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="images\ck1 %283%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="images\ck1 %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="images\nd %283%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="images\nd %282%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="images\nd %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="images\anotherfood %285%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="images\anotherfood %284%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="images\anotherfood %283%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="images\anotherfood %282%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="images\anotherfood %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="images\anotherfood %287%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="images\anotherfood %286%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="images\icon-search.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\delete.png" />

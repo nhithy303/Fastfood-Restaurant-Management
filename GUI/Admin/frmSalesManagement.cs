@@ -109,13 +109,13 @@ namespace GUI
             {
                 btnUpdate.Text = "Hủy";
                 btnSave.Enabled = true;
-                btnDelete.Enabled = false;
+                btnDelete.Enabled = dgvSale.Enabled = false;
             }
             else // btnUpdate.Text == "Hủy"
             {
                 btnUpdate.Text = "Sửa";
                 btnSave.Enabled = false;
-                btnDelete.Enabled = true;
+                btnDelete.Enabled = dgvSale.Enabled = true;
             }
         }
 
@@ -145,6 +145,7 @@ namespace GUI
             {
                 ShowError("Sửa thông tin hóa đơn bán hàng thất bại!");
             }
+            dgvSale.Enabled = true;
         }
 
         private void btnDelete_Click(object sender, EventArgs e)

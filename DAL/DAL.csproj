@@ -57,6 +57,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuanLyDAL.cs" />
     <Compile Include="TaiKhoanDAL.cs" />
+    <Compile Include="ThamSoDAL.cs" />
     <Compile Include="ThucDonDAL.cs" />
     <Compile Include="TrangThaiDonHangDAL.cs" />
   </ItemGroup>
