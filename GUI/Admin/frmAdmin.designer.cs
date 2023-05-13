@@ -34,7 +34,7 @@
             this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lblAdminName = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnProfit = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSettings = new Guna.UI2.WinForms.Guna2Button();
             this.btnMenu = new Guna.UI2.WinForms.Guna2Button();
             this.btnSales = new Guna.UI2.WinForms.Guna2Button();
             this.btnStorage = new Guna.UI2.WinForms.Guna2Button();
@@ -109,7 +109,7 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel1.Controls.Add(this.btnProfit);
+            this.guna2Panel1.Controls.Add(this.btnSettings);
             this.guna2Panel1.Controls.Add(this.btnMenu);
             this.guna2Panel1.Controls.Add(this.btnSales);
             this.guna2Panel1.Controls.Add(this.btnStorage);
@@ -122,25 +122,25 @@
             this.guna2Panel1.Size = new System.Drawing.Size(291, 436);
             this.guna2Panel1.TabIndex = 19;
             // 
-            // btnProfit
+            // btnSettings
             // 
-            this.btnProfit.BackColor = System.Drawing.Color.Transparent;
-            this.btnProfit.CustomBorderColor = System.Drawing.Color.Black;
-            this.btnProfit.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
-            this.btnProfit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnProfit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnProfit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnProfit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnProfit.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnProfit.FillColor = System.Drawing.Color.Transparent;
-            this.btnProfit.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProfit.ForeColor = System.Drawing.Color.Black;
-            this.btnProfit.Location = new System.Drawing.Point(0, 372);
-            this.btnProfit.Margin = new System.Windows.Forms.Padding(4);
-            this.btnProfit.Name = "btnProfit";
-            this.btnProfit.Size = new System.Drawing.Size(291, 62);
-            this.btnProfit.TabIndex = 13;
-            this.btnProfit.Text = "Quản lý doanh thu";
+            this.btnSettings.BackColor = System.Drawing.Color.Transparent;
+            this.btnSettings.CustomBorderColor = System.Drawing.Color.Black;
+            this.btnSettings.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.btnSettings.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSettings.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSettings.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSettings.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSettings.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSettings.FillColor = System.Drawing.Color.Transparent;
+            this.btnSettings.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSettings.ForeColor = System.Drawing.Color.Black;
+            this.btnSettings.Location = new System.Drawing.Point(0, 372);
+            this.btnSettings.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSettings.Name = "btnSettings";
+            this.btnSettings.Size = new System.Drawing.Size(291, 62);
+            this.btnSettings.TabIndex = 13;
+            this.btnSettings.Text = "Cài đặt";
             // 
             // btnMenu
             // 
@@ -332,7 +332,7 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox4;
         private System.Windows.Forms.Label lblAdminName;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2Button btnProfit;
+        private Guna.UI2.WinForms.Guna2Button btnSettings;
         private Guna.UI2.WinForms.Guna2Button btnMenu;
         private Guna.UI2.WinForms.Guna2Button btnSales;
         private Guna.UI2.WinForms.Guna2Button btnStorage;

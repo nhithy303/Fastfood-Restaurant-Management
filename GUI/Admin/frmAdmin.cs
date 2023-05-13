@@ -1,5 +1,6 @@
 ﻿using BLL;
 using DTO;
+using GUI.Admin;
 using System;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
@@ -22,7 +23,7 @@ namespace GUI
             btnStorage.Click += btnStorage_Click;
             btnSales.Click += btnSales_Click;
             btnMenu.Click += btnMenu_Click;
-            btnProfit.Click += btnProfit_Click;
+            btnSettings.Click += btnSettings_Click;
             btnLogOut.Click += btnLogOut_Click;
             picClose.Click += picClose_Click;
             this.FormClosing += frmAdmin_FormClosing;
@@ -61,9 +62,9 @@ namespace GUI
             new frmMenuManagement().ShowDialog();
         }
 
-        private void btnProfit_Click(object sender, EventArgs e)
+        private void btnSettings_Click(object sender, EventArgs e)
         {
-
+            new frmSettings().ShowDialog();
         }
 
         private void btnLogOut_Click(object sender, EventArgs e)

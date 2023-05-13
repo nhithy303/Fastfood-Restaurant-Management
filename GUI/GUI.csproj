@@ -71,12 +71,6 @@
     <Compile Include="Admin\frmAdmin.designer.cs">
       <DependentUpon>frmAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\frmMenuCategory.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Admin\frmMenuCategory.Designer.cs">
-      <DependentUpon>frmMenuCategory.cs</DependentUpon>
-    </Compile>
     <Compile Include="Admin\frmSettings.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,9 +164,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Admin\frmAdmin.resx">
       <DependentUpon>frmAdmin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Admin\frmMenuCategory.resx">
-      <DependentUpon>frmMenuCategory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\frmSettings.resx">
       <DependentUpon>frmSettings.cs</DependentUpon>
