@@ -47,7 +47,7 @@ namespace BLL
 
         private bool IsValid(NguyenLieu nl)
         {
-            return nl.TenNL != String.Empty && nl.TonKho != 0 && nl.DonGia != 0;
+            return nl.TenNL != String.Empty && nl.TonKho >= 0 && nl.DonGia >= 0;
         }
     }
 }

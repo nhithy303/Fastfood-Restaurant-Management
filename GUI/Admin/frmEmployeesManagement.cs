@@ -163,7 +163,6 @@ namespace GUI
             {
                 if (btnCreate.Enabled)
                 {
-                    nv_bll.AddAccount(new NhanVien());
                     btnCreate.Text = "Thêm";
                     btnSave.Enabled = false;
                     btnUpdate.Enabled = true;

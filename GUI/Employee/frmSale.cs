@@ -314,6 +314,11 @@ namespace GUI
         {
             if (dgvOrder.RowCount > 0)
             {
+                if (!cthdbh_bll.CheckStorage(cthdbh))
+                {
+                    ShowError("Nguyên liệu tồn kho không đủ!");
+                    return;
+                }
                 HoaDonBanHang hdbh = new HoaDonBanHang();
                 hdbh.MaNV = nv.MaNV;
                 hdbh.ThanhToan = int.Parse(cboPayment.SelectedValue.ToString());
@@ -335,6 +340,7 @@ namespace GUI
                     }
                     ShowMessage("Đặt hàng thành công!");
                     dgvOrder_Clear();
+                    UpdateTotal();
                 }
                 else
                 {
