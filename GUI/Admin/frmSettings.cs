@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using System.Xml.XPath;
 
 namespace GUI.Admin
 {
@@ -39,10 +40,24 @@ namespace GUI.Admin
         }
 
         // General
+        int menuColumns;
+        int profitMargin;
         private void tpGeneral_Load()
         {
+            // CheckBox & Input
+            cbMenuColumns.Checked = cbProfitMargin.Checked = false;
+            numMenuColumns.Enabled = txtProfitMargin.Enabled = false;
+            cbMenuColumns.CheckedChanged += cbMenuColumns_CheckedChanged;
+            cbProfitMargin.CheckedChanged += cbProfitMargin_CheckedChanged;
+            // Menu columns
             numMenuColumns_Load();
-            btnUpdateMenuColumns.Click += btnUpdateMenuColumns_Click;
+            menuColumns = Convert.ToInt32(numMenuColumns.Value);
+            // Profit margin
+            txtProfitMargin_Load();
+            profitMargin = int.Parse(txtProfitMargin.Text);
+            // Button
+            btnUpdateGeneral.Click += btnUpdateGeneral_Click;
+            btnCancelGeneral.Click += btnCancelGeneral_Click;
         }
 
         private void numMenuColumns_Load()
@@ -58,23 +73,93 @@ namespace GUI.Admin
             numMenuColumns.Value = ts[0].GiaTri;
         }
 
-        private void btnUpdateMenuColumns_Click(object sender, EventArgs e)
+        private void txtProfitMargin_Load()
         {
-            if (numMenuColumns.Value > 0)
+            ThamSo ts_ProfitMargin = new ThamSo();
+            ts_ProfitMargin.TenTS = "ProfitMargin";
+            ThamSo[] ts = ts_bll.GetList(ts_ProfitMargin);
+            if (ts == null)
             {
-                ThamSo ts_MenuColumns = new ThamSo();
-                ts_MenuColumns.TenTS = "MenuColumns";
-                ts_MenuColumns.GiaTri = Convert.ToInt32(numMenuColumns.Value);
-                int result = ts_bll.Update(ts_MenuColumns);
-                if (result > 0)
+                txtProfitMargin.Text = "0";
+                return;
+            }
+            txtProfitMargin.Text = ts[0].GiaTri.ToString();
+        }
+
+        private void cbMenuColumns_CheckedChanged(object sender, EventArgs e)
+        {
+            numMenuColumns.Enabled = cbMenuColumns.Checked;
+        }
+
+        private void cbProfitMargin_CheckedChanged(object sender, EventArgs e)
+        {
+            txtProfitMargin.Enabled = cbProfitMargin.Checked;
+        }
+
+        private void btnUpdateGeneral_Click(object sender, EventArgs e)
+        {
+            int[] result = { -1, -1 };
+            if (cbMenuColumns.Checked)
+            {
+                if (numMenuColumns.Value > 0)
                 {
-                    ShowMessage("Cập nhật số cột thực đơn thành công!");
+                    ThamSo ts_MenuColumns = new ThamSo();
+                    ts_MenuColumns.TenTS = "MenuColumns";
+                    ts_MenuColumns.GiaTri = Convert.ToInt32(numMenuColumns.Value);
+                    if (ts_bll.Update(ts_MenuColumns) > 0)
+                    {
+                        result[0] = 1;
+                        menuColumns = ts_MenuColumns.GiaTri;
+                    }
+                    else
+                    {
+                        result[0] = 0;
+                    }
+                }
+            }
+            if (cbProfitMargin.Checked)
+            {
+                if (txtProfitMargin.Text.Trim().Length == 0)
+                {
+                    ShowError("Thông tin phần trăm lợi nhuận còn trống!");
+                }
+                else if (!txtProfitMargin.Text.All(char.IsDigit))
+                {
+                    ShowError("Phần trăm lợi nhuận phải là giá trị số!");
                 }
                 else
                 {
-                    ShowError("Cập nhật số cột thực đơn thất bại!");
+                    ThamSo ts_ProfitMargin = new ThamSo();
+                    ts_ProfitMargin.TenTS = "ProfitMargin";
+                    ts_ProfitMargin.GiaTri = int.Parse(txtProfitMargin.Text.Trim());
+                    if (ts_bll.Update(ts_ProfitMargin) > 0)
+                    {
+                        result[1] = 1;
+                        profitMargin = ts_ProfitMargin.GiaTri;
+                    }
+                    else
+                    {
+                        result[1] = 0;
+                    }
                 }
             }
+            string message = "Kết quả cập nhật:\n";
+            if (result[0] > -1)
+            {
+                message += "- Số cột thực đơn: " + (result[0] == 1 ? "Thành công" : "Thất bại");
+            }
+            if (result[1] > -1)
+            {
+                message += "\n- Phần trăm lợi nhuận: " + (result[1] == 1 ? "Thành công" : "Thất bại");
+            }
+            ShowMessage(message);
+        }
+
+        private void btnCancelGeneral_Click(object sender, EventArgs e)
+        {
+            cbMenuColumns.Checked = cbProfitMargin.Checked = false;
+            numMenuColumns.Value = menuColumns;
+            txtProfitMargin.Text = profitMargin.ToString();
         }
 
         // Unit

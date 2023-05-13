@@ -56,10 +56,7 @@ namespace GUI
                 txtID.Text = row.Cells[0].Value.ToString();
                 cboCategory.SelectedValue = int.Parse(row.Cells[1].Value.ToString());
                 txtName.Text = row.Cells[2].Value.ToString();
-                //
-                //picDish.Image = ConvertByteToImage(row.Cells[3].Value.ToString());
                 picDish.Image = new Bitmap(row.Cells[3].Value.ToString());
-                //
                 txtOriginalPrice.Text = row.Cells[4].Value.ToString();
                 txtSellingPrice.Text = row.Cells[5].Value.ToString();
 

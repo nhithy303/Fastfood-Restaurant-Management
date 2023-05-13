@@ -18,7 +18,6 @@ namespace GUI
     public partial class frmMenuRecipe : Form
     {
         ThucDon td;
-        //ThucDonBLL td_bll = new ThucDonBLL();
         CongThucBLL ct_bll = new CongThucBLL();
         NguyenLieuBLL nl_bll = new NguyenLieuBLL();
         DonViTinhBLL dvt_bll = new DonViTinhBLL();

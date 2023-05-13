@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -40,14 +43,27 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSettings));
             this.tblMain = new System.Windows.Forms.TableLayoutPanel();
             this.tabSettings = new Guna.UI2.WinForms.Guna2TabControl();
             this.tpGeneral = new System.Windows.Forms.TabPage();
+            this.tblGeneral = new System.Windows.Forms.TableLayoutPanel();
+            this.label16 = new System.Windows.Forms.Label();
             this.tpUnit = new System.Windows.Forms.TabPage();
+            this.tblUnit = new System.Windows.Forms.TableLayoutPanel();
+            this.label13 = new System.Windows.Forms.Label();
+            this.tblUnitBody = new System.Windows.Forms.TableLayoutPanel();
+            this.dgvUnit = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.tblUnitInput = new System.Windows.Forms.TableLayoutPanel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txtUnitID = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtUnitName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tblUnitButton = new System.Windows.Forms.TableLayoutPanel();
+            this.btnSaveUnit = new Guna.UI2.WinForms.Guna2Button();
+            this.btnUpdateUnit = new Guna.UI2.WinForms.Guna2Button();
+            this.btnCreateUnit = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDeleteUnit = new Guna.UI2.WinForms.Guna2Button();
             this.tpPaymentMethod = new System.Windows.Forms.TabPage();
             this.tblPaymentMethod = new System.Windows.Forms.TableLayoutPanel();
             this.label10 = new System.Windows.Forms.Label();
@@ -108,31 +124,26 @@
             this.btnUpdateOrderState = new Guna.UI2.WinForms.Guna2Button();
             this.btnCreateOrderState = new Guna.UI2.WinForms.Guna2Button();
             this.btnDeleteOrderState = new Guna.UI2.WinForms.Guna2Button();
-            this.tblUnit = new System.Windows.Forms.TableLayoutPanel();
-            this.label13 = new System.Windows.Forms.Label();
-            this.tblUnitBody = new System.Windows.Forms.TableLayoutPanel();
-            this.dgvUnit = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.tblUnitInput = new System.Windows.Forms.TableLayoutPanel();
-            this.label14 = new System.Windows.Forms.Label();
-            this.txtUnitID = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.txtUnitName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.tblUnitButton = new System.Windows.Forms.TableLayoutPanel();
-            this.btnSaveUnit = new Guna.UI2.WinForms.Guna2Button();
-            this.btnUpdateUnit = new Guna.UI2.WinForms.Guna2Button();
-            this.btnCreateUnit = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDeleteUnit = new Guna.UI2.WinForms.Guna2Button();
-            this.tblGeneral = new System.Windows.Forms.TableLayoutPanel();
-            this.label16 = new System.Windows.Forms.Label();
             this.tblGeneralBody = new System.Windows.Forms.TableLayoutPanel();
             this.tblMenuColumns = new System.Windows.Forms.TableLayoutPanel();
-            this.label17 = new System.Windows.Forms.Label();
-            this.btnUpdateMenuColumns = new Guna.UI2.WinForms.Guna2Button();
             this.numMenuColumns = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            this.cbMenuColumns = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.tblProfitMargin = new System.Windows.Forms.TableLayoutPanel();
+            this.cbProfitMargin = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.txtProfitMargin = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tblGeneralButton = new System.Windows.Forms.TableLayoutPanel();
+            this.btnUpdateGeneral = new Guna.UI2.WinForms.Guna2Button();
+            this.btnCancelGeneral = new Guna.UI2.WinForms.Guna2Button();
             this.tblMain.SuspendLayout();
             this.tabSettings.SuspendLayout();
             this.tpGeneral.SuspendLayout();
+            this.tblGeneral.SuspendLayout();
             this.tpUnit.SuspendLayout();
+            this.tblUnit.SuspendLayout();
+            this.tblUnitBody.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUnit)).BeginInit();
+            this.tblUnitInput.SuspendLayout();
+            this.tblUnitButton.SuspendLayout();
             this.tpPaymentMethod.SuspendLayout();
             this.tblPaymentMethod.SuspendLayout();
             this.tblPaymentMethodBody.SuspendLayout();
@@ -157,15 +168,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrderState)).BeginInit();
             this.tblOrderStateInput.SuspendLayout();
             this.tblOrderStateButton.SuspendLayout();
-            this.tblUnit.SuspendLayout();
-            this.tblUnitBody.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUnit)).BeginInit();
-            this.tblUnitInput.SuspendLayout();
-            this.tblUnitButton.SuspendLayout();
-            this.tblGeneral.SuspendLayout();
             this.tblGeneralBody.SuspendLayout();
             this.tblMenuColumns.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numMenuColumns)).BeginInit();
+            this.tblProfitMargin.SuspendLayout();
+            this.tblGeneralButton.SuspendLayout();
             this.SuspendLayout();
             // 
             // tblMain
@@ -232,6 +239,34 @@
             this.tpGeneral.Text = "Cài đặt chung";
             this.tpGeneral.UseVisualStyleBackColor = true;
             // 
+            // tblGeneral
+            // 
+            this.tblGeneral.BackColor = System.Drawing.Color.Transparent;
+            this.tblGeneral.ColumnCount = 1;
+            this.tblGeneral.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tblGeneral.Controls.Add(this.label16, 0, 0);
+            this.tblGeneral.Controls.Add(this.tblGeneralBody, 0, 1);
+            this.tblGeneral.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tblGeneral.Location = new System.Drawing.Point(3, 3);
+            this.tblGeneral.Name = "tblGeneral";
+            this.tblGeneral.RowCount = 2;
+            this.tblGeneral.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tblGeneral.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
+            this.tblGeneral.Size = new System.Drawing.Size(852, 584);
+            this.tblGeneral.TabIndex = 45;
+            // 
+            // label16
+            // 
+            this.label16.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(278, 10);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(296, 38);
+            this.label16.TabIndex = 75;
+            this.label16.Text = "CÀI ĐẶT CHUNG";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // tpUnit
             // 
             this.tpUnit.BackgroundImage = global::GUI.Properties.Resources.mF_Background;
@@ -244,6 +279,302 @@
             this.tpUnit.TabIndex = 3;
             this.tpUnit.Text = "Đơn vị tính";
             this.tpUnit.UseVisualStyleBackColor = true;
+            // 
+            // tblUnit
+            // 
+            this.tblUnit.BackColor = System.Drawing.Color.Transparent;
+            this.tblUnit.ColumnCount = 1;
+            this.tblUnit.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tblUnit.Controls.Add(this.label13, 0, 0);
+            this.tblUnit.Controls.Add(this.tblUnitBody, 0, 1);
+            this.tblUnit.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tblUnit.Location = new System.Drawing.Point(3, 3);
+            this.tblUnit.Name = "tblUnit";
+            this.tblUnit.RowCount = 2;
+            this.tblUnit.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tblUnit.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
+            this.tblUnit.Size = new System.Drawing.Size(852, 584);
+            this.tblUnit.TabIndex = 44;
+            // 
+            // label13
+            // 
+            this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(310, 10);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(232, 38);
+            this.label13.TabIndex = 75;
+            this.label13.Text = "ĐƠN VỊ TÍNH";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tblUnitBody
+            // 
+            this.tblUnitBody.ColumnCount = 1;
+            this.tblUnitBody.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tblUnitBody.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tblUnitBody.Controls.Add(this.dgvUnit, 0, 2);
+            this.tblUnitBody.Controls.Add(this.tblUnitInput, 0, 0);
+            this.tblUnitBody.Controls.Add(this.tblUnitButton, 0, 1);
+            this.tblUnitBody.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tblUnitBody.Location = new System.Drawing.Point(3, 61);
+            this.tblUnitBody.Name = "tblUnitBody";
+            this.tblUnitBody.RowCount = 3;
+            this.tblUnitBody.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tblUnitBody.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tblUnitBody.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tblUnitBody.Size = new System.Drawing.Size(846, 520);
+            this.tblUnitBody.TabIndex = 76;
+            // 
+            // dgvUnit
+            // 
+            this.dgvUnit.AllowUserToAddRows = false;
+            this.dgvUnit.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgvUnit.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvUnit.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvUnit.ColumnHeadersHeight = 40;
+            this.dgvUnit.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvUnit.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvUnit.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvUnit.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvUnit.Location = new System.Drawing.Point(3, 159);
+            this.dgvUnit.Name = "dgvUnit";
+            this.dgvUnit.RowHeadersVisible = false;
+            this.dgvUnit.RowHeadersWidth = 51;
+            this.dgvUnit.RowTemplate.Height = 24;
+            this.dgvUnit.Size = new System.Drawing.Size(840, 358);
+            this.dgvUnit.TabIndex = 32;
+            this.dgvUnit.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvUnit.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dgvUnit.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dgvUnit.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dgvUnit.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dgvUnit.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dgvUnit.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvUnit.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dgvUnit.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvUnit.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvUnit.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgvUnit.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgvUnit.ThemeStyle.HeaderStyle.Height = 40;
+            this.dgvUnit.ThemeStyle.ReadOnly = false;
+            this.dgvUnit.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvUnit.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvUnit.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvUnit.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvUnit.ThemeStyle.RowsStyle.Height = 24;
+            this.dgvUnit.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvUnit.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // tblUnitInput
+            // 
+            this.tblUnitInput.ColumnCount = 4;
+            this.tblUnitInput.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tblUnitInput.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tblUnitInput.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tblUnitInput.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45F));
+            this.tblUnitInput.Controls.Add(this.label14, 0, 0);
+            this.tblUnitInput.Controls.Add(this.txtUnitID, 0, 0);
+            this.tblUnitInput.Controls.Add(this.label15, 0, 0);
+            this.tblUnitInput.Controls.Add(this.txtUnitName, 3, 0);
+            this.tblUnitInput.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tblUnitInput.Location = new System.Drawing.Point(3, 3);
+            this.tblUnitInput.Name = "tblUnitInput";
+            this.tblUnitInput.RowCount = 1;
+            this.tblUnitInput.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tblUnitInput.Size = new System.Drawing.Size(840, 72);
+            this.tblUnitInput.TabIndex = 0;
+            // 
+            // label14
+            // 
+            this.label14.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(351, 23);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(108, 25);
+            this.label14.TabIndex = 94;
+            this.label14.Text = "Tên đơn vị";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtUnitID
+            // 
+            this.txtUnitID.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtUnitID.BackColor = System.Drawing.Color.Transparent;
+            this.txtUnitID.BorderColor = System.Drawing.Color.Transparent;
+            this.txtUnitID.BorderRadius = 5;
+            this.txtUnitID.BorderThickness = 0;
+            this.txtUnitID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtUnitID.DefaultText = "";
+            this.txtUnitID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtUnitID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtUnitID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUnitID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUnitID.Enabled = false;
+            this.txtUnitID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUnitID.Font = new System.Drawing.Font("Times New Roman", 13F);
+            this.txtUnitID.ForeColor = System.Drawing.Color.Black;
+            this.txtUnitID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUnitID.Location = new System.Drawing.Point(173, 21);
+            this.txtUnitID.Margin = new System.Windows.Forms.Padding(5);
+            this.txtUnitID.Name = "txtUnitID";
+            this.txtUnitID.PasswordChar = '\0';
+            this.txtUnitID.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txtUnitID.PlaceholderText = "";
+            this.txtUnitID.ReadOnly = true;
+            this.txtUnitID.SelectedText = "";
+            this.txtUnitID.Size = new System.Drawing.Size(116, 30);
+            this.txtUnitID.TabIndex = 93;
+            // 
+            // label15
+            // 
+            this.label15.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(62, 23);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(103, 25);
+            this.label15.TabIndex = 92;
+            this.label15.Text = "Mã đơn vị";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtUnitName
+            // 
+            this.txtUnitName.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtUnitName.BackColor = System.Drawing.Color.Transparent;
+            this.txtUnitName.BorderColor = System.Drawing.Color.Transparent;
+            this.txtUnitName.BorderRadius = 5;
+            this.txtUnitName.BorderThickness = 0;
+            this.txtUnitName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtUnitName.DefaultText = "";
+            this.txtUnitName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtUnitName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtUnitName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUnitName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUnitName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUnitName.Font = new System.Drawing.Font("Times New Roman", 13F);
+            this.txtUnitName.ForeColor = System.Drawing.Color.Black;
+            this.txtUnitName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUnitName.Location = new System.Drawing.Point(467, 21);
+            this.txtUnitName.Margin = new System.Windows.Forms.Padding(5);
+            this.txtUnitName.Name = "txtUnitName";
+            this.txtUnitName.PasswordChar = '\0';
+            this.txtUnitName.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txtUnitName.PlaceholderText = "";
+            this.txtUnitName.SelectedText = "";
+            this.txtUnitName.Size = new System.Drawing.Size(280, 30);
+            this.txtUnitName.TabIndex = 95;
+            // 
+            // tblUnitButton
+            // 
+            this.tblUnitButton.ColumnCount = 4;
+            this.tblUnitButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tblUnitButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tblUnitButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tblUnitButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tblUnitButton.Controls.Add(this.btnSaveUnit, 0, 0);
+            this.tblUnitButton.Controls.Add(this.btnUpdateUnit, 0, 0);
+            this.tblUnitButton.Controls.Add(this.btnCreateUnit, 0, 0);
+            this.tblUnitButton.Controls.Add(this.btnDeleteUnit, 3, 0);
+            this.tblUnitButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tblUnitButton.Location = new System.Drawing.Point(3, 81);
+            this.tblUnitButton.Name = "tblUnitButton";
+            this.tblUnitButton.RowCount = 1;
+            this.tblUnitButton.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tblUnitButton.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 72F));
+            this.tblUnitButton.Size = new System.Drawing.Size(840, 72);
+            this.tblUnitButton.TabIndex = 1;
+            // 
+            // btnSaveUnit
+            // 
+            this.btnSaveUnit.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnSaveUnit.BackColor = System.Drawing.Color.Transparent;
+            this.btnSaveUnit.BorderRadius = 5;
+            this.btnSaveUnit.BorderThickness = 1;
+            this.btnSaveUnit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSaveUnit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSaveUnit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSaveUnit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSaveUnit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnSaveUnit.Font = new System.Drawing.Font("Times New Roman", 14F);
+            this.btnSaveUnit.ForeColor = System.Drawing.Color.Black;
+            this.btnSaveUnit.Location = new System.Drawing.Point(450, 16);
+            this.btnSaveUnit.Name = "btnSaveUnit";
+            this.btnSaveUnit.Size = new System.Drawing.Size(150, 40);
+            this.btnSaveUnit.TabIndex = 40;
+            this.btnSaveUnit.Text = "Lưu";
+            // 
+            // btnUpdateUnit
+            // 
+            this.btnUpdateUnit.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnUpdateUnit.BackColor = System.Drawing.Color.Transparent;
+            this.btnUpdateUnit.BorderRadius = 5;
+            this.btnUpdateUnit.BorderThickness = 1;
+            this.btnUpdateUnit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnUpdateUnit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnUpdateUnit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnUpdateUnit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnUpdateUnit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnUpdateUnit.Font = new System.Drawing.Font("Times New Roman", 14F);
+            this.btnUpdateUnit.ForeColor = System.Drawing.Color.Black;
+            this.btnUpdateUnit.Location = new System.Drawing.Point(240, 16);
+            this.btnUpdateUnit.Name = "btnUpdateUnit";
+            this.btnUpdateUnit.Size = new System.Drawing.Size(150, 40);
+            this.btnUpdateUnit.TabIndex = 38;
+            this.btnUpdateUnit.Text = "Sửa";
+            // 
+            // btnCreateUnit
+            // 
+            this.btnCreateUnit.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnCreateUnit.BackColor = System.Drawing.Color.Transparent;
+            this.btnCreateUnit.BorderRadius = 5;
+            this.btnCreateUnit.BorderThickness = 1;
+            this.btnCreateUnit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCreateUnit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCreateUnit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCreateUnit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCreateUnit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnCreateUnit.Font = new System.Drawing.Font("Times New Roman", 14F);
+            this.btnCreateUnit.ForeColor = System.Drawing.Color.Black;
+            this.btnCreateUnit.Location = new System.Drawing.Point(30, 16);
+            this.btnCreateUnit.Name = "btnCreateUnit";
+            this.btnCreateUnit.Size = new System.Drawing.Size(150, 40);
+            this.btnCreateUnit.TabIndex = 37;
+            this.btnCreateUnit.Text = "Thêm";
+            // 
+            // btnDeleteUnit
+            // 
+            this.btnDeleteUnit.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnDeleteUnit.BackColor = System.Drawing.Color.Transparent;
+            this.btnDeleteUnit.BorderRadius = 5;
+            this.btnDeleteUnit.BorderThickness = 1;
+            this.btnDeleteUnit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDeleteUnit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDeleteUnit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDeleteUnit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDeleteUnit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnDeleteUnit.Font = new System.Drawing.Font("Times New Roman", 14F);
+            this.btnDeleteUnit.ForeColor = System.Drawing.Color.Black;
+            this.btnDeleteUnit.Location = new System.Drawing.Point(660, 16);
+            this.btnDeleteUnit.Name = "btnDeleteUnit";
+            this.btnDeleteUnit.Size = new System.Drawing.Size(150, 40);
+            this.btnDeleteUnit.TabIndex = 41;
+            this.btnDeleteUnit.Text = "Xóa";
             // 
             // tpPaymentMethod
             // 
@@ -1481,401 +1812,48 @@
             this.btnDeleteOrderState.TabIndex = 41;
             this.btnDeleteOrderState.Text = "Xóa";
             // 
-            // tblUnit
-            // 
-            this.tblUnit.BackColor = System.Drawing.Color.Transparent;
-            this.tblUnit.ColumnCount = 1;
-            this.tblUnit.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tblUnit.Controls.Add(this.label13, 0, 0);
-            this.tblUnit.Controls.Add(this.tblUnitBody, 0, 1);
-            this.tblUnit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tblUnit.Location = new System.Drawing.Point(3, 3);
-            this.tblUnit.Name = "tblUnit";
-            this.tblUnit.RowCount = 2;
-            this.tblUnit.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tblUnit.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
-            this.tblUnit.Size = new System.Drawing.Size(852, 584);
-            this.tblUnit.TabIndex = 44;
-            // 
-            // label13
-            // 
-            this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(310, 10);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(232, 38);
-            this.label13.TabIndex = 75;
-            this.label13.Text = "ĐƠN VỊ TÍNH";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // tblUnitBody
-            // 
-            this.tblUnitBody.ColumnCount = 1;
-            this.tblUnitBody.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tblUnitBody.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tblUnitBody.Controls.Add(this.dgvUnit, 0, 2);
-            this.tblUnitBody.Controls.Add(this.tblUnitInput, 0, 0);
-            this.tblUnitBody.Controls.Add(this.tblUnitButton, 0, 1);
-            this.tblUnitBody.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tblUnitBody.Location = new System.Drawing.Point(3, 61);
-            this.tblUnitBody.Name = "tblUnitBody";
-            this.tblUnitBody.RowCount = 3;
-            this.tblUnitBody.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tblUnitBody.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tblUnitBody.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tblUnitBody.Size = new System.Drawing.Size(846, 520);
-            this.tblUnitBody.TabIndex = 76;
-            // 
-            // dgvUnit
-            // 
-            this.dgvUnit.AllowUserToAddRows = false;
-            this.dgvUnit.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgvUnit.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvUnit.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvUnit.ColumnHeadersHeight = 40;
-            this.dgvUnit.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvUnit.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvUnit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvUnit.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvUnit.Location = new System.Drawing.Point(3, 159);
-            this.dgvUnit.Name = "dgvUnit";
-            this.dgvUnit.RowHeadersVisible = false;
-            this.dgvUnit.RowHeadersWidth = 51;
-            this.dgvUnit.RowTemplate.Height = 24;
-            this.dgvUnit.Size = new System.Drawing.Size(840, 358);
-            this.dgvUnit.TabIndex = 32;
-            this.dgvUnit.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgvUnit.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dgvUnit.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dgvUnit.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dgvUnit.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgvUnit.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dgvUnit.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvUnit.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.dgvUnit.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvUnit.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvUnit.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgvUnit.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dgvUnit.ThemeStyle.HeaderStyle.Height = 40;
-            this.dgvUnit.ThemeStyle.ReadOnly = false;
-            this.dgvUnit.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgvUnit.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgvUnit.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvUnit.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgvUnit.ThemeStyle.RowsStyle.Height = 24;
-            this.dgvUnit.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvUnit.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // tblUnitInput
-            // 
-            this.tblUnitInput.ColumnCount = 4;
-            this.tblUnitInput.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tblUnitInput.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tblUnitInput.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tblUnitInput.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45F));
-            this.tblUnitInput.Controls.Add(this.label14, 0, 0);
-            this.tblUnitInput.Controls.Add(this.txtUnitID, 0, 0);
-            this.tblUnitInput.Controls.Add(this.label15, 0, 0);
-            this.tblUnitInput.Controls.Add(this.txtUnitName, 3, 0);
-            this.tblUnitInput.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tblUnitInput.Location = new System.Drawing.Point(3, 3);
-            this.tblUnitInput.Name = "tblUnitInput";
-            this.tblUnitInput.RowCount = 1;
-            this.tblUnitInput.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tblUnitInput.Size = new System.Drawing.Size(840, 72);
-            this.tblUnitInput.TabIndex = 0;
-            // 
-            // label14
-            // 
-            this.label14.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(351, 23);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(108, 25);
-            this.label14.TabIndex = 94;
-            this.label14.Text = "Tên đơn vị";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtUnitID
-            // 
-            this.txtUnitID.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtUnitID.BackColor = System.Drawing.Color.Transparent;
-            this.txtUnitID.BorderColor = System.Drawing.Color.Transparent;
-            this.txtUnitID.BorderRadius = 5;
-            this.txtUnitID.BorderThickness = 0;
-            this.txtUnitID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtUnitID.DefaultText = "";
-            this.txtUnitID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtUnitID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtUnitID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtUnitID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtUnitID.Enabled = false;
-            this.txtUnitID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUnitID.Font = new System.Drawing.Font("Times New Roman", 13F);
-            this.txtUnitID.ForeColor = System.Drawing.Color.Black;
-            this.txtUnitID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUnitID.Location = new System.Drawing.Point(173, 21);
-            this.txtUnitID.Margin = new System.Windows.Forms.Padding(5);
-            this.txtUnitID.Name = "txtUnitID";
-            this.txtUnitID.PasswordChar = '\0';
-            this.txtUnitID.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txtUnitID.PlaceholderText = "";
-            this.txtUnitID.ReadOnly = true;
-            this.txtUnitID.SelectedText = "";
-            this.txtUnitID.Size = new System.Drawing.Size(116, 30);
-            this.txtUnitID.TabIndex = 93;
-            // 
-            // label15
-            // 
-            this.label15.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(62, 23);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(103, 25);
-            this.label15.TabIndex = 92;
-            this.label15.Text = "Mã đơn vị";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtUnitName
-            // 
-            this.txtUnitName.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtUnitName.BackColor = System.Drawing.Color.Transparent;
-            this.txtUnitName.BorderColor = System.Drawing.Color.Transparent;
-            this.txtUnitName.BorderRadius = 5;
-            this.txtUnitName.BorderThickness = 0;
-            this.txtUnitName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtUnitName.DefaultText = "";
-            this.txtUnitName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtUnitName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtUnitName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtUnitName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtUnitName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUnitName.Font = new System.Drawing.Font("Times New Roman", 13F);
-            this.txtUnitName.ForeColor = System.Drawing.Color.Black;
-            this.txtUnitName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUnitName.Location = new System.Drawing.Point(467, 21);
-            this.txtUnitName.Margin = new System.Windows.Forms.Padding(5);
-            this.txtUnitName.Name = "txtUnitName";
-            this.txtUnitName.PasswordChar = '\0';
-            this.txtUnitName.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txtUnitName.PlaceholderText = "";
-            this.txtUnitName.SelectedText = "";
-            this.txtUnitName.Size = new System.Drawing.Size(280, 30);
-            this.txtUnitName.TabIndex = 95;
-            // 
-            // tblUnitButton
-            // 
-            this.tblUnitButton.ColumnCount = 4;
-            this.tblUnitButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tblUnitButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tblUnitButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tblUnitButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tblUnitButton.Controls.Add(this.btnSaveUnit, 0, 0);
-            this.tblUnitButton.Controls.Add(this.btnUpdateUnit, 0, 0);
-            this.tblUnitButton.Controls.Add(this.btnCreateUnit, 0, 0);
-            this.tblUnitButton.Controls.Add(this.btnDeleteUnit, 3, 0);
-            this.tblUnitButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tblUnitButton.Location = new System.Drawing.Point(3, 81);
-            this.tblUnitButton.Name = "tblUnitButton";
-            this.tblUnitButton.RowCount = 1;
-            this.tblUnitButton.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tblUnitButton.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 72F));
-            this.tblUnitButton.Size = new System.Drawing.Size(840, 72);
-            this.tblUnitButton.TabIndex = 1;
-            // 
-            // btnSaveUnit
-            // 
-            this.btnSaveUnit.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnSaveUnit.BackColor = System.Drawing.Color.Transparent;
-            this.btnSaveUnit.BorderRadius = 5;
-            this.btnSaveUnit.BorderThickness = 1;
-            this.btnSaveUnit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSaveUnit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSaveUnit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSaveUnit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSaveUnit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnSaveUnit.Font = new System.Drawing.Font("Times New Roman", 14F);
-            this.btnSaveUnit.ForeColor = System.Drawing.Color.Black;
-            this.btnSaveUnit.Location = new System.Drawing.Point(450, 16);
-            this.btnSaveUnit.Name = "btnSaveUnit";
-            this.btnSaveUnit.Size = new System.Drawing.Size(150, 40);
-            this.btnSaveUnit.TabIndex = 40;
-            this.btnSaveUnit.Text = "Lưu";
-            // 
-            // btnUpdateUnit
-            // 
-            this.btnUpdateUnit.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnUpdateUnit.BackColor = System.Drawing.Color.Transparent;
-            this.btnUpdateUnit.BorderRadius = 5;
-            this.btnUpdateUnit.BorderThickness = 1;
-            this.btnUpdateUnit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpdateUnit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpdateUnit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnUpdateUnit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnUpdateUnit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnUpdateUnit.Font = new System.Drawing.Font("Times New Roman", 14F);
-            this.btnUpdateUnit.ForeColor = System.Drawing.Color.Black;
-            this.btnUpdateUnit.Location = new System.Drawing.Point(240, 16);
-            this.btnUpdateUnit.Name = "btnUpdateUnit";
-            this.btnUpdateUnit.Size = new System.Drawing.Size(150, 40);
-            this.btnUpdateUnit.TabIndex = 38;
-            this.btnUpdateUnit.Text = "Sửa";
-            // 
-            // btnCreateUnit
-            // 
-            this.btnCreateUnit.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnCreateUnit.BackColor = System.Drawing.Color.Transparent;
-            this.btnCreateUnit.BorderRadius = 5;
-            this.btnCreateUnit.BorderThickness = 1;
-            this.btnCreateUnit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnCreateUnit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnCreateUnit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnCreateUnit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCreateUnit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnCreateUnit.Font = new System.Drawing.Font("Times New Roman", 14F);
-            this.btnCreateUnit.ForeColor = System.Drawing.Color.Black;
-            this.btnCreateUnit.Location = new System.Drawing.Point(30, 16);
-            this.btnCreateUnit.Name = "btnCreateUnit";
-            this.btnCreateUnit.Size = new System.Drawing.Size(150, 40);
-            this.btnCreateUnit.TabIndex = 37;
-            this.btnCreateUnit.Text = "Thêm";
-            // 
-            // btnDeleteUnit
-            // 
-            this.btnDeleteUnit.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnDeleteUnit.BackColor = System.Drawing.Color.Transparent;
-            this.btnDeleteUnit.BorderRadius = 5;
-            this.btnDeleteUnit.BorderThickness = 1;
-            this.btnDeleteUnit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeleteUnit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeleteUnit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDeleteUnit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDeleteUnit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnDeleteUnit.Font = new System.Drawing.Font("Times New Roman", 14F);
-            this.btnDeleteUnit.ForeColor = System.Drawing.Color.Black;
-            this.btnDeleteUnit.Location = new System.Drawing.Point(660, 16);
-            this.btnDeleteUnit.Name = "btnDeleteUnit";
-            this.btnDeleteUnit.Size = new System.Drawing.Size(150, 40);
-            this.btnDeleteUnit.TabIndex = 41;
-            this.btnDeleteUnit.Text = "Xóa";
-            // 
-            // tblGeneral
-            // 
-            this.tblGeneral.BackColor = System.Drawing.Color.Transparent;
-            this.tblGeneral.ColumnCount = 1;
-            this.tblGeneral.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tblGeneral.Controls.Add(this.label16, 0, 0);
-            this.tblGeneral.Controls.Add(this.tblGeneralBody, 0, 1);
-            this.tblGeneral.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tblGeneral.Location = new System.Drawing.Point(3, 3);
-            this.tblGeneral.Name = "tblGeneral";
-            this.tblGeneral.RowCount = 2;
-            this.tblGeneral.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tblGeneral.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
-            this.tblGeneral.Size = new System.Drawing.Size(852, 584);
-            this.tblGeneral.TabIndex = 45;
-            // 
-            // label16
-            // 
-            this.label16.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(278, 10);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(296, 38);
-            this.label16.TabIndex = 75;
-            this.label16.Text = "CÀI ĐẶT CHUNG";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // tblGeneralBody
             // 
             this.tblGeneralBody.ColumnCount = 1;
             this.tblGeneralBody.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tblGeneralBody.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tblGeneralBody.Controls.Add(this.tblMenuColumns, 0, 0);
+            this.tblGeneralBody.Controls.Add(this.tblProfitMargin, 0, 1);
+            this.tblGeneralBody.Controls.Add(this.tblGeneralButton, 0, 2);
             this.tblGeneralBody.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tblGeneralBody.Location = new System.Drawing.Point(3, 61);
             this.tblGeneralBody.Name = "tblGeneralBody";
-            this.tblGeneralBody.RowCount = 2;
+            this.tblGeneralBody.RowCount = 3;
             this.tblGeneralBody.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tblGeneralBody.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tblGeneralBody.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tblGeneralBody.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.tblGeneralBody.Size = new System.Drawing.Size(846, 520);
             this.tblGeneralBody.TabIndex = 76;
             // 
             // tblMenuColumns
             // 
             this.tblMenuColumns.ColumnCount = 3;
-            this.tblMenuColumns.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tblMenuColumns.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tblMenuColumns.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55F));
-            this.tblMenuColumns.Controls.Add(this.label17, 0, 0);
-            this.tblMenuColumns.Controls.Add(this.btnUpdateMenuColumns, 2, 0);
-            this.tblMenuColumns.Controls.Add(this.numMenuColumns, 1, 0);
+            this.tblMenuColumns.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tblMenuColumns.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tblMenuColumns.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tblMenuColumns.Controls.Add(this.numMenuColumns, 2, 0);
+            this.tblMenuColumns.Controls.Add(this.cbMenuColumns, 1, 0);
             this.tblMenuColumns.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tblMenuColumns.Location = new System.Drawing.Point(3, 3);
             this.tblMenuColumns.Name = "tblMenuColumns";
             this.tblMenuColumns.RowCount = 1;
             this.tblMenuColumns.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tblMenuColumns.Size = new System.Drawing.Size(840, 98);
-            this.tblMenuColumns.TabIndex = 0;
-            // 
-            // label17
-            // 
-            this.label17.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(56, 36);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(151, 25);
-            this.label17.TabIndex = 93;
-            this.label17.Text = "Số cột thực đơn";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnUpdateMenuColumns
-            // 
-            this.btnUpdateMenuColumns.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnUpdateMenuColumns.BackColor = System.Drawing.Color.Transparent;
-            this.btnUpdateMenuColumns.BorderRadius = 5;
-            this.btnUpdateMenuColumns.BorderThickness = 1;
-            this.btnUpdateMenuColumns.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpdateMenuColumns.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpdateMenuColumns.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnUpdateMenuColumns.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnUpdateMenuColumns.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnUpdateMenuColumns.Font = new System.Drawing.Font("Times New Roman", 14F);
-            this.btnUpdateMenuColumns.ForeColor = System.Drawing.Color.Black;
-            this.btnUpdateMenuColumns.Location = new System.Drawing.Point(381, 29);
-            this.btnUpdateMenuColumns.Name = "btnUpdateMenuColumns";
-            this.btnUpdateMenuColumns.Size = new System.Drawing.Size(150, 40);
-            this.btnUpdateMenuColumns.TabIndex = 94;
-            this.btnUpdateMenuColumns.Text = "Cập nhật";
+            this.tblMenuColumns.TabIndex = 3;
             // 
             // numMenuColumns
             // 
-            this.numMenuColumns.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.numMenuColumns.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.numMenuColumns.BackColor = System.Drawing.Color.Transparent;
             this.numMenuColumns.BorderRadius = 5;
             this.numMenuColumns.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.numMenuColumns.Font = new System.Drawing.Font("Times New Roman", 13F);
-            this.numMenuColumns.Location = new System.Drawing.Point(254, 29);
+            this.numMenuColumns.Location = new System.Drawing.Point(423, 29);
             this.numMenuColumns.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.numMenuColumns.Maximum = new decimal(new int[] {
             6,
@@ -1883,13 +1861,146 @@
             0,
             0});
             this.numMenuColumns.Name = "numMenuColumns";
-            this.numMenuColumns.Size = new System.Drawing.Size(80, 40);
+            this.numMenuColumns.Size = new System.Drawing.Size(100, 40);
             this.numMenuColumns.TabIndex = 95;
             this.numMenuColumns.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
+            // 
+            // cbMenuColumns
+            // 
+            this.cbMenuColumns.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.cbMenuColumns.AutoSize = true;
+            this.cbMenuColumns.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbMenuColumns.CheckedState.BorderRadius = 0;
+            this.cbMenuColumns.CheckedState.BorderThickness = 0;
+            this.cbMenuColumns.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbMenuColumns.Location = new System.Drawing.Point(87, 34);
+            this.cbMenuColumns.Name = "cbMenuColumns";
+            this.cbMenuColumns.Size = new System.Drawing.Size(173, 29);
+            this.cbMenuColumns.TabIndex = 96;
+            this.cbMenuColumns.Text = "Số cột thực đơn";
+            this.cbMenuColumns.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.cbMenuColumns.UncheckedState.BorderRadius = 0;
+            this.cbMenuColumns.UncheckedState.BorderThickness = 0;
+            this.cbMenuColumns.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            // 
+            // tblProfitMargin
+            // 
+            this.tblProfitMargin.ColumnCount = 3;
+            this.tblProfitMargin.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tblProfitMargin.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tblProfitMargin.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tblProfitMargin.Controls.Add(this.cbProfitMargin, 1, 0);
+            this.tblProfitMargin.Controls.Add(this.txtProfitMargin, 2, 0);
+            this.tblProfitMargin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tblProfitMargin.Location = new System.Drawing.Point(3, 107);
+            this.tblProfitMargin.Name = "tblProfitMargin";
+            this.tblProfitMargin.RowCount = 1;
+            this.tblProfitMargin.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tblProfitMargin.Size = new System.Drawing.Size(840, 98);
+            this.tblProfitMargin.TabIndex = 4;
+            // 
+            // cbProfitMargin
+            // 
+            this.cbProfitMargin.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.cbProfitMargin.AutoSize = true;
+            this.cbProfitMargin.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbProfitMargin.CheckedState.BorderRadius = 0;
+            this.cbProfitMargin.CheckedState.BorderThickness = 0;
+            this.cbProfitMargin.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbProfitMargin.Location = new System.Drawing.Point(87, 34);
+            this.cbProfitMargin.Name = "cbProfitMargin";
+            this.cbProfitMargin.Size = new System.Drawing.Size(208, 29);
+            this.cbProfitMargin.TabIndex = 97;
+            this.cbProfitMargin.Text = "Phần trăm lợi nhuận";
+            this.cbProfitMargin.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.cbProfitMargin.UncheckedState.BorderRadius = 0;
+            this.cbProfitMargin.UncheckedState.BorderThickness = 0;
+            this.cbProfitMargin.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            // 
+            // txtProfitMargin
+            // 
+            this.txtProfitMargin.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtProfitMargin.BackColor = System.Drawing.Color.Transparent;
+            this.txtProfitMargin.BorderColor = System.Drawing.Color.Transparent;
+            this.txtProfitMargin.BorderRadius = 5;
+            this.txtProfitMargin.BorderThickness = 0;
+            this.txtProfitMargin.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtProfitMargin.DefaultText = "";
+            this.txtProfitMargin.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtProfitMargin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtProfitMargin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtProfitMargin.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtProfitMargin.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtProfitMargin.Font = new System.Drawing.Font("Times New Roman", 13F);
+            this.txtProfitMargin.ForeColor = System.Drawing.Color.Black;
+            this.txtProfitMargin.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtProfitMargin.Location = new System.Drawing.Point(425, 29);
+            this.txtProfitMargin.Margin = new System.Windows.Forms.Padding(5);
+            this.txtProfitMargin.Name = "txtProfitMargin";
+            this.txtProfitMargin.PasswordChar = '\0';
+            this.txtProfitMargin.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txtProfitMargin.PlaceholderText = "";
+            this.txtProfitMargin.SelectedText = "";
+            this.txtProfitMargin.Size = new System.Drawing.Size(100, 40);
+            this.txtProfitMargin.TabIndex = 98;
+            // 
+            // tblGeneralButton
+            // 
+            this.tblGeneralButton.ColumnCount = 3;
+            this.tblGeneralButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45F));
+            this.tblGeneralButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tblGeneralButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45F));
+            this.tblGeneralButton.Controls.Add(this.btnUpdateGeneral, 0, 0);
+            this.tblGeneralButton.Controls.Add(this.btnCancelGeneral, 2, 0);
+            this.tblGeneralButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tblGeneralButton.Location = new System.Drawing.Point(3, 211);
+            this.tblGeneralButton.Name = "tblGeneralButton";
+            this.tblGeneralButton.RowCount = 1;
+            this.tblGeneralButton.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tblGeneralButton.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tblGeneralButton.Size = new System.Drawing.Size(840, 306);
+            this.tblGeneralButton.TabIndex = 5;
+            // 
+            // btnUpdateGeneral
+            // 
+            this.btnUpdateGeneral.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnUpdateGeneral.BackColor = System.Drawing.Color.Transparent;
+            this.btnUpdateGeneral.BorderRadius = 5;
+            this.btnUpdateGeneral.BorderThickness = 1;
+            this.btnUpdateGeneral.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnUpdateGeneral.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnUpdateGeneral.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnUpdateGeneral.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnUpdateGeneral.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnUpdateGeneral.Font = new System.Drawing.Font("Times New Roman", 14F);
+            this.btnUpdateGeneral.ForeColor = System.Drawing.Color.Black;
+            this.btnUpdateGeneral.Location = new System.Drawing.Point(225, 3);
+            this.btnUpdateGeneral.Name = "btnUpdateGeneral";
+            this.btnUpdateGeneral.Size = new System.Drawing.Size(150, 40);
+            this.btnUpdateGeneral.TabIndex = 95;
+            this.btnUpdateGeneral.Text = "Cập nhật";
+            // 
+            // btnCancelGeneral
+            // 
+            this.btnCancelGeneral.BackColor = System.Drawing.Color.Transparent;
+            this.btnCancelGeneral.BorderRadius = 5;
+            this.btnCancelGeneral.BorderThickness = 1;
+            this.btnCancelGeneral.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCancelGeneral.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCancelGeneral.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCancelGeneral.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCancelGeneral.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnCancelGeneral.Font = new System.Drawing.Font("Times New Roman", 14F);
+            this.btnCancelGeneral.ForeColor = System.Drawing.Color.Black;
+            this.btnCancelGeneral.Location = new System.Drawing.Point(465, 3);
+            this.btnCancelGeneral.Name = "btnCancelGeneral";
+            this.btnCancelGeneral.Size = new System.Drawing.Size(150, 40);
+            this.btnCancelGeneral.TabIndex = 96;
+            this.btnCancelGeneral.Text = "Hủy";
             // 
             // frmSettings
             // 
@@ -1906,7 +2017,16 @@
             this.tblMain.ResumeLayout(false);
             this.tabSettings.ResumeLayout(false);
             this.tpGeneral.ResumeLayout(false);
+            this.tblGeneral.ResumeLayout(false);
+            this.tblGeneral.PerformLayout();
             this.tpUnit.ResumeLayout(false);
+            this.tblUnit.ResumeLayout(false);
+            this.tblUnit.PerformLayout();
+            this.tblUnitBody.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUnit)).EndInit();
+            this.tblUnitInput.ResumeLayout(false);
+            this.tblUnitInput.PerformLayout();
+            this.tblUnitButton.ResumeLayout(false);
             this.tpPaymentMethod.ResumeLayout(false);
             this.tblPaymentMethod.ResumeLayout(false);
             this.tblPaymentMethod.PerformLayout();
@@ -1939,19 +2059,13 @@
             this.tblOrderStateInput.ResumeLayout(false);
             this.tblOrderStateInput.PerformLayout();
             this.tblOrderStateButton.ResumeLayout(false);
-            this.tblUnit.ResumeLayout(false);
-            this.tblUnit.PerformLayout();
-            this.tblUnitBody.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUnit)).EndInit();
-            this.tblUnitInput.ResumeLayout(false);
-            this.tblUnitInput.PerformLayout();
-            this.tblUnitButton.ResumeLayout(false);
-            this.tblGeneral.ResumeLayout(false);
-            this.tblGeneral.PerformLayout();
             this.tblGeneralBody.ResumeLayout(false);
             this.tblMenuColumns.ResumeLayout(false);
             this.tblMenuColumns.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numMenuColumns)).EndInit();
+            this.tblProfitMargin.ResumeLayout(false);
+            this.tblProfitMargin.PerformLayout();
+            this.tblGeneralButton.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -2040,8 +2154,13 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TableLayoutPanel tblGeneralBody;
         private System.Windows.Forms.TableLayoutPanel tblMenuColumns;
-        private System.Windows.Forms.Label label17;
-        private Guna.UI2.WinForms.Guna2Button btnUpdateMenuColumns;
         private Guna.UI2.WinForms.Guna2NumericUpDown numMenuColumns;
+        private Guna.UI2.WinForms.Guna2CheckBox cbMenuColumns;
+        private System.Windows.Forms.TableLayoutPanel tblProfitMargin;
+        private Guna.UI2.WinForms.Guna2CheckBox cbProfitMargin;
+        private Guna.UI2.WinForms.Guna2TextBox txtProfitMargin;
+        private System.Windows.Forms.TableLayoutPanel tblGeneralButton;
+        private Guna.UI2.WinForms.Guna2Button btnUpdateGeneral;
+        private Guna.UI2.WinForms.Guna2Button btnCancelGeneral;
     }
 }
