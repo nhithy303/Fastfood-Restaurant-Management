@@ -312,7 +312,7 @@ namespace GUI
 
         private void btnOrder_Click(object sender, EventArgs e)
         {
-            if (dgvOrder.RowCount > 1)
+            if (dgvOrder.RowCount > 0)
             {
                 HoaDonBanHang hdbh = new HoaDonBanHang();
                 hdbh.MaNV = nv.MaNV;
@@ -329,7 +329,7 @@ namespace GUI
                         {
                             cthdbh_bll.Delete(cthdbh[i]);
                             hdbh_bll.Delete(hdbh);
-                            ShowError("Đặt hàng thất bại (chi tiết)!");
+                            ShowError("Đặt hàng thất bại!");
                             return;
                         }
                     }

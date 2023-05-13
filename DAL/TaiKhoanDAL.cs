@@ -30,7 +30,7 @@ namespace DAL
             tk.MaTK = int.Parse(row["MATK"].ToString());
             tk.TenDangNhap = row["TENDANGNHAP"].ToString();
             tk.MatKhau = row["MATKHAU"].ToString();
-            tk.PhanQuyen = int.Parse(row["PHANQUYEN"].ToString());
+            tk.PhanQuyen = row["PHANQUYEN"].ToString();
             return tk;
         }
 

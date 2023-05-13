@@ -36,11 +36,11 @@ namespace GUI
             {
                 foreach (PhanQuyen item in pq)
                 {
-                    if (item.KyHieu == "QL")
+                    if (item.MaPQ == "QL")
                     {
                         rdoAdmin.Tag = item.MaPQ;
                     }
-                    if (item.KyHieu == "NV")
+                    if (item.MaPQ == "NV")
                     {
                         rdoEmployee.Tag = item.MaPQ;
                     }
@@ -55,7 +55,7 @@ namespace GUI
             TaiKhoan tk = new TaiKhoan();
             tk.TenDangNhap = txtUsername.Text.Trim();
             tk.MatKhau = txtPassword.Text;
-            tk.PhanQuyen = rdoAdmin.Checked ? int.Parse(rdoAdmin.Tag.ToString()) : int.Parse(rdoEmployee.Tag.ToString());
+            tk.PhanQuyen = rdoAdmin.Checked ? rdoAdmin.Tag.ToString() : rdoEmployee.Tag.ToString();
 
             if (!tk_bll.IsValidated(tk))
             {

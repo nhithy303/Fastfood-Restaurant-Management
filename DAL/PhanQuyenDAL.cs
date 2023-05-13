@@ -18,17 +18,15 @@ namespace DAL
             return new SqlParameter[]
             {
                 new SqlParameter("@MaPQ", pq.MaPQ),
-                new SqlParameter("@TenPQ", pq.TenPQ),
-                new SqlParameter("@KyHieu", pq.KyHieu)
+                new SqlParameter("@TenPQ", pq.TenPQ)
             };
         }
 
         private PhanQuyen GetPhanQuyenFromDataRow(DataRow row)
         {
             PhanQuyen pq = new PhanQuyen();
-            pq.MaPQ  = int.Parse(row["MAPQ"].ToString());
+            pq.MaPQ  = row["MAPQ"].ToString();
             pq.TenPQ = row["TENPQ"].ToString();
-            pq.KyHieu = row["KYHIEU"].ToString();
             return pq;
         }
 
