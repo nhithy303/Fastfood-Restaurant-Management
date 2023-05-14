@@ -18,15 +18,17 @@ namespace GUI
 {
     public partial class frmOrderDetail : Form
     {
+        bool isAdmin;
         HoaDonBanHang hdbh;
         TrangThaiDonHangBLL ttdh_bll = new TrangThaiDonHangBLL();
         ChiTietHDBHBLL cthdbh_bll = new ChiTietHDBHBLL();
         ThucDonBLL td_bll = new ThucDonBLL();
         HoaDonBanHangBLL hdbh_bll = new HoaDonBanHangBLL();
 
-        public frmOrderDetail(HoaDonBanHang hdbh)
+        public frmOrderDetail(HoaDonBanHang hdbh, bool isAdmin)
         {
             InitializeComponent();
+            this.isAdmin = isAdmin;
             this.hdbh = hdbh;
             this.Load += frmOrderDetail_Load;
             dgvOrderDetail.SelectionChanged += dgvOrderDetail_SelectionChanged;
@@ -42,8 +44,8 @@ namespace GUI
         private void frmOrderDetail_Load(object sender, EventArgs e)
         {
             EnableEdit();
-            dgvOrderDetail_Load();
             cboMenu_Load();
+            dgvOrderDetail_Load();
             DisableInput();
             btnSave.Enabled = false;
             UpdateTotal();
@@ -276,8 +278,10 @@ namespace GUI
 
         private void EnableEdit()
         {
+            // If the current user is Admin
+            // or
             // If this order has been already served -> don't allow editing
-            if (hdbh.TrangThai == ttdh_bll.Served())
+            if (isAdmin || hdbh.TrangThai == ttdh_bll.Served())
             {
                 btnCreate.Enabled = btnUpdate.Enabled = btnDelete.Enabled = false;
             }

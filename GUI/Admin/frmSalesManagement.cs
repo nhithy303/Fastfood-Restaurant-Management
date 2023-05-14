@@ -15,9 +15,13 @@ namespace GUI
     public partial class frmSalesManagement : Form
     {
         HoaDonBanHangBLL hdbh_bll = new HoaDonBanHangBLL();
+        HinhThucThanhToan[] httt;
         HinhThucThanhToanBLL httt_bll = new HinhThucThanhToanBLL();
+        TrangThaiDonHang[] ttdh;
         TrangThaiDonHangBLL ttdh_bll = new TrangThaiDonHangBLL();
+        NhanVien[] nv;
         NhanVienBLL nv_bll = new NhanVienBLL();
+        ExcelBLL excel_bll = new ExcelBLL();
 
         public frmSalesManagement()
         {
@@ -25,9 +29,6 @@ namespace GUI
             this.Load += frmSalesManagement_Load;
             dgvSale.SelectionChanged += dgvSale_SelectionChanged;
             btnDetail.Click += btnDetail_Click;
-            btnUpdate.Click += btnUpdate_Click;
-            btnSave.Click += btnSave_Click;
-            btnDelete.Click += btnDelete_Click;
             btnExportExcel.Click += btnExportExcel_Click;
             dtpDate.Format = DateTimePickerFormat.Custom;
             dtpDate.CustomFormat = "dd'/'MM'/'yyyy";
@@ -35,11 +36,11 @@ namespace GUI
 
         private void frmSalesManagement_Load(object sender, EventArgs e)
         {
-            dgvSale_Load();
             cboEmployee_Load();
             cboPayment_Load();
             cboState_Load();
-            btnSave.Enabled = false;
+            dgvSale_Load();
+            cboEmployee.Enabled = cboPayment.Enabled = cboState.Enabled = false;
         }
 
         private void dgvSale_Load()
@@ -59,18 +60,12 @@ namespace GUI
                 txtTotal.Text = row.Cells[3].Value.ToString();
                 cboPayment.SelectedValue = int.Parse(row.Cells[4].Value.ToString());
                 cboState.SelectedValue = int.Parse(row.Cells[5].Value.ToString());
-
-                btnUpdate.Enabled = btnDelete.Enabled = true;
-            }
-            else
-            {
-                btnUpdate.Enabled = btnDelete.Enabled = false;
             }
         }
 
         private void cboEmployee_Load()
         {
-            NhanVien[] nv = nv_bll.GetFullName(new NhanVien());
+            nv = nv_bll.GetFullName(new NhanVien());
             cboEmployee.DisplayMember = "TenNV";
             cboEmployee.ValueMember = "MaNV";
             cboEmployee.DataSource = nv;
@@ -78,7 +73,7 @@ namespace GUI
 
         private void cboPayment_Load()
         {
-            HinhThucThanhToan[] httt = httt_bll.GetList(new HinhThucThanhToan());
+            httt = httt_bll.GetList(new HinhThucThanhToan());
             cboPayment.DisplayMember = "TenHTTT";
             cboPayment.ValueMember = "MaHTTT";
             cboPayment.DataSource = httt;
@@ -86,7 +81,7 @@ namespace GUI
 
         private void cboState_Load()
         {
-            TrangThaiDonHang[] ttdh = ttdh_bll.GetList(new TrangThaiDonHang());
+            ttdh = ttdh_bll.GetList(new TrangThaiDonHang());
             cboState.DisplayMember = "TenTT";
             cboState.ValueMember = "MaTT";
             cboState.DataSource = ttdh;
@@ -99,86 +94,50 @@ namespace GUI
             hdbh.MaHD = int.Parse(row.Cells[0].Value.ToString());
             hdbh.ThanhToan = int.Parse(row.Cells[4].Value.ToString());
             hdbh.TrangThai = int.Parse(row.Cells[5].Value.ToString());
-            new frmOrderDetail(hdbh).ShowDialog();
-            //dgvSale_Load();
-        }
-
-        private void btnUpdate_Click(object sender, EventArgs e)
-        {
-            if (btnUpdate.Text == "Sửa")
-            {
-                btnUpdate.Text = "Hủy";
-                btnSave.Enabled = true;
-                btnDelete.Enabled = dgvSale.Enabled = false;
-            }
-            else // btnUpdate.Text == "Hủy"
-            {
-                btnUpdate.Text = "Sửa";
-                btnSave.Enabled = false;
-                btnDelete.Enabled = dgvSale.Enabled = true;
-            }
-        }
-
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            HoaDonBanHang hdbh = new HoaDonBanHang();
-            hdbh.MaHD = int.Parse(txtID.Text);
-            hdbh.MaNV = int.Parse(cboEmployee.SelectedValue.ToString());
-            hdbh.TongTien = int.Parse(txtTotal.Text);
-            hdbh.ThanhToan = int.Parse(cboPayment.SelectedValue.ToString());
-            hdbh.TrangThai = int.Parse(cboState.SelectedValue.ToString());
-
-            int result = hdbh_bll.Update(hdbh);
-            if (result > 0)
-            {
-                btnUpdate.Text = "Sửa";
-                btnSave.Enabled = false;
-                btnDelete.Enabled = true;
-                ShowMessage("Sửa thông tin hóa đơn bán hàng thành công!");
-                dgvSale_Load();
-            }
-            else if (result == -2)
-            {
-                ShowError("Thông tin không hợp lệ!");
-            }
-            else
-            {
-                ShowError("Sửa thông tin hóa đơn bán hàng thất bại!");
-            }
-            dgvSale.Enabled = true;
-        }
-
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-            DataGridViewRow row = dgvSale.CurrentRow;
-            string question = String.Format("Bạn có chắc chắn muốn xóa đơn hàng {0} không?",
-                row.Cells[0].Value.ToString());
-            DialogResult r = MessageBox.Show(question, "Xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (r == DialogResult.Yes)
-            {
-                HoaDonBanHang hdbh_delete = new HoaDonBanHang();
-                hdbh_delete.MaHD = int.Parse(row.Cells[0].Value.ToString());
-                hdbh_delete.TrangThai = int.Parse(row.Cells[5].Value.ToString());
-                int result = hdbh_bll.Delete(hdbh_delete);
-                if (result > 0)
-                {
-                    ShowMessage("Xóa đơn hàng thành công!");
-                    dgvSale_Load();
-                }
-                else if (result == -2)
-                {
-                    ShowError("Không thể xóa đơn hàng đã phục vụ!");
-                }
-                else
-                {
-                    ShowError("Xóa đơn hàng thất bại!");
-                }
-            }
+            new frmOrderDetail(hdbh, true).ShowDialog();
+            dgvSale_Load();
         }
 
         private void btnExportExcel_Click(object sender, EventArgs e)
         {
+            // Convert DataGridView to DataTable
+            HoaDonBanHang[] hdbh = (HoaDonBanHang[])(dgvSale.DataSource);
+            DataTable table = new DataTable();
+            table.Columns.Add("Mã hóa đơn");
+            table.Columns.Add("Mã nhân viên");
+            table.Columns.Add("Họ tên nhân viên");
+            table.Columns.Add("Ngày hóa đơn");
+            table.Columns.Add("Tổng tiền");
+            table.Columns.Add("Hình thức thanh toán");
+            table.Columns.Add("Trạng thái");
+            for (int i = 0; i < hdbh.Length; i++)
+            {
+                DataRow row = table.NewRow();
+                row[0] = hdbh[i].MaHD;
+                row[1] = hdbh[i].MaNV;
+                row[2] = nv.First(item => item.MaNV == hdbh[i].MaNV).TenNV;
+                row[3] = ReverseDateFormat(hdbh[i].NgayHD);
+                row[4] = hdbh[i].TongTien;
+                row[5] = httt.First(item => item.MaHTTT == hdbh[i].ThanhToan).TenHTTT;
+                row[6] = ttdh.First(item => item.MaTT == hdbh[i].TrangThai).TenTT;
+                table.Rows.Add(row);
+            }
 
+            // Export file Excel
+            SaveFileDialog dialog = new SaveFileDialog();
+            dialog.Title = "Export file Excel";
+            dialog.Filter = "Excel Files (*.xlsx)|*.xlsx";
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                if (excel_bll.Export(table, dialog.FileName))
+                {
+                    ShowMessage("Xuất file Excel thành công!");
+                }
+                else
+                {
+                    ShowError("Xuất file Excel thất bại!");
+                }
+            }
         }
 
         private void ShowError(string error)

@@ -46,6 +46,7 @@
     <Compile Include="CongThucDAL.cs" />
     <Compile Include="DatabaseAccess.cs" />
     <Compile Include="DonViTinhDAL.cs" />
+    <Compile Include="ExcelDAL.cs" />
     <Compile Include="HinhThucThanhToanDAL.cs" />
     <Compile Include="HoaDonBanHangDAL.cs" />
     <Compile Include="HoaDonNhapHangDAL.cs" />

@@ -13,6 +13,7 @@ namespace DAL
     public class DatabaseAccess
     {
         private static SqlConnection connection = null;
+        private static SqlBulkCopy copy = null;
 
         public DatabaseAccess()
         {
@@ -20,6 +21,7 @@ namespace DAL
             string database = "DAHLIA_FFR";
             string connStr = string.Format("Data Source={0};Initial Catalog={1};Integrated Security=True", server, database);
             connection = new SqlConnection(connStr);
+            copy = new SqlBulkCopy(connStr);
         }
 
         public DataTable ExecuteQuery(string procedure, string action, SqlParameter[] parameters)
@@ -64,6 +66,25 @@ namespace DAL
                 connection.Close();
             }
             return count;
+        }
+
+        public bool ExecuteBulkCopy(DataTable table)
+        {
+            try
+            {
+                connection.Open();
+                copy.DestinationTableName = table.TableName;
+                copy.WriteToServer(table);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                connection.Close();
+            }
         }
     }
 }

@@ -49,6 +49,16 @@
             this.tpGeneral = new System.Windows.Forms.TabPage();
             this.tblGeneral = new System.Windows.Forms.TableLayoutPanel();
             this.label16 = new System.Windows.Forms.Label();
+            this.tblGeneralBody = new System.Windows.Forms.TableLayoutPanel();
+            this.tblMenuColumns = new System.Windows.Forms.TableLayoutPanel();
+            this.numMenuColumns = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            this.cbMenuColumns = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.tblProfitMargin = new System.Windows.Forms.TableLayoutPanel();
+            this.cbProfitMargin = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.txtProfitMargin = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tblGeneralButton = new System.Windows.Forms.TableLayoutPanel();
+            this.btnUpdateGeneral = new Guna.UI2.WinForms.Guna2Button();
+            this.btnCancelGeneral = new Guna.UI2.WinForms.Guna2Button();
             this.tpUnit = new System.Windows.Forms.TabPage();
             this.tblUnit = new System.Windows.Forms.TableLayoutPanel();
             this.label13 = new System.Windows.Forms.Label();
@@ -124,20 +134,15 @@
             this.btnUpdateOrderState = new Guna.UI2.WinForms.Guna2Button();
             this.btnCreateOrderState = new Guna.UI2.WinForms.Guna2Button();
             this.btnDeleteOrderState = new Guna.UI2.WinForms.Guna2Button();
-            this.tblGeneralBody = new System.Windows.Forms.TableLayoutPanel();
-            this.tblMenuColumns = new System.Windows.Forms.TableLayoutPanel();
-            this.numMenuColumns = new Guna.UI2.WinForms.Guna2NumericUpDown();
-            this.cbMenuColumns = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.tblProfitMargin = new System.Windows.Forms.TableLayoutPanel();
-            this.cbProfitMargin = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.txtProfitMargin = new Guna.UI2.WinForms.Guna2TextBox();
-            this.tblGeneralButton = new System.Windows.Forms.TableLayoutPanel();
-            this.btnUpdateGeneral = new Guna.UI2.WinForms.Guna2Button();
-            this.btnCancelGeneral = new Guna.UI2.WinForms.Guna2Button();
             this.tblMain.SuspendLayout();
             this.tabSettings.SuspendLayout();
             this.tpGeneral.SuspendLayout();
             this.tblGeneral.SuspendLayout();
+            this.tblGeneralBody.SuspendLayout();
+            this.tblMenuColumns.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numMenuColumns)).BeginInit();
+            this.tblProfitMargin.SuspendLayout();
+            this.tblGeneralButton.SuspendLayout();
             this.tpUnit.SuspendLayout();
             this.tblUnit.SuspendLayout();
             this.tblUnitBody.SuspendLayout();
@@ -168,11 +173,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrderState)).BeginInit();
             this.tblOrderStateInput.SuspendLayout();
             this.tblOrderStateButton.SuspendLayout();
-            this.tblGeneralBody.SuspendLayout();
-            this.tblMenuColumns.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numMenuColumns)).BeginInit();
-            this.tblProfitMargin.SuspendLayout();
-            this.tblGeneralButton.SuspendLayout();
             this.SuspendLayout();
             // 
             // tblMain
@@ -267,6 +267,196 @@
             this.label16.Text = "CÀI ĐẶT CHUNG";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // tblGeneralBody
+            // 
+            this.tblGeneralBody.ColumnCount = 1;
+            this.tblGeneralBody.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tblGeneralBody.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tblGeneralBody.Controls.Add(this.tblMenuColumns, 0, 0);
+            this.tblGeneralBody.Controls.Add(this.tblProfitMargin, 0, 1);
+            this.tblGeneralBody.Controls.Add(this.tblGeneralButton, 0, 2);
+            this.tblGeneralBody.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tblGeneralBody.Location = new System.Drawing.Point(3, 61);
+            this.tblGeneralBody.Name = "tblGeneralBody";
+            this.tblGeneralBody.RowCount = 3;
+            this.tblGeneralBody.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tblGeneralBody.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tblGeneralBody.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tblGeneralBody.Size = new System.Drawing.Size(846, 520);
+            this.tblGeneralBody.TabIndex = 76;
+            // 
+            // tblMenuColumns
+            // 
+            this.tblMenuColumns.ColumnCount = 3;
+            this.tblMenuColumns.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tblMenuColumns.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tblMenuColumns.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tblMenuColumns.Controls.Add(this.numMenuColumns, 2, 0);
+            this.tblMenuColumns.Controls.Add(this.cbMenuColumns, 1, 0);
+            this.tblMenuColumns.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tblMenuColumns.Location = new System.Drawing.Point(3, 3);
+            this.tblMenuColumns.Name = "tblMenuColumns";
+            this.tblMenuColumns.RowCount = 1;
+            this.tblMenuColumns.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tblMenuColumns.Size = new System.Drawing.Size(840, 98);
+            this.tblMenuColumns.TabIndex = 3;
+            // 
+            // numMenuColumns
+            // 
+            this.numMenuColumns.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.numMenuColumns.BackColor = System.Drawing.Color.Transparent;
+            this.numMenuColumns.BorderRadius = 5;
+            this.numMenuColumns.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.numMenuColumns.Font = new System.Drawing.Font("Times New Roman", 13F);
+            this.numMenuColumns.Location = new System.Drawing.Point(423, 29);
+            this.numMenuColumns.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.numMenuColumns.Maximum = new decimal(new int[] {
+            6,
+            0,
+            0,
+            0});
+            this.numMenuColumns.Name = "numMenuColumns";
+            this.numMenuColumns.Size = new System.Drawing.Size(100, 40);
+            this.numMenuColumns.TabIndex = 95;
+            this.numMenuColumns.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // cbMenuColumns
+            // 
+            this.cbMenuColumns.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.cbMenuColumns.AutoSize = true;
+            this.cbMenuColumns.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbMenuColumns.CheckedState.BorderRadius = 0;
+            this.cbMenuColumns.CheckedState.BorderThickness = 0;
+            this.cbMenuColumns.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbMenuColumns.Location = new System.Drawing.Point(87, 34);
+            this.cbMenuColumns.Name = "cbMenuColumns";
+            this.cbMenuColumns.Size = new System.Drawing.Size(173, 29);
+            this.cbMenuColumns.TabIndex = 96;
+            this.cbMenuColumns.Text = "Số cột thực đơn";
+            this.cbMenuColumns.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.cbMenuColumns.UncheckedState.BorderRadius = 0;
+            this.cbMenuColumns.UncheckedState.BorderThickness = 0;
+            this.cbMenuColumns.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            // 
+            // tblProfitMargin
+            // 
+            this.tblProfitMargin.ColumnCount = 3;
+            this.tblProfitMargin.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tblProfitMargin.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tblProfitMargin.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tblProfitMargin.Controls.Add(this.cbProfitMargin, 1, 0);
+            this.tblProfitMargin.Controls.Add(this.txtProfitMargin, 2, 0);
+            this.tblProfitMargin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tblProfitMargin.Location = new System.Drawing.Point(3, 107);
+            this.tblProfitMargin.Name = "tblProfitMargin";
+            this.tblProfitMargin.RowCount = 1;
+            this.tblProfitMargin.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tblProfitMargin.Size = new System.Drawing.Size(840, 98);
+            this.tblProfitMargin.TabIndex = 4;
+            // 
+            // cbProfitMargin
+            // 
+            this.cbProfitMargin.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.cbProfitMargin.AutoSize = true;
+            this.cbProfitMargin.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbProfitMargin.CheckedState.BorderRadius = 0;
+            this.cbProfitMargin.CheckedState.BorderThickness = 0;
+            this.cbProfitMargin.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbProfitMargin.Location = new System.Drawing.Point(87, 34);
+            this.cbProfitMargin.Name = "cbProfitMargin";
+            this.cbProfitMargin.Size = new System.Drawing.Size(208, 29);
+            this.cbProfitMargin.TabIndex = 97;
+            this.cbProfitMargin.Text = "Phần trăm lợi nhuận";
+            this.cbProfitMargin.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.cbProfitMargin.UncheckedState.BorderRadius = 0;
+            this.cbProfitMargin.UncheckedState.BorderThickness = 0;
+            this.cbProfitMargin.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            // 
+            // txtProfitMargin
+            // 
+            this.txtProfitMargin.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtProfitMargin.BackColor = System.Drawing.Color.Transparent;
+            this.txtProfitMargin.BorderColor = System.Drawing.Color.Transparent;
+            this.txtProfitMargin.BorderRadius = 5;
+            this.txtProfitMargin.BorderThickness = 0;
+            this.txtProfitMargin.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtProfitMargin.DefaultText = "";
+            this.txtProfitMargin.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtProfitMargin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtProfitMargin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtProfitMargin.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtProfitMargin.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtProfitMargin.Font = new System.Drawing.Font("Times New Roman", 13F);
+            this.txtProfitMargin.ForeColor = System.Drawing.Color.Black;
+            this.txtProfitMargin.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtProfitMargin.Location = new System.Drawing.Point(425, 29);
+            this.txtProfitMargin.Margin = new System.Windows.Forms.Padding(5);
+            this.txtProfitMargin.Name = "txtProfitMargin";
+            this.txtProfitMargin.PasswordChar = '\0';
+            this.txtProfitMargin.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txtProfitMargin.PlaceholderText = "";
+            this.txtProfitMargin.SelectedText = "";
+            this.txtProfitMargin.Size = new System.Drawing.Size(100, 40);
+            this.txtProfitMargin.TabIndex = 98;
+            // 
+            // tblGeneralButton
+            // 
+            this.tblGeneralButton.ColumnCount = 3;
+            this.tblGeneralButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45F));
+            this.tblGeneralButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tblGeneralButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45F));
+            this.tblGeneralButton.Controls.Add(this.btnUpdateGeneral, 0, 0);
+            this.tblGeneralButton.Controls.Add(this.btnCancelGeneral, 2, 0);
+            this.tblGeneralButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tblGeneralButton.Location = new System.Drawing.Point(3, 211);
+            this.tblGeneralButton.Name = "tblGeneralButton";
+            this.tblGeneralButton.RowCount = 1;
+            this.tblGeneralButton.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tblGeneralButton.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 306F));
+            this.tblGeneralButton.Size = new System.Drawing.Size(840, 306);
+            this.tblGeneralButton.TabIndex = 5;
+            // 
+            // btnUpdateGeneral
+            // 
+            this.btnUpdateGeneral.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnUpdateGeneral.BackColor = System.Drawing.Color.Transparent;
+            this.btnUpdateGeneral.BorderRadius = 5;
+            this.btnUpdateGeneral.BorderThickness = 1;
+            this.btnUpdateGeneral.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnUpdateGeneral.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnUpdateGeneral.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnUpdateGeneral.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnUpdateGeneral.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnUpdateGeneral.Font = new System.Drawing.Font("Times New Roman", 14F);
+            this.btnUpdateGeneral.ForeColor = System.Drawing.Color.Black;
+            this.btnUpdateGeneral.Location = new System.Drawing.Point(225, 3);
+            this.btnUpdateGeneral.Name = "btnUpdateGeneral";
+            this.btnUpdateGeneral.Size = new System.Drawing.Size(150, 40);
+            this.btnUpdateGeneral.TabIndex = 95;
+            this.btnUpdateGeneral.Text = "Cập nhật";
+            // 
+            // btnCancelGeneral
+            // 
+            this.btnCancelGeneral.BackColor = System.Drawing.Color.Transparent;
+            this.btnCancelGeneral.BorderRadius = 5;
+            this.btnCancelGeneral.BorderThickness = 1;
+            this.btnCancelGeneral.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCancelGeneral.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCancelGeneral.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCancelGeneral.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCancelGeneral.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnCancelGeneral.Font = new System.Drawing.Font("Times New Roman", 14F);
+            this.btnCancelGeneral.ForeColor = System.Drawing.Color.Black;
+            this.btnCancelGeneral.Location = new System.Drawing.Point(465, 3);
+            this.btnCancelGeneral.Name = "btnCancelGeneral";
+            this.btnCancelGeneral.Size = new System.Drawing.Size(150, 40);
+            this.btnCancelGeneral.TabIndex = 96;
+            this.btnCancelGeneral.Text = "Hủy";
+            // 
             // tpUnit
             // 
             this.tpUnit.BackgroundImage = global::GUI.Properties.Resources.mF_Background;
@@ -353,7 +543,9 @@
             this.dgvUnit.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvUnit.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvUnit.Location = new System.Drawing.Point(3, 159);
+            this.dgvUnit.MultiSelect = false;
             this.dgvUnit.Name = "dgvUnit";
+            this.dgvUnit.ReadOnly = true;
             this.dgvUnit.RowHeadersVisible = false;
             this.dgvUnit.RowHeadersWidth = 51;
             this.dgvUnit.RowTemplate.Height = 24;
@@ -372,7 +564,7 @@
             this.dgvUnit.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgvUnit.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvUnit.ThemeStyle.HeaderStyle.Height = 40;
-            this.dgvUnit.ThemeStyle.ReadOnly = false;
+            this.dgvUnit.ThemeStyle.ReadOnly = true;
             this.dgvUnit.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvUnit.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvUnit.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -662,7 +854,9 @@
             this.dgvPaymentMethod.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvPaymentMethod.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvPaymentMethod.Location = new System.Drawing.Point(3, 159);
+            this.dgvPaymentMethod.MultiSelect = false;
             this.dgvPaymentMethod.Name = "dgvPaymentMethod";
+            this.dgvPaymentMethod.ReadOnly = true;
             this.dgvPaymentMethod.RowHeadersVisible = false;
             this.dgvPaymentMethod.RowHeadersWidth = 51;
             this.dgvPaymentMethod.RowTemplate.Height = 24;
@@ -681,7 +875,7 @@
             this.dgvPaymentMethod.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgvPaymentMethod.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvPaymentMethod.ThemeStyle.HeaderStyle.Height = 40;
-            this.dgvPaymentMethod.ThemeStyle.ReadOnly = false;
+            this.dgvPaymentMethod.ThemeStyle.ReadOnly = true;
             this.dgvPaymentMethod.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvPaymentMethod.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvPaymentMethod.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -971,7 +1165,9 @@
             this.dgvEmployeeCategory.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvEmployeeCategory.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvEmployeeCategory.Location = new System.Drawing.Point(3, 159);
+            this.dgvEmployeeCategory.MultiSelect = false;
             this.dgvEmployeeCategory.Name = "dgvEmployeeCategory";
+            this.dgvEmployeeCategory.ReadOnly = true;
             this.dgvEmployeeCategory.RowHeadersVisible = false;
             this.dgvEmployeeCategory.RowHeadersWidth = 51;
             this.dgvEmployeeCategory.RowTemplate.Height = 24;
@@ -990,7 +1186,7 @@
             this.dgvEmployeeCategory.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgvEmployeeCategory.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvEmployeeCategory.ThemeStyle.HeaderStyle.Height = 40;
-            this.dgvEmployeeCategory.ThemeStyle.ReadOnly = false;
+            this.dgvEmployeeCategory.ThemeStyle.ReadOnly = true;
             this.dgvEmployeeCategory.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvEmployeeCategory.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvEmployeeCategory.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1280,7 +1476,9 @@
             this.dgvMenuCategory.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvMenuCategory.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvMenuCategory.Location = new System.Drawing.Point(3, 159);
+            this.dgvMenuCategory.MultiSelect = false;
             this.dgvMenuCategory.Name = "dgvMenuCategory";
+            this.dgvMenuCategory.ReadOnly = true;
             this.dgvMenuCategory.RowHeadersVisible = false;
             this.dgvMenuCategory.RowHeadersWidth = 51;
             this.dgvMenuCategory.RowTemplate.Height = 24;
@@ -1299,7 +1497,7 @@
             this.dgvMenuCategory.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgvMenuCategory.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvMenuCategory.ThemeStyle.HeaderStyle.Height = 40;
-            this.dgvMenuCategory.ThemeStyle.ReadOnly = false;
+            this.dgvMenuCategory.ThemeStyle.ReadOnly = true;
             this.dgvMenuCategory.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvMenuCategory.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvMenuCategory.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1589,7 +1787,9 @@
             this.dgvOrderState.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvOrderState.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvOrderState.Location = new System.Drawing.Point(3, 159);
+            this.dgvOrderState.MultiSelect = false;
             this.dgvOrderState.Name = "dgvOrderState";
+            this.dgvOrderState.ReadOnly = true;
             this.dgvOrderState.RowHeadersVisible = false;
             this.dgvOrderState.RowHeadersWidth = 51;
             this.dgvOrderState.RowTemplate.Height = 24;
@@ -1608,7 +1808,7 @@
             this.dgvOrderState.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgvOrderState.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvOrderState.ThemeStyle.HeaderStyle.Height = 40;
-            this.dgvOrderState.ThemeStyle.ReadOnly = false;
+            this.dgvOrderState.ThemeStyle.ReadOnly = true;
             this.dgvOrderState.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvOrderState.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvOrderState.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1812,196 +2012,6 @@
             this.btnDeleteOrderState.TabIndex = 41;
             this.btnDeleteOrderState.Text = "Xóa";
             // 
-            // tblGeneralBody
-            // 
-            this.tblGeneralBody.ColumnCount = 1;
-            this.tblGeneralBody.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tblGeneralBody.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tblGeneralBody.Controls.Add(this.tblMenuColumns, 0, 0);
-            this.tblGeneralBody.Controls.Add(this.tblProfitMargin, 0, 1);
-            this.tblGeneralBody.Controls.Add(this.tblGeneralButton, 0, 2);
-            this.tblGeneralBody.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tblGeneralBody.Location = new System.Drawing.Point(3, 61);
-            this.tblGeneralBody.Name = "tblGeneralBody";
-            this.tblGeneralBody.RowCount = 3;
-            this.tblGeneralBody.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tblGeneralBody.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tblGeneralBody.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tblGeneralBody.Size = new System.Drawing.Size(846, 520);
-            this.tblGeneralBody.TabIndex = 76;
-            // 
-            // tblMenuColumns
-            // 
-            this.tblMenuColumns.ColumnCount = 3;
-            this.tblMenuColumns.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tblMenuColumns.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tblMenuColumns.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tblMenuColumns.Controls.Add(this.numMenuColumns, 2, 0);
-            this.tblMenuColumns.Controls.Add(this.cbMenuColumns, 1, 0);
-            this.tblMenuColumns.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tblMenuColumns.Location = new System.Drawing.Point(3, 3);
-            this.tblMenuColumns.Name = "tblMenuColumns";
-            this.tblMenuColumns.RowCount = 1;
-            this.tblMenuColumns.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tblMenuColumns.Size = new System.Drawing.Size(840, 98);
-            this.tblMenuColumns.TabIndex = 3;
-            // 
-            // numMenuColumns
-            // 
-            this.numMenuColumns.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.numMenuColumns.BackColor = System.Drawing.Color.Transparent;
-            this.numMenuColumns.BorderRadius = 5;
-            this.numMenuColumns.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.numMenuColumns.Font = new System.Drawing.Font("Times New Roman", 13F);
-            this.numMenuColumns.Location = new System.Drawing.Point(423, 29);
-            this.numMenuColumns.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.numMenuColumns.Maximum = new decimal(new int[] {
-            6,
-            0,
-            0,
-            0});
-            this.numMenuColumns.Name = "numMenuColumns";
-            this.numMenuColumns.Size = new System.Drawing.Size(100, 40);
-            this.numMenuColumns.TabIndex = 95;
-            this.numMenuColumns.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // cbMenuColumns
-            // 
-            this.cbMenuColumns.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.cbMenuColumns.AutoSize = true;
-            this.cbMenuColumns.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbMenuColumns.CheckedState.BorderRadius = 0;
-            this.cbMenuColumns.CheckedState.BorderThickness = 0;
-            this.cbMenuColumns.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbMenuColumns.Location = new System.Drawing.Point(87, 34);
-            this.cbMenuColumns.Name = "cbMenuColumns";
-            this.cbMenuColumns.Size = new System.Drawing.Size(173, 29);
-            this.cbMenuColumns.TabIndex = 96;
-            this.cbMenuColumns.Text = "Số cột thực đơn";
-            this.cbMenuColumns.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.cbMenuColumns.UncheckedState.BorderRadius = 0;
-            this.cbMenuColumns.UncheckedState.BorderThickness = 0;
-            this.cbMenuColumns.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            // 
-            // tblProfitMargin
-            // 
-            this.tblProfitMargin.ColumnCount = 3;
-            this.tblProfitMargin.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tblProfitMargin.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tblProfitMargin.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tblProfitMargin.Controls.Add(this.cbProfitMargin, 1, 0);
-            this.tblProfitMargin.Controls.Add(this.txtProfitMargin, 2, 0);
-            this.tblProfitMargin.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tblProfitMargin.Location = new System.Drawing.Point(3, 107);
-            this.tblProfitMargin.Name = "tblProfitMargin";
-            this.tblProfitMargin.RowCount = 1;
-            this.tblProfitMargin.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tblProfitMargin.Size = new System.Drawing.Size(840, 98);
-            this.tblProfitMargin.TabIndex = 4;
-            // 
-            // cbProfitMargin
-            // 
-            this.cbProfitMargin.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.cbProfitMargin.AutoSize = true;
-            this.cbProfitMargin.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbProfitMargin.CheckedState.BorderRadius = 0;
-            this.cbProfitMargin.CheckedState.BorderThickness = 0;
-            this.cbProfitMargin.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbProfitMargin.Location = new System.Drawing.Point(87, 34);
-            this.cbProfitMargin.Name = "cbProfitMargin";
-            this.cbProfitMargin.Size = new System.Drawing.Size(208, 29);
-            this.cbProfitMargin.TabIndex = 97;
-            this.cbProfitMargin.Text = "Phần trăm lợi nhuận";
-            this.cbProfitMargin.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.cbProfitMargin.UncheckedState.BorderRadius = 0;
-            this.cbProfitMargin.UncheckedState.BorderThickness = 0;
-            this.cbProfitMargin.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            // 
-            // txtProfitMargin
-            // 
-            this.txtProfitMargin.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtProfitMargin.BackColor = System.Drawing.Color.Transparent;
-            this.txtProfitMargin.BorderColor = System.Drawing.Color.Transparent;
-            this.txtProfitMargin.BorderRadius = 5;
-            this.txtProfitMargin.BorderThickness = 0;
-            this.txtProfitMargin.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtProfitMargin.DefaultText = "";
-            this.txtProfitMargin.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtProfitMargin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtProfitMargin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtProfitMargin.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtProfitMargin.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtProfitMargin.Font = new System.Drawing.Font("Times New Roman", 13F);
-            this.txtProfitMargin.ForeColor = System.Drawing.Color.Black;
-            this.txtProfitMargin.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtProfitMargin.Location = new System.Drawing.Point(425, 29);
-            this.txtProfitMargin.Margin = new System.Windows.Forms.Padding(5);
-            this.txtProfitMargin.Name = "txtProfitMargin";
-            this.txtProfitMargin.PasswordChar = '\0';
-            this.txtProfitMargin.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txtProfitMargin.PlaceholderText = "";
-            this.txtProfitMargin.SelectedText = "";
-            this.txtProfitMargin.Size = new System.Drawing.Size(100, 40);
-            this.txtProfitMargin.TabIndex = 98;
-            // 
-            // tblGeneralButton
-            // 
-            this.tblGeneralButton.ColumnCount = 3;
-            this.tblGeneralButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45F));
-            this.tblGeneralButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tblGeneralButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45F));
-            this.tblGeneralButton.Controls.Add(this.btnUpdateGeneral, 0, 0);
-            this.tblGeneralButton.Controls.Add(this.btnCancelGeneral, 2, 0);
-            this.tblGeneralButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tblGeneralButton.Location = new System.Drawing.Point(3, 211);
-            this.tblGeneralButton.Name = "tblGeneralButton";
-            this.tblGeneralButton.RowCount = 1;
-            this.tblGeneralButton.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tblGeneralButton.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tblGeneralButton.Size = new System.Drawing.Size(840, 306);
-            this.tblGeneralButton.TabIndex = 5;
-            // 
-            // btnUpdateGeneral
-            // 
-            this.btnUpdateGeneral.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnUpdateGeneral.BackColor = System.Drawing.Color.Transparent;
-            this.btnUpdateGeneral.BorderRadius = 5;
-            this.btnUpdateGeneral.BorderThickness = 1;
-            this.btnUpdateGeneral.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpdateGeneral.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpdateGeneral.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnUpdateGeneral.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnUpdateGeneral.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnUpdateGeneral.Font = new System.Drawing.Font("Times New Roman", 14F);
-            this.btnUpdateGeneral.ForeColor = System.Drawing.Color.Black;
-            this.btnUpdateGeneral.Location = new System.Drawing.Point(225, 3);
-            this.btnUpdateGeneral.Name = "btnUpdateGeneral";
-            this.btnUpdateGeneral.Size = new System.Drawing.Size(150, 40);
-            this.btnUpdateGeneral.TabIndex = 95;
-            this.btnUpdateGeneral.Text = "Cập nhật";
-            // 
-            // btnCancelGeneral
-            // 
-            this.btnCancelGeneral.BackColor = System.Drawing.Color.Transparent;
-            this.btnCancelGeneral.BorderRadius = 5;
-            this.btnCancelGeneral.BorderThickness = 1;
-            this.btnCancelGeneral.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnCancelGeneral.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnCancelGeneral.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnCancelGeneral.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCancelGeneral.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnCancelGeneral.Font = new System.Drawing.Font("Times New Roman", 14F);
-            this.btnCancelGeneral.ForeColor = System.Drawing.Color.Black;
-            this.btnCancelGeneral.Location = new System.Drawing.Point(465, 3);
-            this.btnCancelGeneral.Name = "btnCancelGeneral";
-            this.btnCancelGeneral.Size = new System.Drawing.Size(150, 40);
-            this.btnCancelGeneral.TabIndex = 96;
-            this.btnCancelGeneral.Text = "Hủy";
-            // 
             // frmSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -2019,6 +2029,13 @@
             this.tpGeneral.ResumeLayout(false);
             this.tblGeneral.ResumeLayout(false);
             this.tblGeneral.PerformLayout();
+            this.tblGeneralBody.ResumeLayout(false);
+            this.tblMenuColumns.ResumeLayout(false);
+            this.tblMenuColumns.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numMenuColumns)).EndInit();
+            this.tblProfitMargin.ResumeLayout(false);
+            this.tblProfitMargin.PerformLayout();
+            this.tblGeneralButton.ResumeLayout(false);
             this.tpUnit.ResumeLayout(false);
             this.tblUnit.ResumeLayout(false);
             this.tblUnit.PerformLayout();
@@ -2059,13 +2076,6 @@
             this.tblOrderStateInput.ResumeLayout(false);
             this.tblOrderStateInput.PerformLayout();
             this.tblOrderStateButton.ResumeLayout(false);
-            this.tblGeneralBody.ResumeLayout(false);
-            this.tblMenuColumns.ResumeLayout(false);
-            this.tblMenuColumns.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numMenuColumns)).EndInit();
-            this.tblProfitMargin.ResumeLayout(false);
-            this.tblProfitMargin.PerformLayout();
-            this.tblGeneralButton.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

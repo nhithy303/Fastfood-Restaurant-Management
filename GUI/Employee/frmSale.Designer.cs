@@ -31,7 +31,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSale));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenuPreview));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tblTotal = new System.Windows.Forms.TableLayoutPanel();
@@ -329,6 +329,7 @@
             this.dgvOrder.Location = new System.Drawing.Point(3, 88);
             this.dgvOrder.MultiSelect = false;
             this.dgvOrder.Name = "dgvOrder";
+            this.dgvOrder.ReadOnly = true;
             this.dgvOrder.RowHeadersVisible = false;
             this.dgvOrder.RowHeadersWidth = 51;
             this.dgvOrder.RowTemplate.Height = 24;
@@ -347,7 +348,7 @@
             this.dgvOrder.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgvOrder.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvOrder.ThemeStyle.HeaderStyle.Height = 50;
-            this.dgvOrder.ThemeStyle.ReadOnly = false;
+            this.dgvOrder.ThemeStyle.ReadOnly = true;
             this.dgvOrder.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvOrder.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvOrder.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -361,30 +362,35 @@
             this.Dish.HeaderText = "Món ăn";
             this.Dish.MinimumWidth = 6;
             this.Dish.Name = "Dish";
+            this.Dish.ReadOnly = true;
             // 
             // UnitPrice
             // 
             this.UnitPrice.HeaderText = "Đơn giá";
             this.UnitPrice.MinimumWidth = 6;
             this.UnitPrice.Name = "UnitPrice";
+            this.UnitPrice.ReadOnly = true;
             // 
             // Quantity
             // 
             this.Quantity.HeaderText = "Số lượng";
             this.Quantity.MinimumWidth = 6;
             this.Quantity.Name = "Quantity";
+            this.Quantity.ReadOnly = true;
             // 
             // TotalPrice
             // 
             this.TotalPrice.HeaderText = "Thành tiền";
             this.TotalPrice.MinimumWidth = 6;
             this.TotalPrice.Name = "TotalPrice";
+            this.TotalPrice.ReadOnly = true;
             // 
             // Delete
             // 
             this.Delete.HeaderText = "";
             this.Delete.MinimumWidth = 6;
             this.Delete.Name = "Delete";
+            this.Delete.ReadOnly = true;
             this.Delete.Text = "Xóa";
             this.Delete.UseColumnTextForButtonValue = true;
             // 

@@ -40,9 +40,9 @@ namespace GUI
         {
             txtID.Text = td.MaMon.ToString();
             txtName.Text = td.TenMon;
-            dgvRecipe_Load();
             cboIngredient_Load();
             cboUnit_Load();
+            dgvRecipe_Load();
             DisableInput();
             btnSave.Enabled = false;
         }

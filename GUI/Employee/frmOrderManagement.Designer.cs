@@ -65,7 +65,6 @@
             // 
             this.dgvOrder.AllowUserToAddRows = false;
             this.dgvOrder.AllowUserToDeleteRows = false;
-            this.dgvOrder.AllowUserToOrderColumns = true;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dgvOrder.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvOrder.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
@@ -90,6 +89,7 @@
             this.dgvOrder.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvOrder.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvOrder.Location = new System.Drawing.Point(3, 350);
+            this.dgvOrder.MultiSelect = false;
             this.dgvOrder.Name = "dgvOrder";
             this.dgvOrder.ReadOnly = true;
             this.dgvOrder.RowHeadersVisible = false;

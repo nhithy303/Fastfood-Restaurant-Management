@@ -47,6 +47,7 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.tblButton = new System.Windows.Forms.TableLayoutPanel();
+            this.btnResetPassword = new Guna.UI2.WinForms.Guna2Button();
             this.tblInput = new System.Windows.Forms.TableLayoutPanel();
             this.tblInput1 = new System.Windows.Forms.TableLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
@@ -64,7 +65,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.dtpBirthday = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
-            this.btnResetPassword = new Guna.UI2.WinForms.Guna2Button();
+            this.btnExport = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployees)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.tblButton.SuspendLayout();
@@ -231,7 +232,7 @@
             this.btnCreate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnCreate.Font = new System.Drawing.Font("Times New Roman", 14F);
             this.btnCreate.ForeColor = System.Drawing.Color.Black;
-            this.btnCreate.Location = new System.Drawing.Point(82, 17);
+            this.btnCreate.Location = new System.Drawing.Point(56, 17);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(150, 40);
             this.btnCreate.TabIndex = 32;
@@ -250,7 +251,7 @@
             this.btnDelete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnDelete.Font = new System.Drawing.Font("Times New Roman", 14F);
             this.btnDelete.ForeColor = System.Drawing.Color.Black;
-            this.btnDelete.Location = new System.Drawing.Point(1027, 17);
+            this.btnDelete.Location = new System.Drawing.Point(842, 17);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(150, 40);
             this.btnDelete.TabIndex = 33;
@@ -269,7 +270,7 @@
             this.btnUpdate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnUpdate.Font = new System.Drawing.Font("Times New Roman", 14F);
             this.btnUpdate.ForeColor = System.Drawing.Color.Black;
-            this.btnUpdate.Location = new System.Drawing.Point(397, 17);
+            this.btnUpdate.Location = new System.Drawing.Point(318, 17);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(150, 40);
             this.btnUpdate.TabIndex = 34;
@@ -374,7 +375,7 @@
             this.btnSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnSave.Font = new System.Drawing.Font("Times New Roman", 14F);
             this.btnSave.ForeColor = System.Drawing.Color.Black;
-            this.btnSave.Location = new System.Drawing.Point(712, 17);
+            this.btnSave.Location = new System.Drawing.Point(580, 17);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(150, 40);
             this.btnSave.TabIndex = 38;
@@ -415,18 +416,19 @@
             // 
             // tblButton
             // 
-            this.tblButton.ColumnCount = 5;
-            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tblButton.ColumnCount = 6;
+            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tblButton.Controls.Add(this.btnCreate, 0, 0);
             this.tblButton.Controls.Add(this.btnSave, 2, 0);
             this.tblButton.Controls.Add(this.btnUpdate, 1, 0);
             this.tblButton.Controls.Add(this.btnDelete, 3, 0);
             this.tblButton.Controls.Add(this.btnResetPassword, 4, 0);
+            this.tblButton.Controls.Add(this.btnExport, 5, 0);
             this.tblButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tblButton.Location = new System.Drawing.Point(3, 288);
             this.tblButton.Name = "tblButton";
@@ -434,6 +436,25 @@
             this.tblButton.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tblButton.Size = new System.Drawing.Size(1576, 75);
             this.tblButton.TabIndex = 36;
+            // 
+            // btnResetPassword
+            // 
+            this.btnResetPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnResetPassword.BackColor = System.Drawing.Color.Transparent;
+            this.btnResetPassword.BorderRadius = 5;
+            this.btnResetPassword.BorderThickness = 1;
+            this.btnResetPassword.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnResetPassword.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnResetPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnResetPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnResetPassword.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnResetPassword.Font = new System.Drawing.Font("Times New Roman", 14F);
+            this.btnResetPassword.ForeColor = System.Drawing.Color.Black;
+            this.btnResetPassword.Location = new System.Drawing.Point(1079, 17);
+            this.btnResetPassword.Name = "btnResetPassword";
+            this.btnResetPassword.Size = new System.Drawing.Size(200, 40);
+            this.btnResetPassword.TabIndex = 40;
+            this.btnResetPassword.Text = "Đặt lại mật khẩu";
             // 
             // tblInput
             // 
@@ -706,24 +727,24 @@
             this.label8.Text = "Số điện thoại";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnResetPassword
+            // btnExport
             // 
-            this.btnResetPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnResetPassword.BackColor = System.Drawing.Color.Transparent;
-            this.btnResetPassword.BorderRadius = 5;
-            this.btnResetPassword.BorderThickness = 1;
-            this.btnResetPassword.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnResetPassword.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnResetPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnResetPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnResetPassword.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnResetPassword.Font = new System.Drawing.Font("Times New Roman", 14F);
-            this.btnResetPassword.ForeColor = System.Drawing.Color.Black;
-            this.btnResetPassword.Location = new System.Drawing.Point(1318, 17);
-            this.btnResetPassword.Name = "btnResetPassword";
-            this.btnResetPassword.Size = new System.Drawing.Size(200, 40);
-            this.btnResetPassword.TabIndex = 40;
-            this.btnResetPassword.Text = "Đặt lại mật khẩu";
+            this.btnExport.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnExport.BackColor = System.Drawing.Color.Transparent;
+            this.btnExport.BorderRadius = 5;
+            this.btnExport.BorderThickness = 1;
+            this.btnExport.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnExport.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnExport.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnExport.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnExport.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnExport.Font = new System.Drawing.Font("Times New Roman", 14F);
+            this.btnExport.ForeColor = System.Drawing.Color.Black;
+            this.btnExport.Location = new System.Drawing.Point(1368, 17);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(150, 40);
+            this.btnExport.TabIndex = 41;
+            this.btnExport.Text = "Export";
             // 
             // frmEmployeesManagement
             // 
@@ -786,5 +807,6 @@
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpBirthday;
         private System.Windows.Forms.Label label8;
         private Guna.UI2.WinForms.Guna2Button btnResetPassword;
+        private Guna.UI2.WinForms.Guna2Button btnExport;
     }
 }

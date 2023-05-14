@@ -36,8 +36,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dgvSale = new Guna.UI2.WinForms.Guna2DataGridView();
             this.tblButton = new System.Windows.Forms.TableLayoutPanel();
-            this.btnSave = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
             this.btnDetail = new Guna.UI2.WinForms.Guna2Button();
             this.btnExportExcel = new Guna.UI2.WinForms.Guna2Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -54,7 +52,6 @@
             this.cboPayment = new Guna.UI2.WinForms.Guna2ComboBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.cboState = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.btnUpdate = new Guna.UI2.WinForms.Guna2Button();
             this.tblMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSale)).BeginInit();
             this.tblButton.SuspendLayout();
@@ -99,7 +96,6 @@
             // 
             this.dgvSale.AllowUserToAddRows = false;
             this.dgvSale.AllowUserToDeleteRows = false;
-            this.dgvSale.AllowUserToOrderColumns = true;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dgvSale.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -155,67 +151,23 @@
             // 
             // tblButton
             // 
-            this.tblButton.ColumnCount = 5;
-            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tblButton.Controls.Add(this.btnSave, 0, 0);
-            this.tblButton.Controls.Add(this.btnDelete, 0, 0);
+            this.tblButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.tblButton.ColumnCount = 3;
+            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45F));
+            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45F));
             this.tblButton.Controls.Add(this.btnDetail, 0, 0);
-            this.tblButton.Controls.Add(this.btnUpdate, 0, 0);
-            this.tblButton.Controls.Add(this.btnExportExcel, 1, 0);
-            this.tblButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tblButton.Controls.Add(this.btnExportExcel, 2, 0);
             this.tblButton.Location = new System.Drawing.Point(3, 328);
             this.tblButton.Name = "tblButton";
             this.tblButton.RowCount = 1;
             this.tblButton.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tblButton.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 75F));
             this.tblButton.Size = new System.Drawing.Size(1576, 75);
             this.tblButton.TabIndex = 76;
             // 
-            // btnSave
-            // 
-            this.btnSave.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnSave.BackColor = System.Drawing.Color.Transparent;
-            this.btnSave.BorderRadius = 5;
-            this.btnSave.BorderThickness = 1;
-            this.btnSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnSave.Font = new System.Drawing.Font("Times New Roman", 14F);
-            this.btnSave.ForeColor = System.Drawing.Color.Black;
-            this.btnSave.Location = new System.Drawing.Point(712, 17);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(150, 40);
-            this.btnSave.TabIndex = 92;
-            this.btnSave.Text = "Lưu";
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnDelete.BackColor = System.Drawing.Color.Transparent;
-            this.btnDelete.BorderRadius = 5;
-            this.btnDelete.BorderThickness = 1;
-            this.btnDelete.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDelete.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDelete.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDelete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDelete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnDelete.Font = new System.Drawing.Font("Times New Roman", 14F);
-            this.btnDelete.ForeColor = System.Drawing.Color.Black;
-            this.btnDelete.Location = new System.Drawing.Point(1027, 17);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(150, 40);
-            this.btnDelete.TabIndex = 91;
-            this.btnDelete.Text = "Xóa";
-            // 
             // btnDetail
             // 
-            this.btnDetail.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnDetail.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.btnDetail.BackColor = System.Drawing.Color.Transparent;
             this.btnDetail.BorderRadius = 5;
             this.btnDetail.BorderThickness = 1;
@@ -226,7 +178,7 @@
             this.btnDetail.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnDetail.Font = new System.Drawing.Font("Times New Roman", 14F);
             this.btnDetail.ForeColor = System.Drawing.Color.Black;
-            this.btnDetail.Location = new System.Drawing.Point(82, 17);
+            this.btnDetail.Location = new System.Drawing.Point(556, 17);
             this.btnDetail.Name = "btnDetail";
             this.btnDetail.Size = new System.Drawing.Size(150, 40);
             this.btnDetail.TabIndex = 90;
@@ -234,7 +186,7 @@
             // 
             // btnExportExcel
             // 
-            this.btnExportExcel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnExportExcel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnExportExcel.BackColor = System.Drawing.Color.Transparent;
             this.btnExportExcel.BorderRadius = 5;
             this.btnExportExcel.BorderThickness = 1;
@@ -245,7 +197,7 @@
             this.btnExportExcel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnExportExcel.Font = new System.Drawing.Font("Times New Roman", 14F);
             this.btnExportExcel.ForeColor = System.Drawing.Color.Black;
-            this.btnExportExcel.Location = new System.Drawing.Point(1343, 17);
+            this.btnExportExcel.Location = new System.Drawing.Point(869, 17);
             this.btnExportExcel.Name = "btnExportExcel";
             this.btnExportExcel.Size = new System.Drawing.Size(150, 40);
             this.btnExportExcel.TabIndex = 89;
@@ -498,25 +450,6 @@
             this.cboState.Size = new System.Drawing.Size(250, 36);
             this.cboState.TabIndex = 103;
             // 
-            // btnUpdate
-            // 
-            this.btnUpdate.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnUpdate.BackColor = System.Drawing.Color.Transparent;
-            this.btnUpdate.BorderRadius = 5;
-            this.btnUpdate.BorderThickness = 1;
-            this.btnUpdate.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpdate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpdate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnUpdate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnUpdate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnUpdate.Font = new System.Drawing.Font("Times New Roman", 14F);
-            this.btnUpdate.ForeColor = System.Drawing.Color.Black;
-            this.btnUpdate.Location = new System.Drawing.Point(397, 17);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(150, 40);
-            this.btnUpdate.TabIndex = 88;
-            this.btnUpdate.Text = "Sửa";
-            // 
             // frmSalesManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -548,8 +481,6 @@
         private System.Windows.Forms.TableLayoutPanel tblButton;
         private Guna.UI2.WinForms.Guna2Button btnExportExcel;
         private Guna.UI2.WinForms.Guna2Button btnDetail;
-        private Guna.UI2.WinForms.Guna2Button btnSave;
-        private Guna.UI2.WinForms.Guna2Button btnDelete;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label4;
@@ -564,6 +495,5 @@
         private Guna.UI2.WinForms.Guna2ComboBox cboEmployee;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private Guna.UI2.WinForms.Guna2ComboBox cboState;
-        private Guna.UI2.WinForms.Guna2Button btnUpdate;
     }
 }

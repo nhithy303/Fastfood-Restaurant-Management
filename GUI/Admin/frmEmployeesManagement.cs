@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.WebRequestMethods;
 
 namespace GUI
 {
@@ -16,7 +17,10 @@ namespace GUI
     {
         TaiKhoanBLL tk_bll = new TaiKhoanBLL();
         NhanVienBLL nv_bll = new NhanVienBLL();
+        Dictionary<string, int> gender;
+        PhanLoaiNV[] plnv;
         PhanLoaiNVBLL plnv_bll = new PhanLoaiNVBLL();
+        ExcelBLL excel_bll = new ExcelBLL();
         
         public frmEmployeesManagement()
         {
@@ -28,6 +32,7 @@ namespace GUI
             btnSave.Click += btnSave_Click;
             btnDelete.Click += btnDelete_Click;
             btnResetPassword.Click += btnResetPassword_Click;
+            btnExport.Click += btnExport_Click;
             dtpBirthday.Format = DateTimePickerFormat.Custom;
             dtpBirthday.CustomFormat = "dd'/'MM'/'yyyy";
             dtpStartDate.Format = DateTimePickerFormat.Custom;
@@ -36,9 +41,9 @@ namespace GUI
 
         private void frmEmployeesManagement_Load(object sender, EventArgs e)
         {
-            dgvEmployees_Load();
             cboGender_Load();
             cboType_Load();
+            dgvEmployees_Load();
             DisableInput();
             btnSave.Enabled = false;
         }
@@ -75,7 +80,7 @@ namespace GUI
 
         private void cboGender_Load()
         {
-            Dictionary<string, int> gender = new Dictionary<string, int>
+            gender = new Dictionary<string, int>
             {
                 {"Nữ", 1}, {"Nam", 2}
             };
@@ -86,7 +91,7 @@ namespace GUI
 
         private void cboType_Load()
         {
-            PhanLoaiNV[] plnv = plnv_bll.GetList(new PhanLoaiNV());
+            plnv = plnv_bll.GetList(new PhanLoaiNV());
             cboType.DisplayMember = "TenLoai";
             cboType.ValueMember = "MaLoai";
             cboType.DataSource = plnv;
@@ -231,6 +236,54 @@ namespace GUI
                 else
                 {
                     ShowError("Đặt lại mật khẩu thất bại!");
+                }
+            }
+        }
+
+        private void btnExport_Click(object sender, EventArgs e)
+        {
+            // Convert DataGridView to DataTable
+            NhanVien[] nv = (NhanVien[])(dgvEmployees.DataSource);
+            DataTable table = new DataTable();
+            table.Columns.Add("Mã nhân viên");
+            table.Columns.Add("Mã tài khoản");
+            table.Columns.Add("Họ");
+            table.Columns.Add("Tên");
+            table.Columns.Add("Ngày sinh");
+            table.Columns.Add("Giới tính");
+            table.Columns.Add("Số điện thoại");
+            table.Columns.Add("Địa chỉ");
+            table.Columns.Add("Loại nhân viên");
+            table.Columns.Add("Ngày vào làm");
+            for (int i = 0; i < nv.Length; i++)
+            {
+                DataRow row = table.NewRow();
+                row[0] = nv[i].MaNV;
+                row[1] = nv[i].MaTK;
+                row[2] = nv[i].HoNV;
+                row[3] = nv[i].TenNV;
+                row[4] = ReverseDateFormat(nv[i].NgaySinh);
+                row[5] = gender.First(item => item.Value == nv[i].GioiTinh).Key;
+                row[6] = String.Format("'{0}", nv[i].Sdt);
+                row[7] = nv[i].DiaChi;
+                row[8] = plnv.First(item => item.MaLoai == nv[i].MaLoai).TenLoai;
+                row[9] = ReverseDateFormat(nv[i].NgayVaoLam);
+                table.Rows.Add(row);
+            }
+
+            // Export file Excel
+            SaveFileDialog dialog = new SaveFileDialog();
+            dialog.Title = "Export file Excel";
+            dialog.Filter = "Excel Files (*.xlsx)|*.xlsx";
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                if (excel_bll.Export(table, dialog.FileName))
+                {
+                    ShowMessage("Xuất file Excel thành công!");
+                }
+                else
+                {
+                    ShowError("Xuất file Excel thất bại!");
                 }
             }
         }

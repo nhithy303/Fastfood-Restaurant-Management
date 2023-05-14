@@ -63,6 +63,8 @@
             // 
             // dgvOrderDetail
             // 
+            this.dgvOrderDetail.AllowUserToAddRows = false;
+            this.dgvOrderDetail.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dgvOrderDetail.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -86,7 +88,9 @@
             this.dgvOrderDetail.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvOrderDetail.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvOrderDetail.Location = new System.Drawing.Point(3, 240);
+            this.dgvOrderDetail.MultiSelect = false;
             this.dgvOrderDetail.Name = "dgvOrderDetail";
+            this.dgvOrderDetail.ReadOnly = true;
             this.dgvOrderDetail.RowHeadersVisible = false;
             this.dgvOrderDetail.RowHeadersWidth = 51;
             this.dgvOrderDetail.RowTemplate.Height = 24;
@@ -105,7 +109,7 @@
             this.dgvOrderDetail.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgvOrderDetail.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvOrderDetail.ThemeStyle.HeaderStyle.Height = 40;
-            this.dgvOrderDetail.ThemeStyle.ReadOnly = false;
+            this.dgvOrderDetail.ThemeStyle.ReadOnly = true;
             this.dgvOrderDetail.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvOrderDetail.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvOrderDetail.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

@@ -10,13 +10,16 @@ using System.Management;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.WebRequestMethods;
 
 namespace GUI
 {
     public partial class frmStorageManagement : Form
     {
         NguyenLieuBLL nl_bll = new NguyenLieuBLL();
+        DonViTinh[] dvt;
         DonViTinhBLL dvt_bll = new DonViTinhBLL();
+        ExcelBLL excel_bll = new ExcelBLL();
 
         public frmStorageManagement()
         {
@@ -27,12 +30,14 @@ namespace GUI
             btnUpdate.Click += btnUpdate_Click;
             btnSave.Click += btnSave_Click;
             btnDelete.Click += btnDelete_Click;
+            btnImport.Click += btnImport_Click;
+            btnExport.Click += btnExport_Click;
         }
 
         private void frmStorageManagement_Load(object sender, EventArgs e)
         {
-            dgvIngredient_Load();
             cboUnit_Load();
+            dgvIngredient_Load();
             DisableInput();
             btnSave.Enabled = false;
         }
@@ -64,7 +69,7 @@ namespace GUI
 
         private void cboUnit_Load()
         {
-            DonViTinh[] dvt = dvt_bll.GetList(new DonViTinh());
+            dvt = dvt_bll.GetList(new DonViTinh());
             cboUnit.DisplayMember = "TenDVT";
             cboUnit.ValueMember = "MaDVT";
             cboUnit.DataSource = dvt;
@@ -181,6 +186,49 @@ namespace GUI
                 else
                 {
                     ShowError("Xóa nguyên liệu thất bại!");
+                }
+            }
+        }
+
+        private void btnImport_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnExport_Click(object sender, EventArgs e)
+        {
+            // Convert DataGridView to DataTable
+            NguyenLieu[] nl = (NguyenLieu[])(dgvIngredient.DataSource);
+            DataTable table = new DataTable();
+            table.Columns.Add("Mã nguyên liệu");
+            table.Columns.Add("Tên nguyên liệu");
+            table.Columns.Add("Tồn kho");
+            table.Columns.Add("Đơn vị tính");
+            table.Columns.Add("Đơn giá");
+            for (int i = 0; i < nl.Length; i++)
+            {
+                DataRow row = table.NewRow();
+                row[0] = nl[i].MaNL;
+                row[1] = nl[i].TenNL;
+                row[2] = nl[i].TonKho;
+                row[3] = dvt.First(item => item.MaDVT == nl[i].DonViTinh).TenDVT;
+                row[4] = nl[i].DonGia;
+                table.Rows.Add(row);
+            }
+
+            // Export file Excel
+            SaveFileDialog dialog = new SaveFileDialog();
+            dialog.Title = "Export file Excel";
+            dialog.Filter = "Excel Files (*.xlsx)|*.xlsx";
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                if (excel_bll.Export(table, dialog.FileName))
+                {
+                    ShowMessage("Xuất file Excel thành công!");
+                }
+                else
+                {
+                    ShowError("Xuất file Excel thất bại!");
                 }
             }
         }

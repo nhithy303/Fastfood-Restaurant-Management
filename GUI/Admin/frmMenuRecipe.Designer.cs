@@ -122,6 +122,8 @@
             // 
             // dgvRecipe
             // 
+            this.dgvRecipe.AllowUserToAddRows = false;
+            this.dgvRecipe.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dgvRecipe.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -145,7 +147,9 @@
             this.dgvRecipe.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvRecipe.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvRecipe.Location = new System.Drawing.Point(3, 299);
+            this.dgvRecipe.MultiSelect = false;
             this.dgvRecipe.Name = "dgvRecipe";
+            this.dgvRecipe.ReadOnly = true;
             this.dgvRecipe.RowHeadersVisible = false;
             this.dgvRecipe.RowHeadersWidth = 51;
             this.dgvRecipe.RowTemplate.Height = 24;
@@ -164,7 +168,7 @@
             this.dgvRecipe.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgvRecipe.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvRecipe.ThemeStyle.HeaderStyle.Height = 40;
-            this.dgvRecipe.ThemeStyle.ReadOnly = false;
+            this.dgvRecipe.ThemeStyle.ReadOnly = true;
             this.dgvRecipe.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvRecipe.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvRecipe.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

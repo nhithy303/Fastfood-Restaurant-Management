@@ -59,6 +59,7 @@
             this.tblInput4 = new System.Windows.Forms.TableLayoutPanel();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.btnPreview = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.picDish)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMenu)).BeginInit();
             this.tblMain.SuspendLayout();
@@ -83,7 +84,7 @@
             this.btnCreate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnCreate.Font = new System.Drawing.Font("Times New Roman", 14F);
             this.btnCreate.ForeColor = System.Drawing.Color.Black;
-            this.btnCreate.Location = new System.Drawing.Point(82, 17);
+            this.btnCreate.Location = new System.Drawing.Point(56, 17);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(150, 40);
             this.btnCreate.TabIndex = 37;
@@ -102,7 +103,7 @@
             this.btnDelete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnDelete.Font = new System.Drawing.Font("Times New Roman", 14F);
             this.btnDelete.ForeColor = System.Drawing.Color.Black;
-            this.btnDelete.Location = new System.Drawing.Point(1027, 17);
+            this.btnDelete.Location = new System.Drawing.Point(842, 17);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(150, 40);
             this.btnDelete.TabIndex = 38;
@@ -256,7 +257,7 @@
             this.btnSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnSave.Font = new System.Drawing.Font("Times New Roman", 14F);
             this.btnSave.ForeColor = System.Drawing.Color.Black;
-            this.btnSave.Location = new System.Drawing.Point(712, 17);
+            this.btnSave.Location = new System.Drawing.Point(580, 17);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(150, 40);
             this.btnSave.TabIndex = 68;
@@ -275,7 +276,7 @@
             this.btnUpdate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnUpdate.Font = new System.Drawing.Font("Times New Roman", 14F);
             this.btnUpdate.ForeColor = System.Drawing.Color.Black;
-            this.btnUpdate.Location = new System.Drawing.Point(397, 17);
+            this.btnUpdate.Location = new System.Drawing.Point(318, 17);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(150, 40);
             this.btnUpdate.TabIndex = 69;
@@ -294,7 +295,7 @@
             this.btnRecipe.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnRecipe.Font = new System.Drawing.Font("Times New Roman", 14F);
             this.btnRecipe.ForeColor = System.Drawing.Color.Black;
-            this.btnRecipe.Location = new System.Drawing.Point(1343, 17);
+            this.btnRecipe.Location = new System.Drawing.Point(1104, 17);
             this.btnRecipe.Name = "btnRecipe";
             this.btnRecipe.Size = new System.Drawing.Size(150, 40);
             this.btnRecipe.TabIndex = 70;
@@ -421,18 +422,19 @@
             // 
             // tblButton
             // 
-            this.tblButton.ColumnCount = 5;
-            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tblButton.ColumnCount = 6;
+            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tblButton.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tblButton.Controls.Add(this.btnCreate, 0, 0);
             this.tblButton.Controls.Add(this.btnUpdate, 1, 0);
             this.tblButton.Controls.Add(this.btnRecipe, 4, 0);
             this.tblButton.Controls.Add(this.btnSave, 2, 0);
             this.tblButton.Controls.Add(this.btnDelete, 3, 0);
+            this.tblButton.Controls.Add(this.btnPreview, 5, 0);
             this.tblButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tblButton.Location = new System.Drawing.Point(3, 328);
             this.tblButton.Name = "tblButton";
@@ -618,6 +620,25 @@
             this.label5.Text = "Giá gốc";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btnPreview
+            // 
+            this.btnPreview.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnPreview.BackColor = System.Drawing.Color.Transparent;
+            this.btnPreview.BorderRadius = 5;
+            this.btnPreview.BorderThickness = 1;
+            this.btnPreview.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnPreview.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnPreview.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPreview.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnPreview.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnPreview.Font = new System.Drawing.Font("Times New Roman", 14F);
+            this.btnPreview.ForeColor = System.Drawing.Color.Black;
+            this.btnPreview.Location = new System.Drawing.Point(1368, 17);
+            this.btnPreview.Name = "btnPreview";
+            this.btnPreview.Size = new System.Drawing.Size(150, 40);
+            this.btnPreview.TabIndex = 71;
+            this.btnPreview.Text = "Xem trước";
+            // 
             // frmMenuManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -674,5 +695,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2TextBox txtName;
+        private Guna.UI2.WinForms.Guna2Button btnPreview;
     }
 }

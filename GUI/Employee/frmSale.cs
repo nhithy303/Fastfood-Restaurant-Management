@@ -226,12 +226,14 @@ namespace GUI
             {
                 cthdbh.RemoveAt(e.RowIndex);
                 dgvOrder.Rows.RemoveAt(e.RowIndex);
+                UpdateTotal();
             }
         }
 
         private void dgvOrder_Clear()
         {
             dgvOrder.Rows.Clear();
+            UpdateTotal();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)

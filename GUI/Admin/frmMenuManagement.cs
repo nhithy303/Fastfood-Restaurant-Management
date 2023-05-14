@@ -32,12 +32,13 @@ namespace GUI
             btnDelete.Click += btnDelete_Click;
             btnRecipe.Click += btnRecipe_Click;
             btnUpload.Click += btnUpload_Click;
+            btnPreview.Click += btnPreview_Click;
         }
 
         private void frmMenuManagement_Load(object sender, EventArgs e)
         {
-            dgvMenu_Load();
             cboCategory_Load();
+            dgvMenu_Load();
             DisableInput();
             btnRecipe.Enabled = btnDelete.Enabled = false;
         }
@@ -216,6 +217,11 @@ namespace GUI
                 picDish.Image = new Bitmap(txtImagePath.Text);
                 picDish.SizeMode = PictureBoxSizeMode.StretchImage;
             }
+        }
+
+        private void btnPreview_Click(object sender, EventArgs e)
+        {
+            new frmMenuPreview().ShowDialog();
         }
 
         private void ShowError(string error)

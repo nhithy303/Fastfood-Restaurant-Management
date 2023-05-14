@@ -38,9 +38,9 @@ namespace GUI.Employee
 
         private void frmOrderManagement_Load(object sender, EventArgs e)
         {
-            dgvOrder_Load();
             cboPayment_Load();
             cboState_Load();
+            dgvOrder_Load();
             DisableInput();
             btnSave.Enabled = false;
         }
@@ -98,7 +98,7 @@ namespace GUI.Employee
             hdbh.TongTien = int.Parse(row.Cells[3].Value.ToString());
             hdbh.ThanhToan = int.Parse(row.Cells[4].Value.ToString());
             hdbh.TrangThai = int.Parse(row.Cells[5].Value.ToString());
-            new frmOrderDetail(hdbh).ShowDialog();
+            new frmOrderDetail(hdbh, false).ShowDialog();
             dgvOrder_Load();
         }
 

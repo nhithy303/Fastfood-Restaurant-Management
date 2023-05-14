@@ -31,6 +31,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -45,6 +49,7 @@
     <Compile Include="ChiTietHDNHBLL.cs" />
     <Compile Include="CongThucBLL.cs" />
     <Compile Include="DonViTinhBLL.cs" />
+    <Compile Include="ExcelBLL.cs" />
     <Compile Include="HinhThucThanhToanBLL.cs" />
     <Compile Include="HoaDonBanHangBLL.cs" />
     <Compile Include="HoaDonNhapHangBLL.cs" />
@@ -69,6 +74,9 @@
       <Project>{cfcba85d-5f67-401c-a4fc-d5d8ba9c858b}</Project>
       <Name>DTO</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
