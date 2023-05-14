@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -28,7 +29,12 @@ namespace GUI
             InitializeComponent();
             this.Load += frmSalesManagement_Load;
             dgvSale.SelectionChanged += dgvSale_SelectionChanged;
+            cbEmployee.CheckedChanged += cbEmployee_CheckedChanged;
+            cbDate.CheckedChanged += cbDate_CheckedChanged;
+            cbPayment.CheckedChanged += cbPayment_CheckedChanged;
+            btnSearch.Click += btnSearch_Click;
             btnDetail.Click += btnDetail_Click;
+            btnReload.Click += btnReload_Click;
             btnExportExcel.Click += btnExportExcel_Click;
             dtpDate.Format = DateTimePickerFormat.Custom;
             dtpDate.CustomFormat = "dd'/'MM'/'yyyy";
@@ -41,6 +47,7 @@ namespace GUI
             cboState_Load();
             dgvSale_Load();
             cboEmployee.Enabled = cboPayment.Enabled = cboState.Enabled = false;
+            cbEmployee.Checked = cbDate.Checked = cbPayment.Checked = btnSearch.Enabled = false;
         }
 
         private void dgvSale_Load()
@@ -85,6 +92,49 @@ namespace GUI
             cboState.DisplayMember = "TenTT";
             cboState.ValueMember = "MaTT";
             cboState.DataSource = ttdh;
+        }        
+
+        private void cbEmployee_CheckedChanged(object sender, EventArgs e)
+        {
+            cboEmployee.Enabled = cbEmployee.Checked;
+            EnableFeature();
+        }
+
+        private void cbDate_CheckedChanged(object sender, EventArgs e)
+        {
+            dtpDate.Enabled = cbDate.Checked;
+            EnableFeature();
+        }
+
+        private void cbPayment_CheckedChanged(object sender, EventArgs e)
+        {
+            cboPayment.Enabled = cbPayment.Checked;
+            EnableFeature();
+        }
+
+        private void EnableFeature()
+        {
+            dgvSale.Enabled = (!cbEmployee.Checked && !cbDate.Checked && !cbPayment.Checked);
+            btnSearch.Enabled = (cbEmployee.Checked || cbDate.Checked || cbPayment.Checked);
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            HoaDonBanHang hdbh_filter = new HoaDonBanHang();
+            if (cbEmployee.Checked)
+            {
+                hdbh_filter.MaNV = Convert.ToInt32(cboEmployee.SelectedValue);
+            }
+            if (cbDate.Checked)
+            {
+                hdbh_filter.NgayHD = dtpDate.Value.ToString();
+            }
+            if (cbPayment.Checked)
+            {
+                hdbh_filter.ThanhToan = Convert.ToInt32(cboPayment.SelectedValue);
+            }
+            dgvSale.DataSource = hdbh_bll.GetList(hdbh_filter);
+            dgvSale.Font = new Font("Times New Roman", 13F);
         }
 
         private void btnDetail_Click(object sender, EventArgs e)
@@ -95,6 +145,11 @@ namespace GUI
             hdbh.ThanhToan = int.Parse(row.Cells[4].Value.ToString());
             hdbh.TrangThai = int.Parse(row.Cells[5].Value.ToString());
             new frmOrderDetail(hdbh, true).ShowDialog();
+            dgvSale_Load();
+        }
+
+        private void btnReload_Click(object sender, EventArgs e)
+        {
             dgvSale_Load();
         }
 
