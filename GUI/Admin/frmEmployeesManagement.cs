@@ -37,6 +37,7 @@ namespace GUI
             dtpBirthday.CustomFormat = "dd'/'MM'/'yyyy";
             dtpStartDate.Format = DateTimePickerFormat.Custom;
             dtpStartDate.CustomFormat = "dd'/'MM'/'yyyy";
+            btnUpdate.Enabled = btnDelete.Enabled = btnResetPassword.Enabled = false;
         }
 
         private void frmEmployeesManagement_Load(object sender, EventArgs e)

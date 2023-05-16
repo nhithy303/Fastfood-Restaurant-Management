@@ -18,7 +18,7 @@ namespace DAL
         public DatabaseAccess()
         {
             string server = "LAPTOP-NL39PTHM\\MEI";
-            string database = "DAHLIA_FFR";
+            string database = "DAHLIA_FASTFOOD";
             string connStr = string.Format("Data Source={0};Initial Catalog={1};Integrated Security=True", server, database);
             connection = new SqlConnection(connStr);
             copy = new SqlBulkCopy(connStr);

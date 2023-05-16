@@ -39,6 +39,7 @@ namespace GUI
             btnSave.Click += btnSave_Click;
             btnDelete.Click += btnDelete_Click;
             btnPrint.Click += btnPrint_Click;
+            btnUpdate.Enabled = btnDelete.Enabled = false;
         }
 
         private void frmOrderDetail_Load(object sender, EventArgs e)
@@ -223,32 +224,39 @@ namespace GUI
 
         private void btnPrint_Click(object sender, EventArgs e)
         {
-            // Pass table of ChiTietHDBH to print
-            DataTable table = new DataTable();
-            table.Columns.Add("TENMON");
-            table.Columns.Add("SOLUONG");
-            table.Columns.Add("DONGIA");
-            table.Columns.Add("THANHTIEN");
-            foreach (DataGridViewRow row in dgvOrderDetail.Rows)
+            if (dgvOrderDetail.RowCount > 0)
             {
-                DataRow newRow = table.NewRow();
-
-                // Find TENMON of MAMON
-                ThucDon td_find = new ThucDon();
-                td_find.MaMon = int.Parse(row.Cells[1].Value.ToString());
-                ThucDon[] td = td_bll.GetList(td_find);
-                if (td != null)
+                // Pass table of ChiTietHDBH to print
+                DataTable table = new DataTable();
+                table.Columns.Add("TENMON");
+                table.Columns.Add("SOLUONG");
+                table.Columns.Add("DONGIA");
+                table.Columns.Add("THANHTIEN");
+                foreach (DataGridViewRow row in dgvOrderDetail.Rows)
                 {
-                    newRow[0] = td[0].TenMon;
-                }
-                // Add value of other columns
-                newRow[1] = row.Cells[2].Value;
-                newRow[2] = row.Cells[3].Value;
-                newRow[3] = row.Cells[4].Value;
+                    DataRow newRow = table.NewRow();
 
-                table.Rows.Add(newRow);
+                    // Find TENMON of MAMON
+                    ThucDon td_find = new ThucDon();
+                    td_find.MaMon = int.Parse(row.Cells[1].Value.ToString());
+                    ThucDon[] td = td_bll.GetList(td_find);
+                    if (td != null)
+                    {
+                        newRow[0] = td[0].TenMon;
+                    }
+                    // Add value of other columns
+                    newRow[1] = row.Cells[2].Value;
+                    newRow[2] = row.Cells[3].Value;
+                    newRow[3] = row.Cells[4].Value;
+
+                    table.Rows.Add(newRow);
+                }
+                new frmOrderDetailPrint(hdbh, table).ShowDialog();
             }
-            new frmOrderDetailPrint(hdbh, table).ShowDialog();
+            else
+            {
+                ShowError("Chi tiết hóa đơn bán hàng này còn trống!");
+            }
         }
 
         private void UpdateTotal()

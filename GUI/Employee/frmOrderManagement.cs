@@ -34,6 +34,7 @@ namespace GUI.Employee
             btnDelete.Click += btnDelete_Click;
             dtpDate.Format = DateTimePickerFormat.Custom;
             dtpDate.CustomFormat = "dd'/'MM'/'yyyy";
+            btnDetail.Enabled = btnUpdate.Enabled = btnDelete.Enabled = false;
         }
 
         private void frmOrderManagement_Load(object sender, EventArgs e)
@@ -64,11 +65,11 @@ namespace GUI.Employee
                 cboPayment.SelectedValue = int.Parse(row.Cells[4].Value.ToString());
                 cboState.SelectedValue = int.Parse(row.Cells[5].Value.ToString());
 
-                btnUpdate.Enabled = btnDelete.Enabled = true;
+                btnDetail.Enabled = btnUpdate.Enabled = btnDelete.Enabled = true;
             }
             else
             {
-                btnUpdate.Enabled = btnDelete.Enabled = false;
+                btnDetail.Enabled = btnUpdate.Enabled = btnDelete.Enabled = false;
             }
         }
 

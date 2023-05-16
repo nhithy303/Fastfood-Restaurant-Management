@@ -38,6 +38,7 @@ namespace GUI
             btnExportExcel.Click += btnExportExcel_Click;
             dtpDate.Format = DateTimePickerFormat.Custom;
             dtpDate.CustomFormat = "dd'/'MM'/'yyyy";
+            btnDetail.Enabled = false;
         }
 
         private void frmSalesManagement_Load(object sender, EventArgs e)
@@ -67,6 +68,11 @@ namespace GUI
                 txtTotal.Text = row.Cells[3].Value.ToString();
                 cboPayment.SelectedValue = int.Parse(row.Cells[4].Value.ToString());
                 cboState.SelectedValue = int.Parse(row.Cells[5].Value.ToString());
+                btnDetail.Enabled = true;
+            }
+            else
+            {
+                btnDetail.Enabled = false;
             }
         }
 

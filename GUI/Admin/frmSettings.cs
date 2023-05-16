@@ -172,7 +172,7 @@ namespace GUI.Admin
             btnSaveUnit.Click += btnSaveUnit_Click;
             btnDeleteUnit.Click += btnDeleteUnit_Click;
             DisableUnitInput();
-            btnSaveUnit.Enabled = false;
+            btnUpdateUnit.Enabled = btnSaveUnit.Enabled = btnDeleteUnit.Enabled = false;
         }
 
         private void dgvUnit_Load()
@@ -306,6 +306,10 @@ namespace GUI.Admin
 
                 btnUpdateUnit.Enabled = btnDeleteUnit.Enabled = true;
             }
+            else
+            {
+                btnUpdateUnit.Enabled = btnDeleteUnit.Enabled = false;
+            }
         }
 
         private void EnableUnitInput()
@@ -328,7 +332,7 @@ namespace GUI.Admin
             btnSavePaymentMethod.Click += btnSavePaymentMethod_Click;
             btnDeletePaymentMethod.Click += btnDeletePaymentMethod_Click;
             DisablePaymentMethodInput();
-            btnSavePaymentMethod.Enabled = false;
+            btnUpdatePaymentMethod.Enabled = btnSavePaymentMethod.Enabled = btnDeletePaymentMethod.Enabled = false;
         }
 
         private void dgvPaymentMethod_Load()
@@ -462,6 +466,10 @@ namespace GUI.Admin
 
                 btnUpdatePaymentMethod.Enabled = btnDeletePaymentMethod.Enabled = true;
             }
+            else
+            {
+                btnUpdatePaymentMethod.Enabled = btnDeletePaymentMethod.Enabled = false;
+            }
         }
 
         private void EnablePaymentMethodInput()
@@ -484,7 +492,7 @@ namespace GUI.Admin
             btnSaveEmployeeCategory.Click += btnSaveEmployeeCategory_Click;
             btnDeleteEmployeeCategory.Click += btnDeleteEmployeeCategory_Click;
             DisableEmployeeCategoryInput();
-            btnSaveEmployeeCategory.Enabled = false;
+            btnUpdateEmployeeCategory.Enabled = btnSaveEmployeeCategory.Enabled = btnDeleteEmployeeCategory.Enabled = false;
         }
 
         private void dgvEmployeeCategory_Load()
@@ -618,6 +626,10 @@ namespace GUI.Admin
 
                 btnUpdateEmployeeCategory.Enabled = btnDeleteEmployeeCategory.Enabled = true;
             }
+            else
+            {
+                btnUpdateEmployeeCategory.Enabled = btnDeleteEmployeeCategory.Enabled = false;
+            }
         }
 
         private void EnableEmployeeCategoryInput()
@@ -640,7 +652,7 @@ namespace GUI.Admin
             btnSaveMenuCategory.Click += btnSaveMenuCategory_Click;
             btnDeleteMenuCategory.Click += btnDeleteMenuCategory_Click;
             DisableMenuCategoryInput();
-            btnSaveMenuCategory.Enabled = false;
+            btnUpdateMenuCategory.Enabled = btnSaveMenuCategory.Enabled = btnDeleteMenuCategory.Enabled = false;
         }
 
         private void dgvMenuCategory_Load()
@@ -774,6 +786,10 @@ namespace GUI.Admin
 
                 btnUpdateMenuCategory.Enabled = btnDeleteMenuCategory.Enabled = true;
             }
+            else
+            {
+                btnUpdateMenuCategory.Enabled = btnDeleteMenuCategory.Enabled = false;
+            }
         }
 
         private void EnableMenuCategoryInput()
@@ -796,7 +812,7 @@ namespace GUI.Admin
             btnSaveOrderState.Click += btnSaveOrderState_Click;
             btnDeleteOrderState.Click += btnDeleteOrderState_Click;
             DisableOrderStateInput();
-            btnSaveOrderState.Enabled = false;
+            btnUpdateOrderState.Enabled = btnSaveOrderState.Enabled = btnDeleteOrderState.Enabled = false;
         }
 
         private void dgvOrderState_Load()
@@ -929,6 +945,10 @@ namespace GUI.Admin
                 txtOrderStateName.Text = row.Cells[1].Value.ToString();
 
                 btnUpdateOrderState.Enabled = btnDeleteOrderState.Enabled = true;
+            }
+            else
+            {
+                btnUpdateOrderState.Enabled = btnDeleteOrderState.Enabled = false;
             }
         }
 

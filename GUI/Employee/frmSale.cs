@@ -45,7 +45,10 @@ namespace GUI
         private void frmSale_Load(object sender, EventArgs e)
         {
             tabOrder_Load();
-            currentTabPage = tabOrder.TabPages[0];
+            if (tabOrder.TabCount > 0)
+            {
+                currentTabPage = tabOrder.TabPages[0];
+            }
             dgvOrder_Load();
             cboPayment_Load();
         }

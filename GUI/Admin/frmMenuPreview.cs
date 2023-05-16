@@ -38,7 +38,10 @@ namespace GUI
         private void frmMenuPreview_Load(object sender, EventArgs e)
         {
             tabMenu_Load();
-            currentTabPage = tabMenu.TabPages[0];
+            if (tabMenu.TabCount > 0)
+            {
+                currentTabPage = tabMenu.TabPages[0];
+            }
         }
 
         private void tabMenu_Load()
@@ -162,20 +165,27 @@ namespace GUI
         Bitmap[] printMenu;
         private void btnPrint_Click(object sender, EventArgs e)
         {
-            printMenu = new Bitmap[pltd.Length];
-            for (int i = 0; i < pltd.Length; i++)
+            if (pltd != null)
             {
-                TableLayoutPanel tbl = (TableLayoutPanel)(tabMenu.TabPages[i].Controls[0]);
-                printMenu[i] = new Bitmap(tbl.Width, tbl.Height);
-                tbl.DrawToBitmap(printMenu[i], new Rectangle(0, 0, printMenu[i].Width, printMenu[i].Height));
-            }
-            
-            PrintPreviewDialog previewDialog = new PrintPreviewDialog();
-            PrintDocument document = new PrintDocument();
-            document.PrintPage += document_PrintPage;
+                printMenu = new Bitmap[pltd.Length];
+                for (int i = 0; i < pltd.Length; i++)
+                {
+                    TableLayoutPanel tbl = (TableLayoutPanel)(tabMenu.TabPages[i].Controls[0]);
+                    printMenu[i] = new Bitmap(tbl.Width, tbl.Height);
+                    tbl.DrawToBitmap(printMenu[i], new Rectangle(0, 0, printMenu[i].Width, printMenu[i].Height));
+                }
 
-            previewDialog.Document = document;
-            previewDialog.ShowDialog();
+                PrintPreviewDialog previewDialog = new PrintPreviewDialog();
+                PrintDocument document = new PrintDocument();
+                document.PrintPage += document_PrintPage;
+
+                previewDialog.Document = document;
+                previewDialog.ShowDialog();
+            }
+            else
+            {
+                ShowError("Bạn chưa thêm món nào vào thực đơn!");
+            }
         }
 
         int pageNumber = 0;

@@ -33,6 +33,7 @@ namespace GUI
             btnRecipe.Click += btnRecipe_Click;
             btnUpload.Click += btnUpload_Click;
             btnPreview.Click += btnPreview_Click;
+            btnUpdate.Enabled = btnDelete.Enabled = btnRecipe.Enabled = false;
         }
 
         private void frmMenuManagement_Load(object sender, EventArgs e)

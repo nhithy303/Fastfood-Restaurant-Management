@@ -32,6 +32,7 @@ namespace GUI
             btnDelete.Click += btnDelete_Click;
             btnImport.Click += btnImport_Click;
             btnExport.Click += btnExport_Click;
+            btnUpdate.Enabled = btnDelete.Enabled = false;
         }
 
         private void frmStorageManagement_Load(object sender, EventArgs e)
