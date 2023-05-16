@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="ChiTietHDBHDAL.cs" />
     <Compile Include="ChiTietHDNHDAL.cs" />
+    <Compile Include="ConfigDatabaseDAL.cs" />
     <Compile Include="CongThucDAL.cs" />
     <Compile Include="DatabaseAccess.cs" />
     <Compile Include="DonViTinhDAL.cs" />

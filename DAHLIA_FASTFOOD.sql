@@ -857,3 +857,4 @@ GO
 EXEC spTHAMSO @ActionType = 'Create', @TenTS = 'MenuColumns', @GiaTri = 3, @MoTa = N'Số cột hiển thị của thực đơn'
 GO
 EXEC spTHAMSO @ActionType = 'Create', @TenTS = 'ProfitMargin', @GiaTri = 20, @MoTa = N'Phần trăm lợi nhuận chỉ tiêu'
+GO

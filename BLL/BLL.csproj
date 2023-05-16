@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="ChiTietHDBHBLL.cs" />
     <Compile Include="ChiTietHDNHBLL.cs" />
+    <Compile Include="ConfigDatabaseBLL.cs" />
     <Compile Include="CongThucBLL.cs" />
     <Compile Include="DonViTinhBLL.cs" />
     <Compile Include="ExcelBLL.cs" />

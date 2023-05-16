@@ -99,6 +99,7 @@ namespace GUI
             nv_update.GioiTinh = int.Parse(cboGender.SelectedValue.ToString());
             nv_update.Sdt = txtPhone.Text;
             nv_update.DiaChi = txtAddress.Text;
+            nv_update.NgayVaoLam = DateTime.Parse(dtpStartDate.Value.ToString()).ToString("yyyy-MM-dd");
 
             int result = nv_bll.Update(nv_update);
             if (result > 0)

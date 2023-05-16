@@ -10,18 +10,37 @@ using System.Web;
 
 namespace DAL
 {
-    public class DatabaseAccess
+    internal class DatabaseAccess
     {
         private static SqlConnection connection = null;
         private static SqlBulkCopy copy = null;
 
         public DatabaseAccess()
         {
-            string server = "LAPTOP-NL39PTHM\\MEI";
-            string database = "DAHLIA_FASTFOOD";
+
+        }
+
+        public static bool ConfigDatabase(string server, string database)
+        {
             string connStr = string.Format("Data Source={0};Initial Catalog={1};Integrated Security=True", server, database);
             connection = new SqlConnection(connStr);
             copy = new SqlBulkCopy(connStr);
+            try
+            {
+                connection.Open();
+                connection.Close();
+                return true;
+            }
+            catch
+            {
+                if (connection.State == ConnectionState.Open)
+                {
+                    connection.Close();
+                }
+                server = "";
+                database = "";
+                return false;
+            }
         }
 
         public DataTable ExecuteQuery(string procedure, string action, SqlParameter[] parameters)

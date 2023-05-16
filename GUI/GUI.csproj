@@ -154,6 +154,12 @@
     <Compile Include="Employee\frmSale.Designer.cs">
       <DependentUpon>frmSale.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmConfigDatabase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfigDatabase.Designer.cs">
+      <DependentUpon>frmConfigDatabase.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmWelcome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -211,6 +217,9 @@
       <DependentUpon>frmSale.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Employee\rptOrderDetail.rdlc" />
+    <EmbeddedResource Include="frmConfigDatabase.resx">
+      <DependentUpon>frmConfigDatabase.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmWelcome.resx">
       <DependentUpon>frmWelcome.cs</DependentUpon>
     </EmbeddedResource>
@@ -323,64 +332,10 @@
     <None Include="Resources\mOrder_deco3.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\cheese_chicken.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\chicken %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\chicken %282%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\chicken %283%29.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\deco.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\nomal_chicken.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\spicy_chicken.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\tilte.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\hbg %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\hbg %282%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\hbg %283%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\hbg_beef.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\hbg_chicken.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\hbg_egg.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\noodle %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\noodle %282%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\noodle %283%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\noodle_beef.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\noodle_eggbeef.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\noodles_egg.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\chicken_deco.png" />
@@ -393,27 +348,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\noodle_tilte.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\another %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\another %282%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\another %283%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\another %284%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\another %285%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\another %286%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\another %287%29.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\another_bg.jpg" />

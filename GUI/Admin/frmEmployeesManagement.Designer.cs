@@ -48,6 +48,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tblButton = new System.Windows.Forms.TableLayoutPanel();
             this.btnResetPassword = new Guna.UI2.WinForms.Guna2Button();
+            this.btnExport = new Guna.UI2.WinForms.Guna2Button();
             this.tblInput = new System.Windows.Forms.TableLayoutPanel();
             this.tblInput1 = new System.Windows.Forms.TableLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
@@ -65,7 +66,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.dtpBirthday = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
-            this.btnExport = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployees)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.tblButton.SuspendLayout();
@@ -456,6 +456,25 @@
             this.btnResetPassword.TabIndex = 40;
             this.btnResetPassword.Text = "Đặt lại mật khẩu";
             // 
+            // btnExport
+            // 
+            this.btnExport.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnExport.BackColor = System.Drawing.Color.Transparent;
+            this.btnExport.BorderRadius = 5;
+            this.btnExport.BorderThickness = 1;
+            this.btnExport.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnExport.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnExport.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnExport.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnExport.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnExport.Font = new System.Drawing.Font("Times New Roman", 14F);
+            this.btnExport.ForeColor = System.Drawing.Color.Black;
+            this.btnExport.Location = new System.Drawing.Point(1368, 17);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(150, 40);
+            this.btnExport.TabIndex = 41;
+            this.btnExport.Text = "Export";
+            // 
             // tblInput
             // 
             this.tblInput.ColumnCount = 1;
@@ -726,25 +745,6 @@
             this.label8.TabIndex = 97;
             this.label8.Text = "Số điện thoại";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnExport
-            // 
-            this.btnExport.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnExport.BackColor = System.Drawing.Color.Transparent;
-            this.btnExport.BorderRadius = 5;
-            this.btnExport.BorderThickness = 1;
-            this.btnExport.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnExport.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnExport.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnExport.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnExport.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnExport.Font = new System.Drawing.Font("Times New Roman", 14F);
-            this.btnExport.ForeColor = System.Drawing.Color.Black;
-            this.btnExport.Location = new System.Drawing.Point(1368, 17);
-            this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(150, 40);
-            this.btnExport.TabIndex = 41;
-            this.btnExport.Text = "Export";
             // 
             // frmEmployeesManagement
             // 
