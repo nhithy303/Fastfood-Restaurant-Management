@@ -128,7 +128,6 @@ namespace GUI
                 btnCreate.Text = "Hủy";
                 btnSave.Enabled = true;
                 btnUpdate.Enabled = btnDelete.Enabled = dgvRecipe.Enabled = false;
-                txtName.Clear();
                 EnableInput();
             }
             else // btnCreate.Text == "Hủy"
@@ -138,6 +137,7 @@ namespace GUI
                 btnUpdate.Enabled = btnDelete.Enabled = dgvRecipe.Enabled = true;
                 DisableInput();
             }
+            ResetInput();
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -212,8 +212,9 @@ namespace GUI
         private void btnDelete_Click(object sender, EventArgs e)
         {
             DataGridViewRow row = dgvRecipe.CurrentRow;
+            NguyenLieu nl_selected = (NguyenLieu)cboIngredient.SelectedItem;
             string question = String.Format("Bạn có chắc chắn muốn xóa công thức của món \"{0}\" với nguyên liệu \"{1}\" không?",
-                txtName.Text, cboIngredient.SelectedText);
+                txtName.Text, nl_selected.TenNL);
             DialogResult r = MessageBox.Show(question, "Xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (r == DialogResult.Yes)
             {
@@ -241,6 +242,12 @@ namespace GUI
         private void ShowMessage(string message)
         {
             MessageBox.Show(message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void ResetInput()
+        {
+            txtName.Text = txtQuantity.Text = txtCost.Text = "";
+            cboIngredient.SelectedIndex = cboUnit.SelectedIndex = 0;
         }
 
         private void EnableInput()

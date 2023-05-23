@@ -556,11 +556,12 @@ BEGIN
 			UPDATE CONGTHUC
 			SET SOLUONG = @SoLuong, DONVITINH = @DonViTinh, GIANL = @GiaNL
 			WHERE MAMON = @MaMon AND MANL = @MaNL
+			EXEC spTHUCDON @ActionType = 'UpdateOriginalPrice', @MaMon = @MaMon
 		END
 	IF @ActionType = 'UpdateIngredientPrice'
 		BEGIN
 			UPDATE CONGTHUC
-			SET GIANL = @GiaNL
+			SET GIANL = @GiaNL * SOLUONG
 			WHERE MANL = @MaNL
 			EXEC spTHUCDON @ActionType = 'UpdateOriginalPrice', @MaMon = @MaMon
 		END
@@ -568,6 +569,7 @@ BEGIN
 		BEGIN
 			DELETE FROM CONGTHUC
 			WHERE MAMON = @MaMon AND MANL = @MaNL
+			EXEC spTHUCDON @ActionType = 'UpdateOriginalPrice', @MaMon = @MaMon
 		END
 END
 GO
@@ -600,7 +602,7 @@ BEGIN
 		BEGIN
 			UPDATE NGUYENLIEU
 			SET TENNL = @TenNL, TONKHO = @TonKho, DONVITINH = @DonViTinh, DONGIA = @DonGia WHERE MANL = @MaNL
-			EXEC spCONGTHUC @ActionType = 'UpdateIngredientPrice', @MaNL = @MaNL
+			EXEC spCONGTHUC @ActionType = 'UpdateIngredientPrice', @MaNL = @MaNL, @GiaNL = @DonGia
 		END
 	IF @ActionType = 'Delete'
 		BEGIN

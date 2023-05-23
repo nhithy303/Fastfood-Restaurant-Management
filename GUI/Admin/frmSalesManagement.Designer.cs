@@ -51,13 +51,13 @@
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.tblSearch = new System.Windows.Forms.TableLayoutPanel();
             this.btnSearch = new Guna.UI2.WinForms.Guna2Button();
-            this.cbEmployee = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.cbDate = new Guna.UI2.WinForms.Guna2CheckBox();
             this.cbPayment = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.cbDate = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.cbEmployee = new Guna.UI2.WinForms.Guna2CheckBox();
             this.tblButton = new System.Windows.Forms.TableLayoutPanel();
             this.btnReload = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDetail = new Guna.UI2.WinForms.Guna2Button();
             this.btnExportExcel = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDetail = new Guna.UI2.WinForms.Guna2Button();
             this.tblMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSale)).BeginInit();
             this.tblInput.SuspendLayout();
@@ -350,6 +350,7 @@
             this.cboEmployee.ForeColor = System.Drawing.Color.Black;
             this.cboEmployee.ItemHeight = 30;
             this.cboEmployee.Location = new System.Drawing.Point(632, 11);
+            this.cboEmployee.MaxDropDownItems = 5;
             this.cboEmployee.Name = "cboEmployee";
             this.cboEmployee.Size = new System.Drawing.Size(388, 36);
             this.cboEmployee.TabIndex = 101;
@@ -442,23 +443,23 @@
             this.btnSearch.Size = new System.Drawing.Size(50, 50);
             this.btnSearch.TabIndex = 108;
             // 
-            // cbEmployee
+            // cbPayment
             // 
-            this.cbEmployee.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cbEmployee.AutoSize = true;
-            this.cbEmployee.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbEmployee.CheckedState.BorderRadius = 0;
-            this.cbEmployee.CheckedState.BorderThickness = 0;
-            this.cbEmployee.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbEmployee.Location = new System.Drawing.Point(332, 23);
-            this.cbEmployee.Name = "cbEmployee";
-            this.cbEmployee.Size = new System.Drawing.Size(123, 29);
-            this.cbEmployee.TabIndex = 109;
-            this.cbEmployee.Text = "Nhân viên";
-            this.cbEmployee.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.cbEmployee.UncheckedState.BorderRadius = 0;
-            this.cbEmployee.UncheckedState.BorderThickness = 0;
-            this.cbEmployee.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.cbPayment.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cbPayment.AutoSize = true;
+            this.cbPayment.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbPayment.CheckedState.BorderRadius = 0;
+            this.cbPayment.CheckedState.BorderThickness = 0;
+            this.cbPayment.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbPayment.Location = new System.Drawing.Point(916, 23);
+            this.cbPayment.Name = "cbPayment";
+            this.cbPayment.Size = new System.Drawing.Size(214, 29);
+            this.cbPayment.TabIndex = 111;
+            this.cbPayment.Text = "Hình thức thanh toán";
+            this.cbPayment.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.cbPayment.UncheckedState.BorderRadius = 0;
+            this.cbPayment.UncheckedState.BorderThickness = 0;
+            this.cbPayment.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             // 
             // cbDate
             // 
@@ -478,23 +479,23 @@
             this.cbDate.UncheckedState.BorderThickness = 0;
             this.cbDate.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             // 
-            // cbPayment
+            // cbEmployee
             // 
-            this.cbPayment.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cbPayment.AutoSize = true;
-            this.cbPayment.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbPayment.CheckedState.BorderRadius = 0;
-            this.cbPayment.CheckedState.BorderThickness = 0;
-            this.cbPayment.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbPayment.Location = new System.Drawing.Point(916, 23);
-            this.cbPayment.Name = "cbPayment";
-            this.cbPayment.Size = new System.Drawing.Size(214, 29);
-            this.cbPayment.TabIndex = 111;
-            this.cbPayment.Text = "Hình thức thanh toán";
-            this.cbPayment.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.cbPayment.UncheckedState.BorderRadius = 0;
-            this.cbPayment.UncheckedState.BorderThickness = 0;
-            this.cbPayment.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.cbEmployee.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cbEmployee.AutoSize = true;
+            this.cbEmployee.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbEmployee.CheckedState.BorderRadius = 0;
+            this.cbEmployee.CheckedState.BorderThickness = 0;
+            this.cbEmployee.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbEmployee.Location = new System.Drawing.Point(332, 23);
+            this.cbEmployee.Name = "cbEmployee";
+            this.cbEmployee.Size = new System.Drawing.Size(123, 29);
+            this.cbEmployee.TabIndex = 109;
+            this.cbEmployee.Text = "Nhân viên";
+            this.cbEmployee.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.cbEmployee.UncheckedState.BorderRadius = 0;
+            this.cbEmployee.UncheckedState.BorderThickness = 0;
+            this.cbEmployee.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             // 
             // tblButton
             // 
@@ -532,25 +533,6 @@
             this.btnReload.TabIndex = 94;
             this.btnReload.Text = "Tải lại";
             // 
-            // btnDetail
-            // 
-            this.btnDetail.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnDetail.BackColor = System.Drawing.Color.Transparent;
-            this.btnDetail.BorderRadius = 5;
-            this.btnDetail.BorderThickness = 1;
-            this.btnDetail.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDetail.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDetail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDetail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDetail.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnDetail.Font = new System.Drawing.Font("Times New Roman", 14F);
-            this.btnDetail.ForeColor = System.Drawing.Color.Black;
-            this.btnDetail.Location = new System.Drawing.Point(477, 17);
-            this.btnDetail.Name = "btnDetail";
-            this.btnDetail.Size = new System.Drawing.Size(150, 40);
-            this.btnDetail.TabIndex = 93;
-            this.btnDetail.Text = "Chi tiết";
-            // 
             // btnExportExcel
             // 
             this.btnExportExcel.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -569,6 +551,25 @@
             this.btnExportExcel.Size = new System.Drawing.Size(150, 40);
             this.btnExportExcel.TabIndex = 92;
             this.btnExportExcel.Text = "Xuất Excel";
+            // 
+            // btnDetail
+            // 
+            this.btnDetail.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnDetail.BackColor = System.Drawing.Color.Transparent;
+            this.btnDetail.BorderRadius = 5;
+            this.btnDetail.BorderThickness = 1;
+            this.btnDetail.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDetail.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDetail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDetail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDetail.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnDetail.Font = new System.Drawing.Font("Times New Roman", 14F);
+            this.btnDetail.ForeColor = System.Drawing.Color.Black;
+            this.btnDetail.Location = new System.Drawing.Point(477, 17);
+            this.btnDetail.Name = "btnDetail";
+            this.btnDetail.Size = new System.Drawing.Size(150, 40);
+            this.btnDetail.TabIndex = 93;
+            this.btnDetail.Text = "Chi tiết";
             // 
             // frmSalesManagement
             // 

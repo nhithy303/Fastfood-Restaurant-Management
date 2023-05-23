@@ -63,8 +63,7 @@ namespace DAL
 
         public int Create(NguyenLieu nl)
         {
-            SqlParameter[] p = GetParametersArray(nl);
-            return da.ExecuteNonQuery(procedure, "Create", p);
+            return da.ExecuteNonQuery(procedure, "Create", GetParametersArray(nl));
         }
 
         public int Update(NguyenLieu nl)

@@ -83,7 +83,6 @@ namespace GUI
                 btnCreate.Text = "Hủy";
                 btnSave.Enabled = true;
                 btnUpdate.Enabled = btnDelete.Enabled = dgvIngredient.Enabled = false;
-                ResetInput();
                 EnableInput();
             }
             else // btnCreate.Text == "Hủy"
@@ -93,6 +92,7 @@ namespace GUI
                 btnUpdate.Enabled = btnDelete.Enabled = dgvIngredient.Enabled = true;
                 DisableInput();
             }
+            ResetInput();
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -258,11 +258,8 @@ namespace GUI
 
         private void ResetInput()
         {
-            txtID.Text = "";
-            txtName.Clear();
-            txtQuantity.Clear();
+            txtID.Text = txtName.Text = txtQuantity.Text = txtUnitPrice.Text = "";
             cboUnit.SelectedIndex = 0;
-            txtUnitPrice.Clear();
         }
     }
 }

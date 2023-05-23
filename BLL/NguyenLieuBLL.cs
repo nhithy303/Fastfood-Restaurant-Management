@@ -37,6 +37,10 @@ namespace BLL
 
         public int Update(NguyenLieu nl)
         {
+            if (!IsValid(nl))
+            {
+                return -2;
+            }
             return nl_dal.Update(nl);
         }
 

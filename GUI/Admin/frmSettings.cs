@@ -188,7 +188,6 @@ namespace GUI.Admin
                 btnCreateUnit.Text = "Hủy";
                 btnSaveUnit.Enabled = true;
                 btnUpdateUnit.Enabled = btnDeleteUnit.Enabled = dgvUnit.Enabled = false;
-                txtUnitName.Clear();
                 EnableUnitInput();
             }
             else // btnCreateUnit.Text == "Hủy"
@@ -198,7 +197,7 @@ namespace GUI.Admin
                 btnUpdateUnit.Enabled = btnDeleteUnit.Enabled = dgvUnit.Enabled = true;
                 DisableUnitInput();
             }
-            txtUnitID.Text = "";
+            txtUnitID.Text = txtUnitName.Text = "";
         }
 
         private void btnUpdateUnit_Click(object sender, EventArgs e)
@@ -348,7 +347,6 @@ namespace GUI.Admin
                 btnCreatePaymentMethod.Text = "Hủy";
                 btnSavePaymentMethod.Enabled = true;
                 btnUpdatePaymentMethod.Enabled = btnDeletePaymentMethod.Enabled = dgvPaymentMethod.Enabled = false;
-                txtPaymentMethodName.Clear();
                 EnablePaymentMethodInput();
             }
             else // btnCreatePaymentMethod.Text == "Hủy"
@@ -358,7 +356,7 @@ namespace GUI.Admin
                 btnUpdatePaymentMethod.Enabled = btnDeletePaymentMethod.Enabled = dgvPaymentMethod.Enabled = true;
                 DisablePaymentMethodInput();
             }
-            txtPaymentMethodID.Text = "";
+            txtPaymentMethodID.Text = txtPaymentMethodName.Text = "";
         }
 
         private void btnUpdatePaymentMethod_Click(object sender, EventArgs e)
@@ -508,7 +506,6 @@ namespace GUI.Admin
                 btnCreateEmployeeCategory.Text = "Hủy";
                 btnSaveEmployeeCategory.Enabled = true;
                 btnUpdateEmployeeCategory.Enabled = btnDeleteEmployeeCategory.Enabled = dgvEmployeeCategory.Enabled = false;
-                txtEmployeeCategoryName.Clear();
                 EnableEmployeeCategoryInput();
             }
             else // btnCreateEmployeeCategory.Text == "Hủy"
@@ -518,7 +515,7 @@ namespace GUI.Admin
                 btnUpdateEmployeeCategory.Enabled = btnDeleteEmployeeCategory.Enabled = dgvEmployeeCategory.Enabled = true;
                 DisableEmployeeCategoryInput();
             }
-            txtEmployeeCategoryID.Text = "";
+            txtEmployeeCategoryID.Text = txtEmployeeCategoryName.Text = "";
         }
 
         private void btnUpdateEmployeeCategory_Click(object sender, EventArgs e)
@@ -668,7 +665,6 @@ namespace GUI.Admin
                 btnCreateMenuCategory.Text = "Hủy";
                 btnSaveMenuCategory.Enabled = true;
                 btnUpdateMenuCategory.Enabled = btnDeleteMenuCategory.Enabled = dgvMenuCategory.Enabled = false;
-                txtMenuCategoryName.Clear();
                 EnableMenuCategoryInput();
             }
             else // btnCreateMenuCategory.Text == "Hủy"
@@ -678,7 +674,7 @@ namespace GUI.Admin
                 btnUpdateMenuCategory.Enabled = btnDeleteMenuCategory.Enabled = dgvMenuCategory.Enabled = true;
                 DisableMenuCategoryInput();
             }
-            txtMenuCategoryID.Text = "";
+            txtMenuCategoryID.Text = txtMenuCategoryName.Text = "";
         }
 
         private void btnUpdateMenuCategory_Click(object sender, EventArgs e)
@@ -828,7 +824,6 @@ namespace GUI.Admin
                 btnCreateOrderState.Text = "Hủy";
                 btnSaveOrderState.Enabled = true;
                 btnUpdateOrderState.Enabled = btnDeleteOrderState.Enabled = dgvOrderState.Enabled = false;
-                txtOrderStateName.Clear();
                 EnableOrderStateInput();
             }
             else // btnCreateOrderState.Text == "Hủy"
@@ -838,7 +833,7 @@ namespace GUI.Admin
                 btnUpdateOrderState.Enabled = btnDeleteOrderState.Enabled = dgvOrderState.Enabled = true;
                 DisableOrderStateInput();
             }
-            txtOrderStateID.Text = "";
+            txtOrderStateID.Text = txtOrderStateName.Text = "";
         }
 
         private void btnUpdateOrderState_Click(object sender, EventArgs e)

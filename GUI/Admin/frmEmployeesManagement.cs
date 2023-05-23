@@ -105,7 +105,6 @@ namespace GUI
                 btnCreate.Text = "Hủy";
                 btnSave.Enabled = true;
                 btnUpdate.Enabled = btnDelete.Enabled = btnResetPassword.Enabled = dgvEmployees.Enabled = false;
-                ResetInput();
                 EnableInput();
             }
             else // btnCreate.Text == "Hủy"
@@ -115,6 +114,7 @@ namespace GUI
                 btnUpdate.Enabled = btnDelete.Enabled = btnResetPassword.Enabled = dgvEmployees.Enabled = true;
                 DisableInput();
             }
+            ResetInput();
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)

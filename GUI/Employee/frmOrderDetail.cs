@@ -125,6 +125,7 @@ namespace GUI
                 btnUpdate.Enabled = btnDelete.Enabled = true;
                 DisableInput();
             }
+            ResetInput();
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -297,6 +298,13 @@ namespace GUI
             {
                 btnCreate.Enabled = btnUpdate.Enabled = btnDelete.Enabled = true;
             }
+        }
+
+        private void ResetInput()
+        {
+            cboMenu.SelectedIndex = 0;
+            numQuantity.Value = 0;
+            txtUnitPrice.Text = txtTotalPrice.Text = "";
         }
 
         private void EnableInput()
