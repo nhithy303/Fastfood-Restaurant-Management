@@ -745,6 +745,11 @@ BEGIN
 			SET TONKHO = TONKHO - (@SoLuong * (SELECT TOP 1 SOLUONG FROM CONGTHUC WHERE MAMON = @MaMon AND MANL = MANL))
 			WHERE MANL IN (SELECT MANL FROM CONGTHUC WHERE MAMON = @MaMon)
 			--------------------------------------------------------
+			---Update total price of this invoice---
+			UPDATE HOADONBANHANG
+			SET TONGTIEN = TONGTIEN + @SoLuong * @DonGia
+			WHERE MAHD = @MaHD
+			----------------------------------------
 		END
 	IF @ActionType = 'Update'
 		BEGIN

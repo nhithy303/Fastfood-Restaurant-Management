@@ -201,8 +201,9 @@ namespace GUI
         private void btnDelete_Click(object sender, EventArgs e)
         {
             DataGridViewRow row = dgvOrderDetail.CurrentRow;
+            ThucDon td_selected = (ThucDon)cboMenu.SelectedItem;
             string question = String.Format("Bạn có chắc chắn muốn xóa chi tiết hóa đơn \"{0}\" với món ăn \"{1}\" không?",
-                hdbh.MaHD, cboMenu.SelectedText);
+                hdbh.MaHD, td_selected.TenMon);
             DialogResult r = MessageBox.Show(question, "Xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (r == DialogResult.Yes)
             {

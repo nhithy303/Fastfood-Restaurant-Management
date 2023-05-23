@@ -65,7 +65,15 @@ namespace GUI.Employee
                 cboPayment.SelectedValue = int.Parse(row.Cells[4].Value.ToString());
                 cboState.SelectedValue = int.Parse(row.Cells[5].Value.ToString());
 
-                btnDetail.Enabled = btnUpdate.Enabled = btnDelete.Enabled = true;
+                btnDetail.Enabled = true;
+                if (int.Parse(cboState.SelectedValue.ToString()) == ttdh_bll.Served())
+                {
+                    btnUpdate.Enabled = btnDelete.Enabled = false;
+                }
+                else
+                {
+                    btnUpdate.Enabled = btnDelete.Enabled = true;
+                }
             }
             else
             {
@@ -109,14 +117,14 @@ namespace GUI.Employee
             {
                 btnUpdate.Text = "Hủy";
                 btnSave.Enabled = true;
-                btnDelete.Enabled = false;
+                btnDetail.Enabled = btnDelete.Enabled = false;
                 EnableInput();
             }
             else // btnUpdate.Text == "Hủy"
             {
                 btnUpdate.Text = "Sửa";
                 btnSave.Enabled = false;
-                btnDelete.Enabled = true;
+                btnDetail.Enabled = btnDelete.Enabled = true;
                 DisableInput();
             }
         }
@@ -126,6 +134,7 @@ namespace GUI.Employee
             HoaDonBanHang hdbh = new HoaDonBanHang();
             hdbh.MaHD = int.Parse(txtID.Text);
             hdbh.MaNV = nv.MaNV;
+            hdbh.NgayHD = DateTime.Parse(dtpDate.Value.ToString()).ToString("yyyy-MM-dd");
             hdbh.TongTien = int.Parse(txtTotal.Text);
             hdbh.ThanhToan = int.Parse(cboPayment.SelectedValue.ToString());
             hdbh.TrangThai = int.Parse(cboState.SelectedValue.ToString());
@@ -140,7 +149,7 @@ namespace GUI.Employee
                 DisableInput();
                 dgvOrder_Load();
             }
-            else if (result == -2)
+            else if (result == -3)
             {
                 ShowError("Thông tin không hợp lệ!");
             }

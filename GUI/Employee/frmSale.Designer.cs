@@ -31,7 +31,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenuPreview));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSale));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tblTotal = new System.Windows.Forms.TableLayoutPanel();
@@ -398,7 +398,7 @@
             // 
             this.tabOrder.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabOrder.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabOrder.ItemSize = new System.Drawing.Size(180, 40);
+            this.tabOrder.ItemSize = new System.Drawing.Size(120, 40);
             this.tabOrder.Location = new System.Drawing.Point(3, 3);
             this.tabOrder.Name = "tabOrder";
             this.tabOrder.SelectedIndex = 0;
@@ -418,7 +418,7 @@
             this.tabOrder.TabButtonSelectedState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
             this.tabOrder.TabButtonSelectedState.ForeColor = System.Drawing.Color.White;
             this.tabOrder.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(132)))), ((int)(((byte)(255)))));
-            this.tabOrder.TabButtonSize = new System.Drawing.Size(180, 40);
+            this.tabOrder.TabButtonSize = new System.Drawing.Size(120, 40);
             this.tabOrder.TabIndex = 7;
             this.tabOrder.TabMenuBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.tabOrder.TabMenuOrientation = Guna.UI2.WinForms.TabMenuOrientation.HorizontalTop;

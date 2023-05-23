@@ -76,7 +76,7 @@
             // 
             this.tabMenu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabMenu.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabMenu.ItemSize = new System.Drawing.Size(180, 40);
+            this.tabMenu.ItemSize = new System.Drawing.Size(120, 40);
             this.tabMenu.Location = new System.Drawing.Point(3, 3);
             this.tabMenu.Name = "tabMenu";
             this.tabMenu.SelectedIndex = 0;
@@ -96,7 +96,7 @@
             this.tabMenu.TabButtonSelectedState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
             this.tabMenu.TabButtonSelectedState.ForeColor = System.Drawing.Color.White;
             this.tabMenu.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(132)))), ((int)(((byte)(255)))));
-            this.tabMenu.TabButtonSize = new System.Drawing.Size(180, 40);
+            this.tabMenu.TabButtonSize = new System.Drawing.Size(120, 40);
             this.tabMenu.TabIndex = 7;
             this.tabMenu.TabMenuBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.tabMenu.TabMenuOrientation = Guna.UI2.WinForms.TabMenuOrientation.HorizontalTop;

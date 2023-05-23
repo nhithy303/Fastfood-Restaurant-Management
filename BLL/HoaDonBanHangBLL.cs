@@ -30,11 +30,6 @@ namespace BLL
 
         public int Update(HoaDonBanHang hdbh)
         {
-            TrangThaiDonHangBLL ttdh_bll = new TrangThaiDonHangBLL();
-            if (hdbh.TrangThai == ttdh_bll.Served())
-            {
-                return -2;
-            }
             return hdbh_dal.Update(hdbh);
         }
 
