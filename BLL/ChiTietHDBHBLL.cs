@@ -21,7 +21,29 @@ namespace BLL
 
         public int Create(ChiTietHDBH cthdbh)
         {
-            return cthdbh_dal.Create(cthdbh);
+            int result = cthdbh_dal.Create(cthdbh);
+            if (result > 0)
+            {
+                // Subtract amount of ingredient after selling dishes
+                CongThuc ct_find = new CongThuc();
+                ct_find.MaMon = cthdbh.MaMon;
+                CongThuc[] ct = ct_bll.GetList(ct_find);
+                if (ct != null)
+                {
+                    foreach (CongThuc ct_item in ct)
+                    {
+                        NguyenLieu nl_find = new NguyenLieu();
+                        nl_find.MaNL = ct_item.MaNL;
+                        NguyenLieu[] nl = nl_bll.GetList(nl_find);
+                        if (nl != null)
+                        {
+                            nl[0].TonKho -= cthdbh.SoLuong * ct_item.SoLuong;
+                            result = nl_bll.Update(nl[0]);
+                        }
+                    }
+                }
+            }
+            return result;
         }
 
         public int Update(ChiTietHDBH cthdbh)

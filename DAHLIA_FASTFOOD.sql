@@ -741,9 +741,9 @@ BEGIN
 			INSERT INTO CHITIETHDBH(MAHD, MAMON, SOLUONG, DONGIA) VALUES
 				(@MaHD, @MaMon, @SoLuong, @DonGia)
 			---Subtract amount of ingredient after selling dishes---
-			UPDATE NGUYENLIEU
-			SET TONKHO = TONKHO - (@SoLuong * (SELECT TOP 1 SOLUONG FROM CONGTHUC WHERE MAMON = @MaMon AND MANL = MANL))
-			WHERE MANL IN (SELECT MANL FROM CONGTHUC WHERE MAMON = @MaMon)
+			--UPDATE NGUYENLIEU
+			--SET TONKHO = TONKHO - (@SoLuong * (SELECT TOP 1 SOLUONG FROM CONGTHUC WHERE MAMON = @MaMon AND MANL = MANL))
+			--WHERE MANL IN (SELECT MANL FROM CONGTHUC WHERE MAMON = @MaMon)
 			--------------------------------------------------------
 			---Update total price of this invoice---
 			UPDATE HOADONBANHANG
