@@ -73,12 +73,22 @@ namespace GUI
                 td_find.MaLoai = category.MaLoai;
                 ThucDon[] td = td_bll.GetList(td_find);
 
+                // Add TableLayoutPanel to TabPage
+                TableLayoutPanel newTable = new TableLayoutPanel();
+                newTable.AutoSize = true;
+                newTable.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+                newTable.BackColor = Color.Transparent;
+                newTable.Dock = DockStyle.Top;
+                newPage.Controls.Add(newTable);
+
                 // If this catogery has no dish added
                 if (td == null)
                 {
-                    newPage.Controls.Add(new Label()
+                    newTable.Controls.Add(new Label()
+                    //newPage.Controls.Add(new Label()
                     {
                         Anchor = AnchorStyles.Top,
+                        AutoSize = true,
                         Text = "Chưa có món ăn nào được thêm vào phân loại thực đơn này!",
                         Font = new Font("Times New Roman", 14F, FontStyle.Bold)
                     });
@@ -87,13 +97,7 @@ namespace GUI
                     continue;
                 }
 
-                // Add TableLayoutPanel to TabPage
-                TableLayoutPanel newTable = new TableLayoutPanel();
-                newTable.AutoSize = true;
-                newTable.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-                newTable.BackColor = Color.Transparent;
-                newTable.Dock = DockStyle.Top;
-                newPage.Controls.Add(newTable);
+                //
 
                 // Generate columns
                 ThamSo ts_MenuColumns = new ThamSo();
