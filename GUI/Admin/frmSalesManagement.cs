@@ -148,6 +148,9 @@ namespace GUI
             DataGridViewRow row = dgvSale.CurrentRow;
             HoaDonBanHang hdbh = new HoaDonBanHang();
             hdbh.MaHD = int.Parse(row.Cells[0].Value.ToString());
+            hdbh.MaNV = int.Parse(row.Cells[1].Value.ToString());
+            hdbh.NgayHD = ReverseDateFormat(row.Cells[2].Value.ToString());
+            hdbh.TongTien = int.Parse(row.Cells[3].Value.ToString());
             hdbh.ThanhToan = int.Parse(row.Cells[4].Value.ToString());
             hdbh.TrangThai = int.Parse(row.Cells[5].Value.ToString());
             new frmOrderDetail(hdbh, true).ShowDialog();

@@ -492,6 +492,7 @@ BEGIN
 	IF @ActionType = 'Delete'
 		BEGIN
 			UPDATE THUCDON SET DAXOA = GETDATE() WHERE MAMON = @MaMon
+			EXEC spCONGTHUC @ActionType = 'DeleteMenu', @MaMon = @MaMon
 		END
 	IF @ActionType = 'Restore'
 		BEGIN
@@ -570,6 +571,10 @@ BEGIN
 			DELETE FROM CONGTHUC
 			WHERE MAMON = @MaMon AND MANL = @MaNL
 			EXEC spTHUCDON @ActionType = 'UpdateOriginalPrice', @MaMon = @MaMon
+		END
+	IF @ActionType = 'DeleteMenu'
+		BEGIN
+			DELETE FROM CONGTHUC WHERE MAMON = @MaMon
 		END
 END
 GO
